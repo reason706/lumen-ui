@@ -5,9 +5,11 @@
   "description": "Framework-free component library and live component studio",
   "scripts": {
     "start": "python3 -m http.server 8000 --bind 127.0.0.1",
-    "test": "node tests/catalog.mjs && node tests/browser.mjs && node tests/themes.mjs",
+    "test": "node scripts/build-offline.mjs --check && node tests/catalog.mjs && node tests/browser.mjs && node tests/file.mjs && node tests/themes.mjs",
     "test:themes": "node tests/themes.mjs",
-    "test:catalog": "node tests/catalog.mjs"
+    "test:catalog": "node tests/catalog.mjs",
+    "build:offline": "node scripts/build-offline.mjs",
+    "test:file": "node tests/file.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.58.2",

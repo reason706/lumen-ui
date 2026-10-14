@@ -49,17 +49,19 @@ Examples are labeled by capability:
 
 The 60 core examples include interactive controls, CSS/native examples, and compositions. Example counts are distinct from component-family counts and individual variant counts.
 
-## Run the studio
+## Open the studio
 
-From the repository root, with Node.js/npm and Python 3 available:
+You can double-click `studio-preview.html` to open the complete studio directly from your filesystem. No server or dependency installation is required. The included `js/studio-data.js` snapshot supplies the catalog, templates, and styles without local-file fetch requests. Standalone `example.html` pages also support direct-file opening.
+
+Alternatively, use VS Code **Live Server → Open with Live Server**, or run this command from the repository root with Node.js/npm and Python 3 available:
 
 ```bash
 npm start
 ```
 
-The command starts a Python static HTTP server on port 8000, bound to the local machine. Open `studio-preview.html` through that server; `index.html` also redirects there. The studio fetches its catalog and templates over HTTP, so opening the file directly is not supported.
+The command starts a Python static HTTP server on port 8000, bound to the local machine. Open `studio-preview.html` through that server; `index.html` also redirects there. Server mode reads the current catalog and templates over HTTP. Both opening methods support previewing, searching, inspecting HTML/CSS, and copying examples. When serving over HTTP, add `?offline=1` to exercise the included snapshot instead of fetching source data.
 
-No dependency installation, build, framework, backend, or credentials are required to view the studio. Google Fonts is optional; when its domains are unavailable, the configured font stacks fall back to local fonts.
+No framework, backend, or credentials are required to view the studio. Google Fonts is optional; when its domains are unavailable, the configured font stacks fall back to local fonts.
 
 Use the category sidebar or **Ctrl / Command + K** to search. Select **Inspect** on an example for its preview, HTML, CSS, and copying tools. Use **⇄** to select examples for comparison. Favorites, recent items, and the theme choice are stored in your browser.
 
@@ -132,6 +134,8 @@ The original theme manager, telemetry simulator, and automotive controls remain 
  components/core.css      Public lm- component styles
  components/utilities.css Responsive layout and logical spacing utilities
  components/*.css         Original component styles
+ js/assets.js             Shared HTTP / direct-file asset loader
+ js/studio-data.js         Generated direct-file snapshot
  js/components.js         Public interaction and lifecycle API
  js/studio.js             Catalog-driven studio and inspector
  js/example.js            Standalone example loader
@@ -144,12 +148,13 @@ The original theme manager, telemetry simulator, and automotive controls remain 
  studio-preview.html      Studio entrypoint
  studio.css               Studio shell styling
  example.html             Standalone examples selected with ?item=source/id
- tests/                   Catalog, browser, accessibility, and theme checks
+ scripts/build-offline.mjs Regenerates the direct-file snapshot
+ tests/                   Catalog, browser, direct-file, accessibility, theme checks
 ```
 
 For example, `example.html?item=core/dialog` renders the public modal example. The item's stable key, template source, CSS dependencies, and category are defined in the catalog.
 
-To reorganize an item, update its catalog category and family while retaining its stable key. To add an example, add its HTML template and catalog record. Navigation, search, category counts, and inspection derive from those records; the studio shell does not need a separate inventory update.
+To reorganize an item, update its catalog category and family while retaining its stable key. To add an example, add its HTML template and catalog record. Navigation, search, category counts, and inspection derive from those records; the studio shell does not need a separate inventory update. After changing catalog records, templates, or CSS, run `npm run build:offline` and commit the updated `js/studio-data.js`. It is generated from those source files; edit the sources rather than the snapshot. Tests verify that the snapshot is current.
 
 ## Validation
 
@@ -165,11 +170,12 @@ Browser checks require Chromium at `/usr/bin/chromium`, or an alternative execut
 The suite checks:
 
 - Catalog integrity, unique keys, template dependencies, and retention of all 473 original records.
-- Rendering all 533 previews, navigation, aliases, filtering, favorites, comparison, and standalone exports.
+- Rendering all 533 previews over HTTP and through direct-file URLs, navigation, aliases, filtering, favorites, comparison, and standalone exports.
+- Windows direct-file path resolution without fetch requests, offline snapshot rendering, HTML/CSS inspection, standalone interactions, paths containing spaces, and HTTP hosting under a subdirectory. The suite attempts real `file://` browser navigation; if an administrator policy blocks that scheme, it reports the check as skipped and tests the same snapshot loader using HTTP offline mode.
 - Core and selected original interactions, keyboard behavior, runtime lifecycle, responsive preview containers, and mobile layout.
 - **480 public core/theme combinations**: 60 core examples across eight themes, including open dialogs/menus, validation errors, automated WCAG checks through axe-core, and narrow-layout checks.
 
-Focused commands are `npm run test:catalog` and `npm run test:themes`. Automated checks cover the public core and selected interactions; they are not an accessibility certification of every retained visual reference or a substitute for manual testing in target applications.
+Focused commands are `npm run test:catalog`, `npm run test:file`, and `npm run test:themes`. Automated checks cover the public core and selected interactions; they are not an accessibility certification of every retained visual reference or a substitute for manual testing in target applications.
 
 ## License
 

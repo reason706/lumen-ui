@@ -10,7 +10,7 @@ const icons=['◈','▦','↗','▤','◉','☷','▣','◇','◌','▥','▷','
 const typeLabels={functional:'Interactive core',css:'CSS / native controls',reference:'Visual reference',composition:'Composition'};
 function el(tag,className,text){const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node}
 function notice(message){$('notice').textContent=message;$('notice').hidden=false;clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>$('notice').hidden=true,2500)}
-async function loadTemplates(file){if(!templates.has(file))templates.set(file,fetch(file).then(r=>{if(!r.ok)throw Error('Could not load '+file);return r.text()}).then(text=>{const doc=document.createElement('div');doc.innerHTML=text;return doc}));return templates.get(file)}
+async function loadTemplates(file){if(!templates.has(file))templates.set(file,LumenAssets.text(file).then(text=>{const doc=document.createElement('div');doc.innerHTML=text;return doc}));return templates.get(file)}
 async function content(item){const doc=await loadTemplates(item.template),t=doc.querySelector('template[id="'+CSS.escape(item.id)+'"]');if(!t)throw Error('Missing template: '+item.key);return t.content.cloneNode(true)}
 function legacySnippet(fragment){const sec=fragment.querySelector('section.sec');if(sec){sec.removeAttribute('id');sec.querySelector('.sh')?.remove();sec.classList.remove('sec','w2','w3')}return fragment}
 async function markup(item,variant){const fragment=legacySnippet(await content(item));if(variant!==undefined&&variant!=='all'){const candidates=[...fragment.querySelectorAll('button,input,select,textarea,progress,meter')];const node=candidates[Number(variant)];if(node){const label=node.closest('label');return (label||node).outerHTML}}const holder=el('div');holder.append(fragment);return holder.innerHTML}
@@ -36,9 +36,8 @@ async function preview(item,container){
 }
 async function previewSheet(file){
  if(!sheetCache.has(file))sheetCache.set(file,(async()=>{
-  const response=await fetch(file);if(!response.ok)throw Error('Styles unavailable: '+file);
-  let text=await response.text();const imports=[...text.matchAll(/@import\s+url\(['"]([^'"]+)['"]\);/g)];
-  for(const match of imports){const path=new URL(match[1],new URL(file,location.href)).pathname.replace(/^\//,'');text=text.replace(match[0],await previewSheet(path))}
+  let text=await LumenAssets.text(file);const imports=[...text.matchAll(/@import\s+url\(['"]([^'"]+)['"]\);/g)];
+  for(const match of imports){const path=LumenAssets.path(new URL(match[1],new URL(file,document.baseURI)));text=text.replace(match[0],await previewSheet(path))}
   return text.replace(/:root\b/g,':host').replace(/@media\s*\((min|max)-width\s*:\s*([^)]*)\)/g,'@container lm-preview ($1-width: $2)');
  })());return sheetCache.get(file);
 }
@@ -76,14 +75,14 @@ function navigate(){if(!catalog)return;const route=resolve(location.hash);catego
  $('family-filter').replaceChildren(new Option('All families',''),...[...new Set(baseItems().map(x=>x.family))].sort().map(x=>new Option(x.replace(/^\d+ · /,''),x)));render();
  if(route.key){const item=catalog.items.find(x=>x.key===route.key);remember(item);const node=document.querySelector('[data-key="'+CSS.escape(route.key)+'"]');node?.classList.add('is-selected');node?.scrollIntoView({block:'start'});}
 }
-async function openInspector(item){selected=item;remember(item);$('inspector-title').textContent=item.title;$('standalone-link').href='example.html?item='+encodeURIComponent(item.key)+'&theme='+$('theme').value;$('save-favorite').textContent=favorites.includes(item.key)?'★ Favorited':'☆ Favorite';if(!$('inspector').open)$('inspector').showModal();await inspectTab('preview')}
+async function openInspector(item){selected=item;remember(item);$('inspector-title').textContent=item.title;$('standalone-link').href='example.html?item='+encodeURIComponent(item.key)+'&theme='+$('theme').value+(LumenAssets.offline&&location.protocol!=='file:'?'&offline=1':'');$('save-favorite').textContent=favorites.includes(item.key)?'★ Favorited':'☆ Favorite';if(!$('inspector').open)$('inspector').showModal();await inspectTab('preview')}
 async function inspectTab(tab){const item=selected;if(!item)return;inspectorPreview?.destroy();inspectorPreview=null;$('inspector-body').replaceChildren();document.querySelectorAll('[data-inspect]').forEach(b=>{const on=b.dataset.inspect===tab;b.setAttribute('aria-selected',String(on));b.tabIndex=on?0:-1});
  if(tab==='preview'){inspectorPreview=await preview(item,$('inspector-body'));if(selected!==item||!$('inspector').open){inspectorPreview.destroy();inspectorPreview=null}return}
  const label=el('label','variant-select','Copy selection'),select=el('select');select.id='variant-selection';select.append(new Option('Complete example','all'));if(tab==='html'){const fragment=await content(item);[...fragment.querySelectorAll('button,input,select,textarea,progress,meter')].forEach((node,i)=>{select.append(new Option((node.textContent.trim()||node.getAttribute('aria-label')||node.getAttribute('placeholder')||node.tagName)+' · '+(i+1),String(i)))})}label.append(select);const source=el('pre');$('inspector-body').append(label,source);
  const refresh=async()=>{source.textContent=tab==='html'?await markup(item,select.value):await styles(item)};select.onchange=refresh;await refresh();
 }
-async function styles(item){const files=item.source==='core'?['components/core.css','components/utilities.css']:item.css;return '/* Required stylesheet: '+(item.source==='core'?'lumen-core.css':files.join(', '))+' */\n\n'+(await Promise.all(files.map(file=>{if(!cssCache.has(file))cssCache.set(file,fetch(file).then(r=>{if(!r.ok)throw Error('Could not load '+file);return r.text()}));return cssCache.get(file)}))).join('\n')}
-function setTheme(theme){document.documentElement.dataset.theme=theme;write('theme',theme);for(const p of previews)p.host.dataset.theme=theme;if(selected)$('standalone-link').href='example.html?item='+encodeURIComponent(selected.key)+'&theme='+theme}
+async function styles(item){const files=item.source==='core'?['components/core.css','components/utilities.css']:item.css;return '/* Required stylesheet: '+(item.source==='core'?'lumen-core.css':files.join(', '))+' */\n\n'+(await Promise.all(files.map(file=>{if(!cssCache.has(file))cssCache.set(file,LumenAssets.text(file));return cssCache.get(file)}))).join('\n')}
+function setTheme(theme){document.documentElement.dataset.theme=theme;write('theme',theme);for(const p of previews)p.host.dataset.theme=theme;if(selected)$('standalone-link').href='example.html?item='+encodeURIComponent(selected.key)+'&theme='+theme+(LumenAssets.offline&&location.protocol!=='file:'?'&offline=1':'')}
 $('compare-open').onclick=()=>{if(!comparison.length)return;category='compare';$('page-title').textContent='Compare components';$('page-summary').textContent='Selected examples side by side. Use the theme and width controls to compare.';$('search').value='';$('family-filter').value='';$('status-filter').value='';$('layout-filter').value='grid';render()};
 $('direction').onchange=()=>{document.documentElement.dir=$('direction').value};
 $('theme').value=read('theme','light');if(!$('theme').value)$('theme').value='light';setTheme($('theme').value);$('theme').onchange=()=>setTheme($('theme').value);
@@ -99,7 +98,7 @@ $('copy-snippet').onclick=async()=>{try{await LumenUI.copy(await markup(selected
 $('copy-standalone').onclick=async()=>{try{await LumenUI.copy(await standalone(selected,$('variant-selection')?.value));notice('Complete example copied')}catch{notice('Clipboard unavailable')}};$('save-favorite').onclick=()=>toggleFavorite(selected.key);
 document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('search').focus();$('search').select()}if(e.key==='Escape'){$('sidebar').classList.remove('open');$('menu-toggle').setAttribute('aria-expanded','false');syncSidebar()}});
 window.addEventListener('hashchange',navigate);
-fetch('catalog/components.json').then(r=>{if(!r.ok)throw Error('Catalog unavailable');return r.json()}).then(data=>{
+LumenAssets.json('catalog/components.json').then(data=>{
  catalog=data;
  // Migrate old favorites and recent records using stable original keys.
  favorites=[...new Set(favorites.map(k=>catalog.aliases?.[k]||k))].filter(k=>catalog.items.some(x=>x.key===k));recent=recent.map(x=>typeof x==='string'?x:x.p+'/'+x.id).map(k=>catalog.aliases?.[k]||k).filter(k=>catalog.items.some(x=>x.key===k));
