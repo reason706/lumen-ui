@@ -28,3 +28,6 @@
 @import url('./components/surfaces.css');
 @import url('./components/feedback.css');
 @import url('./components/data-media.css');
+
+@import url('./components/core.css');
+@import url('./components/utilities.css');

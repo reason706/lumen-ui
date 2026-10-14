@@ -1,130 +1,176 @@
-# Lumen UI — Modular Design System & Live Component Studio
+# Lumen UI — Component Library & Live Studio
 
-![Lumen UI Banner](https://img.shields.io/badge/Lumen%20UI-Design%20System-6366f1?style=for-the-badge&logo=css3&logoColor=white)
-![Version](https://img.shields.io/badge/version-2.0.0-blue?style=flat-square)
-![Tokens](https://img.shields.io/badge/tokens-rem--based-emerald?style=flat-square)
-![Accessibility](https://img.shields.io/badge/WCAG-AAA%20Compliant-purple?style=flat-square)
-![Dependencies](https://img.shields.io/badge/dependencies-zero-success?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-orange?style=flat-square)
+![Version](https://img.shields.io/badge/version-3.0.0-6366f1)
+![Runtime](https://img.shields.io/badge/runtime-framework%20free-10b981)
+![Examples](https://img.shields.io/badge/examples-533-8b5cf6)
+![Themes](https://img.shields.io/badge/themes-8-ec4899)
 
-**Lumen UI** is an ultra-modern, production-ready, `rem`-based modular design system and interactive component library with **474+ curated UI components** across 9 foundational categories. Engineered for enterprise dashboards, modern SaaS, mobile web apps, and automotive human-machine interfaces (HMI).
+Lumen UI is a modular HTML, CSS, and JavaScript component library with **533 examples across 12 categories and 70 families**. Its live studio organizes related items so you can find, compare, inspect, and copy them into your own interfaces.
 
----
+Version 3 preserves all **473 original examples** and their color, typography, spacing, effects, and component styles. It adds **60 public core examples**, a single catalog, native HTML templates, reusable interactions, and responsive utilities. Lumen follows a Bootstrap-style approach to composing interfaces with classes and optional JavaScript; migrating an existing Bootstrap application requires adapting its markup and classes to Lumen's API.
 
-## ✦ Key Features
+## What's new
 
-- **Zero Framework Lock-in:** Pure semantic CSS3 with CSS custom properties and lightweight vanilla JavaScript. Works seamlessly with React, Vue, Svelte, Angular, Flutter Web, or vanilla HTML/CSS.
-- **`rem`-Based Fluid Architecture:** Scalable responsive typography, standard 4px/8px spatial rhythm (`0.25rem` to `6rem`), and minimum 44px touch targets.
-- **Multi-Theme Engine:** Out-of-the-box support for Daylight, Slate Dark, True OLED Black, Cyberpunk Neon, Obsidian, Arctic, Sport, and Luxury palettes.
-- **Gradient Button & Variant Suite:** Comprehensive solid, soft/tonal, outline, ghost, and 8-ramp gradient buttons (`g1` through `g8`) embedded seamlessly across core action groups.
-- **Automotive & Telemetry Ready:** Includes radial speedometers, battery state-of-charge (SoC) rings, rotary dual-zone HVAC dials, ADAS sensor arcs, and a 60 FPS mock CAN-bus physics engine.
-- **Live Component Studio & Inspector:** Real-time component preview with responsive viewport modes (Desktop, Tablet, Mobile), instant search (⌘K / Ctrl+K), and 1-click clipboard code extraction.
+- **One catalog:** categories, families, search tags, dependencies, example types, and stable keys come from `catalog/components.json`.
+- **Purposeful organization:** components have a canonical category, related variants stay together, and existing moved-item links remain supported through aliases.
+- **Paired button variants:** solid, tonal, outline, ghost, and link examples place gradient treatments directly below standard variants.
+- **Reusable core:** namespaced `lm-` classes, logical spacing, responsive columns, theme-aware styles, visible focus, and reduced-motion support.
+- **Shared interactions:** menus, tabs, dialogs, drawers, collapse, notifications, validation, comboboxes, tables, sliders, uploads, selection trees, and carousels.
+- **Studio tools:** global search, family/type filters, grid/list layouts, comparisons of up to four examples, favorites, recent items, and deep links.
+- **Copying and inspection:** inspect HTML and CSS, choose an individual control, copy a complete example with dependencies, or open it independently of the studio.
+- **Preview controls:** desktop/tablet/mobile widths, LTR/RTL direction, and eight themes. Responsive styles inside isolated previews respond to the preview width.
 
----
+## Categories
 
-## 📁 Repository Structure
+| Category | Examples |
+| --- | ---: |
+| Foundations | 51 |
+| Layout & utilities | 8 |
+| Buttons & actions | 61 |
+| Forms & selection | 69 |
+| Sliders & values | 36 |
+| Navigation | 42 |
+| Cards & surfaces | 42 |
+| Disclosure & overlays | 21 |
+| Status & feedback | 50 |
+| Data & content | 49 |
+| Media & imagery | 75 |
+| Compositions | 29 |
+| **Total** | **533** |
 
+Examples are labeled by capability:
+
+| Type | Meaning |
+| --- | --- |
+| Interactive core | Public JavaScript provides the demonstrated interaction. |
+| CSS / native controls | CSS and native browser controls provide the demonstrated behavior. |
+| Visual reference | A styling example; full application behavior is not implied. |
+| Composition | An assembled interface whose application-specific actions and data need integration. |
+
+The 60 core examples include interactive controls, CSS/native examples, and compositions. Example counts are distinct from component-family counts and individual variant counts.
+
+## Run the studio
+
+From the repository root, with Node.js/npm and Python 3 available:
+
+```bash
+npm start
 ```
-lumen-ui/
-├── tokens/
-│   ├── colors.css             /* Semantic palettes, 50-900 ramps, dark/OLED themes, tone scopes */
-│   ├── typography.css         /* Fluid rem type scale, font pairings, tabular numbers, tracking */
-│   ├── spacing-sizing.css     /* 4px/8px rem spacing scale, widths, heights, radii, touch targets */
-│   ├── effects.css            /* Elevation shadows (0-5), glassmorphism, neumorphism, motion */
-│   └── media-queries.css      /* Breakpoints (xs-xxl), responsive container, 12-col grid */
-├── components/
-│   ├── foundations.css        /* Color ramps, palettes, pairings, typography, grid, borders */
-│   ├── buttons.css            /* Solid, soft, outline, ghost, 8 gradient ramps, FAB, morphs */
-│   ├── forms.css              /* Inputs, floating labels, choice cards, switches, calendar, OTP */
-│   ├── sliders-values.css     /* Range sliders, circular dials, steppers, gauges, equalizers */
-│   ├── navigation.css         /* Navbars, sidebars, tabs, breadcrumbs, command bar, docks */
-│   ├── surfaces.css           /* Cards, modals, drawers, bento grids, glass/skeuomorphic panels */
-│   ├── feedback.css           /* Alerts, toasts, skeletons, progress rings, status indicators */
-│   └── data-media.css         /* Tables, charts, speedometers, avatars, audio/video players */
-├── js/
-│   ├── theme-manager.js       /* Multi-palette dynamic switcher (Daylight, Dark, OLED, Cyberpunk) */
-│   ├── telemetry.js           /* Observable vehicle state store & 60 FPS live CAN-bus simulator */
-│   ├── controls.js            /* Interactive virtual rotary dials, rocker switches, hold-to-confirm */
-│   ├── lumen.js               /* Master framework controller & auto-initialization */
-│   └── studio.js              /* Component Studio client controller & inspector drawer */
-├── lumen.css                  /* Master barrel stylesheet (@import tokens + components) */
-├── studio.css                 /* Component Studio shell styling */
-├── studio-preview.html        /* Interactive Live Component Studio & Variant Inspector */
-├── index.html                 /* Fast redirect entrypoint to studio-preview.html */
-├── .gitignore                 /* Clean version control exclusion rules */
-└── README.md                  /* Documentation & usage guide */
-```
 
----
+The command starts a Python static HTTP server on port 8000, bound to the local machine. Open `studio-preview.html` through that server; `index.html` also redirects there. The studio fetches its catalog and templates over HTTP, so opening the file directly is not supported.
 
-## 🚀 Quick Start
+No dependency installation, build, framework, backend, or credentials are required to view the studio. Google Fonts is optional; when its domains are unavailable, the configured font stacks fall back to local fonts.
 
-### 1. Import Master Bundle
-Drop the master bundle into your HTML document to access the entire token and component suite:
+Use the category sidebar or **Ctrl / Command + K** to search. Select **Inspect** on an example for its preview, HTML, CSS, and copying tools. Use **⇄** to select examples for comparison. Favorites, recent items, and the theme choice are stored in your browser.
+
+## Use the public core
+
+Include the core stylesheet and optional interaction script, and apply `lm-scope` to the component container:
 
 ```html
-<link rel="stylesheet" href="lumen.css">
+<link rel="stylesheet" href="lumen-core.css">
+<script src="js/components.js" defer></script>
+
+<div class="lm-scope">
+  <button type="button" class="lm-btn">Primary action</button>
+  <button type="button" class="lm-btn lm-btn--tonal">Tonal action</button>
+  <button type="button" class="lm-btn lm-btn--outline">Outline action</button>
+  <button type="button" class="lm-btn lm-btn--gradient">Gradient action</button>
+</div>
 ```
 
-### 2. Or Import Modular Stylesheets Individually
-Use only the specific categories your project requires:
+Paths are relative to the location where you host Lumen's files. Keep the `tokens/` and `components/` directories available: stylesheets import their dependencies. The inspector's **Copy complete example** action includes the exact stylesheet, script, and icon definitions required by the selected example.
+
+`lumen-core.css` loads the design tokens, public core components, and utilities. `lumen.css` remains the full bundle containing the original component styles as well as the new core. Original examples can also use their individual stylesheets, such as `components/buttons.css`.
+
+### Responsive layout and spacing
 
 ```html
-<!-- Design Tokens -->
-<link rel="stylesheet" href="tokens/colors.css">
-<link rel="stylesheet" href="tokens/typography.css">
-<link rel="stylesheet" href="tokens/spacing-sizing.css">
-
-<!-- Specific Components -->
-<link rel="stylesheet" href="components/buttons.css">
-<link rel="stylesheet" href="components/forms.css">
-<link rel="stylesheet" href="components/surfaces.css">
+<div class="lm-scope lm-container">
+  <div class="lm-grid lm-gap-4">
+    <article class="lm-card lm-col-12 lm-md-col-6 lm-lg-col-4 lm-p-6">
+      Card content
+    </article>
+  </div>
+</div>
 ```
 
-### 3. Include JavaScript Controllers (Optional)
+Responsive prefixes are `sm`, `md`, `lg`, `xl`, and `xxl`. Spacing suffixes match the original `--space-*` tokens: for example, `lm-p-4` uses `--space-4` (1rem), while `lm-p-6` uses `--space-6` (1.5rem). Logical utilities such as `lm-ps-4` and `lm-me-4` support RTL layouts.
 
-```html
-<!-- Theme Management & Dynamic Controllers -->
-<script src="js/theme-manager.js"></script>
-<script src="js/telemetry.js"></script>
-<script src="js/controls.js"></script>
-<script src="js/lumen.js"></script>
+### Themes
+
+Set `data-theme` on the document root or a component scope:
+
+```js
+document.documentElement.dataset.theme = 'dark';
 ```
 
----
+Supported themes: `light`, `dark`, `oled`, `cyberpunk`, `obsidian`, `arctic`, `sport`, and `luxury`. Public core controls use theme-aware foregrounds; visual references retain their original example palettes.
 
-## 🎨 Design Tokens Overview
+### JavaScript lifecycle
 
-### Color System (`tokens/colors.css`)
-- **Semantic Palettes:** `--color-primary`, `--color-info`, `--color-success`, `--color-warning`, `--color-danger`, `--color-violet`, `--color-ink`, `--color-muted`, `--color-border`, `--color-surface`.
-- **50-900 Primitive Ramps:** Slate, Gray, Indigo, Cyan, Emerald, Amber, Rose, and Violet.
-- **Dark & OLED Themes:** Activated automatically via `body.dark`, `:root[data-theme="dark"]`, or `[data-theme="oled"]`.
+The interaction script automatically mounts the document. For dynamically inserted content or Shadow DOM, mount or refresh the appropriate root:
 
-### Spacing & Sizing (`tokens/spacing-sizing.css`)
-- Based on standard 4px/8px scale expressed in `rem` (`1rem = 16px`):
-  - `--space-1`: `0.25rem` (4px)
-  - `--space-2`: `0.5rem` (8px)
-  - `--space-4`: `1rem` (16px)
-  - `--space-6`: `1.5rem` (24px)
-  - `--space-8`: `2rem` (32px)
-  - `--space-12`: `3rem` (48px)
-  - `--space-16`: `4rem` (64px)
+```js
+const ui = LumenUI.mount(rootNode);
+ui.refresh();
 
----
+// Release listeners, timers, notifications, and open dialogs on removal.
+ui.destroy();
+```
 
-## 🖥️ Live Component Studio
+Calling `LumenUI.mount` again on a mounted root refreshes it without adding duplicate delegated listeners. Components dispatch bubbling `lumen:*` events, including `lumen:action`, `lumen:tabchange`, `lumen:submit`, `lumen:select`, `lumen:sort`, and `lumen:page`, for application integration.
 
-To launch the interactive studio:
-1. Open [`studio-preview.html`](studio-preview.html) directly in any modern browser, or run a local static server:
-   ```bash
-   npx serve .
-   ```
-2. Navigate between all 9 component categories.
-3. Switch between **Desktop**, **Tablet**, and **Mobile** viewports to inspect responsive ergonomics.
-4. Use **◎ Inspect** to inspect the clean markup and copy component code directly.
+The original theme manager, telemetry simulator, and automotive controls remain available in `js/theme-manager.js`, `js/telemetry.js`, `js/controls.js`, and `js/lumen.js`. They are optional modules and are separate from the public core interaction layer.
 
----
+## Repository structure
 
-## 📄 License
+```text
+ catalog/components.json   Category and example metadata, stable keys, aliases
+ templates/               Native HTML templates for all examples
+ tokens/                  Original colors, typography, spacing, effects, breakpoints
+ components/core.css      Public lm- component styles
+ components/utilities.css Responsive layout and logical spacing utilities
+ components/*.css         Original component styles
+ js/components.js         Public interaction and lifecycle API
+ js/studio.js             Catalog-driven studio and inspector
+ js/example.js            Standalone example loader
+ js/theme-manager.js      Original theme manager
+ js/telemetry.js           Optional vehicle simulator
+ js/controls.js            Optional automotive controls
+ js/lumen.js               Original module facade
+ lumen-core.css           Public core stylesheet entrypoint
+ lumen.css                Full stylesheet entrypoint
+ studio-preview.html      Studio entrypoint
+ studio.css               Studio shell styling
+ example.html             Standalone examples selected with ?item=source/id
+ tests/                   Catalog, browser, accessibility, and theme checks
+```
 
-Distributed under the [MIT License](LICENSE). Copyright © 2026 Santosh Ghimire.
+For example, `example.html?item=core/dialog` renders the public modal example. The item's stable key, template source, CSS dependencies, and category are defined in the catalog.
+
+To reorganize an item, update its catalog category and family while retaining its stable key. To add an example, add its HTML template and catalog record. Navigation, search, category counts, and inspection derive from those records; the studio shell does not need a separate inventory update.
+
+## Validation
+
+Install the development-only test dependencies from the lockfile:
+
+```bash
+npm ci
+npm test
+```
+
+Browser checks require Chromium at `/usr/bin/chromium`, or an alternative executable selected with `CHROMIUM_PATH`.
+
+The suite checks:
+
+- Catalog integrity, unique keys, template dependencies, and retention of all 473 original records.
+- Rendering all 533 previews, navigation, aliases, filtering, favorites, comparison, and standalone exports.
+- Core and selected original interactions, keyboard behavior, runtime lifecycle, responsive preview containers, and mobile layout.
+- **480 public core/theme combinations**: 60 core examples across eight themes, including open dialogs/menus, validation errors, automated WCAG checks through axe-core, and narrow-layout checks.
+
+Focused commands are `npm run test:catalog` and `npm run test:themes`. Automated checks cover the public core and selected interactions; they are not an accessibility certification of every retained visual reference or a substitute for manual testing in target applications.
+
+## License
+
+MIT. Copyright © 2026 Santosh Ghimire.

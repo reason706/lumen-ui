@@ -1,0 +1,16 @@
+{
+  "name": "lumen-ui",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Framework-free component library and live component studio",
+  "scripts": {
+    "start": "python3 -m http.server 8000 --bind 127.0.0.1",
+    "test": "node tests/catalog.mjs && node tests/browser.mjs && node tests/themes.mjs",
+    "test:themes": "node tests/themes.mjs",
+    "test:catalog": "node tests/catalog.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2",
+    "axe-core": "4.11.1"
+  }
+}
