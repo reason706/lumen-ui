@@ -67,3 +67,15 @@ Keep one canonical demo for each primitive, with standard colors and gradients g
 4. Check real combinations outside studio isolation.
 5. Regenerate styles and offline assets; run appropriate checks.
 6. Keep implemented work distinct from planned expansion. Do not merge components solely because they look alike or to reduce their count.
+
+## Version 3.1 improvement pass — implemented
+
+- Consolidated 58 repeated rules from eight category sources into one primitive source; retained original selectors through generated aliases.
+- Connected public spacing, typography, weights, radii, elevation, palette and focus to shared tokens, with rendered token-change checks.
+- Added live customization for eight primitives, shared icons, search synonyms, expanded CSS copying and portable HTML downloads.
+- Improved disabled/busy handling, menu keyboard/outside-focus behavior, validation/reset/live correction, dialog focus and close events, responsive navigation, table filtering/pagination/selection, CSV downloads and undo.
+- Built six functional application patterns and merged three matching original form entries through aliases, retaining 524 examples.
+- Added import-free CSS and optional JavaScript distributions, an asset manifest and starter page. Deduplication removes 2,623 repeated rules from the flattened full collection.
+- Added mixed-DOM, portable export, bundle parity, token, workflow, accessibility and desktop/mobile RTL visual regression checks.
+
+The earlier consolidation stages remain guidance for expanding additional specialized reference families. This improvement pass covers the shared public components and tested application patterns; visual references continue to state their behavior requirements explicitly.

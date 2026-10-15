@@ -1,24 +1,44 @@
 {
   "name": "lumen-ui",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "private": true,
   "description": "Framework-free component library and live component studio",
   "scripts": {
     "start": "python3 -m http.server 8000 --bind 127.0.0.1",
-    "test": "node scripts/build-naming.mjs --check && node scripts/build-offline.mjs --check && node tests/catalog.mjs && node tests/naming.mjs && node tests/browser.mjs && node tests/buttons.mjs && node tests/file.mjs && node tests/themes.mjs",
+    "test": "node scripts/build-icons.mjs --check && node scripts/build-dist.mjs --check && node scripts/build-naming.mjs --check && node scripts/build-offline.mjs --check && node tests/catalog.mjs && node tests/naming.mjs && node tests/quality.mjs && node tests/browser.mjs && node tests/buttons.mjs && node tests/file.mjs && node tests/themes.mjs",
     "test:themes": "node tests/themes.mjs",
     "test:catalog": "node tests/catalog.mjs",
-    "build:offline": "node scripts/build-naming.mjs && node scripts/build-offline.mjs",
+    "build:offline": "node scripts/build-icons.mjs && node scripts/build-naming.mjs && node scripts/build-dist.mjs && node scripts/build-offline.mjs",
     "test:file": "node tests/file.mjs",
     "test:buttons": "node tests/buttons.mjs",
     "build:naming": "node scripts/build-naming.mjs",
-    "build": "npm run build:offline",
-    "test:naming": "node tests/naming.mjs"
+    "build": "node scripts/build-icons.mjs && node scripts/build-naming.mjs && node scripts/build-dist.mjs && node scripts/build-offline.mjs",
+    "test:naming": "node tests/naming.mjs",
+    "build:icons": "node scripts/build-icons.mjs",
+    "build:dist": "node scripts/build-dist.mjs",
+    "test:quality": "node tests/quality.mjs",
+    "test:visual:update": "node tests/quality.mjs --update"
   },
   "devDependencies": {
     "@playwright/test": "1.58.2",
     "axe-core": "4.11.1",
+    "pixelmatch": "7.1.0",
+    "pngjs": "7.0.0",
     "postcss": "8.5.6",
     "postcss-selector-parser": "7.1.0"
-  }
+  },
+  "exports": {
+    "./core.css": "./dist/lumen-core.css",
+    "./lumen.css": "./dist/lumen.css",
+    "./lumen.js": "./dist/lumen.js",
+    "./icons.svg": "./dist/icons.svg",
+    "./components/*": "./components/*",
+    "./tokens/*": "./tokens/*"
+  },
+  "files": [
+    "dist",
+    "components",
+    "tokens",
+    "README.md"
+  ]
 }

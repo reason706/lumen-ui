@@ -9654,27 +9654,6 @@
       "wrapper": "buttons-preview"
     },
     {
-      "key": "forms/login-form",
-      "id": "login-form",
-      "source": "forms",
-      "category": "compositions",
-      "family": "01 · Account & form flows",
-      "title": "Login form",
-      "template": "templates/forms.html",
-      "css": [
-        "components/public-forms.css",
-        "components/appearance.css"
-      ],
-      "status": "reference",
-      "tags": [
-        "compositions",
-        "form",
-        "forms",
-        "login"
-      ],
-      "wrapper": "forms-preview"
-    },
-    {
       "key": "forms/sign-up-form",
       "id": "sign-up-form",
       "source": "forms",
@@ -9714,51 +9693,6 @@
         "contact",
         "form",
         "forms"
-      ],
-      "wrapper": "forms-preview"
-    },
-    {
-      "key": "forms/settings-form-with-save-bar",
-      "id": "settings-form-with-save-bar",
-      "source": "forms",
-      "category": "compositions",
-      "family": "01 · Account & form flows",
-      "title": "Settings form with save bar",
-      "template": "templates/forms.html",
-      "css": [
-        "components/public-forms.css",
-        "components/appearance.css"
-      ],
-      "status": "reference",
-      "tags": [
-        "bar",
-        "compositions",
-        "form",
-        "forms",
-        "save",
-        "settings",
-        "with"
-      ],
-      "wrapper": "forms-preview"
-    },
-    {
-      "key": "forms/checkout-summary",
-      "id": "checkout-summary",
-      "source": "forms",
-      "category": "compositions",
-      "family": "01 · Account & form flows",
-      "title": "Checkout summary",
-      "template": "templates/forms.html",
-      "css": [
-        "components/public-forms.css",
-        "components/appearance.css"
-      ],
-      "status": "reference",
-      "tags": [
-        "checkout",
-        "compositions",
-        "forms",
-        "summary"
       ],
       "wrapper": "forms-preview"
     },
@@ -10682,18 +10616,20 @@
       "id": "checkout",
       "source": "core",
       "category": "compositions",
-      "family": "02 · Commerce",
-      "title": "Checkout composition",
-      "template": "templates/core.html",
+      "family": "01 · Application patterns",
+      "title": "Checkout",
+      "template": "templates/recipes.html",
       "css": [
         "components/public-core.css",
-        "components/public-utilities.css",
-        "components/appearance.css"
+        "components/appearance.css",
+        "components/public-patterns.css"
       ],
       "status": "composition",
       "tags": [
-        "compositions",
-        "checkout composition"
+        "composition",
+        "checkout",
+        "interactive",
+        "application"
       ],
       "wrapper": "lumen"
     },
@@ -10702,18 +10638,20 @@
       "id": "dashboard",
       "source": "core",
       "category": "compositions",
-      "family": "04 · Dashboards",
-      "title": "Dashboard composition",
-      "template": "templates/core.html",
+      "family": "01 · Application patterns",
+      "title": "Dashboard",
+      "template": "templates/recipes.html",
       "css": [
         "components/public-core.css",
-        "components/public-utilities.css",
-        "components/appearance.css"
+        "components/appearance.css",
+        "components/public-patterns.css"
       ],
       "status": "composition",
       "tags": [
-        "compositions",
-        "dashboard composition"
+        "composition",
+        "dashboard",
+        "interactive",
+        "application"
       ],
       "wrapper": "lumen"
     },
@@ -11002,18 +10940,20 @@
       "id": "settings",
       "source": "core",
       "category": "compositions",
-      "family": "01 · Account & form flows",
-      "title": "Settings composition",
-      "template": "templates/core.html",
+      "family": "01 · Application patterns",
+      "title": "Settings",
+      "template": "templates/recipes.html",
       "css": [
         "components/public-core.css",
-        "components/public-utilities.css",
-        "components/appearance.css"
+        "components/appearance.css",
+        "components/public-patterns.css"
       ],
       "status": "composition",
       "tags": [
-        "compositions",
-        "settings composition"
+        "composition",
+        "settings",
+        "interactive",
+        "application"
       ],
       "wrapper": "lumen"
     },
@@ -11038,6 +10978,75 @@
       ],
       "added": true,
       "wrapper": "buttons-preview"
+    },
+    {
+      "key": "core/login",
+      "id": "login",
+      "source": "core",
+      "added": true,
+      "category": "compositions",
+      "family": "01 · Application patterns",
+      "title": "Login form",
+      "template": "templates/recipes.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-patterns.css"
+      ],
+      "status": "composition",
+      "tags": [
+        "composition",
+        "login",
+        "interactive",
+        "application"
+      ],
+      "wrapper": "lumen"
+    },
+    {
+      "key": "core/data-management",
+      "id": "data-management",
+      "source": "core",
+      "added": true,
+      "category": "compositions",
+      "family": "01 · Application patterns",
+      "title": "Order management",
+      "template": "templates/recipes.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-patterns.css"
+      ],
+      "status": "composition",
+      "tags": [
+        "composition",
+        "data-management",
+        "interactive",
+        "application"
+      ],
+      "wrapper": "lumen"
+    },
+    {
+      "key": "core/action-workflows",
+      "id": "action-workflows",
+      "source": "core",
+      "added": true,
+      "category": "compositions",
+      "family": "01 · Application patterns",
+      "title": "Confirm and undo actions",
+      "template": "templates/recipes.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-patterns.css"
+      ],
+      "status": "composition",
+      "tags": [
+        "composition",
+        "action-workflows",
+        "interactive",
+        "application"
+      ],
+      "wrapper": "lumen"
     }
   ],
   "aliases": {
@@ -11065,10 +11074,16 @@
     "core/button-states": "buttons/button-states",
     "core/button-group": "buttons/button-groups",
     "core/split-button": "buttons/split-and-dropdown-buttons",
-    "buttons/gradient-buttons": "buttons/solid"
+    "buttons/gradient-buttons": "buttons/solid",
+    "forms/login-form": "core/login",
+    "forms/settings-form-with-save-bar": "core/settings",
+    "forms/checkout-summary": "core/checkout"
   },
   "mergedOriginalKeys": [
-    "buttons/gradient-buttons"
+    "buttons/gradient-buttons",
+    "forms/login-form",
+    "forms/settings-form-with-save-bar",
+    "forms/checkout-summary"
   ],
   "namingVersion": 1
 }

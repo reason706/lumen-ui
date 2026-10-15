@@ -5,7 +5,7 @@ import path from 'node:path';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const catalogText=await readFile(path.join(root,'catalog/components.json'),'utf8');
 const catalog=JSON.parse(catalogText);
-const files=new Set(['catalog/components.json',...catalog.items.map(item=>item.template)]);
+const files=new Set(['catalog/components.json','js/components.js',...catalog.items.map(item=>item.template)]);
 for(const directory of ['tokens','components'])for(const file of await readdir(path.join(root,directory)))if(file.endsWith('.css'))files.add(directory+'/'+file);
 for(const file of await readdir(root))if(file.endsWith('.css'))files.add(file);
 const assets={};

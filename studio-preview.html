@@ -6,7 +6,7 @@
  <link rel="stylesheet" href="lumen-core.css"><link rel="stylesheet" href="studio.css">
  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;600;700&family=Playfair+Display:wght@400;700&family=Inter:wght@400;600;700&family=Space+Grotesk:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=Sora:wght@400;600;700&family=DM+Serif+Display&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
- <script src="js/assets.js" defer></script><script src="js/components.js" defer></script><script src="js/studio.js" defer></script>
+ <script src="js/assets.js" defer></script><script src="js/components.js" defer></script><script src="js/icons.js" defer></script><script src="js/variants.js" defer></script><script src="js/studio.js" defer></script>
 </head>
 <body class="lm-scope">
  <a class="skip-link" href="#library">Skip to components</a>
@@ -14,7 +14,7 @@
   <a class="brand" href="#home"><span class="brand-mark">✦</span><span>Lumen UI<small>COMPONENT STUDIO</small></span></a>
   <div class="sidebar-label">WORKSPACE</div><nav id="workspace-nav" aria-label="Workspace"><a href="#home" data-category="home">◈ Overview</a><a href="#favorites" data-category="favorites">☆ Favorites <span id="favorite-count">0</span></a><a href="#recent" data-category="recent">◷ Recently viewed</a></nav>
   <div class="sidebar-label">COMPONENT LIBRARY</div><nav id="category-nav" aria-label="Component categories"></nav>
-  <div class="sidebar-bottom"><span class="status-dot"></span> Vanilla HTML · CSS · JavaScript<small id="library-version">Lumen 3.0</small></div>
+  <div class="sidebar-bottom"><span class="status-dot"></span> Vanilla HTML · CSS · JavaScript<small id="library-version">Lumen 3.1</small></div>
  </aside>
  <div class="workspace">
   <header class="topbar"><button id="menu-toggle" class="icon-button mobile-only" aria-label="Toggle sidebar" aria-expanded="false" aria-controls="sidebar">☰</button><div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a component, style or variant…" aria-label="Search components"><kbd>⌘ K</kbd></div><select id="direction" aria-label="Text direction"><option value="ltr">LTR</option><option value="rtl">RTL</option></select><select id="theme" aria-label="Preview theme"><option value="light">Daylight</option><option value="dark">Slate dark</option><option value="oled">OLED black</option><option value="cyberpunk">Cyberpunk</option><option value="obsidian">Obsidian</option><option value="arctic">Arctic</option><option value="sport">Sport</option><option value="luxury">Luxury</option></select></header>
@@ -30,7 +30,7 @@
   </main>
   <footer>✦ Lumen UI <span>Shared foundations. Independent components.</span></footer>
  </div>
- <dialog id="inspector" class="inspector lm-scope" aria-labelledby="inspector-title"><div class="inspector-head"><div><span class="eyebrow">COMPONENT INSPECTOR</span><h2 id="inspector-title"></h2></div><button class="icon-button" id="inspector-close" aria-label="Close inspector">×</button></div><div class="inspector-tabs" role="tablist" aria-label="Inspector"><button role="tab" aria-selected="true" data-inspect="preview">Preview</button><button role="tab" aria-selected="false" data-inspect="html">HTML</button><button role="tab" aria-selected="false" data-inspect="css">CSS</button></div><div id="inspector-body"></div><div class="inspector-actions"><button id="copy-snippet" class="lm-btn">Copy HTML</button><button id="copy-standalone" class="lm-btn lm-btn--outline">Copy complete example</button><button id="save-favorite" class="lm-btn lm-btn--ghost">☆ Favorite</button><a id="standalone-link" class="lm-btn lm-btn--ghost" href="example.html">Open standalone ↗</a></div></dialog>
+ <dialog id="inspector" class="inspector lm-scope" aria-labelledby="inspector-title"><div class="inspector-head"><div><span class="eyebrow">COMPONENT INSPECTOR</span><h2 id="inspector-title"></h2></div><button class="icon-button" id="inspector-close" aria-label="Close inspector">×</button></div><div class="inspector-tabs" role="tablist" aria-label="Inspector"><button role="tab" aria-selected="true" data-inspect="preview">Preview</button><button role="tab" aria-selected="false" data-inspect="html">HTML</button><button role="tab" aria-selected="false" data-inspect="css">CSS</button><button role="tab" aria-selected="false" data-inspect="configure" id="configure-tab" hidden>Customize</button></div><div id="inspector-body"></div><div class="inspector-actions"><button id="copy-snippet" class="lm-btn">Copy HTML</button><button id="copy-standalone" class="lm-btn lm-btn--outline">Copy complete example</button><button id="copy-css" class="btn btn-style-ghost">Copy CSS</button><button id="download-example" class="btn btn-style-outline">Download HTML</button><button id="save-favorite" class="lm-btn lm-btn--ghost">☆ Favorite</button><a id="standalone-link" class="lm-btn lm-btn--ghost" href="example.html">Open standalone ↗</a></div></dialog>
  <div class="studio-notice" id="notice" role="status" hidden></div>
 </body>
 </html>

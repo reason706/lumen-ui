@@ -23,7 +23,7 @@ try{
  browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});
  const page=await browser.newPage();await page.route(/fonts\./,r=>r.abort());
  await page.goto(base+'/example.html?item=core/cards');await page.locator('#example[data-ready=true]').waitFor();
- assert.equal(await page.locator('.card-style-gradient .btn').evaluate(n=>getComputedStyle(n).color),'rgb(255, 255, 255)','Gradient card actions retain readable ink after merging style names');
+ await expect.poll(()=>page.locator('.card-style-gradient .btn').evaluate(n=>getComputedStyle(n).color),{message:'Gradient card actions retain readable ink'}).toBe('rgb(255, 255, 255)');
  // Use the full bundle together: no Shadow DOM and no old classes in the sample.
  await page.evaluate(url=>new Promise((resolve,reject)=>{const link=document.createElement('link');link.rel='stylesheet';link.href=url;link.onload=resolve;link.onerror=reject;document.head.append(link)}),base+'/lumen.css');
  await page.evaluate(()=>{

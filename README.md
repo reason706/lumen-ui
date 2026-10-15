@@ -1,13 +1,13 @@
 # Lumen UI — Component Library & Live Studio
 
-![Version](https://img.shields.io/badge/version-3.0.0-6366f1)
+![Version](https://img.shields.io/badge/version-3.1.0-6366f1)
 ![Runtime](https://img.shields.io/badge/runtime-framework%20free-10b981)
 ![Examples](https://img.shields.io/badge/examples-524-8b5cf6)
 ![Themes](https://img.shields.io/badge/themes-8-ec4899)
 
 Lumen UI is a modular HTML, CSS, and JavaScript component library with **524 examples across 12 categories and 69 families**. Its live studio organizes related items so you can find, compare, inspect, and copy them into your own interfaces.
 
-Version 3 preserves the content of all **473 original examples**, with repeated button demonstrations merged into canonical sections. The original color, typography, spacing, effects, and component styles remain available. It adds **51 public core examples**, a single catalog, native HTML templates, reusable interactions, and responsive utilities. Lumen follows a Bootstrap-style approach to composing interfaces with classes and optional JavaScript; migrating an existing Bootstrap application requires adapting its markup and classes to Lumen's API.
+Version 3 preserves the content of all **473 original examples**, with repeated button demonstrations merged into canonical sections. The original color, typography, spacing, effects, and component styles remain available. It adds **54 public core examples**, a single catalog, native HTML templates, reusable interactions, and responsive utilities. Lumen follows a Bootstrap-style approach to composing interfaces with classes and optional JavaScript; migrating an existing Bootstrap application requires adapting its markup and classes to Lumen's API.
 
 ## What's new
 
@@ -48,7 +48,7 @@ Examples are labeled by capability:
 | Visual reference | A styling example; full application behavior is not implied. |
 | Composition | An assembled interface whose application-specific actions and data need integration. |
 
-The 51 core examples include interactive controls, CSS/native examples, and compositions. Example counts are distinct from component-family counts and individual variant counts.
+The 54 core examples include interactive controls, CSS/native examples, and compositions. Example counts are distinct from component-family counts and individual variant counts.
 
 ## Open the studio
 
@@ -65,6 +65,60 @@ The command starts a Python static HTTP server on port 8000, bound to the local 
 No framework, backend, or credentials are required to view the studio. Google Fonts is optional; when its domains are unavailable, the configured font stacks fall back to local fonts.
 
 Use the category sidebar or **Ctrl / Command + K** to search. Select **Inspect** on an example for its preview, HTML, CSS, and copying tools. Use **⇄** to select examples for comparison. Favorites, recent items, and the theme choice are stored in your browser.
+
+## Ready-built files
+
+For a project that only needs the framework, copy `dist/lumen-core.css` and optionally `dist/lumen.js`. These files have no build-time dependencies or CSS imports. `dist/lumen.css` includes the larger reference collection. `dist/index.html` is a working starter page; `dist/manifest.json` records sizes and checksums. The full bundle removes 2,623 repeated rules while preserving cascade order. The core bundle is about 32 KB gzipped; the full collection is about 120 KB gzipped.
+
+```html
+<link rel="stylesheet" href="lumen-core.css">
+<script src="lumen.js" defer></script>
+<div class="lumen">
+  <button class="btn btn-style-tonal color-blue" data-lm-toast="Ready">Try Lumen</button>
+</div>
+```
+
+Run `npm ci && npm run build` to regenerate icons, canonical styles, distribution files and offline assets. `npm pack` creates a local asset package with CSS/JS exports; this repository remains private for npm publishing. The package also includes component/token modules for selective imports. For example, load the core, then `lumen-ui/components/public-forms.css` and `lumen-ui/components/appearance.css` for the form reference collection.
+
+## Build and export a variant
+
+Open **Inspect → Customize** on a supported example. Choose a button, card, badge, input, alert, chip, avatar or progress control, then adjust its style, color/gradient, size, shape, state, label and icon where supported. Preview, HTML, copying and the standalone link use the same validated configuration. Focus/hover/pressed choices demonstrate those states; disabled and busy choices use native attributes.
+
+**Copy HTML** supplies markup. **Copy CSS** supplies expanded stylesheet dependencies. **Copy complete example** includes the source stylesheet/script links and icon definitions. **Download HTML** embeds the CSS and interaction script so the downloaded page can run independently. External images in visual references retain their original URLs. Direct-file studio opening supports these tools through the generated snapshot.
+
+Search understands familiar synonyms including “IB,” “btn,” “soft,” and “modal.” Example labels distinguish shared interactive components, native controls, and appearance references that need application behavior.
+
+## Application patterns
+
+The Compositions category includes tested login, settings, checkout, dashboard, order-management, and confirmation/undo patterns. They use the same public components:
+
+- Forms support client validation, error associations, live correction, reset, and a `lumen:submit` event. Applications own authentication, persistence and payments; the examples do not call a backend.
+- Order management combines search, sorting, pagination, visible-row selection and CSV download.
+- Navigation collapses at mobile widths, including narrow studio previews. Tables scroll inside their own container, and layouts support RTL.
+- Dialogs restore focus after closing; removal actions expose Undo.
+
+Matching older form entries redirect through catalog aliases instead of duplicating the working patterns. The inventory remains 524 examples.
+
+## Shared foundations and parts
+
+Fifty-eight repeated primitive rules now have one source in `components/primitives.css`, used across eight category stylesheets. Public components consume palette, spacing, type, weight, radius, elevation, focus and control-size tokens. Bespoke reference artwork keeps its intentional styling.
+
+Use `card-header`, `card-body`, `card-footer`, `dialog-header`, `dialog-body`, `dialog-footer`, `input-label`, `input-help`, `input-error`, `toolbar`, and `navbar` to compose a screen. Changing a Foundation spacing, type or palette token updates the corresponding public primitives; automated checks verify real rendered changes.
+
+## Icons and asynchronous actions
+
+The shared icon source is `icons/icons.json`. Its 12 icons generate `icons/lumen.svg` and an inline SVG helper included in `dist/lumen.js`:
+
+```js
+button.prepend(LumenIcons.create('download')); // Decorative icon inside a labelled button.
+container.append(LumenIcons.create('check', {label: 'Completed'}));
+
+await LumenUI.run(button, async () => {
+  await saveChanges();
+});
+```
+
+`LumenUI.run` sets busy/disabled state while the task runs and restores the previous state on success or failure. It rejects concurrent runs on the same busy button. Mount lifecycle cleanup also restores busy controls. Icon-only buttons still need an accessible name on the button.
 
 ## Use the public core
 
@@ -84,7 +138,7 @@ Include the core stylesheet and optional interaction script, and apply `lumen` t
 
 Paths are relative to the location where you host Lumen's files. Keep the `tokens/` and `components/` directories available: stylesheets import their dependencies. The inspector's **Copy complete example** action includes the exact stylesheet, script, and icon definitions required by the selected example.
 
-`lumen-core.css` loads the design tokens, public core components, and utilities. `lumen.css` remains the full bundle containing the original component styles as well as the new core. Category examples use their generated stylesheets, such as `components/public-buttons.css`, plus `components/appearance.css`. The original stylesheet paths remain available for existing integrations.
+`lumen-core.css` loads the design tokens, public core components, and utilities. `lumen.css` remains the full bundle containing the original component styles as well as the new core. Category examples use `lumen-core.css` as their shared foundation, then their generated stylesheet, such as `components/public-buttons.css`, and `components/appearance.css`. The original stylesheet paths remain available for existing integrations.
 
 ### Buttons and icon buttons
 
@@ -217,10 +271,16 @@ The suite checks:
 - Windows direct-file path resolution without fetch requests, offline snapshot rendering, HTML/CSS inspection, standalone interactions, paths containing spaces, and HTTP hosting under a subdirectory. The suite attempts real `file://` browser navigation; if an administrator policy blocks that scheme, it reports the check as skipped and tests the same snapshot loader using HTTP offline mode.
 - Core and selected original interactions, keyboard behavior, runtime lifecycle, responsive preview containers, and mobile layout.
 - Foundation/button palette parity, merged button aliases, text/icon hover and press states, disabled behavior, and 48 canonical button/theme accessibility checks.
-- **408 public core/theme combinations**: 51 core examples across eight themes, including open dialogs/menus, validation errors, automated WCAG checks through axe-core, and narrow-layout checks.
+- **432 public core/theme combinations**: 54 core examples across eight themes, including open dialogs/menus, validation errors, automated WCAG checks through axe-core, and narrow-layout checks.
 
 Focused commands are `npm run test:catalog`, `npm run test:buttons`, `npm run test:file`, and `npm run test:themes`. Automated checks cover the public core and selected interactions; they are not an accessibility certification of every retained visual reference or a substitute for manual testing in target applications.
 
 ## License
 
 MIT. Copyright © 2026 Santosh Ghimire.
+
+### Functional and visual regression checks
+
+`npm test` verifies generated assets, every retained preview, mixed components, interaction behavior, configured exports, distribution parity, token changes, themes and accessibility. The quality suite includes 52 application/configurator accessibility audits, plus eight committed desktop/mobile-RTL screenshot baselines. Pixel differences are written to `/tmp/lumen-visual-diffs` when a baseline fails.
+
+Run `npm run test:quality` for this feature suite. After an intentional visual change, run `npm run test:visual:update`, inspect the changed PNG files in `tests/visual`, and commit the reviewed baselines. Test fonts use local fallbacks and reduced motion for repeatability. Browser snapshots complement semantic and keyboard checks; they do not replace them.

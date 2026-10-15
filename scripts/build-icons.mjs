@@ -1,0 +1,7 @@
+import{readFile,writeFile}from'node:fs/promises';
+const paths=JSON.parse(await readFile('icons/icons.json','utf8'));
+const svg='<svg xmlns="http://www.w3.org/2000/svg">'+Object.entries(paths).map(([name,d])=>'<symbol id="'+name+'" viewBox="0 0 24 24"><path d="'+d+'"/></symbol>').join('')+'</svg>\n';
+const js=`/* Generated from icons/icons.json. Inline SVG works with file:// and server previews. */
+(function(global){'use strict';const paths=${JSON.stringify(paths)};function create(name,{label='',size=20}={}){if(!Object.hasOwn(paths,name))throw Error('Unknown icon: '+name);const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('class','icon');svg.setAttribute('width',String(Number(size)||20));svg.setAttribute('height',String(Number(size)||20));svg.setAttribute('fill','none');svg.setAttribute('stroke','currentColor');svg.setAttribute('stroke-width','1.8');svg.setAttribute('focusable','false');if(label){svg.setAttribute('role','img');svg.setAttribute('aria-label',label)}else svg.setAttribute('aria-hidden','true');const path=document.createElementNS(ns,'path');path.setAttribute('d',paths[name]);svg.append(path);return svg}global.LumenIcons={names:Object.keys(paths),create};})(window);\n`;
+for(const [file,text]of [['icons/lumen.svg',svg],['js/icons.js',js]])if(process.argv.includes('--check')){if(await readFile(file,'utf8')!==text)throw Error('Stale icons: '+file)}else await writeFile(file,text);
+console.log('PASS icons: '+Object.keys(paths).length+' shared accessible icons');
