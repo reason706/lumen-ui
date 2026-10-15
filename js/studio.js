@@ -101,7 +101,7 @@ window.addEventListener('hashchange',navigate);
 LumenAssets.json('catalog/components.json').then(data=>{
  catalog=data;
  // Migrate old favorites and recent records using stable original keys.
- favorites=[...new Set(favorites.map(k=>catalog.aliases?.[k]||k))].filter(k=>catalog.items.some(x=>x.key===k));recent=recent.map(x=>typeof x==='string'?x:x.p+'/'+x.id).map(k=>catalog.aliases?.[k]||k).filter(k=>catalog.items.some(x=>x.key===k));
+ favorites=[...new Set(favorites.map(k=>catalog.aliases?.[k]||k))].filter(k=>catalog.items.some(x=>x.key===k));recent=[...new Set(recent.map(x=>typeof x==='string'?x:x.p+'/'+x.id).map(k=>catalog.aliases?.[k]||k))].filter(k=>catalog.items.some(x=>x.key===k));
  const families=new Set(catalog.items.map(x=>x.category+'/'+x.family)),core=catalog.items.filter(x=>x.source==='core');
  for(const [value,label] of [[catalog.items.length,'Curated examples'],[families.size,'Component families'],[catalog.categories.length,'Purposeful categories'],[core.length,'Public core examples']]){const stat=el('div');stat.append(el('strong','',String(value)),el('span','',label));$('stats').append(stat)}
  catalog.categories.forEach((cat,i)=>{const count=catalog.items.filter(x=>x.category===cat.id).length;const link=el('a');link.href='#'+cat.id;link.dataset.category=cat.id;link.append(el('span','',icons[i]),document.createTextNode(cat.label),el('span','',String(count)));$('category-nav').append(link);const card=el('a','category-card');card.href='#'+cat.id;card.append(el('div','category-icon',icons[i]),el('h3','',cat.label),el('p','',[...new Set(catalog.items.filter(x=>x.category===cat.id).map(x=>x.family.replace(/^\d+ · /,'')))].slice(0,3).join(' · ')),el('small','',count+' examples ↗'));$('category-grid').append(card)});

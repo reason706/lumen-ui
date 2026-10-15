@@ -2,9 +2,9 @@
 'use strict';
 const params=new URLSearchParams(location.search),key=params.get('item')||'core/buttons-solid',theme=params.get('theme')||'light';document.documentElement.dataset.theme=['light','dark','oled','cyberpunk','obsidian','arctic','sport','luxury'].includes(theme)?theme:'light';
 try{
- const catalog=await LumenAssets.json('catalog/components.json'),item=catalog.items.find(x=>x.key===key);if(!item)throw Error('Unknown component');
+ const catalog=await LumenAssets.json('catalog/components.json'),item=catalog.items.find(x=>x.key===(catalog.aliases?.[key]||key));if(!item)throw Error('Unknown component');
  const source=await LumenAssets.text(item.template),doc=document.createElement('div');doc.innerHTML=source;const template=doc.querySelector('template[id="'+CSS.escape(item.id)+'"]');if(!template)throw Error('Missing component template');
- document.title=item.title+' — Lumen';for(const file of item.source==='core'?[]:item.css){const link=document.createElement('link');link.rel='stylesheet';link.href=file;document.head.append(link)}
+ document.title=item.title+' — Lumen';await Promise.all((item.source==='core'?[]:item.css).map(file=>new Promise((resolve,reject)=>{const link=document.createElement('link');link.rel='stylesheet';link.href=file;link.onload=resolve;link.onerror=()=>reject(Error('Could not load stylesheet: '+file));document.head.append(link)})));
  const fragment=template.content.cloneNode(true),section=fragment.querySelector('.sec');if(section){section.querySelector('.sh')?.remove();section.removeAttribute('id');section.classList.remove('sec','w2','w3')}
  const main=document.getElementById('example');main.replaceChildren();const icons=doc.querySelector('template#icons');if(icons)main.append(icons.content.cloneNode(true));const wrap=document.createElement('div');wrap.className=item.source==='core'?'lm-scope':'p';wrap.append(fragment);main.append(wrap);main.dataset.ready='true';LumenUI.mount(document);
 }catch(error){document.getElementById('example').textContent=error.message;document.getElementById('example').dataset.ready='error'}

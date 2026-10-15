@@ -14,19 +14,20 @@ try{
  assert.equal(await page.locator('#category-nav a').count(),12);
  // Every retained template mounts in the same preview renderer, with no ID loss.
  const inventory=await page.evaluate(async()=>{const target=document.createElement('div');document.body.append(target);let checked=0;const failures=[];for(const item of LumenStudio.catalog.items){try{const p=await LumenStudio.preview(item,target);if(p.host.dataset.ready!=='true')throw Error('Not ready');if(!p.shadow.querySelector('button,input,select,textarea,svg,div,span,p,section'))throw Error('Empty');p.destroy();checked++}catch(e){failures.push(item.key+': '+e.message)}}target.remove();return{checked,failures}});
- assert.deepEqual(inventory.failures,[]);assert.equal(inventory.checked,533);
+ assert.deepEqual(inventory.failures,[]);assert.equal(inventory.checked,524);
  await page.goto(base+'/studio-preview.html#buttons/solid');await page.waitForFunction(()=>window.LumenStudio);
  await page.locator('[data-key="buttons/solid"] .preview-host[data-ready=true]').waitFor();
  assert.equal(await page.locator('[data-key="buttons/solid"] .preview-host .r button').count(),16);
- const paired=await page.locator('[data-key="core/buttons-solid"] .preview-host .lm-row').count();assert.equal(paired,2);
+ const paired=await page.locator('[data-key="buttons/solid"] .preview-host .r').count();assert.equal(paired,2);
  // Catalog navigation, search, status filtering, and persistence.
  await page.locator('#search').fill('combobox');await page.locator('[data-key="core/combobox"]').waitFor();assert.equal(await page.locator('.example-card').count(),1);
  await page.locator('[data-favorite="core/combobox"]').click();await page.goto(base+'/studio-preview.html#favorites');await page.waitForFunction(()=>window.LumenStudio);assert.equal(await page.locator('[data-key="core/combobox"]').count(),1);
  await page.locator('[aria-label="Inspect Searchable combobox"]').click();await page.locator('[data-inspect=html]').click();await page.locator('#variant-selection').waitFor();assert((await page.locator('#inspector-body pre').textContent()).includes('role="combobox"'));
  await page.locator('#inspector-close').click();
+ await page.evaluate(()=>localStorage.setItem('lumen-studio-recent',JSON.stringify(['core/buttons-solid','buttons/solid','core/buttons-tonal','buttons/soft-tinted'])));await page.goto(base+'/studio-preview.html#recent');await page.waitForFunction(()=>window.LumenStudio);assert.equal(await page.locator('.example-card').count(),2,'Recent aliases must not reintroduce duplicate cards');
  // Comparison, canonical relocation aliases and responsive preview containers.
  await page.goto(base+'/studio-preview.html#buttons');await page.waitForFunction(()=>window.LumenStudio);
- await page.locator('[aria-label="Compare Solid buttons"]').click();await page.locator('[aria-label="Compare Tonal buttons"]').click();await page.locator('#compare-open').click();assert.equal(await page.locator('.example-card').count(),2);
+ await page.locator('[aria-label="Compare Solid"]').click();await page.locator('[aria-label="Compare Tonal (soft)"]').click();await page.locator('#compare-open').click();assert.equal(await page.locator('.example-card').count(),2);
  await page.goto(base+'/studio-preview.html#foundations/badges-solid-soft-outline');await page.waitForFunction(()=>window.LumenStudio);assert.equal(await page.locator('#page-title').textContent(),'Status & feedback');assert.equal(await page.locator('.is-selected').getAttribute('data-key'),'buttons/badges-solid-soft-outline');
  await page.goto(base+'/studio-preview.html#layout');await page.waitForFunction(()=>window.LumenStudio);await page.locator('#layout-filter').selectOption('list');const gridHost=page.locator('[data-key="core/responsive-grid"] .preview-host[data-ready=true]');await gridHost.waitFor();
  await page.locator('[data-width="375"]').click();assert.equal(await gridHost.locator('.lm-col-12').first().evaluate(e=>getComputedStyle(e).gridColumn),'span 12');await page.locator('[data-width="full"]').click();assert.equal(await gridHost.locator('.lm-col-12').first().evaluate(e=>getComputedStyle(e).gridColumn),'span 4');
@@ -63,8 +64,8 @@ try{
  // Axe on public components; failures are errors rather than a manual checklist.
  const axe=await readFile('node_modules/axe-core/axe.min.js','utf8');let audits=0;
  for(const key of ['core/tabs','core/dropdown','core/dialog','core/combobox','core/validation','core/table','core/carousel','core/choices','core/rating']){await example(key);await page.addScriptTag({content:axe});const violations=await page.evaluate(async()=>{const r=await axe.run(document.getElementById('example'),{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}});return r.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))});assert.deepEqual(violations,[],key+' accessibility');audits++}
- await page.goto(base+'/studio-preview.html#buttons');await page.waitForFunction(()=>window.LumenStudio);await page.locator('[data-key="core/buttons-solid"] .preview-host[data-ready=true]').waitFor();
- await page.locator('#theme').selectOption('dark');const bg=await page.locator('[data-key="core/buttons-solid"] .lm-btn').first().evaluate(el=>getComputedStyle(el).backgroundColor);assert(bg!=='rgba(0, 0, 0, 0)');
+ await page.goto(base+'/studio-preview.html#buttons');await page.waitForFunction(()=>window.LumenStudio);await page.locator('[data-key="buttons/solid"] .preview-host[data-ready=true]').waitFor();
+ await page.locator('#theme').selectOption('dark');const bg=await page.locator('[data-key="buttons/solid"] .b').first().evaluate(el=>getComputedStyle(el).backgroundColor);assert(bg!=='rgba(0, 0, 0, 0)');
  await mkdir('/tmp/lumen-screenshots',{recursive:true});await page.screenshot({path:'/tmp/lumen-screenshots/buttons.png',fullPage:false});
  await page.setViewportSize({width:390,height:844});await page.locator('#theme').selectOption('light');assert(await page.locator('#sidebar').evaluate(el=>el.inert));await page.locator('#menu-toggle').click();assert(!(await page.locator('#sidebar').evaluate(el=>el.inert)));await page.keyboard.press('Escape');assert(await page.locator('#sidebar').evaluate(el=>el.inert));await page.waitForFunction(()=>document.getElementById('sidebar').getBoundingClientRect().right<=0);await page.screenshot({path:'/tmp/lumen-screenshots/mobile.png'});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Mobile shell overflow');
  await page.goto(base+'/studio-preview.html');await page.waitForFunction(()=>window.LumenStudio);await page.setViewportSize({width:1440,height:1000});await page.screenshot({path:'/tmp/lumen-screenshots/overview.png'});

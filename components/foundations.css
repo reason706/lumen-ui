@@ -8,6 +8,7 @@
 @import url('../tokens/spacing-sizing.css');
 @import url('../tokens/effects.css');
 @import url('../tokens/media-queries.css');
+@import url('../tokens/brand.css');
 
 *{box-sizing:border-box}body{margin:0}
 .p{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:#F4F6FB;color:#0F1630;padding:44px 5vw 72px;min-height:100%}

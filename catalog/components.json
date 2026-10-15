@@ -1100,7 +1100,7 @@
       "css": [
         "components/buttons.css"
       ],
-      "status": "reference",
+      "status": "css",
       "tags": [
         "buttons",
         "solid"
@@ -1112,12 +1112,12 @@
       "source": "buttons",
       "category": "buttons",
       "family": "01 · Appearance",
-      "title": "Soft (tinted)",
+      "title": "Tonal (soft)",
       "template": "templates/buttons.html",
       "css": [
         "components/buttons.css"
       ],
-      "status": "reference",
+      "status": "css",
       "tags": [
         "buttons",
         "soft",
@@ -1135,7 +1135,7 @@
       "css": [
         "components/buttons.css"
       ],
-      "status": "reference",
+      "status": "css",
       "tags": [
         "buttons",
         "outline"
@@ -1147,12 +1147,12 @@
       "source": "buttons",
       "category": "buttons",
       "family": "01 · Appearance",
-      "title": "Ghost and link",
+      "title": "Ghost",
       "template": "templates/buttons.html",
       "css": [
         "components/buttons.css"
       ],
-      "status": "reference",
+      "status": "css",
       "tags": [
         "and",
         "buttons",
@@ -1161,29 +1161,12 @@
       ]
     },
     {
-      "key": "buttons/gradient-buttons",
-      "id": "gradient-buttons",
-      "source": "buttons",
-      "category": "buttons",
-      "family": "02 · Gradient treatments",
-      "title": "Gradient buttons",
-      "template": "templates/buttons.html",
-      "css": [
-        "components/buttons.css"
-      ],
-      "status": "reference",
-      "tags": [
-        "buttons",
-        "gradient"
-      ]
-    },
-    {
       "key": "buttons/gradient-variants",
       "id": "gradient-variants",
       "source": "buttons",
       "category": "buttons",
-      "family": "02 · Gradient treatments",
-      "title": "Gradient variants",
+      "family": "03 · Size & shape",
+      "title": "Gradient shapes & effects",
       "template": "templates/buttons.html",
       "css": [
         "components/buttons.css"
@@ -1260,7 +1243,7 @@
       "css": [
         "components/buttons.css"
       ],
-      "status": "reference",
+      "status": "css",
       "tags": [
         "buttons",
         "icon",
@@ -1318,7 +1301,7 @@
       "css": [
         "components/buttons.css"
       ],
-      "status": "reference",
+      "status": "functional",
       "tags": [
         "button",
         "buttons",
@@ -1336,7 +1319,7 @@
       "css": [
         "components/buttons.css"
       ],
-      "status": "reference",
+      "status": "functional",
       "tags": [
         "button",
         "buttons",
@@ -1354,7 +1337,7 @@
       "css": [
         "components/buttons.css"
       ],
-      "status": "reference",
+      "status": "functional",
       "tags": [
         "and",
         "buttons",
@@ -9050,170 +9033,6 @@
       ]
     },
     {
-      "key": "core/buttons-solid",
-      "id": "buttons-solid",
-      "source": "core",
-      "category": "buttons",
-      "family": "01 · Appearance",
-      "title": "Solid buttons",
-      "template": "templates/core.html",
-      "css": [
-        "components/core.css",
-        "components/utilities.css"
-      ],
-      "status": "functional",
-      "tags": [
-        "button",
-        "solid",
-        "gradient",
-        "solid",
-        "buttons",
-        "solid buttons"
-      ]
-    },
-    {
-      "key": "core/buttons-tonal",
-      "id": "buttons-tonal",
-      "source": "core",
-      "category": "buttons",
-      "family": "01 · Appearance",
-      "title": "Tonal buttons",
-      "template": "templates/core.html",
-      "css": [
-        "components/core.css",
-        "components/utilities.css"
-      ],
-      "status": "functional",
-      "tags": [
-        "button",
-        "tonal",
-        "gradient",
-        "soft",
-        "buttons",
-        "tonal buttons"
-      ]
-    },
-    {
-      "key": "core/buttons-outline",
-      "id": "buttons-outline",
-      "source": "core",
-      "category": "buttons",
-      "family": "01 · Appearance",
-      "title": "Outline buttons",
-      "template": "templates/core.html",
-      "css": [
-        "components/core.css",
-        "components/utilities.css"
-      ],
-      "status": "functional",
-      "tags": [
-        "button",
-        "outline",
-        "gradient",
-        "outline",
-        "buttons",
-        "outline buttons"
-      ]
-    },
-    {
-      "key": "core/buttons-ghost",
-      "id": "buttons-ghost",
-      "source": "core",
-      "category": "buttons",
-      "family": "01 · Appearance",
-      "title": "Ghost buttons",
-      "template": "templates/core.html",
-      "css": [
-        "components/core.css",
-        "components/utilities.css"
-      ],
-      "status": "functional",
-      "tags": [
-        "button",
-        "ghost",
-        "gradient",
-        "ghost",
-        "buttons",
-        "ghost buttons"
-      ]
-    },
-    {
-      "key": "core/buttons-link",
-      "id": "buttons-link",
-      "source": "core",
-      "category": "buttons",
-      "family": "01 · Appearance",
-      "title": "Link buttons",
-      "template": "templates/core.html",
-      "css": [
-        "components/core.css",
-        "components/utilities.css"
-      ],
-      "status": "functional",
-      "tags": [
-        "button",
-        "link",
-        "gradient",
-        "link",
-        "buttons",
-        "link buttons"
-      ]
-    },
-    {
-      "key": "core/button-sizes",
-      "id": "button-sizes",
-      "source": "core",
-      "category": "buttons",
-      "family": "03 · Size & shape",
-      "title": "Sizes, shapes & widths",
-      "template": "templates/core.html",
-      "css": [
-        "components/core.css",
-        "components/utilities.css"
-      ],
-      "status": "functional",
-      "tags": [
-        "buttons",
-        "sizes, shapes & widths"
-      ]
-    },
-    {
-      "key": "core/button-states",
-      "id": "button-states",
-      "source": "core",
-      "category": "buttons",
-      "family": "05 · States",
-      "title": "Disabled, loading & toggle states",
-      "template": "templates/core.html",
-      "css": [
-        "components/core.css",
-        "components/utilities.css"
-      ],
-      "status": "functional",
-      "tags": [
-        "buttons",
-        "disabled, loading & toggle states"
-      ]
-    },
-    {
-      "key": "core/button-group",
-      "id": "button-group",
-      "source": "core",
-      "category": "buttons",
-      "family": "06 · Groups & toolbars",
-      "title": "Grouped & split actions",
-      "template": "templates/core.html",
-      "css": [
-        "components/core.css",
-        "components/utilities.css"
-      ],
-      "status": "functional",
-      "tags": [
-        "buttons",
-        "grouped & split actions"
-      ]
-    },
-    {
       "key": "core/responsive-grid",
       "id": "responsive-grid",
       "source": "core",
@@ -9955,24 +9774,6 @@
       ]
     },
     {
-      "key": "core/split-button",
-      "id": "split-button",
-      "source": "core",
-      "category": "buttons",
-      "family": "06 · Groups & toolbars",
-      "title": "Split button dropdown",
-      "template": "templates/core.html",
-      "css": [
-        "components/core.css",
-        "components/utilities.css"
-      ],
-      "status": "functional",
-      "tags": [
-        "buttons",
-        "split button dropdown"
-      ]
-    },
-    {
       "key": "core/input-groups",
       "id": "input-groups",
       "source": "core",
@@ -10169,6 +9970,26 @@
         "compositions",
         "settings composition"
       ]
+    },
+    {
+      "key": "buttons/link",
+      "id": "link",
+      "source": "buttons",
+      "category": "buttons",
+      "family": "01 · Appearance",
+      "title": "Link",
+      "template": "templates/buttons.html",
+      "css": [
+        "components/buttons.css"
+      ],
+      "status": "css",
+      "tags": [
+        "and",
+        "buttons",
+        "ghost",
+        "link"
+      ],
+      "added": true
     }
   ],
   "aliases": {
@@ -10186,6 +10007,19 @@
     "gallery/music-now-playing": "surfaces/music-now-playing",
     "forms/rating-prompt": "feedback/rating-prompt",
     "gallery/dashboard-media-player": "data/dashboard-media-player",
-    "surfaces/hero-sections": "gallery/hero-sections"
-  }
+    "surfaces/hero-sections": "gallery/hero-sections",
+    "core/buttons-solid": "buttons/solid",
+    "core/buttons-tonal": "buttons/soft-tinted",
+    "core/buttons-outline": "buttons/outline",
+    "core/buttons-ghost": "buttons/ghost-and-link",
+    "core/buttons-link": "buttons/link",
+    "core/button-sizes": "buttons/sizes",
+    "core/button-states": "buttons/button-states",
+    "core/button-group": "buttons/button-groups",
+    "core/split-button": "buttons/split-and-dropdown-buttons",
+    "buttons/gradient-buttons": "buttons/solid"
+  },
+  "mergedOriginalKeys": [
+    "buttons/gradient-buttons"
+  ]
 }
