@@ -23,10 +23,52 @@ try{
   await page.mouse.down();await expect.poll(()=>button.evaluate(n=>getComputedStyle(n).boxShadow)).not.toBe(hover.shadow);const pressed=await button.evaluate(n=>({filter:getComputedStyle(n).filter,shadow:getComputedStyle(n).boxShadow,transform:getComputedStyle(n).transform}));assert.notEqual(pressed.shadow,hover.shadow,'Press shadow differs from hover');assert.notEqual(pressed.transform,'none','Press has displacement');await page.mouse.up();stateChecks++;
  }
  const states=page.locator('[data-key="buttons/button-states"]');await states.scrollIntoViewIfNeeded();await states.locator('.preview-host[data-ready=true]').waitFor();const disabled=states.locator('.b.soft:disabled').first();const before=await disabled.evaluate(n=>getComputedStyle(n).backgroundColor);await disabled.hover();assert.equal(await disabled.evaluate(n=>getComputedStyle(n).backgroundColor),before,'Disabled never fills');
+ // Text and icon controls share dimensions at every size in both APIs.
+ const sizing=await browser.newPage();await sizing.route(/fonts\./,r=>r.abort());
+ await sizing.goto(base+'/example.html?item=buttons/solid');await sizing.locator('#example[data-ready=true]').waitFor();
+ const sizes=[['xs',32,12],['sm',40,16],['',44,20],['lg',52,28],['xl',62,36]];
+ for(const [size,height,padding] of sizes){
+  const metrics=await sizing.evaluate(({size})=>{
+   const root=document.createElement('div');document.body.append(root);
+   const results={};
+   for(const api of ['legacy','core']){
+    const wrap=document.createElement('div');wrap.className=api==='core'?'lm-scope':'p';root.append(wrap);
+    for(const kind of ['text','icon','compat']){
+     if(api==='core'&&kind==='compat')continue;
+     const button=document.createElement('button');button.type='button';button.textContent=kind==='text'?'Save changes':'+';
+     button.className=api==='core'?'lm-btn '+(size?'lm-btn--'+size:'')+(kind==='icon'?' lm-btn--icon':''):(kind==='compat'?'ib':'b'+(kind==='icon'?' ib':''))+' solid k-primary '+size;
+     wrap.append(button);const css=getComputedStyle(button),rect=button.getBoundingClientRect();
+     results[api+'-'+kind]={height:rect.height,width:rect.width,padding:parseFloat(css.paddingInlineStart),font:css.fontSize,radius:css.borderRadius,overflow:button.scrollWidth>button.clientWidth};
+    }
+   }
+   root.remove();return results;
+  },{size});
+  for(const [key,metric] of Object.entries(metrics)){
+   assert.equal(metric.height,height,size+' '+key+' height');
+   assert.equal(metric.padding,key.endsWith('text')?padding:0,size+' '+key+' padding');
+   if(!key.endsWith('text'))assert.equal(metric.width,height,size+' '+key+' square');
+   assert.equal(metric.font,metrics['legacy-text'].font,size+' '+key+' font');
+   assert.equal(metric.radius,metrics['legacy-text'].radius,size+' '+key+' radius');
+   assert(!metric.overflow,size+' '+key+' clipped content');
+  }
+ }
+ // Each original category must import the shared base, including when used alone.
+ for(const category of ['buttons','forms','navigation','sliders-values','surfaces','feedback','data-media','foundations']){
+  const css=await readFile('components/'+category+'.css','utf8');
+  assert(css.includes("@import url('./button-base.css')"),category+' shared base import');
+  assert(!/^\.b\{display:inline-flex/m.test(css),category+' duplicated base');
+  assert(!/^\.ib\{width:44px/m.test(css),category+' duplicated icon dimensions');
+  await sizing.setContent('<div class="p"><button class="b solid lg">Save</button><button class="b ib solid lg" aria-label="Add">+</button><button class="ib solid lg" aria-label="Legacy add">+</button></div>');
+  await sizing.evaluate(url=>new Promise((resolve,reject)=>{const link=document.createElement('link');link.rel='stylesheet';link.href=url;link.onload=resolve;link.onerror=reject;document.head.append(link)}),base+'/components/'+category+'.css');
+  const dimensions=await sizing.locator('button').evaluateAll(nodes=>nodes.map(node=>{const r=node.getBoundingClientRect();return{height:r.height,width:r.width}}));
+  for(const metric of dimensions)assert.equal(metric.height,52,category+' aligned height');
+  for(const metric of dimensions.slice(1))assert.equal(metric.width,52,category+' square icon');
+ }
+ await sizing.close();
  // Standalone lm- buttons must agree with the retained originals too.
  await page.goto(base+'/example.html?item=core/cards');await page.locator('#example[data-ready=true]').waitFor();await page.evaluate(()=>{const wrap=document.createElement('div');wrap.className='lm-scope';wrap.id='button-probes';wrap.innerHTML='<button class="lm-btn lm-btn--tonal lm-info">Info tonal</button><button class="lm-btn lm-btn--outline lm-success lm-btn--icon" aria-label="Success outline icon">+</button><button class="lm-btn lm-btn--gradient lm-gradient-ocean">Ocean</button>';document.getElementById('example').append(wrap)});
  assert.equal(await page.locator('.lm-gradient-ocean').evaluate(n=>getComputedStyle(n).backgroundImage),gradients[1]);for(const [selector,color] of [['#button-probes .lm-info',palette.info],['#button-probes .lm-success',palette.success]]){await page.locator(selector).hover();await expect.poll(()=>page.locator(selector).evaluate(n=>getComputedStyle(n).backgroundColor)).toBe(color)}
  const axe=await readFile('node_modules/axe-core/axe.min.js','utf8');let audits=0;
  for(const theme of ['light','dark','oled','cyberpunk','obsidian','arctic','sport','luxury'])for(const key of ['buttons/solid','buttons/soft-tinted','buttons/outline','buttons/ghost-and-link','buttons/link','buttons/icon-buttons-variants']){await page.goto(base+'/example.html?item='+encodeURIComponent(key)+'&theme='+theme);await page.locator('#example[data-ready=true]').waitFor();await page.addScriptTag({content:axe});const violations=await page.evaluate(async()=>{const r=await axe.run(document.getElementById('example'),{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}});return r.violations.map(x=>({id:x.id,nodes:x.nodes.map(n=>({target:n.target,summary:n.failureSummary}))}))});assert.deepEqual(violations,[],theme+' '+key+' accessibility');audits++}
- console.log(`PASS buttons: Foundation colors and eight gradients, merged aliases, ${stateChecks} text/icon hover and press combinations, disabled behavior, public CSS parity, ${audits} accessibility audits`);
+ console.log(`PASS buttons: Foundation colors and eight gradients, merged aliases, five shared sizes, eight category imports, ${stateChecks} text/icon hover and press combinations, disabled behavior, public CSS parity, ${audits} accessibility audits`);
 }finally{await browser?.close();server.kill()}

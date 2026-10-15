@@ -1,3 +1,4 @@
+@import url('../tokens/controls.css');
 /* Public Lumen components. Independent of the studio and legacy demo classes. */
 :root,:host {
  --lm-primary:var(--indigo-700,#4338ca);--lm-ink:var(--color-ink,#0f1630);--lm-muted:var(--color-muted,#5b6486);
@@ -20,7 +21,7 @@
 .lm-grid{display:grid;grid-template-columns:repeat(var(--lm-cols,12),minmax(0,1fr));gap:var(--lm-space)}
 .lm-col{grid-column:span var(--lm-span,12)}
 /* Button fills match Foundations; foregrounds provide contrast without tinting fills. */
-.lm-btn{--lm-accent:var(--lumen-color-primary);--lm-on-accent:var(--lumen-on-primary);--lm-rest-ink:color-mix(in srgb,var(--lm-accent) 60%,var(--lm-ink));--lm-gradient-ink:var(--lumen-gradient-on-violet);display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:2.75rem;padding:.625rem 1.125rem;border:1px solid transparent;border-radius:var(--lm-radius);background:var(--lm-accent);color:var(--lm-on-accent);font-weight:700;text-decoration:none;transition:background .15s,color .15s,box-shadow .15s,filter .15s,transform .15s}
+.lm-btn{--lm-btn-size:var(--lm-control-md);--lm-btn-padding:var(--lm-control-pad-md);--lm-btn-font:var(--lm-control-font-md);--lm-btn-radius:var(--lm-control-radius-md);box-sizing:border-box;--lm-accent:var(--lumen-color-primary);--lm-on-accent:var(--lumen-on-primary);--lm-rest-ink:color-mix(in srgb,var(--lm-accent) 60%,var(--lm-ink));--lm-gradient-ink:var(--lumen-gradient-on-violet);display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:var(--lm-btn-size);padding:0 var(--lm-btn-padding);font-size:var(--lm-btn-font);line-height:1.25;border:1px solid transparent;border-radius:var(--lm-btn-radius);background:var(--lm-accent);color:var(--lm-on-accent);font-weight:700;text-decoration:none;transition:background .15s,color .15s,box-shadow .15s,filter .15s,transform .15s}
 .lm-btn--tonal{background:color-mix(in srgb,var(--lm-accent) 12%,var(--lm-surface));color:var(--lm-rest-ink)}
 .lm-btn--outline{background:transparent;border-color:var(--lm-accent);color:var(--lm-rest-ink)}
 .lm-btn--ghost,.lm-btn--link{background:transparent;color:var(--lm-rest-ink)}.lm-btn--link{text-decoration:underline;text-underline-offset:.2em}
@@ -32,8 +33,8 @@
 .lm-btn--gradient:is(.lm-btn--tonal,.lm-btn--outline):is(:hover,:active,.is-h,.is-a,[aria-pressed=true]):not(:disabled):not([aria-disabled=true]){background:var(--lm-gradient);border-color:transparent;color:var(--lm-gradient-ink)}
 .lm-btn:is(.lm-btn--ghost,.lm-btn--link):is(:hover,.is-h):not(:disabled):not([aria-disabled=true]){background:color-mix(in srgb,var(--lm-accent) 16%,var(--lm-surface));filter:none}
 .lm-btn[class]:is(:active,.is-a,[aria-pressed=true]):not(:disabled):not([aria-disabled=true]){filter:none;transform:translateY(2px);box-shadow:inset 0 2px 5px #0004}
-.lm-btn--sm{min-height:2.25rem;padding:.375rem .75rem;font-size:.875rem}.lm-btn--lg{min-height:3.5rem;padding:.875rem 1.5rem;font-size:1.125rem}
-.lm-btn--pill{border-radius:99rem}.lm-btn--icon{width:2.75rem;padding:.5rem}.lm-btn--block{width:100%}
+.lm-btn--xs{--lm-btn-size:var(--lm-control-xs);--lm-btn-padding:var(--lm-control-pad-xs);--lm-btn-font:var(--lm-control-font-xs);--lm-btn-radius:var(--lm-control-radius-xs)}.lm-btn--sm{--lm-btn-size:var(--lm-control-sm);--lm-btn-padding:var(--lm-control-pad-sm);--lm-btn-font:var(--lm-control-font-sm);--lm-btn-radius:var(--lm-control-radius-sm)}.lm-btn--lg{--lm-btn-size:var(--lm-control-lg);--lm-btn-padding:var(--lm-control-pad-lg);--lm-btn-font:var(--lm-control-font-lg);--lm-btn-radius:var(--lm-control-radius-lg)}.lm-btn--xl{--lm-btn-size:var(--lm-control-xl);--lm-btn-padding:var(--lm-control-pad-xl);--lm-btn-font:var(--lm-control-font-xl);--lm-btn-radius:var(--lm-control-radius-xl)}
+.lm-btn--pill{border-radius:99rem}.lm-btn--icon{width:var(--lm-btn-size);height:var(--lm-btn-size);padding:0;flex-shrink:0}.lm-btn--block{width:100%}
 .lm-primary{--lm-accent:var(--lumen-color-primary);--lm-on-accent:var(--lumen-on-primary)}
 .lm-secondary{--lm-accent:var(--lumen-color-secondary);--lm-on-accent:var(--lumen-on-secondary)}
 .lm-success{--lm-accent:var(--lumen-color-success);--lm-on-accent:var(--lumen-on-success)}
@@ -97,7 +98,7 @@
 body.lm-scope{margin:0;background:var(--lm-bg);color:var(--lm-ink)}
 :is([data-theme=dark],[data-theme=oled],[data-theme=cyberpunk],[data-theme=obsidian],[data-theme=sport],[data-theme=luxury]) :is(.lm-badge,.lm-tabs [aria-selected=true]),:host(:is([data-theme=dark],[data-theme=oled],[data-theme=cyberpunk],[data-theme=obsidian],[data-theme=sport],[data-theme=luxury])) :is(.lm-badge,.lm-tabs [aria-selected=true]){color:color-mix(in srgb,var(--lm-primary) 35%,white)}
 :is([data-theme=cyberpunk]) .lm-nav [aria-current=page],:host([data-theme=cyberpunk]) .lm-nav [aria-current=page]{background:color-mix(in srgb,var(--lm-primary) 38%,#101510);color:white}
-.lm-scope .lm-btn{font-weight:700}
+.lm-scope .lm-btn{font-weight:700;font-size:var(--lm-btn-font);line-height:1.25}
 [data-theme=cyberpunk] .lm-avatar,:host([data-theme=cyberpunk]) .lm-avatar{color:#101510}
 
 /* Additional original Lumen palettes, with readable component accents. */

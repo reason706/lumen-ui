@@ -86,6 +86,19 @@ Paths are relative to the location where you host Lumen's files. Keep the `token
 
 `lumen-core.css` loads the design tokens, public core components, and utilities. `lumen.css` remains the full bundle containing the original component styles as well as the new core. Original examples can also use their individual stylesheets, such as `components/buttons.css`.
 
+### Buttons and icon buttons
+
+Use the same base, appearance, color, and size classes for both. Add `lm-btn--icon` for a square icon-only control and provide an accessible name:
+
+```html
+<button type="button" class="lm-btn lm-btn--tonal lm-success lm-btn--sm">Save</button>
+<button type="button" class="lm-btn lm-btn--tonal lm-success lm-btn--sm lm-btn--icon" aria-label="Add">+</button>
+```
+
+Sizes are `lm-btn--xs` (32px), `lm-btn--sm` (40px), default (44px), `lm-btn--lg` (52px), and `lm-btn--xl` (62px). Text buttons use horizontal padding; icon buttons use the same height as their square width with zero padding. Both APIs consume `tokens/controls.css`; original category styles share `components/button-base.css` instead of repeating button geometry. The original examples now use `b ib` for icon buttons; standalone `ib` remains compatible. Public core button dimensions now match the original scale, including the previously different small and large sizes.
+
+The [framework simplification plan](FRAMEWORK-PLAN.md) defines the naming convention, shared primitives, consolidation rules, migration order, and acceptance checks across all categories. The shared button foundation is implemented; the remaining migration stages are planned.
+
 ### Responsive layout and spacing
 
 ```html
