@@ -60,7 +60,7 @@ Alternatively, use VS Code **Live Server → Open with Live Server**, or run thi
 npm start
 ```
 
-The command starts a Python static HTTP server on port 8000, bound to the local machine. Open `studio-preview.html` through that server; `index.html` also redirects there. Server mode reads the current catalog and templates over HTTP. Both opening methods support previewing, searching, inspecting HTML/CSS, and copying examples. When serving over HTTP, add `?offline=1` to exercise the included snapshot instead of fetching source data.
+The command starts a Python static HTTP server on port 8000, bound to the local machine. Open `studio-preview.html` through that server; `index.html` also redirects there. Server mode reads the current catalog and templates over HTTP without reusing cached responses. Template files are checked against the catalog after HTML parsing; if a server returns incomplete templates, the studio and standalone previews recover from the included snapshot. Both opening methods support previewing, searching, inspecting HTML/CSS, and copying examples. When serving over HTTP, add `?offline=1` to exercise the included snapshot instead of fetching source data.
 
 No framework, backend, or credentials are required to view the studio. Google Fonts is optional; when its domains are unavailable, the configured font stacks fall back to local fonts.
 

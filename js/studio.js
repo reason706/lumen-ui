@@ -10,7 +10,7 @@ const icons=['◈','▦','↗','▤','◉','☷','▣','◇','◌','▥','▷','
 const typeLabels={functional:'Interactive core',css:'CSS / native controls',reference:'Visual reference',composition:'Composition'};
 function el(tag,className,text){const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=text;return node}
 function notice(message){$('notice').textContent=message;$('notice').hidden=false;clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>$('notice').hidden=true,2500)}
-async function loadTemplates(file){if(!templates.has(file))templates.set(file,LumenAssets.text(file).then(text=>{const doc=document.createElement('div');doc.innerHTML=text;return doc}));return templates.get(file)}
+async function loadTemplates(file){if(!templates.has(file))templates.set(file,LumenAssets.templateDocument(file,catalog.items));return templates.get(file)}
 async function content(item){const doc=await loadTemplates(item.template),t=doc.querySelector('template[id="'+CSS.escape(item.id)+'"]');if(!t)throw Error('Missing template: '+item.key);return t.content.cloneNode(true)}
 function legacySnippet(fragment){const sec=fragment.querySelector('section.sec');if(sec){sec.removeAttribute('id');sec.querySelector('.sh')?.remove();sec.classList.remove('sec','w2','w3')}return fragment}
 async function markup(item,variant){const fragment=legacySnippet(await content(item));if(variant!==undefined&&variant!=='all'){const candidates=[...fragment.querySelectorAll('button,input,select,textarea,progress,meter')];const node=candidates[Number(variant)];if(node){const label=node.closest('label');return (label||node).outerHTML}}const holder=el('div');holder.append(fragment);return holder.innerHTML}

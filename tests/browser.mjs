@@ -69,5 +69,25 @@ try{
  await mkdir('/tmp/lumen-screenshots',{recursive:true});await page.screenshot({path:'/tmp/lumen-screenshots/buttons.png',fullPage:false});
  await page.setViewportSize({width:390,height:844});await page.locator('#theme').selectOption('light');assert(await page.locator('#sidebar').evaluate(el=>el.inert));await page.locator('#menu-toggle').click();assert(!(await page.locator('#sidebar').evaluate(el=>el.inert)));await page.keyboard.press('Escape');assert(await page.locator('#sidebar').evaluate(el=>el.inert));await page.waitForFunction(()=>document.getElementById('sidebar').getBoundingClientRect().right<=0);await page.screenshot({path:'/tmp/lumen-screenshots/mobile.png'});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Mobile shell overflow');
  await page.goto(base+'/studio-preview.html');await page.waitForFunction(()=>window.LumenStudio);await page.setViewportSize({width:1440,height:1000});await page.screenshot({path:'/tmp/lumen-screenshots/overview.png'});
- assert.deepEqual(errors,[],'Uncaught browser errors');console.log(`PASS browser: ${inventory.checked} previews, navigation and export, interactions, lifecycle, ${audits} accessibility audits, mobile layout`);
+ // Reproduce a new catalog paired with a truncated/old button template response.
+ const recovery=await context.newPage();
+ await recovery.route('**/templates/buttons.html',route=>route.fulfill({contentType:'text/html',body:'<template id="solid"><section>Outdated buttons</section></template>'}));
+ await recovery.goto(base+'/studio-preview.html#buttons');await recovery.waitForFunction(()=>window.LumenStudio);
+ const recovered=await recovery.evaluate(async()=>{
+  const items=LumenStudio.catalog.items.filter(item=>item.template==='templates/buttons.html');
+  for(const item of items){
+   const content=await LumenStudio.content(item);
+   if(!content.querySelector('section[id="'+CSS.escape(item.id)+'"]'))throw Error('Wrong content for '+item.key);
+  }
+  return items.length;
+ });
+ assert(recovered>30,'All original button templates must recover, not just the first card');
+ assert.equal(await recovery.locator('script[src$="js/studio-data.js"]').count(),1,'Share one snapshot across recovered templates');
+ for(const id of ['on-dark-surfaces','button-groups','overlay-and-select-buttons']){
+  await recovery.goto(base+'/example.html?item=buttons/'+id);
+  await recovery.locator('#example[data-ready=true]').waitFor();
+  assert(!(await recovery.locator('#example').textContent()).includes('Missing template'));
+ }
+ await recovery.close();
+ assert.deepEqual(errors,[],'Uncaught browser errors');console.log(`PASS browser: ${inventory.checked} previews, incomplete-template recovery, navigation and export, interactions, lifecycle, ${audits} accessibility audits, mobile layout`);
 }finally{await browser?.close();server.kill()}

@@ -27,9 +27,26 @@
    if(!Object.hasOwn(assets,key))throw Error('Local preview asset is missing: '+key);
    return assets[key];
   }
-  const response=await fetch(new URL(key,base));
+  const response=await fetch(new URL(key,base),{cache:'no-store'});
   if(!response.ok)throw Error('Could not load '+key+' (HTTP '+response.status+')');
   return response.text();
  }
- global.LumenAssets={offline,text,json:async file=>JSON.parse(await text(file)),path:pathOf};
+ // Validate the parsed DOM, not just template IDs appearing in source text.
+ async function templateDocument(file,items){
+  const expected=items.filter(item=>item.template===file);
+  function parse(source){
+   const doc=document.createElement('div');doc.innerHTML=source;
+   const missing=expected.filter(item=>!doc.querySelector('template[id="'+CSS.escape(item.id)+'"]')?.content);
+   return {doc,missing};
+  }
+  let parsed=parse(await text(file));
+  if(parsed.missing.length&&!offline){
+   // A partial checkout or stale server response can mix a new catalog with old HTML.
+   const assets=await loadSnapshot();
+   if(Object.hasOwn(assets,pathOf(file)))parsed=parse(assets[pathOf(file)]);
+  }
+  if(parsed.missing.length)throw Error('Incomplete template file '+file+': '+parsed.missing.map(item=>item.id).join(', ')+'. Pull the complete repository, including js/studio-data.js.');
+  return parsed.doc;
+ }
+ global.LumenAssets={offline,text,templateDocument,json:async file=>JSON.parse(await text(file)),path:pathOf};
 })(window);
