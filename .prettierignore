@@ -1,0 +1,6 @@
+node_modules
+dist
+js/studio-data.js
+js/icons.js
+components/public-*.css
+tokens/public-*.css

@@ -1,0 +1,203 @@
+/* Shared reference styles. Imports retain the original cascade positions. */
+.dtl {
+  border: 1.5px solid var(--lumen-color-border, #e3e7f2);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+}
+.dtl details + details {
+  border-top: 1px solid #eef1f9;
+}
+.dtl summary {
+  list-style: none;
+  cursor: pointer;
+  padding: var(--space-3_5, 14px) var(--space-4, 16px);
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dtl summary::-webkit-details-marker {
+  display: none;
+}
+.dtl summary:after {
+  content: "+";
+  font-size: 20px;
+  color: var(--lumen-color-primary, #4338ca);
+}
+.dtl details[open] summary:after {
+  content: "-";
+}
+.dtl details[open] summary {
+  background: #f5f7ff;
+}
+.dtl .bd2 {
+  padding: var(--space-3_5, 14px) var(--space-4, 16px);
+  display: grid;
+  gap: var(--space-3, 12px);
+}
+.res {
+  display: grid;
+  gap: var(--space-2_5, 10px);
+}
+.res div {
+  position: relative;
+  border-radius: 12px;
+  background: var(--lumen-color-surface, #f4f6fb);
+  padding: 11px var(--space-3_5, 14px);
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.res i {
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+  bottom: 0;
+  background: #e0e7ff;
+  z-index: 0;
+}
+.res span {
+  position: relative;
+}
+.res .win i {
+  background: #c7d2fe;
+}
+.qz {
+  display: grid;
+  gap: var(--space-2, 8px);
+}
+.qz div {
+  border: 1.5px solid #d5dbec;
+  border-radius: 12px;
+  padding: var(--space-3, 12px) var(--space-3_5, 14px);
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.qz .ok {
+  border-color: var(--lumen-color-success, #0d9488);
+  background: #f0fdfa;
+  color: #115e59;
+}
+.qz .bad {
+  border-color: var(--lumen-color-danger, #e11d48);
+  background: #fff1f2;
+  color: #9f1239;
+}
+.sk2 {
+  height: 12px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    #e9edf7,
+    var(--lumen-color-surface, #f4f6fb),
+    #e9edf7
+  );
+  background-size: 200% 100%;
+  animation: skm 1.4s linear infinite;
+}
+@keyframes skm {
+  to {
+    background-position: -200% 0;
+  }
+}
+.ed2 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2, 8px);
+  font-size: 18px;
+  font-weight: 800;
+}
+.ed2 .ibx {
+  opacity: 0.5;
+}
+.ed2:hover .ibx {
+  opacity: 1;
+}
+.lk5 {
+  display: grid;
+  grid-template-columns: 1fr repeat(5, 32px);
+  gap: var(--space-1_5, 6px);
+  align-items: center;
+  font-size: 13px;
+}
+.lk5 span.h {
+  font-size: 10px;
+  text-align: center;
+  color: #8a93b8;
+  font-weight: 700;
+}
+.lk5 input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--lumen-color-primary, #4338ca);
+  justify-self: center;
+}
+.cons {
+  height: 90px;
+  overflow: auto;
+  border: 1.5px solid #d5dbec;
+  border-radius: 12px;
+  padding: var(--space-3, 12px);
+  font-size: 13px;
+  color: var(--lumen-color-muted, #5b6486);
+  line-height: 1.6;
+}
+.tot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: var(--space-1_5, 6px) 0;
+}
+.tot.b2 {
+  font-weight: 800;
+  font-size: 17px;
+  border-top: 1px solid #eef1f9;
+  padding-top: var(--space-3, 12px);
+}
+.okc {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #15803d;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+}
+.okc .ic {
+  width: 30px;
+  height: 30px;
+}
+.sts {
+  display: inline-flex;
+  gap: var(--space-2, 8px);
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  padding: var(--space-1_5, 6px) var(--space-3, 12px);
+  border-radius: 99px;
+}
+.cring {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--lumen-color-primary, #4338ca) 72%,
+    var(--lumen-color-border, #e3e7f2) 0
+  );
+  display: grid;
+  place-items: center;
+}
+.cring i {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #fff;
+  display: block;
+}

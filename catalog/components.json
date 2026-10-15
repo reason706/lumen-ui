@@ -11047,6 +11047,116 @@
         "application"
       ],
       "wrapper": "lumen"
+    },
+    {
+      "key": "core/editable-table",
+      "id": "editable-table",
+      "source": "core",
+      "added": true,
+      "category": "compositions",
+      "family": "01 · Application patterns",
+      "title": "Editable inventory",
+      "template": "templates/recipes.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-patterns.css"
+      ],
+      "status": "composition",
+      "tags": [
+        "composition",
+        "editable-table",
+        "application"
+      ],
+      "wrapper": "lumen"
+    },
+    {
+      "key": "core/status-states",
+      "id": "status-states",
+      "source": "core",
+      "added": true,
+      "category": "compositions",
+      "family": "01 · Application patterns",
+      "title": "Empty, loading and error states",
+      "template": "templates/recipes.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-patterns.css"
+      ],
+      "status": "css",
+      "tags": [
+        "composition",
+        "status-states",
+        "application"
+      ],
+      "wrapper": "lumen"
+    },
+    {
+      "key": "core/multistep-form",
+      "id": "multistep-form",
+      "source": "core",
+      "added": true,
+      "category": "compositions",
+      "family": "01 · Application patterns",
+      "title": "Multi-step project form",
+      "template": "templates/recipes.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-patterns.css"
+      ],
+      "status": "composition",
+      "tags": [
+        "composition",
+        "multistep-form",
+        "application"
+      ],
+      "wrapper": "lumen"
+    },
+    {
+      "key": "core/filter-panel",
+      "id": "filter-panel",
+      "source": "core",
+      "added": true,
+      "category": "compositions",
+      "family": "01 · Application patterns",
+      "title": "Search and filter panel",
+      "template": "templates/recipes.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-patterns.css"
+      ],
+      "status": "composition",
+      "tags": [
+        "composition",
+        "filter-panel",
+        "application"
+      ],
+      "wrapper": "lumen"
+    },
+    {
+      "key": "core/file-upload-workflow",
+      "id": "file-upload-workflow",
+      "source": "core",
+      "added": true,
+      "category": "compositions",
+      "family": "01 · Application patterns",
+      "title": "File selection and validation",
+      "template": "templates/recipes.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-patterns.css"
+      ],
+      "status": "composition",
+      "tags": [
+        "composition",
+        "file-upload-workflow",
+        "application"
+      ],
+      "wrapper": "lumen"
     }
   ],
   "aliases": {

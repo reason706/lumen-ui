@@ -6435,7 +6435,11 @@
         "row": "row",
         "btn-style-tonal": "btn-style-tonal",
         "color-danger": "color-danger",
-        "dialog-footer": "dialog-footer"
+        "dialog-footer": "dialog-footer",
+        "size-sm": "size-sm",
+        "heading-sm": "heading-sm",
+        "empty-state": "empty-state",
+        "alert": "alert"
       }
     }
   },

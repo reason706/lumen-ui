@@ -4,42 +4,44 @@
  */
 
 (function (root, factory) {
-  if (typeof define === 'function' && define.amd) {
+  if (typeof define === "function" && define.amd) {
     define([], factory);
-  } else if (typeof module === 'object' && module.exports) {
+  } else if (typeof module === "object" && module.exports) {
     module.exports = factory();
   } else {
     root.CarTelemetry = factory();
     if (!root.Lumen) root.Lumen = {};
     root.Lumen.Telemetry = root.CarTelemetry;
   }
-})(typeof self !== 'undefined' ? self : this, function () {
-  'use strict';
+})(typeof self !== "undefined" ? self : this, function () {
+  "use strict";
 
   class TelemetryEngine {
     constructor() {
       this.state = {
-        speed: 84,            // km/h (0 - 260)
-        power: 18.5,          // kW (-80 to +350)
-        battery: 76,          // % (0 - 100)
-        range: 395,           // km
-        gear: 'D',            // P, R, N, D
-        driveMode: 'sport',   // chill, sport, track
-        cabinTemp: 21.5,      // Celsius
-        targetTemp: 22.0,     // Celsius
-        seatHeatDriver: 2,    // 0, 1, 2, 3
+        speed: 84, // km/h (0 - 260)
+        power: 18.5, // kW (-80 to +350)
+        battery: 76, // % (0 - 100)
+        range: 395, // km
+        gear: "D", // P, R, N, D
+        driveMode: "sport", // chill, sport, track
+        cabinTemp: 21.5, // Celsius
+        targetTemp: 22.0, // Celsius
+        seatHeatDriver: 2, // 0, 1, 2, 3
         seatHeatPassenger: 0, // 0, 1, 2, 3
-        turnSignal: 'off',    // left, right, hazard, off
-        autopilot: 'engaged', // off, standby, engaged, takeover
+        turnSignal: "off", // left, right, hazard, off
+        autopilot: "engaged", // off, standby, engaged, takeover
         tires: {
-          fl: 2.8, fr: 2.8,   // Bar
-          rl: 2.9, rr: 2.9
+          fl: 2.8,
+          fr: 2.8, // Bar
+          rl: 2.9,
+          rr: 2.9,
         },
         gForce: {
-          x: 0.05,            // Lateral G
-          y: 0.12             // Longitudinal G
+          x: 0.05, // Lateral G
+          y: 0.12, // Longitudinal G
         },
-        odometer: 14820       // km
+        odometer: 14820, // km
       };
 
       this.listeners = new Set();
@@ -64,12 +66,16 @@
      * Get snapshot of current state
      */
     getState() {
-      return { ...this.state, tires: { ...this.state.tires }, gForce: { ...this.state.gForce } };
+      return {
+        ...this.state,
+        tires: { ...this.state.tires },
+        gForce: { ...this.state.gForce },
+      };
     }
 
     /**
      * Update specific telemetry state keys
-     * @param {Object} partialState 
+     * @param {Object} partialState
      */
     setState(partialState) {
       this.state = { ...this.state, ...partialState };
@@ -78,11 +84,11 @@
 
     notify() {
       const snapshot = this.getState();
-      this.listeners.forEach(fn => {
+      this.listeners.forEach((fn) => {
         try {
           fn(snapshot);
         } catch (err) {
-          console.error('[LumenTelemetry] Listener error:', err);
+          console.error("[LumenTelemetry] Listener error:", err);
         }
       });
     }
@@ -102,12 +108,16 @@
         this.simPhase += dt * 0.8;
 
         // Realistic driving speed oscillation (65 km/h to 135 km/h)
-        const baseSpeed = 95 + Math.sin(this.simPhase) * 28 + Math.sin(this.simPhase * 2.3) * 12;
+        const baseSpeed =
+          95 +
+          Math.sin(this.simPhase) * 28 +
+          Math.sin(this.simPhase * 2.3) * 12;
         const targetSpeed = Math.max(0, Math.min(240, Math.round(baseSpeed)));
 
         // Power consumption correlates with acceleration
         const accel = (targetSpeed - this.state.speed) / (dt || 0.016);
-        let powerKw = accel > 0 ? (accel * 4.2) + (targetSpeed * 0.18) : (accel * 3.8);
+        let powerKw =
+          accel > 0 ? accel * 4.2 + targetSpeed * 0.18 : accel * 3.8;
         powerKw = Math.max(-65, Math.min(280, Math.round(powerKw * 10) / 10));
 
         // Lateral & longitudinal G-forces
@@ -125,8 +135,8 @@
           range: Math.round(newBattery * 5.2),
           gForce: {
             x: Math.round(latG * 100) / 100,
-            y: Math.round(lonG * 100) / 100
-          }
+            y: Math.round(lonG * 100) / 100,
+          },
         });
 
         this.animationFrameId = requestAnimationFrame(loop);
@@ -149,4 +159,3 @@
 
   return new TelemetryEngine();
 });
-

@@ -1,0 +1,17 @@
+{
+  "lumen.css": {
+    "gzipBytes": 135000
+  },
+  "lumen-core.css": {
+    "gzipBytes": 33000
+  },
+  "lumen-modern.css": {
+    "gzipBytes": 120000
+  },
+  "lumen-core-modern.css": {
+    "gzipBytes": 27000
+  },
+  "lumen.js": {
+    "gzipBytes": 10000
+  }
+}

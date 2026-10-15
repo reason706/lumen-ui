@@ -79,3 +79,13 @@ Keep one canonical demo for each primitive, with standard colors and gradients g
 - Added mixed-DOM, portable export, bundle parity, token, workflow, accessibility and desktop/mobile RTL visual regression checks.
 
 The earlier consolidation stages remain guidance for expanding additional specialized reference families. This improvement pass covers the shared public components and tested application patterns; visual references continue to state their behavior requirements explicitly.
+
+## Version 3.2 consistency and expansion pass — implemented
+
+- Extracted 485 repeated reference nodes into three shared source fragments, removing 2,720 repeated copies without merging distinct visuals. Expansion retains the importing category's naming context.
+- Connected reference palette, focus and spacing values to tokens; moved reference layout directions and grouped-control corners to logical CSS. Shared control dimensions now drive public size modifiers.
+- Fixed preview-host navigation visibility/ARIA agreement and prevented resize notifications from closing an opened menu within the same breakpoint. Nested mounted roots now process actions once.
+- Added copied-instance ID remapping, scoped reference markup, included icon definitions, and complete-context exports for stateful controls.
+- Added editable inventory, status presentations, validated multi-step forms, combined column filters, and file selection/size validation. Native grouping, focus movement, scrolling access, reset and form data are tested.
+- Added optional canonical-only distributions, reusable build helpers, readable source formatting and reviewed gzip budgets. Default compatibility bundles remain supported.
+- Expanded regression checks across copied instances, exports, shared-core canonical bundle parity, reference families, mobile RTL and accessibility. Visual reference/application-integration distinctions remain explicit.
