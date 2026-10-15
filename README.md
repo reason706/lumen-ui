@@ -15,7 +15,7 @@ Version 3 preserves the content of all **473 original examples**, with repeated 
 - **Purposeful organization:** components have a canonical category, related variants stay together, and existing moved-item links remain supported through aliases.
 - **Shared button palette:** standard colors and eight gradients use the same Foundation tokens. Tonal and outline buttons, including icons, fill on hover/press; disabled controls retain their resting appearance.
 - **Paired button variants:** solid, tonal, outline, ghost, and link examples place gradient treatments directly below standard variants.
-- **Reusable core:** namespaced `lm-` classes, logical spacing, responsive columns, theme-aware styles, visible focus, and reduced-motion support.
+- **Reusable core:** component bases with component-specific styles and shared color/size classes, logical spacing, responsive columns, theme-aware styles, visible focus, and reduced-motion support.
 - **Shared interactions:** menus, tabs, dialogs, drawers, collapse, notifications, validation, comboboxes, tables, sliders, uploads, selection trees, and carousels.
 - **Studio tools:** global search, family/type filters, grid/list layouts, comparisons of up to four examples, favorites, recent items, and deep links.
 - **Copying and inspection:** inspect HTML and CSS, choose an individual control, copy a complete example with dependencies, or open it independently of the studio.
@@ -68,50 +68,75 @@ Use the category sidebar or **Ctrl / Command + K** to search. Select **Inspect**
 
 ## Use the public core
 
-Include the core stylesheet and optional interaction script, and apply `lm-scope` to the component container:
+Include the core stylesheet and optional interaction script, and apply `lumen` to the component container:
 
 ```html
 <link rel="stylesheet" href="lumen-core.css">
 <script src="js/components.js" defer></script>
 
-<div class="lm-scope">
-  <button type="button" class="lm-btn">Primary action</button>
-  <button type="button" class="lm-btn lm-btn--tonal">Tonal action</button>
-  <button type="button" class="lm-btn lm-btn--outline">Outline action</button>
-  <button type="button" class="lm-btn lm-btn--gradient">Gradient action</button>
+<div class="lumen">
+  <button type="button" class="btn">Primary action</button>
+  <button type="button" class="btn btn-style-tonal">Tonal action</button>
+  <button type="button" class="btn btn-style-outline">Outline action</button>
+  <button type="button" class="btn color-gradient-violet">Gradient action</button>
 </div>
 ```
 
 Paths are relative to the location where you host Lumen's files. Keep the `tokens/` and `components/` directories available: stylesheets import their dependencies. The inspector's **Copy complete example** action includes the exact stylesheet, script, and icon definitions required by the selected example.
 
-`lumen-core.css` loads the design tokens, public core components, and utilities. `lumen.css` remains the full bundle containing the original component styles as well as the new core. Original examples can also use their individual stylesheets, such as `components/buttons.css`.
+`lumen-core.css` loads the design tokens, public core components, and utilities. `lumen.css` remains the full bundle containing the original component styles as well as the new core. Category examples use their generated stylesheets, such as `components/public-buttons.css`, plus `components/appearance.css`. The original stylesheet paths remain available for existing integrations.
 
 ### Buttons and icon buttons
 
-Use the same base, appearance, color, and size classes for both. Add `lm-btn--icon` for a square icon-only control and provide an accessible name:
+Use the same base, appearance, color, and size classes for both. Add `btn-icon` for a square icon-only control and provide an accessible name:
 
 ```html
-<button type="button" class="lm-btn lm-btn--tonal lm-success lm-btn--sm">Save</button>
-<button type="button" class="lm-btn lm-btn--tonal lm-success lm-btn--sm lm-btn--icon" aria-label="Add">+</button>
+<button type="button" class="btn btn-style-tonal color-success size-sm">Save</button>
+<button type="button" class="btn btn-style-tonal color-success size-sm btn-icon" aria-label="Add">+</button>
 ```
 
-Sizes are `lm-btn--xs` (32px), `lm-btn--sm` (40px), default (44px), `lm-btn--lg` (52px), and `lm-btn--xl` (62px). Text buttons use horizontal padding; icon buttons use the same height as their square width with zero padding. Both APIs consume `tokens/controls.css`; original category styles share `components/button-base.css` instead of repeating button geometry. The original examples now use `b ib` for icon buttons; standalone `ib` remains compatible. Public core button dimensions now match the original scale, including the previously different small and large sizes.
+Sizes are `size-xs` (32px), `size-sm` (40px), default (44px), `size-lg` (52px), and `size-xl` (62px). Text buttons use horizontal padding; icon buttons use the same height as their square width with zero padding. Both APIs consume `tokens/controls.css`; original category styles share `components/button-base.css` instead of repeating button geometry. All icon examples now use `btn btn-icon`. The compiled styles also support the original `b ib`, standalone `ib`, and `lm-*` aliases. Public core button dimensions now match the original scale, including the previously different small and large sizes.
 
-The [framework simplification plan](FRAMEWORK-PLAN.md) defines the naming convention, shared primitives, consolidation rules, migration order, and acceptance checks across all categories. The shared button foundation is implemented; the remaining migration stages are planned.
+The [framework plan](FRAMEWORK-PLAN.md) records the completed naming migration and remaining component consolidation work. Naming now applies to every catalog template; visual references retain their existing behavior status.
+
+### Shared naming convention
+
+Use a component base plus its own style prefix. Sizes and colors are shared:
+
+```html
+<button class="btn btn-style-tonal color-red size-xl">Delete</button>
+<button class="btn btn-icon btn-style-outline color-red size-xl" aria-label="Add">+</button>
+<button class="btn color-gradient-violet width-full">Continue</button>
+<article class="card card-style-raised color-blue size-lg">Card content</article>
+<span class="badge badge-style-outline color-success size-sm">Ready</span>
+<input class="input color-blue size-lg" aria-label="Name">
+```
+
+- Component styles: `btn-style-solid`, `btn-style-tonal`, `btn-style-outline`, `btn-style-ghost`, `btn-style-link`; `card-style-raised`, `card-style-glass`, `card-style-outline`, `card-style-tonal`, `card-style-solid`.
+- Shared sizes: `size-xs`, `size-sm`, default medium, `size-md`, `size-lg`, `size-xl`. A size affects the element carrying it; nested components keep their defaults. Each component defines the dimensions appropriate to it.
+- Shared colors: `color-red`, `color-blue`, `color-green`, `color-teal`, `color-orange`, `color-yellow`, `color-purple`, `color-pink`, `color-slate`, `color-black`, `color-white`, plus Foundation semantic colors such as `color-primary`, `color-success`, and `color-danger`.
+- Gradients: `color-gradient-violet`, `color-gradient-ocean`, `color-gradient-sunset`, `color-gradient-candy`, `color-gradient-forest`, `color-gradient-midnight`, `color-gradient-rose`, `color-gradient-aurora`.
+- Typography: `font-sans`, `font-serif`, `font-mono`; `weight-normal`, `weight-medium`, `weight-semibold`, `weight-bold`; `text-sm`, `text-md`, `text-xl`, `text-2xl`; `leading-tight`, `leading-normal`, `leading-relaxed`; `tracking-tight`, `tracking-normal`, `tracking-wide`; `text-start`, `text-center`, `text-end`.
+- Text/background utilities: `text-red` changes foreground only; `bg-red` changes background only. `color-red` coordinates a component's accent, foreground and interaction colors. Use `text-muted` and `bg-surface` for theme-aware neutral colors.
+- Presets: `heading-xl`, `heading-lg`, `heading-md`, `heading-sm`, `body-lg`, `body-md`, `body-sm`, and `caption`. Heading tags retain their semantic level regardless of visual size.
+- Parts and options stay component-specific: `input-label`, `input-help`, `input-error`, `carousel-controls`, `btn-icon`, `table-striped`, `table-compact`. Native state attributes and existing `data-lm-*` behavior hooks remain unchanged.
+- Layout and surface utilities: `container`, `row`, `stack`, `grid`, `gap-4`, `p-4`, `px-4`, `py-2`, `width-full`, `height-full`, `shape-pill`, `radius-lg`, `shadow-md`, `border-dashed`.
+
+The canonical mapping is in [naming/classes.json](naming/classes.json). New examples and copied snippets use these names. Generated `public-*.css` files contain canonical selectors and original aliases sharing the same declarations; do not edit generated files. Keep `lumen` on the container for the framework's font, form reset and box-sizing rules.
 
 ### Responsive layout and spacing
 
 ```html
-<div class="lm-scope lm-container">
-  <div class="lm-grid lm-gap-4">
-    <article class="lm-card lm-col-12 lm-md-col-6 lm-lg-col-4 lm-p-6">
+<div class="lumen container">
+  <div class="grid gap-4">
+    <article class="card col-12 md-col-6 lg-col-4 p-6">
       Card content
     </article>
   </div>
 </div>
 ```
 
-Responsive prefixes are `sm`, `md`, `lg`, `xl`, and `xxl`. Spacing suffixes match the original `--space-*` tokens: for example, `lm-p-4` uses `--space-4` (1rem), while `lm-p-6` uses `--space-6` (1.5rem). Logical utilities such as `lm-ps-4` and `lm-me-4` support RTL layouts.
+Responsive prefixes are `sm`, `md`, `lg`, `xl`, and `xxl`. Spacing suffixes match the original `--space-*` tokens: for example, `p-4` uses `--space-4` (1rem), while `p-6` uses `--space-6` (1.5rem). Logical utilities such as `ps-4` and `me-4` support RTL layouts.
 
 ### Themes
 
@@ -144,9 +169,12 @@ The original theme manager, telemetry simulator, and automotive controls remain 
 ```text
  catalog/components.json   Category and example metadata, stable keys, aliases
  templates/               Native HTML templates for all examples
+ naming/classes.json      Canonical names, original aliases, per-template mappings
+ components/public-*.css  Generated canonical selectors and compatibility aliases
+ components/appearance.css Shared colors, sizes, typography and appearance utilities
  tokens/brand.css         Shared Foundation palette and gradient tokens
  tokens/                  Original colors, typography, spacing, effects, breakpoints
- components/core.css      Public lm- component styles
+ components/core.css      Component source styles; compiled names live in public-core.css
  components/utilities.css Responsive layout and logical spacing utilities
  components/*.css         Original component styles
  js/assets.js             Shared HTTP / direct-file asset loader
@@ -169,7 +197,7 @@ The original theme manager, telemetry simulator, and automotive controls remain 
 
 For example, `example.html?item=core/dialog` renders the public modal example. The item's stable key, template source, CSS dependencies, and category are defined in the catalog.
 
-To reorganize an item, update its catalog category and family while retaining its stable key. To add an example, add its HTML template and catalog record. Navigation, search, category counts, and inspection derive from those records; the studio shell does not need a separate inventory update. After changing catalog records, templates, or CSS, run `npm run build:offline` and commit the updated `js/studio-data.js`. It is generated from those source files; edit the sources rather than the snapshot. Tests verify that the snapshot is current.
+To reorganize an item, update its catalog category and family while retaining its stable key. To add an example, add its HTML template and catalog record. Navigation, search, category counts, and inspection derive from those records; the studio shell does not need a separate inventory update. After changing catalog records, templates, or CSS, run `npm run build:offline` and commit generated `public-*.css` files and the updated `js/studio-data.js`. This command compiles the naming registry before generating the snapshot. It is generated from those source files; edit the sources rather than the snapshot. Tests verify that the snapshot is current.
 
 ## Validation
 

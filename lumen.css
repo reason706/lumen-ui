@@ -11,24 +11,26 @@
 /* ==========================================================================
    1. DESIGN TOKENS
    ========================================================================== */
-@import url('./tokens/colors.css');
-@import url('./tokens/typography.css');
-@import url('./tokens/spacing-sizing.css');
-@import url('./tokens/effects.css');
-@import url('./tokens/media-queries.css');
+@import url('./tokens/public-colors.css');
+@import url('./tokens/public-typography.css');
+@import url('./tokens/public-spacing-sizing.css');
+@import url('./tokens/public-effects.css');
+@import url('./tokens/public-media-queries.css');
 
 /* ==========================================================================
    2. REUSABLE UI COMPONENT SUITE
    ========================================================================== */
-@import url('./tokens/brand.css');
-@import url('./components/foundations.css');
-@import url('./components/buttons.css');
-@import url('./components/forms.css');
-@import url('./components/sliders-values.css');
-@import url('./components/navigation.css');
-@import url('./components/surfaces.css');
-@import url('./components/feedback.css');
-@import url('./components/data-media.css');
+@import url('./tokens/public-brand.css');
+@import url('./components/public-foundations.css');
+@import url('./components/public-buttons.css');
+@import url('./components/public-forms.css');
+@import url('./components/public-sliders-values.css');
+@import url('./components/public-navigation.css');
+@import url('./components/public-surfaces.css');
+@import url('./components/public-feedback.css');
+@import url('./components/public-data-media.css');
 
-@import url('./components/core.css');
-@import url('./components/utilities.css');
+@import url('./components/public-core.css');
+@import url('./components/public-utilities.css');
+
+@import url('./components/appearance.css');

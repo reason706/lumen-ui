@@ -12,23 +12,23 @@ function el(tag,className,text){const node=document.createElement(tag);if(classN
 function notice(message){$('notice').textContent=message;$('notice').hidden=false;clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>$('notice').hidden=true,2500)}
 async function loadTemplates(file){if(!templates.has(file))templates.set(file,LumenAssets.templateDocument(file,catalog.items));return templates.get(file)}
 async function content(item){const doc=await loadTemplates(item.template),t=doc.querySelector('template[id="'+CSS.escape(item.id)+'"]');if(!t)throw Error('Missing template: '+item.key);return t.content.cloneNode(true)}
-function legacySnippet(fragment){const sec=fragment.querySelector('section.sec');if(sec){sec.removeAttribute('id');sec.querySelector('.sh')?.remove();sec.classList.remove('sec','w2','w3')}return fragment}
+function legacySnippet(fragment){const sec=fragment.querySelector('section.demo-section');if(sec){sec.removeAttribute('id');sec.querySelector('.demo-heading')?.remove();sec.classList.remove('demo-section','demo-span-2','demo-span-full')}return fragment}
 async function markup(item,variant){const fragment=legacySnippet(await content(item));if(variant!==undefined&&variant!=='all'){const candidates=[...fragment.querySelectorAll('button,input,select,textarea,progress,meter')];const node=candidates[Number(variant)];if(node){const label=node.closest('label');return (label||node).outerHTML}}const holder=el('div');holder.append(fragment);return holder.innerHTML}
 async function dependencies(item){const doc=await loadTemplates(item.template);return doc.querySelector('template#icons')?.innerHTML||''}
 async function standalone(item,variant='all'){
 const snippet=await markup(item,variant),defs=await dependencies(item);const links=item.source==='core'?['lumen-core.css']:item.css;
 const theme=$('theme').value;
-return '<!doctype html>\n<html lang="en" data-theme="'+theme+'">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>'+item.title.replace(/[&<>]/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[x]))+'</title>\n'+links.map(f=>'<link rel="stylesheet" href="'+f+'">').join('\n')+'\n<script src="js/components.js" defer></script>\n</head>\n<body class="lm-scope">\n'+defs+'\n'+(item.source==='core'?snippet:'<div class="p">'+snippet+'</div>')+'\n</body>\n</html>';
+return '<!doctype html>\n<html lang="en" data-theme="'+theme+'">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1">\n<title>'+item.title.replace(/[&<>]/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[x]))+'</title>\n'+links.map(f=>'<link rel="stylesheet" href="'+f+'">').join('\n')+'\n<script src="js/components.js" defer></script>\n</head>\n<body class="lumen">\n'+defs+'\n'+(item.source==='core'?snippet:'<div class="'+item.wrapper+'">'+snippet+'</div>')+'\n</body>\n</html>';
 }
 async function preview(item,container){
  const host=el('div','preview-host');host.dataset.theme=$('theme').value;host.style.maxWidth=width==='full'?'100%':width+'px';host.style.containerType='inline-size';host.style.containerName='lm-preview';container.replaceChildren(host);
- const shadow=host.attachShadow({mode:'open'});const root=el('div',item.source==='core'?'lm-scope':'p');
+ const shadow=host.attachShadow({mode:'open'});const root=el('div',item.wrapper||'lumen');
  let destroyed=false,api;
  const handle={host,item,shadow,destroy(){destroyed=true;api?.destroy();previews.delete(handle);host.remove()}};previews.add(handle);
  try{
   const [fragment,doc]=await Promise.all([content(item),loadTemplates(item.template)]);if(destroyed)return handle;
   for(const file of item.source==='core'?['lumen-core.css']:item.css){const sheet=el('style');sheet.textContent=await previewSheet(file);if(destroyed)return handle;shadow.append(sheet)}
-  const style=el('style');style.textContent=':host{display:block;min-width:0;font-family:var(--lm-font,system-ui)}*{box-sizing:border-box}[hidden]{display:none!important}.p{padding:0!important;min-height:0;background:transparent}.sec{padding:0!important;border:0!important;box-shadow:none!important;background:transparent;min-width:0;max-width:100%;margin:0}.sh{display:none}.w2,.w3{grid-column:auto}.lumen-variant-label{font-size:.75rem;font-weight:700;margin:1rem 0 .6rem;color:var(--lm-muted,#5b6486)}.r{flex-wrap:wrap!important}img{max-width:100%}';shadow.append(style);
+  const style=el('style');style.textContent=':host{display:block;min-width:0;font-family:var(--lm-font,system-ui)}*{box-sizing:border-box}[hidden]{display:none!important}[class$="-preview"]{padding:0!important;min-height:0;background:transparent}.demo-section{padding:0!important;border:0!important;box-shadow:none!important;background:transparent;min-width:0;max-width:100%;margin:0}.demo-heading{display:none}.demo-span-2,.demo-span-full{grid-column:auto}.demo-variant-label{font-size:.75rem;font-weight:700;margin:1rem 0 .6rem;color:var(--lm-muted,#5b6486)}.row{flex-wrap:wrap!important}img{max-width:100%}';shadow.append(style);
   const defs=doc.querySelector('template#icons');if(defs)root.append(defs.content.cloneNode(true));root.append(fragment);shadow.append(root);
   api=LumenUI.mount(shadow);host.dataset.ready='true';
  }catch(error){if(!destroyed){container.textContent=error.message;host.dataset.ready='error'}throw error}
