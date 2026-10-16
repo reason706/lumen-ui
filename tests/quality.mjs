@@ -81,7 +81,7 @@ try {
   await standalone.getByRole("button", { name: "Create project" }).waitFor();
   assert.equal(
     await standalone
-      .locator(".btn")
+      .getByRole("button", { name: "Create project", exact: true })
       .evaluate((n) => n.getBoundingClientRect().width),
     62,
   );
@@ -93,8 +93,16 @@ try {
       true,
     ),
   );
-  assert(!portable.includes('<link rel="stylesheet"'));
-  assert(!portable.includes("<script src="));
+  assert.equal(
+    await page.evaluate(
+      (html) =>
+        new DOMParser()
+          .parseFromString(html, "text/html")
+          .querySelectorAll('link[rel="stylesheet"],script[src]').length,
+      portable,
+    ),
+    0,
+  );
   assert(portable.includes("color-gradient-ocean"));
   const offline = await context.newPage();
   await offline.route("**/*", (r) => r.abort());
@@ -102,11 +110,12 @@ try {
   await offline.getByRole("button", { name: "Create project" }).waitFor();
   assert.equal(
     await offline
-      .locator(".btn")
+      .getByRole("button", { name: "Create project", exact: true })
       .evaluate((n) => n.getBoundingClientRect().height),
     62,
   );
   await offline.close();
+  await page.locator(".export-options summary").click();
   const downloadPromise = page.waitForEvent("download");
   await page.locator("#download-example").click();
   const download = await downloadPromise;

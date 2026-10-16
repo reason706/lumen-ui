@@ -1,56 +1,56 @@
 {
-  "version": "3.2.0",
+  "version": "3.3.0",
   "styles": {
     "lumen.css": {
-      "sourceBytes": 1589838,
-      "bytes": 962207,
-      "gzipBytes": 128847,
-      "duplicateRulesRemoved": 2615
+      "sourceBytes": 2769808,
+      "bytes": 986993,
+      "gzipBytes": 130343,
+      "duplicateRulesRemoved": 3082
     },
     "lumen-core.css": {
-      "sourceBytes": 282558,
-      "bytes": 232490,
-      "gzipBytes": 31629,
-      "duplicateRulesRemoved": 0
+      "sourceBytes": 445405,
+      "bytes": 257970,
+      "gzipBytes": 33377,
+      "duplicateRulesRemoved": 66
     },
     "lumen-modern.css": {
-      "sourceBytes": 1513100,
-      "bytes": 902190,
-      "gzipBytes": 113956,
-      "duplicateRulesRemoved": 2619
+      "sourceBytes": 2688229,
+      "bytes": 926975,
+      "gzipBytes": 115389,
+      "duplicateRulesRemoved": 3086
     },
     "lumen-core-modern.css": {
-      "sourceBytes": 253986,
-      "bytes": 204739,
-      "gzipBytes": 25114,
-      "duplicateRulesRemoved": 0
+      "sourceBytes": 416176,
+      "bytes": 230218,
+      "gzipBytes": 27071,
+      "duplicateRulesRemoved": 66
     }
   },
   "files": {
     "lumen.css": {
-      "bytes": 962207,
-      "gzipBytes": 128847,
-      "sha256": "5c398b129bb9eb3d6de09da0791244a392cfdeb56d2fe780a62cca8826ec2d1e"
+      "bytes": 986993,
+      "gzipBytes": 130343,
+      "sha256": "ed0bea3444afec1b49a3c264f3a50f7d20b79d21ce1909d9eb8a3045dbb4903e"
     },
     "lumen-core.css": {
-      "bytes": 232490,
-      "gzipBytes": 31629,
-      "sha256": "0fa7e051725900a97eaf2b9b875f1ed236245e249983dbdd4982f2b91f48fe15"
+      "bytes": 257970,
+      "gzipBytes": 33377,
+      "sha256": "c07c26c228d393abca4caa1b89f8eedbd4bfedb688766e5312d9b43f3a702f36"
     },
     "lumen-modern.css": {
-      "bytes": 902190,
-      "gzipBytes": 113956,
-      "sha256": "7a9718c6ed2f6ec85062fa3b174140eda9f68f52922cfc6cc0c425f8cb430ca8"
+      "bytes": 926975,
+      "gzipBytes": 115389,
+      "sha256": "fd173242dbe2c5e6de4e0468d2a38d116bf5e33280e844f630041197c832ae53"
     },
     "lumen-core-modern.css": {
-      "bytes": 204739,
-      "gzipBytes": 25114,
-      "sha256": "d17129a9537bbca5c858354a84ffe89082f49f0714d1680aea2ee3a00389eaf1"
+      "bytes": 230218,
+      "gzipBytes": 27071,
+      "sha256": "4b3db770bf65503ca79e135d2490f0ae61abfea2f310ec0d54abfe2a4cdee18d"
     },
     "lumen.js": {
-      "bytes": 23801,
-      "gzipBytes": 7516,
-      "sha256": "a23a353c6598df71c806618af11953c0feb7d11fa933bc98b2c7bc0a037c1b7e"
+      "bytes": 36642,
+      "gzipBytes": 11427,
+      "sha256": "34003d60091e85e58ef5e8dc21faa6522151cfb339b379f363273a3208da90eb"
     },
     "icons.svg": {
       "bytes": 1306,

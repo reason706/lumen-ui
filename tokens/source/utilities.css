@@ -1,0 +1,1039 @@
+/* Responsive utilities. Logical spacing uses the original Lumen token scale. */
+.lm-col-1 {
+  grid-column: span 1;
+}
+.lm-col-2 {
+  grid-column: span 2;
+}
+.lm-col-3 {
+  grid-column: span 3;
+}
+.lm-col-4 {
+  grid-column: span 4;
+}
+.lm-col-5 {
+  grid-column: span 5;
+}
+.lm-col-6 {
+  grid-column: span 6;
+}
+.lm-col-7 {
+  grid-column: span 7;
+}
+.lm-col-8 {
+  grid-column: span 8;
+}
+.lm-col-9 {
+  grid-column: span 9;
+}
+.lm-col-10 {
+  grid-column: span 10;
+}
+.lm-col-11 {
+  grid-column: span 11;
+}
+.lm-col-12 {
+  grid-column: span 12;
+}
+.lm-p-0 {
+  padding: var(--space-0, 0rem) !important;
+}
+.lm-px-0 {
+  padding-inline: var(--space-0, 0rem) !important;
+}
+.lm-py-0 {
+  padding-block: var(--space-0, 0rem) !important;
+}
+.lm-ps-0 {
+  padding-inline-start: var(--space-0, 0rem) !important;
+}
+.lm-pe-0 {
+  padding-inline-end: var(--space-0, 0rem) !important;
+}
+.lm-pt-0 {
+  padding-block-start: var(--space-0, 0rem) !important;
+}
+.lm-pb-0 {
+  padding-block-end: var(--space-0, 0rem) !important;
+}
+.lm-m-0 {
+  margin: var(--space-0, 0rem) !important;
+}
+.lm-mx-0 {
+  margin-inline: var(--space-0, 0rem) !important;
+}
+.lm-my-0 {
+  margin-block: var(--space-0, 0rem) !important;
+}
+.lm-ms-0 {
+  margin-inline-start: var(--space-0, 0rem) !important;
+}
+.lm-me-0 {
+  margin-inline-end: var(--space-0, 0rem) !important;
+}
+.lm-mt-0 {
+  margin-block-start: var(--space-0, 0rem) !important;
+}
+.lm-mb-0 {
+  margin-block-end: var(--space-0, 0rem) !important;
+}
+.lm-gap-0 {
+  --lm-grid-gap: var(--space-0, 0rem);
+  gap: var(--space-0, 0rem) !important;
+}
+.lm-p-0_5 {
+  padding: var(--space-0_5, 0.125rem) !important;
+}
+.lm-px-0_5 {
+  padding-inline: var(--space-0_5, 0.125rem) !important;
+}
+.lm-py-0_5 {
+  padding-block: var(--space-0_5, 0.125rem) !important;
+}
+.lm-ps-0_5 {
+  padding-inline-start: var(--space-0_5, 0.125rem) !important;
+}
+.lm-pe-0_5 {
+  padding-inline-end: var(--space-0_5, 0.125rem) !important;
+}
+.lm-pt-0_5 {
+  padding-block-start: var(--space-0_5, 0.125rem) !important;
+}
+.lm-pb-0_5 {
+  padding-block-end: var(--space-0_5, 0.125rem) !important;
+}
+.lm-m-0_5 {
+  margin: var(--space-0_5, 0.125rem) !important;
+}
+.lm-mx-0_5 {
+  margin-inline: var(--space-0_5, 0.125rem) !important;
+}
+.lm-my-0_5 {
+  margin-block: var(--space-0_5, 0.125rem) !important;
+}
+.lm-ms-0_5 {
+  margin-inline-start: var(--space-0_5, 0.125rem) !important;
+}
+.lm-me-0_5 {
+  margin-inline-end: var(--space-0_5, 0.125rem) !important;
+}
+.lm-mt-0_5 {
+  margin-block-start: var(--space-0_5, 0.125rem) !important;
+}
+.lm-mb-0_5 {
+  margin-block-end: var(--space-0_5, 0.125rem) !important;
+}
+.lm-gap-0_5 {
+  --lm-grid-gap: var(--space-0_5, 0.125rem);
+  gap: var(--space-0_5, 0.125rem) !important;
+}
+.lm-p-1 {
+  padding: var(--space-1, 0.25rem) !important;
+}
+.lm-px-1 {
+  padding-inline: var(--space-1, 0.25rem) !important;
+}
+.lm-py-1 {
+  padding-block: var(--space-1, 0.25rem) !important;
+}
+.lm-ps-1 {
+  padding-inline-start: var(--space-1, 0.25rem) !important;
+}
+.lm-pe-1 {
+  padding-inline-end: var(--space-1, 0.25rem) !important;
+}
+.lm-pt-1 {
+  padding-block-start: var(--space-1, 0.25rem) !important;
+}
+.lm-pb-1 {
+  padding-block-end: var(--space-1, 0.25rem) !important;
+}
+.lm-m-1 {
+  margin: var(--space-1, 0.25rem) !important;
+}
+.lm-mx-1 {
+  margin-inline: var(--space-1, 0.25rem) !important;
+}
+.lm-my-1 {
+  margin-block: var(--space-1, 0.25rem) !important;
+}
+.lm-ms-1 {
+  margin-inline-start: var(--space-1, 0.25rem) !important;
+}
+.lm-me-1 {
+  margin-inline-end: var(--space-1, 0.25rem) !important;
+}
+.lm-mt-1 {
+  margin-block-start: var(--space-1, 0.25rem) !important;
+}
+.lm-mb-1 {
+  margin-block-end: var(--space-1, 0.25rem) !important;
+}
+.lm-gap-1 {
+  --lm-grid-gap: var(--space-1, 0.25rem);
+  gap: var(--space-1, 0.25rem) !important;
+}
+.lm-p-1_5 {
+  padding: var(--space-1_5, 0.375rem) !important;
+}
+.lm-px-1_5 {
+  padding-inline: var(--space-1_5, 0.375rem) !important;
+}
+.lm-py-1_5 {
+  padding-block: var(--space-1_5, 0.375rem) !important;
+}
+.lm-ps-1_5 {
+  padding-inline-start: var(--space-1_5, 0.375rem) !important;
+}
+.lm-pe-1_5 {
+  padding-inline-end: var(--space-1_5, 0.375rem) !important;
+}
+.lm-pt-1_5 {
+  padding-block-start: var(--space-1_5, 0.375rem) !important;
+}
+.lm-pb-1_5 {
+  padding-block-end: var(--space-1_5, 0.375rem) !important;
+}
+.lm-m-1_5 {
+  margin: var(--space-1_5, 0.375rem) !important;
+}
+.lm-mx-1_5 {
+  margin-inline: var(--space-1_5, 0.375rem) !important;
+}
+.lm-my-1_5 {
+  margin-block: var(--space-1_5, 0.375rem) !important;
+}
+.lm-ms-1_5 {
+  margin-inline-start: var(--space-1_5, 0.375rem) !important;
+}
+.lm-me-1_5 {
+  margin-inline-end: var(--space-1_5, 0.375rem) !important;
+}
+.lm-mt-1_5 {
+  margin-block-start: var(--space-1_5, 0.375rem) !important;
+}
+.lm-mb-1_5 {
+  margin-block-end: var(--space-1_5, 0.375rem) !important;
+}
+.lm-gap-1_5 {
+  --lm-grid-gap: var(--space-1_5, 0.375rem);
+  gap: var(--space-1_5, 0.375rem) !important;
+}
+.lm-p-2 {
+  padding: var(--space-2, 0.5rem) !important;
+}
+.lm-px-2 {
+  padding-inline: var(--space-2, 0.5rem) !important;
+}
+.lm-py-2 {
+  padding-block: var(--space-2, 0.5rem) !important;
+}
+.lm-ps-2 {
+  padding-inline-start: var(--space-2, 0.5rem) !important;
+}
+.lm-pe-2 {
+  padding-inline-end: var(--space-2, 0.5rem) !important;
+}
+.lm-pt-2 {
+  padding-block-start: var(--space-2, 0.5rem) !important;
+}
+.lm-pb-2 {
+  padding-block-end: var(--space-2, 0.5rem) !important;
+}
+.lm-m-2 {
+  margin: var(--space-2, 0.5rem) !important;
+}
+.lm-mx-2 {
+  margin-inline: var(--space-2, 0.5rem) !important;
+}
+.lm-my-2 {
+  margin-block: var(--space-2, 0.5rem) !important;
+}
+.lm-ms-2 {
+  margin-inline-start: var(--space-2, 0.5rem) !important;
+}
+.lm-me-2 {
+  margin-inline-end: var(--space-2, 0.5rem) !important;
+}
+.lm-mt-2 {
+  margin-block-start: var(--space-2, 0.5rem) !important;
+}
+.lm-mb-2 {
+  margin-block-end: var(--space-2, 0.5rem) !important;
+}
+.lm-gap-2 {
+  --lm-grid-gap: var(--space-2, 0.5rem);
+  gap: var(--space-2, 0.5rem) !important;
+}
+.lm-p-2_5 {
+  padding: var(--space-2_5, 0.625rem) !important;
+}
+.lm-px-2_5 {
+  padding-inline: var(--space-2_5, 0.625rem) !important;
+}
+.lm-py-2_5 {
+  padding-block: var(--space-2_5, 0.625rem) !important;
+}
+.lm-ps-2_5 {
+  padding-inline-start: var(--space-2_5, 0.625rem) !important;
+}
+.lm-pe-2_5 {
+  padding-inline-end: var(--space-2_5, 0.625rem) !important;
+}
+.lm-pt-2_5 {
+  padding-block-start: var(--space-2_5, 0.625rem) !important;
+}
+.lm-pb-2_5 {
+  padding-block-end: var(--space-2_5, 0.625rem) !important;
+}
+.lm-m-2_5 {
+  margin: var(--space-2_5, 0.625rem) !important;
+}
+.lm-mx-2_5 {
+  margin-inline: var(--space-2_5, 0.625rem) !important;
+}
+.lm-my-2_5 {
+  margin-block: var(--space-2_5, 0.625rem) !important;
+}
+.lm-ms-2_5 {
+  margin-inline-start: var(--space-2_5, 0.625rem) !important;
+}
+.lm-me-2_5 {
+  margin-inline-end: var(--space-2_5, 0.625rem) !important;
+}
+.lm-mt-2_5 {
+  margin-block-start: var(--space-2_5, 0.625rem) !important;
+}
+.lm-mb-2_5 {
+  margin-block-end: var(--space-2_5, 0.625rem) !important;
+}
+.lm-gap-2_5 {
+  --lm-grid-gap: var(--space-2_5, 0.625rem);
+  gap: var(--space-2_5, 0.625rem) !important;
+}
+.lm-p-3 {
+  padding: var(--space-3, 0.75rem) !important;
+}
+.lm-px-3 {
+  padding-inline: var(--space-3, 0.75rem) !important;
+}
+.lm-py-3 {
+  padding-block: var(--space-3, 0.75rem) !important;
+}
+.lm-ps-3 {
+  padding-inline-start: var(--space-3, 0.75rem) !important;
+}
+.lm-pe-3 {
+  padding-inline-end: var(--space-3, 0.75rem) !important;
+}
+.lm-pt-3 {
+  padding-block-start: var(--space-3, 0.75rem) !important;
+}
+.lm-pb-3 {
+  padding-block-end: var(--space-3, 0.75rem) !important;
+}
+.lm-m-3 {
+  margin: var(--space-3, 0.75rem) !important;
+}
+.lm-mx-3 {
+  margin-inline: var(--space-3, 0.75rem) !important;
+}
+.lm-my-3 {
+  margin-block: var(--space-3, 0.75rem) !important;
+}
+.lm-ms-3 {
+  margin-inline-start: var(--space-3, 0.75rem) !important;
+}
+.lm-me-3 {
+  margin-inline-end: var(--space-3, 0.75rem) !important;
+}
+.lm-mt-3 {
+  margin-block-start: var(--space-3, 0.75rem) !important;
+}
+.lm-mb-3 {
+  margin-block-end: var(--space-3, 0.75rem) !important;
+}
+.lm-gap-3 {
+  --lm-grid-gap: var(--space-3, 0.75rem);
+  gap: var(--space-3, 0.75rem) !important;
+}
+.lm-p-3_5 {
+  padding: var(--space-3_5, 0.875rem) !important;
+}
+.lm-px-3_5 {
+  padding-inline: var(--space-3_5, 0.875rem) !important;
+}
+.lm-py-3_5 {
+  padding-block: var(--space-3_5, 0.875rem) !important;
+}
+.lm-ps-3_5 {
+  padding-inline-start: var(--space-3_5, 0.875rem) !important;
+}
+.lm-pe-3_5 {
+  padding-inline-end: var(--space-3_5, 0.875rem) !important;
+}
+.lm-pt-3_5 {
+  padding-block-start: var(--space-3_5, 0.875rem) !important;
+}
+.lm-pb-3_5 {
+  padding-block-end: var(--space-3_5, 0.875rem) !important;
+}
+.lm-m-3_5 {
+  margin: var(--space-3_5, 0.875rem) !important;
+}
+.lm-mx-3_5 {
+  margin-inline: var(--space-3_5, 0.875rem) !important;
+}
+.lm-my-3_5 {
+  margin-block: var(--space-3_5, 0.875rem) !important;
+}
+.lm-ms-3_5 {
+  margin-inline-start: var(--space-3_5, 0.875rem) !important;
+}
+.lm-me-3_5 {
+  margin-inline-end: var(--space-3_5, 0.875rem) !important;
+}
+.lm-mt-3_5 {
+  margin-block-start: var(--space-3_5, 0.875rem) !important;
+}
+.lm-mb-3_5 {
+  margin-block-end: var(--space-3_5, 0.875rem) !important;
+}
+.lm-gap-3_5 {
+  --lm-grid-gap: var(--space-3_5, 0.875rem);
+  gap: var(--space-3_5, 0.875rem) !important;
+}
+.lm-p-4 {
+  padding: var(--space-4, 1rem) !important;
+}
+.lm-px-4 {
+  padding-inline: var(--space-4, 1rem) !important;
+}
+.lm-py-4 {
+  padding-block: var(--space-4, 1rem) !important;
+}
+.lm-ps-4 {
+  padding-inline-start: var(--space-4, 1rem) !important;
+}
+.lm-pe-4 {
+  padding-inline-end: var(--space-4, 1rem) !important;
+}
+.lm-pt-4 {
+  padding-block-start: var(--space-4, 1rem) !important;
+}
+.lm-pb-4 {
+  padding-block-end: var(--space-4, 1rem) !important;
+}
+.lm-m-4 {
+  margin: var(--space-4, 1rem) !important;
+}
+.lm-mx-4 {
+  margin-inline: var(--space-4, 1rem) !important;
+}
+.lm-my-4 {
+  margin-block: var(--space-4, 1rem) !important;
+}
+.lm-ms-4 {
+  margin-inline-start: var(--space-4, 1rem) !important;
+}
+.lm-me-4 {
+  margin-inline-end: var(--space-4, 1rem) !important;
+}
+.lm-mt-4 {
+  margin-block-start: var(--space-4, 1rem) !important;
+}
+.lm-mb-4 {
+  margin-block-end: var(--space-4, 1rem) !important;
+}
+.lm-gap-4 {
+  --lm-grid-gap: var(--space-4, 1rem);
+  gap: var(--space-4, 1rem) !important;
+}
+.lm-p-5 {
+  padding: var(--space-5, 1.25rem) !important;
+}
+.lm-px-5 {
+  padding-inline: var(--space-5, 1.25rem) !important;
+}
+.lm-py-5 {
+  padding-block: var(--space-5, 1.25rem) !important;
+}
+.lm-ps-5 {
+  padding-inline-start: var(--space-5, 1.25rem) !important;
+}
+.lm-pe-5 {
+  padding-inline-end: var(--space-5, 1.25rem) !important;
+}
+.lm-pt-5 {
+  padding-block-start: var(--space-5, 1.25rem) !important;
+}
+.lm-pb-5 {
+  padding-block-end: var(--space-5, 1.25rem) !important;
+}
+.lm-m-5 {
+  margin: var(--space-5, 1.25rem) !important;
+}
+.lm-mx-5 {
+  margin-inline: var(--space-5, 1.25rem) !important;
+}
+.lm-my-5 {
+  margin-block: var(--space-5, 1.25rem) !important;
+}
+.lm-ms-5 {
+  margin-inline-start: var(--space-5, 1.25rem) !important;
+}
+.lm-me-5 {
+  margin-inline-end: var(--space-5, 1.25rem) !important;
+}
+.lm-mt-5 {
+  margin-block-start: var(--space-5, 1.25rem) !important;
+}
+.lm-mb-5 {
+  margin-block-end: var(--space-5, 1.25rem) !important;
+}
+.lm-gap-5 {
+  --lm-grid-gap: var(--space-5, 1.25rem);
+  gap: var(--space-5, 1.25rem) !important;
+}
+.lm-p-6 {
+  padding: var(--space-6, 1.5rem) !important;
+}
+.lm-px-6 {
+  padding-inline: var(--space-6, 1.5rem) !important;
+}
+.lm-py-6 {
+  padding-block: var(--space-6, 1.5rem) !important;
+}
+.lm-ps-6 {
+  padding-inline-start: var(--space-6, 1.5rem) !important;
+}
+.lm-pe-6 {
+  padding-inline-end: var(--space-6, 1.5rem) !important;
+}
+.lm-pt-6 {
+  padding-block-start: var(--space-6, 1.5rem) !important;
+}
+.lm-pb-6 {
+  padding-block-end: var(--space-6, 1.5rem) !important;
+}
+.lm-m-6 {
+  margin: var(--space-6, 1.5rem) !important;
+}
+.lm-mx-6 {
+  margin-inline: var(--space-6, 1.5rem) !important;
+}
+.lm-my-6 {
+  margin-block: var(--space-6, 1.5rem) !important;
+}
+.lm-ms-6 {
+  margin-inline-start: var(--space-6, 1.5rem) !important;
+}
+.lm-me-6 {
+  margin-inline-end: var(--space-6, 1.5rem) !important;
+}
+.lm-mt-6 {
+  margin-block-start: var(--space-6, 1.5rem) !important;
+}
+.lm-mb-6 {
+  margin-block-end: var(--space-6, 1.5rem) !important;
+}
+.lm-gap-6 {
+  --lm-grid-gap: var(--space-6, 1.5rem);
+  gap: var(--space-6, 1.5rem) !important;
+}
+.lm-p-7 {
+  padding: var(--space-7, 1.75rem) !important;
+}
+.lm-px-7 {
+  padding-inline: var(--space-7, 1.75rem) !important;
+}
+.lm-py-7 {
+  padding-block: var(--space-7, 1.75rem) !important;
+}
+.lm-ps-7 {
+  padding-inline-start: var(--space-7, 1.75rem) !important;
+}
+.lm-pe-7 {
+  padding-inline-end: var(--space-7, 1.75rem) !important;
+}
+.lm-pt-7 {
+  padding-block-start: var(--space-7, 1.75rem) !important;
+}
+.lm-pb-7 {
+  padding-block-end: var(--space-7, 1.75rem) !important;
+}
+.lm-m-7 {
+  margin: var(--space-7, 1.75rem) !important;
+}
+.lm-mx-7 {
+  margin-inline: var(--space-7, 1.75rem) !important;
+}
+.lm-my-7 {
+  margin-block: var(--space-7, 1.75rem) !important;
+}
+.lm-ms-7 {
+  margin-inline-start: var(--space-7, 1.75rem) !important;
+}
+.lm-me-7 {
+  margin-inline-end: var(--space-7, 1.75rem) !important;
+}
+.lm-mt-7 {
+  margin-block-start: var(--space-7, 1.75rem) !important;
+}
+.lm-mb-7 {
+  margin-block-end: var(--space-7, 1.75rem) !important;
+}
+.lm-gap-7 {
+  --lm-grid-gap: var(--space-7, 1.75rem);
+  gap: var(--space-7, 1.75rem) !important;
+}
+.lm-p-8 {
+  padding: var(--space-8, 2rem) !important;
+}
+.lm-px-8 {
+  padding-inline: var(--space-8, 2rem) !important;
+}
+.lm-py-8 {
+  padding-block: var(--space-8, 2rem) !important;
+}
+.lm-ps-8 {
+  padding-inline-start: var(--space-8, 2rem) !important;
+}
+.lm-pe-8 {
+  padding-inline-end: var(--space-8, 2rem) !important;
+}
+.lm-pt-8 {
+  padding-block-start: var(--space-8, 2rem) !important;
+}
+.lm-pb-8 {
+  padding-block-end: var(--space-8, 2rem) !important;
+}
+.lm-m-8 {
+  margin: var(--space-8, 2rem) !important;
+}
+.lm-mx-8 {
+  margin-inline: var(--space-8, 2rem) !important;
+}
+.lm-my-8 {
+  margin-block: var(--space-8, 2rem) !important;
+}
+.lm-ms-8 {
+  margin-inline-start: var(--space-8, 2rem) !important;
+}
+.lm-me-8 {
+  margin-inline-end: var(--space-8, 2rem) !important;
+}
+.lm-mt-8 {
+  margin-block-start: var(--space-8, 2rem) !important;
+}
+.lm-mb-8 {
+  margin-block-end: var(--space-8, 2rem) !important;
+}
+.lm-gap-8 {
+  --lm-grid-gap: var(--space-8, 2rem);
+  gap: var(--space-8, 2rem) !important;
+}
+.lm-p-9 {
+  padding: var(--space-9, 2.25rem) !important;
+}
+.lm-px-9 {
+  padding-inline: var(--space-9, 2.25rem) !important;
+}
+.lm-py-9 {
+  padding-block: var(--space-9, 2.25rem) !important;
+}
+.lm-ps-9 {
+  padding-inline-start: var(--space-9, 2.25rem) !important;
+}
+.lm-pe-9 {
+  padding-inline-end: var(--space-9, 2.25rem) !important;
+}
+.lm-pt-9 {
+  padding-block-start: var(--space-9, 2.25rem) !important;
+}
+.lm-pb-9 {
+  padding-block-end: var(--space-9, 2.25rem) !important;
+}
+.lm-m-9 {
+  margin: var(--space-9, 2.25rem) !important;
+}
+.lm-mx-9 {
+  margin-inline: var(--space-9, 2.25rem) !important;
+}
+.lm-my-9 {
+  margin-block: var(--space-9, 2.25rem) !important;
+}
+.lm-ms-9 {
+  margin-inline-start: var(--space-9, 2.25rem) !important;
+}
+.lm-me-9 {
+  margin-inline-end: var(--space-9, 2.25rem) !important;
+}
+.lm-mt-9 {
+  margin-block-start: var(--space-9, 2.25rem) !important;
+}
+.lm-mb-9 {
+  margin-block-end: var(--space-9, 2.25rem) !important;
+}
+.lm-gap-9 {
+  --lm-grid-gap: var(--space-9, 2.25rem);
+  gap: var(--space-9, 2.25rem) !important;
+}
+.lm-p-10 {
+  padding: var(--space-10, 2.5rem) !important;
+}
+.lm-px-10 {
+  padding-inline: var(--space-10, 2.5rem) !important;
+}
+.lm-py-10 {
+  padding-block: var(--space-10, 2.5rem) !important;
+}
+.lm-ps-10 {
+  padding-inline-start: var(--space-10, 2.5rem) !important;
+}
+.lm-pe-10 {
+  padding-inline-end: var(--space-10, 2.5rem) !important;
+}
+.lm-pt-10 {
+  padding-block-start: var(--space-10, 2.5rem) !important;
+}
+.lm-pb-10 {
+  padding-block-end: var(--space-10, 2.5rem) !important;
+}
+.lm-m-10 {
+  margin: var(--space-10, 2.5rem) !important;
+}
+.lm-mx-10 {
+  margin-inline: var(--space-10, 2.5rem) !important;
+}
+.lm-my-10 {
+  margin-block: var(--space-10, 2.5rem) !important;
+}
+.lm-ms-10 {
+  margin-inline-start: var(--space-10, 2.5rem) !important;
+}
+.lm-me-10 {
+  margin-inline-end: var(--space-10, 2.5rem) !important;
+}
+.lm-mt-10 {
+  margin-block-start: var(--space-10, 2.5rem) !important;
+}
+.lm-mb-10 {
+  margin-block-end: var(--space-10, 2.5rem) !important;
+}
+.lm-gap-10 {
+  --lm-grid-gap: var(--space-10, 2.5rem);
+  gap: var(--space-10, 2.5rem) !important;
+}
+.lm-p-12 {
+  padding: var(--space-12, 3rem) !important;
+}
+.lm-px-12 {
+  padding-inline: var(--space-12, 3rem) !important;
+}
+.lm-py-12 {
+  padding-block: var(--space-12, 3rem) !important;
+}
+.lm-ps-12 {
+  padding-inline-start: var(--space-12, 3rem) !important;
+}
+.lm-pe-12 {
+  padding-inline-end: var(--space-12, 3rem) !important;
+}
+.lm-pt-12 {
+  padding-block-start: var(--space-12, 3rem) !important;
+}
+.lm-pb-12 {
+  padding-block-end: var(--space-12, 3rem) !important;
+}
+.lm-m-12 {
+  margin: var(--space-12, 3rem) !important;
+}
+.lm-mx-12 {
+  margin-inline: var(--space-12, 3rem) !important;
+}
+.lm-my-12 {
+  margin-block: var(--space-12, 3rem) !important;
+}
+.lm-ms-12 {
+  margin-inline-start: var(--space-12, 3rem) !important;
+}
+.lm-me-12 {
+  margin-inline-end: var(--space-12, 3rem) !important;
+}
+.lm-mt-12 {
+  margin-block-start: var(--space-12, 3rem) !important;
+}
+.lm-mb-12 {
+  margin-block-end: var(--space-12, 3rem) !important;
+}
+.lm-gap-12 {
+  --lm-grid-gap: var(--space-12, 3rem);
+  gap: var(--space-12, 3rem) !important;
+}
+.lm-p-14 {
+  padding: var(--space-14, 3.5rem) !important;
+}
+.lm-px-14 {
+  padding-inline: var(--space-14, 3.5rem) !important;
+}
+.lm-py-14 {
+  padding-block: var(--space-14, 3.5rem) !important;
+}
+.lm-ps-14 {
+  padding-inline-start: var(--space-14, 3.5rem) !important;
+}
+.lm-pe-14 {
+  padding-inline-end: var(--space-14, 3.5rem) !important;
+}
+.lm-pt-14 {
+  padding-block-start: var(--space-14, 3.5rem) !important;
+}
+.lm-pb-14 {
+  padding-block-end: var(--space-14, 3.5rem) !important;
+}
+.lm-m-14 {
+  margin: var(--space-14, 3.5rem) !important;
+}
+.lm-mx-14 {
+  margin-inline: var(--space-14, 3.5rem) !important;
+}
+.lm-my-14 {
+  margin-block: var(--space-14, 3.5rem) !important;
+}
+.lm-ms-14 {
+  margin-inline-start: var(--space-14, 3.5rem) !important;
+}
+.lm-me-14 {
+  margin-inline-end: var(--space-14, 3.5rem) !important;
+}
+.lm-mt-14 {
+  margin-block-start: var(--space-14, 3.5rem) !important;
+}
+.lm-mb-14 {
+  margin-block-end: var(--space-14, 3.5rem) !important;
+}
+.lm-gap-14 {
+  --lm-grid-gap: var(--space-14, 3.5rem);
+  gap: var(--space-14, 3.5rem) !important;
+}
+.lm-p-16 {
+  padding: var(--space-16, 4rem) !important;
+}
+.lm-px-16 {
+  padding-inline: var(--space-16, 4rem) !important;
+}
+.lm-py-16 {
+  padding-block: var(--space-16, 4rem) !important;
+}
+.lm-ps-16 {
+  padding-inline-start: var(--space-16, 4rem) !important;
+}
+.lm-pe-16 {
+  padding-inline-end: var(--space-16, 4rem) !important;
+}
+.lm-pt-16 {
+  padding-block-start: var(--space-16, 4rem) !important;
+}
+.lm-pb-16 {
+  padding-block-end: var(--space-16, 4rem) !important;
+}
+.lm-m-16 {
+  margin: var(--space-16, 4rem) !important;
+}
+.lm-mx-16 {
+  margin-inline: var(--space-16, 4rem) !important;
+}
+.lm-my-16 {
+  margin-block: var(--space-16, 4rem) !important;
+}
+.lm-ms-16 {
+  margin-inline-start: var(--space-16, 4rem) !important;
+}
+.lm-me-16 {
+  margin-inline-end: var(--space-16, 4rem) !important;
+}
+.lm-mt-16 {
+  margin-block-start: var(--space-16, 4rem) !important;
+}
+.lm-mb-16 {
+  margin-block-end: var(--space-16, 4rem) !important;
+}
+.lm-gap-16 {
+  --lm-grid-gap: var(--space-16, 4rem);
+  gap: var(--space-16, 4rem) !important;
+}
+.lm-p-20 {
+  padding: var(--space-20, 5rem) !important;
+}
+.lm-px-20 {
+  padding-inline: var(--space-20, 5rem) !important;
+}
+.lm-py-20 {
+  padding-block: var(--space-20, 5rem) !important;
+}
+.lm-ps-20 {
+  padding-inline-start: var(--space-20, 5rem) !important;
+}
+.lm-pe-20 {
+  padding-inline-end: var(--space-20, 5rem) !important;
+}
+.lm-pt-20 {
+  padding-block-start: var(--space-20, 5rem) !important;
+}
+.lm-pb-20 {
+  padding-block-end: var(--space-20, 5rem) !important;
+}
+.lm-m-20 {
+  margin: var(--space-20, 5rem) !important;
+}
+.lm-mx-20 {
+  margin-inline: var(--space-20, 5rem) !important;
+}
+.lm-my-20 {
+  margin-block: var(--space-20, 5rem) !important;
+}
+.lm-ms-20 {
+  margin-inline-start: var(--space-20, 5rem) !important;
+}
+.lm-me-20 {
+  margin-inline-end: var(--space-20, 5rem) !important;
+}
+.lm-mt-20 {
+  margin-block-start: var(--space-20, 5rem) !important;
+}
+.lm-mb-20 {
+  margin-block-end: var(--space-20, 5rem) !important;
+}
+.lm-gap-20 {
+  --lm-grid-gap: var(--space-20, 5rem);
+  gap: var(--space-20, 5rem) !important;
+}
+.lm-p-24 {
+  padding: var(--space-24, 6rem) !important;
+}
+.lm-px-24 {
+  padding-inline: var(--space-24, 6rem) !important;
+}
+.lm-py-24 {
+  padding-block: var(--space-24, 6rem) !important;
+}
+.lm-ps-24 {
+  padding-inline-start: var(--space-24, 6rem) !important;
+}
+.lm-pe-24 {
+  padding-inline-end: var(--space-24, 6rem) !important;
+}
+.lm-pt-24 {
+  padding-block-start: var(--space-24, 6rem) !important;
+}
+.lm-pb-24 {
+  padding-block-end: var(--space-24, 6rem) !important;
+}
+.lm-m-24 {
+  margin: var(--space-24, 6rem) !important;
+}
+.lm-mx-24 {
+  margin-inline: var(--space-24, 6rem) !important;
+}
+.lm-my-24 {
+  margin-block: var(--space-24, 6rem) !important;
+}
+.lm-ms-24 {
+  margin-inline-start: var(--space-24, 6rem) !important;
+}
+.lm-me-24 {
+  margin-inline-end: var(--space-24, 6rem) !important;
+}
+.lm-mt-24 {
+  margin-block-start: var(--space-24, 6rem) !important;
+}
+.lm-mb-24 {
+  margin-block-end: var(--space-24, 6rem) !important;
+}
+.lm-gap-24 {
+  --lm-grid-gap: var(--space-24, 6rem);
+  gap: var(--space-24, 6rem) !important;
+}
+.lm-p-32 {
+  padding: var(--space-32, 8rem) !important;
+}
+.lm-px-32 {
+  padding-inline: var(--space-32, 8rem) !important;
+}
+.lm-py-32 {
+  padding-block: var(--space-32, 8rem) !important;
+}
+.lm-ps-32 {
+  padding-inline-start: var(--space-32, 8rem) !important;
+}
+.lm-pe-32 {
+  padding-inline-end: var(--space-32, 8rem) !important;
+}
+.lm-pt-32 {
+  padding-block-start: var(--space-32, 8rem) !important;
+}
+.lm-pb-32 {
+  padding-block-end: var(--space-32, 8rem) !important;
+}
+.lm-m-32 {
+  margin: var(--space-32, 8rem) !important;
+}
+.lm-mx-32 {
+  margin-inline: var(--space-32, 8rem) !important;
+}
+.lm-my-32 {
+  margin-block: var(--space-32, 8rem) !important;
+}
+.lm-ms-32 {
+  margin-inline-start: var(--space-32, 8rem) !important;
+}
+.lm-me-32 {
+  margin-inline-end: var(--space-32, 8rem) !important;
+}
+.lm-mt-32 {
+  margin-block-start: var(--space-32, 8rem) !important;
+}
+.lm-mb-32 {
+  margin-block-end: var(--space-32, 8rem) !important;
+}
+.lm-gap-32 {
+  --lm-grid-gap: var(--space-32, 8rem);
+  gap: var(--space-32, 8rem) !important;
+}
+.lm-flex {
+  display: flex !important;
+}
+.lm-grid {
+  display: grid !important;
+}
+.lm-block {
+  display: block !important;
+}
+.lm-hidden {
+  display: none !important;
+}
+.lm-wrap {
+  flex-wrap: wrap !important;
+}
+.lm-items-center {
+  align-items: center !important;
+}
+.lm-justify-between {
+  justify-content: space-between !important;
+}
+.lm-text-center {
+  text-align: center !important;
+}
+.lm-text-start {
+  text-align: start !important;
+}
+.lm-text-end {
+  text-align: end !important;
+}
+.lm-w-full {
+  width: 100% !important;
+}
+.lm-mx-auto {
+  margin-inline: auto !important;
+}

@@ -1,5 +1,25 @@
 # Lumen framework plan
 
+## Version 3.3 roadmap — stages 1–7 implemented
+
+| Stage | Delivered | Evidence / boundary |
+| --- | --- | --- |
+| 1. Token architecture | One JSON source for primitives, roles, themes, aliases, breakpoints and component sizing; generated CSS/JS and dependency validation. | Builds reject cycles, missing references, incomplete theme roles and stale outputs. Existing token aliases remain. |
+| 2. Visual language | Shared typography, surface radius/elevation, content spacing, fluid headings and application parts. | Scoped token changes affect actual components; intentionally distinct reference artwork remains. |
+| 3. Themes and states | Eight scoped themes, nested light reset, contrast roles, compact density, focus/motion, forced colors and high contrast. | Core/theme audits, explicit native state attributes and theme-aware foregrounds. Brand edits warn on text contrast; they are not automatic accessibility certification. |
+| 4. Primitive contracts | Machine-readable anatomy/state/keyboard contracts; default medium equals explicit medium across 22 families; button/icon dimensions share tokens. | Rendered metrics, combined DOM checks and canonical/compatibility bundles. |
+| 5. Interaction system | Validation summary/associations, cancellable dirty forms, request race protection, anchored top-layer menus with typeahead, persistent undo and paused notifications. | Workflow, timing, keyboard and cleanup checks; application persistence/auth remain integration work. |
+| 6. Component workspace | Larger readable controls, supported-instance customization, preserved anatomy/icons, token editing, URL workspace restoration, focused export actions and matching portable output. | Studio/export parity and URL reload checks. Unsupported reference examples remain explicitly labeled. |
+| 7. Connected application | Shared app shell, overview, records, filters/sort/page/CSV/selection, details, create/edit, bulk archive/undo, settings and attachments with cancel/retry/permissions. | Connected workflow tests plus desktop/mobile/RTL/dark audits; session data and simulated requests are deliberate reference-app behavior. |
+
+The agreed public naming convention remains unchanged: component base, component-specific style, shared color and size, component-specific parts. The studio remains a component workspace. New generic parts compose the app rather than requiring a separate app stylesheet.
+
+The token editor uses `LumenDesign`; forms and requests use `LumenUI.form` and `LumenUI.resource`. Both studio and standalone app render `templates/workspace.html` with `js/workspace.js`. No copied app-specific component implementation is maintained.
+
+Verification includes Chromium behavior/accessibility/reflow and generated asset checks. Firefox/WebKit compatibility jobs are configured in `.github/workflows/browser-compatibility.yml`; local engine installation was blocked by the network allowlist. Native `file://` navigation is blocked by managed Chromium policy, with offline snapshot loading checked through the same loader over HTTP. These are explicit verification limits, not passing engine results.
+
+Stages 8–9 remain outside this requested delivery. Further specialized reference consolidation should preserve distinct visuals, stable keys and truthful capability labels. Production backend/authentication integration, package publishing and manual assistive-technology review remain application/release work.
+
 ## Naming migration — implemented
 
 The user-approved naming convention replaces the earlier `lm-` proposal. Every catalog template now uses canonical class names, while compiled styles retain original aliases. Stable catalog keys, category organization, IDs, native states, `data-lm-*` interaction hooks and `lumen:*` events remain intact.
@@ -26,7 +46,7 @@ Medium and solid are defaults for buttons. A gradient color provides the fill wi
 - `naming/classes.json` records canonical names, original aliases and template-specific mappings. Context matters: an abbreviation can have different meanings in forms, charts and galleries.
 - Source CSS remains the single implementation. `scripts/build-naming.mjs` uses CSS and selector parsers to generate `public-*.css` with both canonical selectors and original aliases, sharing declarations rather than duplicating implementations.
 - The full and core bundles import compiled styles. Catalog entries identify their canonical stylesheet dependencies and wrapper. Previews, inspection, copying and standalone exports all consume the migrated templates.
-- `components/appearance.css` supplies the shared public color, typography and size vocabulary. `tokens/controls.css` owns the button dimension scale. Original category buttons share `components/button-base.css`.
+- `components/appearance.css` supplies the shared public color, typography and size vocabulary. `tokens/design-tokens.json` owns the button dimension scale and generates `tokens/controls.css`. Original category buttons share `components/button-base.css`.
 - `js/components.js` recognizes canonical and original interaction classes. Native attributes, behavior hooks, lifecycle API and events retain their existing contracts.
 - `npm run build:offline` compiles the naming registry and rebuilds the direct-file snapshot. Tests reject stale generated files. Add new aliases or names through the registry and regenerate.
 - Original stylesheet paths remain available. Existing integrations using original classes can continue using them. New integrations should use the canonical bundles and names shown by the studio.
@@ -37,7 +57,7 @@ Verify the parsed templates and every retained preview, rather than checking nam
 
 The existing content status remains meaningful: renaming a visual reference does not turn it into a JavaScript widget. The studio remains a component workspace, not a separate documentation site.
 
-## Remaining consolidation work
+## Continuing specialized reference consolidation
 
 ### 1. Reduce repeated reference implementations
 

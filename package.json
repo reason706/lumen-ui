@@ -1,25 +1,29 @@
 {
   "name": "lumen-ui",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "private": true,
   "description": "Framework-free component library and live component studio",
   "scripts": {
     "start": "python3 -m http.server 8000 --bind 127.0.0.1",
-    "test": "node scripts/build-icons.mjs --check && node scripts/build-dist.mjs --check && node scripts/build-naming.mjs --check && node scripts/build-offline.mjs --check && node tests/catalog.mjs && node tests/naming.mjs && node tests/quality.mjs && node tests/improvements.mjs && node tests/browser.mjs && node tests/buttons.mjs && node tests/file.mjs && node tests/themes.mjs",
+    "test": "node scripts/build-tokens.mjs --check && node scripts/build-icons.mjs --check && node scripts/build-dist.mjs --check && node scripts/build-naming.mjs --check && node scripts/build-offline.mjs --check && node tests/catalog.mjs && node tests/naming.mjs && node tests/quality.mjs && node tests/system.mjs && node tests/workspace.mjs && node tests/compat.mjs && node tests/improvements.mjs && node tests/browser.mjs && node tests/buttons.mjs && node tests/file.mjs && node tests/themes.mjs",
     "test:themes": "node tests/themes.mjs",
     "test:catalog": "node tests/catalog.mjs",
-    "build:offline": "node scripts/build-icons.mjs && node scripts/build-naming.mjs && node scripts/build-dist.mjs && node scripts/build-offline.mjs",
+    "build:offline": "node scripts/build-tokens.mjs && node scripts/build-icons.mjs && node scripts/build-naming.mjs && node scripts/build-dist.mjs && node scripts/build-offline.mjs",
     "test:file": "node tests/file.mjs",
     "test:buttons": "node tests/buttons.mjs",
     "build:naming": "node scripts/build-naming.mjs",
-    "build": "node scripts/build-icons.mjs && node scripts/build-naming.mjs && node scripts/build-dist.mjs && node scripts/build-offline.mjs",
+    "build": "node scripts/build-tokens.mjs && node scripts/build-icons.mjs && node scripts/build-naming.mjs && node scripts/build-dist.mjs && node scripts/build-offline.mjs",
     "test:naming": "node tests/naming.mjs",
     "build:icons": "node scripts/build-icons.mjs",
     "build:dist": "node scripts/build-dist.mjs",
     "test:quality": "node tests/quality.mjs",
     "test:visual:update": "node tests/quality.mjs --update",
     "format": "prettier --write \"js/*.js\" \"!js/studio-data.js\" \"!js/icons.js\" \"scripts/**/*.mjs\" \"tests/*.mjs\" \"components/*.css\" \"!components/public-*.css\"",
-    "test:improvements": "node tests/improvements.mjs"
+    "test:improvements": "node tests/improvements.mjs",
+    "build:tokens": "node scripts/build-tokens.mjs",
+    "test:system": "node tests/system.mjs",
+    "test:workspace": "node tests/workspace.mjs",
+    "test:compat": "node tests/compat.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.58.2",
@@ -45,6 +49,8 @@
     "dist",
     "components",
     "tokens",
-    "README.md"
+    "README.md",
+    "components/contracts.json",
+    "tokens/design-tokens.json"
   ]
 }

@@ -1,0 +1,381 @@
+{
+  "version": 1,
+  "components": {
+    "btn": {
+      "parts": [
+        "btn-icon"
+      ],
+      "sizes": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "styles": [
+        "solid",
+        "tonal",
+        "outline",
+        "ghost",
+        "link"
+      ],
+      "states": [
+        "normal",
+        "hover",
+        "focus",
+        "pressed",
+        "selected",
+        "disabled",
+        "loading"
+      ],
+      "keyboard": [
+        "Enter",
+        "Space"
+      ],
+      "native": "button"
+    },
+    "input": {
+      "parts": [
+        "input-label",
+        "input-help",
+        "input-error"
+      ],
+      "sizes": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "styles": [],
+      "states": [
+        "normal",
+        "hover",
+        "focus",
+        "disabled",
+        "readonly",
+        "invalid"
+      ],
+      "keyboard": [
+        "native text editing"
+      ],
+      "native": "input"
+    },
+    "card": {
+      "parts": [
+        "card-header",
+        "card-body",
+        "card-footer"
+      ],
+      "sizes": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "styles": [
+        "solid",
+        "tonal",
+        "outline",
+        "raised",
+        "glass",
+        "gradient"
+      ],
+      "states": [
+        "normal",
+        "selected"
+      ],
+      "keyboard": [
+        "contained controls"
+      ],
+      "native": "article"
+    },
+    "badge": {
+      "parts": [],
+      "sizes": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "styles": [
+        "solid",
+        "tonal",
+        "outline"
+      ],
+      "states": [
+        "normal"
+      ],
+      "keyboard": [],
+      "native": "span"
+    },
+    "alert": {
+      "parts": [],
+      "sizes": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "styles": [
+        "tonal",
+        "solid",
+        "outline"
+      ],
+      "states": [
+        "info",
+        "success",
+        "warning",
+        "error",
+        "dismissed"
+      ],
+      "keyboard": [
+        "dismiss button"
+      ],
+      "native": "div"
+    },
+    "chip": {
+      "parts": [],
+      "sizes": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "styles": [
+        "solid",
+        "tonal",
+        "outline"
+      ],
+      "states": [
+        "normal",
+        "selected",
+        "disabled",
+        "dismissed"
+      ],
+      "keyboard": [
+        "native check or button"
+      ],
+      "native": "span"
+    },
+    "avatar": {
+      "parts": [],
+      "sizes": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "styles": [],
+      "states": [
+        "image",
+        "fallback"
+      ],
+      "keyboard": [],
+      "native": "span"
+    },
+    "progress": {
+      "parts": [],
+      "sizes": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "styles": [],
+      "states": [
+        "determinate",
+        "indeterminate",
+        "complete"
+      ],
+      "keyboard": [],
+      "native": "progress"
+    },
+    "dialog": {
+      "parts": [
+        "dialog-header",
+        "dialog-body",
+        "dialog-footer"
+      ],
+      "sizes": [
+        "xs",
+        "sm",
+        "md",
+        "lg",
+        "xl"
+      ],
+      "states": [
+        "closed",
+        "open"
+      ],
+      "keyboard": [
+        "Tab",
+        "Shift+Tab",
+        "Escape"
+      ],
+      "native": "dialog"
+    },
+    "dropdown": {
+      "parts": [
+        "menu"
+      ],
+      "states": [
+        "closed",
+        "open"
+      ],
+      "keyboard": [
+        "ArrowUp",
+        "ArrowDown",
+        "Home",
+        "End",
+        "Escape",
+        "Tab",
+        "typeahead"
+      ]
+    },
+    "tabs": {
+      "parts": [],
+      "states": [
+        "selected",
+        "unselected",
+        "disabled"
+      ],
+      "keyboard": [
+        "ArrowLeft",
+        "ArrowRight",
+        "Home",
+        "End",
+        "RTL"
+      ]
+    },
+    "combobox": {
+      "parts": [],
+      "states": [
+        "closed",
+        "open",
+        "selected",
+        "empty",
+        "disabled"
+      ],
+      "keyboard": [
+        "ArrowUp",
+        "ArrowDown",
+        "Home",
+        "End",
+        "Enter",
+        "Escape"
+      ]
+    },
+    "form": {
+      "parts": [
+        "field",
+        "input-label",
+        "input-help",
+        "input-error",
+        "form-actions"
+      ],
+      "states": [
+        "idle",
+        "dirty",
+        "invalid",
+        "loading",
+        "success",
+        "error",
+        "cancelled"
+      ],
+      "keyboard": [
+        "native form controls",
+        "error summary links"
+      ]
+    },
+    "resource": {
+      "parts": [
+        "empty-state"
+      ],
+      "states": [
+        "idle",
+        "loading",
+        "empty",
+        "success",
+        "error",
+        "cancelled"
+      ],
+      "keyboard": [
+        "retry",
+        "cancel"
+      ]
+    },
+    "notification": {
+      "parts": [
+        "toast",
+        "toast-region"
+      ],
+      "states": [
+        "visible",
+        "paused",
+        "dismissed"
+      ],
+      "keyboard": [
+        "action",
+        "dismiss"
+      ],
+      "timing": "configurable; pauses on hover/focus; persistent undo"
+    }
+  },
+  "customization": {
+    "buttons/solid": {
+      "type": "btn",
+      "selector": "button.btn"
+    },
+    "buttons/soft-tinted": {
+      "type": "btn",
+      "selector": "button.btn"
+    },
+    "buttons/outline": {
+      "type": "btn",
+      "selector": "button.btn"
+    },
+    "buttons/link": {
+      "type": "btn",
+      "selector": "button.btn"
+    },
+    "buttons/icon-buttons-variants": {
+      "type": "btn",
+      "selector": "button.btn"
+    },
+    "core/fields": {
+      "type": "input",
+      "selector": "input.input"
+    },
+    "core/cards": {
+      "type": "card",
+      "selector": "article.card"
+    },
+    "core/badges": {
+      "type": "badge",
+      "selector": ".badge"
+    },
+    "core/progress": {
+      "type": "progress",
+      "selector": "progress"
+    },
+    "core/avatars": {
+      "type": "avatar",
+      "selector": ".avatar"
+    },
+    "core/alert": {
+      "type": "alert",
+      "selector": ".alert"
+    },
+    "buttons/ghost-and-link": {
+      "type": "btn",
+      "selector": "button.btn"
+    }
+  }
+}

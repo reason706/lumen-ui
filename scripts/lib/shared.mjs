@@ -22,5 +22,16 @@ export async function sharedSource(file, stack = []) {
         ).nodes,
       );
   }
+  if (file === "components/patterns.css") {
+    const { breakpoints } = JSON.parse(
+      await readFile("tokens/design-tokens.json", "utf8"),
+    );
+    css.walkAtRules("media", (rule) => {
+      rule.params = rule.params.replaceAll(
+        "(--lumen-md-down)",
+        "(max-width: " + breakpoints.md + ")",
+      );
+    });
+  }
   return css.toString();
 }

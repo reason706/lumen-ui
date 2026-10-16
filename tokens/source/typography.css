@@ -1,0 +1,28 @@
+.font-sans    { font-family: var(--font-sans); }
+.font-mono    { font-family: var(--font-mono); }
+.font-serif   { font-family: var(--font-serif); }
+.font-display { font-family: var(--font-display); }
+.font-numeral { font-family: var(--font-numeral); font-variant-numeric: var(--font-tabular); }
+
+.text-2xs { font-size: var(--text-2xs); line-height: var(--leading-tight); }
+.text-xs  { font-size: var(--text-xs);  line-height: var(--leading-snug); }
+.text-sm  { font-size: var(--text-sm);  line-height: var(--leading-normal); }
+.text-base{ font-size: var(--text-base);line-height: var(--leading-normal); }
+.text-lg  { font-size: var(--text-lg);  line-height: var(--leading-relaxed); }
+.text-xl  { font-size: var(--text-xl);  line-height: var(--leading-tight); }
+.text-2xl { font-size: var(--text-2xl); line-height: var(--leading-tight); letter-spacing: var(--tracking-tight); }
+.text-3xl { font-size: var(--text-3xl); line-height: var(--leading-none);  letter-spacing: var(--tracking-tight); }
+.text-4xl { font-size: var(--text-4xl); line-height: var(--leading-none);  letter-spacing: var(--tracking-tighter); }
+.text-5xl { font-size: var(--text-5xl); line-height: var(--leading-none);  letter-spacing: var(--tracking-tighter); }
+
+.font-normal    { font-weight: var(--font-weight-normal); }
+.font-medium    { font-weight: var(--font-weight-medium); }
+.font-semibold  { font-weight: var(--font-weight-semibold); }
+.font-bold      { font-weight: var(--font-weight-bold); }
+.font-extrabold { font-weight: var(--font-weight-extrabold); }
+.font-black     { font-weight: var(--font-weight-black); }
+
+.tracking-tight { letter-spacing: var(--tracking-tight); }
+.tracking-wide  { letter-spacing: var(--tracking-wide); }
+.tracking-widest{ letter-spacing: var(--tracking-widest); text-transform: uppercase; }
+.tabular-nums   { font-variant-numeric: var(--font-tabular); }

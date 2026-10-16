@@ -5162,8 +5162,21 @@
         "alert-style-tonal": "alert-style-tonal",
         "dialog-header": "dialog-header",
         "dialog-body": "dialog-body",
-        "dialog-footer": "dialog-footer"
+        "dialog-footer": "dialog-footer",
+        "app-shell": "app-shell",
+        "app-header": "app-header",
+        "app-content": "app-content",
+        "page-header": "page-header",
+        "form-actions": "form-actions",
+        "detail-grid": "detail-grid",
+        "filter-bar": "filter-bar"
       }
+    },
+    "tokens/system.css": {
+      "classes": {}
+    },
+    "components/sizes.css": {
+      "classes": {}
     }
   },
   "templates": {
@@ -6440,6 +6453,38 @@
         "heading-sm": "heading-sm",
         "empty-state": "empty-state",
         "alert": "alert"
+      }
+    },
+    "templates/workspace.html": {
+      "css": "components/patterns.css",
+      "wrapper": "lumen",
+      "classes": {
+        "app-content": "app-content",
+        "app-header": "app-header",
+        "app-shell": "app-shell",
+        "app-sidebar": "app-sidebar",
+        "btn": "btn",
+        "btn-style-ghost": "btn-style-ghost",
+        "btn-style-outline": "btn-style-outline",
+        "caption": "caption",
+        "check": "check",
+        "color-danger": "color-danger",
+        "dialog": "dialog",
+        "dialog-footer": "dialog-footer",
+        "dialog-header": "dialog-header",
+        "drawer": "drawer",
+        "field": "field",
+        "heading-md": "heading-md",
+        "input": "input",
+        "input-label": "input-label",
+        "lumen": "lumen",
+        "my-4": "my-4",
+        "navbar-brand": "navbar-brand",
+        "row": "row",
+        "size-sm": "size-sm",
+        "stack": "stack",
+        "text-muted": "text-muted",
+        "text-start": "text-start"
       }
     }
   },

@@ -69,7 +69,12 @@
         "palette",
         "semantic"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/tonal-ramps",
@@ -89,7 +94,12 @@
         "ramps",
         "tonal"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/gradients",
@@ -108,7 +118,12 @@
         "foundations",
         "gradients"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/palette-fintech-trust",
@@ -129,7 +144,12 @@
         "palette",
         "trust"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/palette-wellness-calm",
@@ -150,7 +170,12 @@
         "palette",
         "wellness"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/palette-beauty-soft",
@@ -171,7 +196,12 @@
         "palette",
         "soft"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/palette-gaming-neon",
@@ -192,7 +222,12 @@
         "neon",
         "palette"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/palette-education-warm",
@@ -213,7 +248,12 @@
         "palette",
         "warm"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/palette-energy-sunset",
@@ -234,7 +274,12 @@
         "palette",
         "sunset"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/palette-nature-earth",
@@ -255,7 +300,12 @@
         "nature",
         "palette"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/palette-luxury-mono",
@@ -276,7 +326,12 @@
         "mono",
         "palette"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/contrast-checks",
@@ -296,7 +351,12 @@
         "contrast",
         "foundations"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/dark-theme-tokens",
@@ -317,7 +377,12 @@
         "theme",
         "tokens"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/elevation-scale",
@@ -338,7 +403,12 @@
         "scale",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/dividers",
@@ -358,7 +428,12 @@
         "foundations",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/touch-targets-and-focus",
@@ -380,7 +455,12 @@
         "targets",
         "touch"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/motion",
@@ -399,7 +479,12 @@
         "foundations",
         "motion"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/ux-checklist",
@@ -419,7 +504,12 @@
         "foundations",
         "ux"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/state-matrix",
@@ -439,7 +529,12 @@
         "matrix",
         "state"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/spacing-scale",
@@ -459,7 +554,12 @@
         "scale",
         "spacing"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/radius-scale",
@@ -479,7 +579,12 @@
         "radius",
         "scale"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/elevation",
@@ -498,7 +603,12 @@
         "elevation",
         "foundations"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/borders-and-opacity",
@@ -519,7 +629,12 @@
         "foundations",
         "opacity"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/z-index-layers",
@@ -540,7 +655,12 @@
         "layers",
         "z"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/section",
@@ -559,7 +679,12 @@
         "foundations",
         "glassmorphism"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/section-2",
@@ -578,7 +703,12 @@
         "foundations",
         "neumorphism"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/section-3",
@@ -598,7 +728,12 @@
         "foundations",
         "neo"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/section-4",
@@ -617,7 +752,12 @@
         "claymorphism",
         "foundations"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/section-5",
@@ -637,7 +777,12 @@
         "neon",
         "oled"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/section-6",
@@ -657,7 +802,12 @@
         "minimalism",
         "swiss"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/section-7",
@@ -677,7 +827,12 @@
         "gradient",
         "mesh"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/section-8",
@@ -697,7 +852,12 @@
         "ink",
         "paper"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/section-9",
@@ -716,7 +876,12 @@
         "foundations",
         "skeuomorphism"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/section-10",
@@ -736,7 +901,12 @@
         "pixel",
         "terminal"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/section-11",
@@ -756,7 +926,12 @@
         "foundations",
         "grid"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/section-12",
@@ -776,7 +951,12 @@
         "foundations",
         "gradients"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/design-tokens",
@@ -796,7 +976,12 @@
         "foundations",
         "tokens"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/chart-chooser",
@@ -816,7 +1001,12 @@
         "chooser",
         "foundations"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/component-anatomy",
@@ -836,7 +1026,12 @@
         "component",
         "foundations"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/naming-conventions",
@@ -856,7 +1051,12 @@
         "foundations",
         "naming"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/type-scale",
@@ -876,7 +1076,12 @@
         "scale",
         "type"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/weights-and-styles",
@@ -897,7 +1102,12 @@
         "styles",
         "weights"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/pairing-plus-jakarta-sans",
@@ -919,7 +1129,12 @@
         "plus",
         "sans"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/pairing-playfair-display-inter",
@@ -941,7 +1156,12 @@
         "pairing",
         "playfair"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/pairing-space-grotesk-dm-sans",
@@ -964,7 +1184,12 @@
         "sans",
         "space"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/pairing-sora-inter",
@@ -985,7 +1210,12 @@
         "pairing",
         "sora"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/pairing-dm-serif-display-dm-sans",
@@ -1008,7 +1238,12 @@
         "sans",
         "serif"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/pairing-outfit-work-sans",
@@ -1030,7 +1265,12 @@
         "sans",
         "work"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/text-in-context",
@@ -1051,7 +1291,12 @@
         "in",
         "text"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/text-effects",
@@ -1071,7 +1316,12 @@
         "foundations",
         "text"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/voice-and-microcopy",
@@ -1092,7 +1342,12 @@
         "microcopy",
         "voice"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/breakpoints-and-containers",
@@ -1114,7 +1369,12 @@
         "foundations",
         "layout"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/12-column-grid",
@@ -1135,7 +1395,12 @@
         "grid",
         "layout"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/icon-grid",
@@ -1156,7 +1421,12 @@
         "icon",
         "layout"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/app-shell-layouts",
@@ -1178,7 +1448,12 @@
         "layouts",
         "shell"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "foundations/responsive-columns",
@@ -1199,7 +1474,12 @@
         "layout",
         "responsive"
       ],
-      "wrapper": "foundations-preview"
+      "wrapper": "foundations-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/solid",
@@ -1218,7 +1498,16 @@
         "buttons",
         "solid"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": true,
+        "applicationIntegration": false
+      },
+      "customize": {
+        "type": "btn",
+        "selector": "button.btn"
+      }
     },
     {
       "key": "buttons/soft-tinted",
@@ -1238,7 +1527,16 @@
         "soft",
         "tinted"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": true,
+        "applicationIntegration": false
+      },
+      "customize": {
+        "type": "btn",
+        "selector": "button.btn"
+      }
     },
     {
       "key": "buttons/outline",
@@ -1257,7 +1555,16 @@
         "buttons",
         "outline"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": true,
+        "applicationIntegration": false
+      },
+      "customize": {
+        "type": "btn",
+        "selector": "button.btn"
+      }
     },
     {
       "key": "buttons/ghost-and-link",
@@ -1278,7 +1585,16 @@
         "ghost",
         "link"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": true,
+        "applicationIntegration": false
+      },
+      "customize": {
+        "type": "btn",
+        "selector": "button.btn"
+      }
     },
     {
       "key": "buttons/gradient-variants",
@@ -1298,7 +1614,12 @@
         "gradient",
         "variants"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/sizes",
@@ -1317,7 +1638,12 @@
         "buttons",
         "sizes"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/shapes-and-widths",
@@ -1338,7 +1664,12 @@
         "shapes",
         "widths"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/buttons-with-icons",
@@ -1358,7 +1689,12 @@
         "icons",
         "with"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/icon-buttons-variants",
@@ -1378,7 +1714,16 @@
         "icon",
         "variants"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": true,
+        "applicationIntegration": false
+      },
+      "customize": {
+        "type": "btn",
+        "selector": "button.btn"
+      }
     },
     {
       "key": "buttons/icon-buttons-sizes-and-shapes",
@@ -1400,7 +1745,12 @@
         "shapes",
         "sizes"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/loading-and-result-states",
@@ -1422,7 +1772,12 @@
         "result",
         "states"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/button-states",
@@ -1442,7 +1797,12 @@
         "buttons",
         "states"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "buttons/button-groups",
@@ -1462,7 +1822,12 @@
         "buttons",
         "groups"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "buttons/split-and-dropdown-buttons",
@@ -1483,7 +1848,12 @@
         "dropdown",
         "split"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "buttons/floating-action-buttons",
@@ -1503,7 +1873,12 @@
         "buttons",
         "floating"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/confirm-actions",
@@ -1523,7 +1898,12 @@
         "buttons",
         "confirm"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/sign-in-actions",
@@ -1544,7 +1924,12 @@
         "in",
         "sign"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/link-actions",
@@ -1564,7 +1949,12 @@
         "buttons",
         "link"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/action-bars",
@@ -1584,7 +1974,12 @@
         "bars",
         "buttons"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/profile-and-account-buttons",
@@ -1605,7 +2000,12 @@
         "buttons",
         "profile"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/notification-actions",
@@ -1625,7 +2025,12 @@
         "buttons",
         "notification"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/card-call-to-actions",
@@ -1647,7 +2052,12 @@
         "card",
         "to"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/floating-helpers",
@@ -1667,7 +2077,12 @@
         "floating",
         "helpers"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/share-buttons",
@@ -1686,7 +2101,12 @@
         "buttons",
         "share"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/payment-buttons",
@@ -1705,7 +2125,12 @@
         "buttons",
         "payment"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/subscribe-and-follow-states",
@@ -1727,7 +2152,12 @@
         "states",
         "subscribe"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/download-states",
@@ -1747,7 +2177,12 @@
         "download",
         "states"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/quick-action-grid",
@@ -1768,7 +2203,12 @@
         "grid",
         "quick"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/list-row-buttons",
@@ -1788,7 +2228,12 @@
         "list",
         "row"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/overlay-and-select-buttons",
@@ -1809,7 +2254,12 @@
         "overlay",
         "select"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/depth-and-effects",
@@ -1830,7 +2280,12 @@
         "depth",
         "effects"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/on-dark-surfaces",
@@ -1851,7 +2306,12 @@
         "on",
         "surfaces"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/micro-interactions",
@@ -1871,7 +2331,12 @@
         "interactions",
         "micro"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/hover-animations",
@@ -1891,7 +2356,12 @@
         "buttons",
         "hover"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/animated-borders-and-glow",
@@ -1913,7 +2383,12 @@
         "buttons",
         "glow"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/shaped-buttons",
@@ -1932,7 +2407,12 @@
         "buttons",
         "shaped"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/focus-ring-styles",
@@ -1953,7 +2433,12 @@
         "ring",
         "styles"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/reaction-picker-hover",
@@ -1974,7 +2459,12 @@
         "picker",
         "reaction"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/ripple-press-feedback",
@@ -1995,7 +2485,12 @@
         "press",
         "ripple"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/buttons-with-counters",
@@ -2015,7 +2510,12 @@
         "counters",
         "with"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/morphing-icon-buttons",
@@ -2035,7 +2535,12 @@
         "icon",
         "morphing"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/two-line-and-promo-buttons",
@@ -2057,7 +2562,12 @@
         "promo",
         "two"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/shortcut-hint-buttons",
@@ -2077,7 +2587,12 @@
         "hint",
         "shortcut"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/toolbars-and-docks",
@@ -2098,7 +2613,12 @@
         "docks",
         "toolbars"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/countdown-and-undo",
@@ -2119,7 +2639,12 @@
         "countdown",
         "undo"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/progress-ring-buttons",
@@ -2139,7 +2664,12 @@
         "progress",
         "ring"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/toggle-buttons",
@@ -2158,7 +2688,12 @@
         "buttons",
         "toggle"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/vote-and-rating-buttons",
@@ -2179,7 +2714,12 @@
         "rating",
         "vote"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/theme-and-view-switch",
@@ -2201,7 +2741,12 @@
         "theme",
         "view"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "buttons/option-pickers",
@@ -2221,7 +2766,12 @@
         "option",
         "pickers"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/sliding-segmented-control-live",
@@ -2243,7 +2793,12 @@
         "segmented",
         "sliding"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "forms/checkboxes",
@@ -2262,7 +2817,12 @@
         "checkboxes",
         "forms"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "forms/checkbox-groups-and-tree",
@@ -2284,7 +2844,12 @@
         "groups",
         "tree"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "forms/radio-buttons",
@@ -2304,7 +2869,12 @@
         "forms",
         "radio"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "forms/choice-cards",
@@ -2324,7 +2894,12 @@
         "choice",
         "forms"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/icon-choice-tiles",
@@ -2345,7 +2920,12 @@
         "icon",
         "tiles"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/switches",
@@ -2364,7 +2944,12 @@
         "forms",
         "switches"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "forms/settings-list",
@@ -2384,7 +2969,12 @@
         "list",
         "settings"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/likert-and-matrix",
@@ -2405,7 +2995,12 @@
         "likert",
         "matrix"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/quiz-answers",
@@ -2425,7 +3020,12 @@
         "forms",
         "quiz"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/consent-and-cookies",
@@ -2446,7 +3046,12 @@
         "cookies",
         "forms"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/payment-card",
@@ -2466,7 +3071,12 @@
         "forms",
         "payment"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/horizontal-form",
@@ -2486,7 +3096,12 @@
         "forms",
         "horizontal"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/inline-subscribe",
@@ -2506,7 +3121,12 @@
         "inline",
         "subscribe"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/multi-step-form",
@@ -2527,7 +3147,12 @@
         "multi",
         "step"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/validation-patterns",
@@ -2547,7 +3172,12 @@
         "patterns",
         "validation"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/feedback-and-survey",
@@ -2568,7 +3198,12 @@
         "forms",
         "survey"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/promo-and-gift-codes",
@@ -2590,7 +3225,12 @@
         "gift",
         "promo"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/success-confirmation",
@@ -2610,7 +3250,12 @@
         "forms",
         "success"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/survey-question-types",
@@ -2631,7 +3276,12 @@
         "survey",
         "types"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/text-field-states",
@@ -2652,7 +3302,12 @@
         "states",
         "text"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/styles",
@@ -2671,7 +3326,12 @@
         "forms",
         "styles"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/sizes",
@@ -2690,7 +3350,12 @@
         "forms",
         "sizes"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/floating-labels",
@@ -2710,7 +3375,12 @@
         "forms",
         "labels"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/icons-and-actions",
@@ -2731,7 +3401,12 @@
         "forms",
         "icons"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/input-groups-and-addons",
@@ -2753,7 +3428,12 @@
         "groups",
         "input"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/textareas",
@@ -2772,7 +3452,12 @@
         "forms",
         "textareas"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "forms/otp-and-pin",
@@ -2793,7 +3478,12 @@
         "otp",
         "pin"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/phone-currency-and-url",
@@ -2815,7 +3505,12 @@
         "phone",
         "url"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/password-and-strength",
@@ -2836,7 +3531,12 @@
         "password",
         "strength"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/search-forms",
@@ -2855,7 +3555,12 @@
         "forms",
         "search"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/mobile-grouped-list",
@@ -2876,7 +3581,12 @@
         "list",
         "mobile"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/inline-editing",
@@ -2896,7 +3606,12 @@
         "forms",
         "inline"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/add-and-remove-rows",
@@ -2918,7 +3633,12 @@
         "remove",
         "rows"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/filter-sidebar",
@@ -2938,7 +3658,12 @@
         "forms",
         "sidebar"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/autosave-and-status",
@@ -2959,7 +3684,12 @@
         "forms",
         "status"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/accordion-form",
@@ -2979,7 +3709,12 @@
         "form",
         "forms"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/loading-and-disabled-form",
@@ -3001,7 +3736,12 @@
         "forms",
         "loading"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/filters-panel",
@@ -3021,7 +3761,12 @@
         "forms",
         "panel"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/star-rating-live",
@@ -3043,7 +3788,12 @@
         "sliders",
         "star"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "feedback/rating-prompt",
@@ -3064,7 +3814,12 @@
         "prompt",
         "rating"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/select-menus",
@@ -3084,7 +3839,12 @@
         "menus",
         "select"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "forms/grouped-and-multi-select",
@@ -3106,7 +3866,12 @@
         "multi",
         "select"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/tags-and-mentions",
@@ -3127,7 +3892,12 @@
         "mentions",
         "tags"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/dates-and-times",
@@ -3148,7 +3918,12 @@
         "forms",
         "times"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/date-range-calendar",
@@ -3169,7 +3944,12 @@
         "forms",
         "range"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/time-wheel",
@@ -3189,7 +3969,12 @@
         "time",
         "wheel"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/address-autocomplete",
@@ -3209,7 +3994,12 @@
         "autocomplete",
         "forms"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/country-and-language-pickers",
@@ -3231,7 +4021,12 @@
         "language",
         "pickers"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/date-presets",
@@ -3251,7 +4046,12 @@
         "forms",
         "presets"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/payment-method-selector",
@@ -3272,7 +4072,12 @@
         "payment",
         "selector"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/file-upload",
@@ -3292,7 +4097,12 @@
         "forms",
         "upload"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "forms/image-and-avatar-upload",
@@ -3314,7 +4124,12 @@
         "image",
         "upload"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/signature-and-captcha",
@@ -3335,7 +4150,12 @@
         "forms",
         "signature"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/markdown-editor",
@@ -3355,7 +4175,12 @@
         "forms",
         "markdown"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/image-upload-manager",
@@ -3376,7 +4201,12 @@
         "manager",
         "upload"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/rgb-colour-mixer",
@@ -3397,7 +4227,12 @@
         "rgb",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/thermostat-dial",
@@ -3417,7 +4252,12 @@
         "sliders",
         "thermostat"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/fan-and-mode-selectors",
@@ -3439,7 +4279,12 @@
         "selectors",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/before-and-after-compare",
@@ -3461,7 +4306,12 @@
         "compare",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/slider-basics",
@@ -3481,7 +4331,12 @@
         "slider",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "sliders/value-tooltip",
@@ -3501,7 +4356,12 @@
         "tooltip",
         "value"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/stepped-with-ticks",
@@ -3522,7 +4382,12 @@
         "ticks",
         "with"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/volume-and-brightness",
@@ -3543,7 +4408,12 @@
         "sliders",
         "volume"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/gradient-track-sliders",
@@ -3563,7 +4433,12 @@
         "sliders",
         "track"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/dual-range-with-histogram",
@@ -3585,7 +4460,12 @@
         "sliders",
         "with"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/vertical-sliders-and-equalizer",
@@ -3606,7 +4486,12 @@
         "sliders",
         "vertical"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/slider-with-number-inputs",
@@ -3628,7 +4513,12 @@
         "sliders",
         "with"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/seek-bar",
@@ -3648,7 +4538,12 @@
         "seek",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/age-range-two-handles",
@@ -3670,7 +4565,12 @@
         "sliders",
         "two"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/circular-dial-slider",
@@ -3691,7 +4591,12 @@
         "slider",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/vertical-volume-with-ticks",
@@ -3713,7 +4618,12 @@
         "volume",
         "with"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/time-range-on-a-day-bar",
@@ -3737,7 +4647,12 @@
         "sliders",
         "time"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/milestone-slider",
@@ -3757,7 +4672,12 @@
         "slider",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/number-steppers",
@@ -3777,7 +4697,12 @@
         "sliders",
         "steppers"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/quantity-selectors",
@@ -3797,7 +4722,12 @@
         "selectors",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/tip-and-amount-pickers",
@@ -3819,7 +4749,12 @@
         "sliders",
         "tip"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/keypad-and-calculator",
@@ -3840,7 +4775,12 @@
         "keypad",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/date-and-number-wheels",
@@ -3862,7 +4802,12 @@
         "sliders",
         "wheels"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/score-counters",
@@ -3882,7 +4827,12 @@
         "score",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/percentage-inputs",
@@ -3902,7 +4852,12 @@
         "percentage",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/segmented-level",
@@ -3922,7 +4877,12 @@
         "segmented",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/read-only-rating",
@@ -3943,7 +4903,12 @@
         "read",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/emoji-thumbs-and-nps",
@@ -3965,7 +4930,12 @@
         "sliders",
         "thumbs"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/budget-allocation",
@@ -3985,7 +4955,12 @@
         "budget",
         "sliders"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/duration-and-timer",
@@ -4006,7 +4981,12 @@
         "sliders",
         "timer"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/split-value-bar",
@@ -4027,7 +5007,12 @@
         "split",
         "value"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "sliders/bullet-and-target-bars",
@@ -4049,7 +5034,12 @@
         "sliders",
         "target"
       ],
-      "wrapper": "sliders-preview"
+      "wrapper": "sliders-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/navbars",
@@ -4068,7 +5058,12 @@
         "navbars",
         "navigation"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/navbar-with-search-and-profile",
@@ -4091,7 +5086,12 @@
         "search",
         "with"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/mobile-app-bars",
@@ -4112,7 +5112,12 @@
         "mobile",
         "navigation"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/responsive-menu",
@@ -4132,7 +5137,12 @@
         "navigation",
         "responsive"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/mega-menu",
@@ -4152,7 +5162,12 @@
         "menu",
         "navigation"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/sidebars",
@@ -4171,7 +5186,12 @@
         "navigation",
         "sidebars"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/navigation-rails",
@@ -4190,7 +5210,12 @@
         "navigation",
         "rails"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/bottom-navigation",
@@ -4209,7 +5234,12 @@
         "bottom",
         "navigation"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/app-and-workspace-switcher",
@@ -4231,7 +5261,12 @@
         "switcher",
         "workspace"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "navigation/mobile-tab-bar-styles",
@@ -4253,7 +5288,12 @@
         "styles",
         "tab"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/collapsed-sidebar-rail-hover",
@@ -4275,7 +5315,12 @@
         "rail",
         "sidebar"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/sticky-navbar-top-and-shrunk",
@@ -4298,7 +5343,12 @@
         "sticky",
         "top"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/footers",
@@ -4317,7 +5367,12 @@
         "footers",
         "navigation"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/page-headers",
@@ -4337,7 +5392,12 @@
         "navigation",
         "page"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/newsletter-footer",
@@ -4357,7 +5417,12 @@
         "navigation",
         "newsletter"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/breadcrumbs",
@@ -4376,7 +5441,12 @@
         "breadcrumbs",
         "navigation"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/on-this-page",
@@ -4397,7 +5467,12 @@
         "page",
         "this"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/tree-and-file-explorer",
@@ -4419,7 +5494,12 @@
         "navigation",
         "tree"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/carousel-navigation",
@@ -4438,7 +5518,12 @@
         "carousel",
         "navigation"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/dropdown-menu",
@@ -4458,7 +5543,12 @@
         "menu",
         "navigation"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/user-menu",
@@ -4478,7 +5568,12 @@
         "navigation",
         "user"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/grouped-and-nested-menu",
@@ -4500,7 +5595,12 @@
         "navigation",
         "nested"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/context-menu",
@@ -4520,7 +5620,12 @@
         "menu",
         "navigation"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/list-menus",
@@ -4540,7 +5645,12 @@
         "menus",
         "navigation"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/pagination-and-load-more",
@@ -4563,7 +5673,12 @@
         "navigation",
         "pagination"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/tabs-underline-live",
@@ -4584,7 +5699,12 @@
         "tabs",
         "underline"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "navigation/tabs-pills-live",
@@ -4605,7 +5725,12 @@
         "pills",
         "tabs"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "navigation/tabs-boxed-and-full-width-live",
@@ -4629,7 +5754,12 @@
         "tabs",
         "width"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "navigation/tabs-vertical-live",
@@ -4650,7 +5780,12 @@
         "tabs",
         "vertical"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "navigation/pagination",
@@ -4669,7 +5804,12 @@
         "navigation",
         "pagination"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/steppers",
@@ -4688,7 +5828,12 @@
         "navigation",
         "steppers"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/category-pills-and-view-switch",
@@ -4711,7 +5856,12 @@
         "switch",
         "view"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "navigation/back-and-next-bars",
@@ -4733,7 +5883,12 @@
         "navigation",
         "next"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/stepper-variants",
@@ -4753,7 +5908,12 @@
         "stepper",
         "variants"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/closable-tabs-and-menu-bar",
@@ -4776,7 +5936,12 @@
         "navigation",
         "tabs"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/pagination-variants",
@@ -4796,7 +5961,12 @@
         "pagination",
         "variants"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/pricing-cards",
@@ -4816,7 +5986,12 @@
         "pricing",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/product-cards",
@@ -4836,7 +6011,12 @@
         "product",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/credit-card-and-boarding-pass",
@@ -4859,7 +6039,12 @@
         "pass",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/job-listing-card",
@@ -4880,7 +6065,12 @@
         "listing",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/property-card",
@@ -4900,7 +6090,12 @@
         "property",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/delivery-tracking-card",
@@ -4921,7 +6116,12 @@
         "surfaces",
         "tracking"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "surfaces/bank-account-card",
@@ -4942,7 +6142,12 @@
         "card",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/stock-and-crypto-card",
@@ -4964,7 +6169,12 @@
         "stock",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/subscription-card",
@@ -4984,7 +6194,12 @@
         "subscription",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/app-promo-card",
@@ -5005,7 +6220,12 @@
         "promo",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/video-and-podcast-cards",
@@ -5027,7 +6247,12 @@
         "surfaces",
         "video"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/article-cards",
@@ -5047,7 +6272,12 @@
         "cards",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/event-and-ticket-cards",
@@ -5069,7 +6299,12 @@
         "surfaces",
         "ticket"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/weather-and-info-cards",
@@ -5091,7 +6326,12 @@
         "surfaces",
         "weather"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/course-and-progress-cards",
@@ -5113,7 +6353,12 @@
         "progress",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/recipe-card",
@@ -5133,7 +6378,12 @@
         "recipe",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/travel-destination-card",
@@ -5154,7 +6404,12 @@
         "surfaces",
         "travel"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/news-card",
@@ -5174,7 +6429,12 @@
         "news",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/fitness-rings-card",
@@ -5195,7 +6455,12 @@
         "rings",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/habit-tracker-card",
@@ -5216,7 +6481,12 @@
         "surfaces",
         "tracker"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/appointment-card",
@@ -5236,7 +6506,12 @@
         "card",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/achievement-badge-card",
@@ -5257,7 +6532,12 @@
         "card",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/stat-and-kpi-cards",
@@ -5279,7 +6559,12 @@
         "stat",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/feature-and-icon-cards",
@@ -5301,7 +6586,12 @@
         "icon",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/file-and-download-cards",
@@ -5323,7 +6613,12 @@
         "file",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/checklist-and-task-cards",
@@ -5345,7 +6640,12 @@
         "surfaces",
         "task"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/kanban-cards",
@@ -5365,7 +6665,12 @@
         "kanban",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/interactive-cards",
@@ -5385,7 +6690,12 @@
         "interactive",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/masonry-and-list-cards",
@@ -5407,7 +6717,12 @@
         "masonry",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/empty-and-call-to-action-cards",
@@ -5431,7 +6746,12 @@
         "surfaces",
         "to"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/profile-cards",
@@ -5451,7 +6771,12 @@
         "profile",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/team-member-cards",
@@ -5472,7 +6797,12 @@
         "surfaces",
         "team"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/testimonial-and-quote",
@@ -5493,7 +6823,12 @@
         "surfaces",
         "testimonial"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/notification-and-message-cards",
@@ -5515,7 +6850,12 @@
         "notification",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/social-post-card",
@@ -5536,7 +6876,12 @@
         "social",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/review-card",
@@ -5556,7 +6901,12 @@
         "review",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/panel-styles",
@@ -5576,7 +6926,12 @@
         "styles",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/glass-and-gradient-surfaces",
@@ -5597,7 +6952,12 @@
         "gradient",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/gradient-border-header-and-ribbon-cards",
@@ -5621,7 +6981,12 @@
         "ribbon",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/device-frames",
@@ -5641,7 +7006,12 @@
         "frames",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/dark-and-inverted-surfaces",
@@ -5662,7 +7032,12 @@
         "inverted",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/modal-confirm-and-alert",
@@ -5687,7 +7062,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/modal-form-and-fullscreen",
@@ -5712,7 +7092,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/lightbox-and-image-viewer",
@@ -5737,7 +7122,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/popovers",
@@ -5759,7 +7149,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/tooltips",
@@ -5781,7 +7176,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/hover-card",
@@ -5804,7 +7204,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/bottom-sheet-and-action-sheet",
@@ -5829,7 +7234,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/side-panel",
@@ -5852,7 +7262,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/backdrops-and-scrims",
@@ -5876,7 +7291,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/cookie-banner-and-promo-popup",
@@ -5902,7 +7322,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/coach-mark-and-spotlight",
@@ -5927,7 +7352,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/accordions-live",
@@ -5950,7 +7380,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "navigation/drawers-and-sheets",
@@ -5974,7 +7409,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/command-palette",
@@ -5997,7 +7437,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "navigation/search-overlay",
@@ -6020,7 +7465,12 @@
         "collapse",
         "offcanvas"
       ],
-      "wrapper": "navigation-preview"
+      "wrapper": "navigation-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/indeterminate-and-buffer",
@@ -6041,7 +7491,12 @@
         "feedback",
         "indeterminate"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/alerts-soft-and-outline-dismiss-live",
@@ -6065,7 +7520,12 @@
         "outline",
         "soft"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "feedback/alerts-solid-and-with-actions",
@@ -6088,7 +7548,12 @@
         "solid",
         "with"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/alert-with-list",
@@ -6109,7 +7574,12 @@
         "list",
         "with"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/banners",
@@ -6128,7 +7598,12 @@
         "banners",
         "feedback"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/permission-and-maintenance",
@@ -6149,7 +7624,12 @@
         "maintenance",
         "permission"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/system-status",
@@ -6169,7 +7649,12 @@
         "status",
         "system"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/connectivity-bars",
@@ -6189,7 +7674,12 @@
         "connectivity",
         "feedback"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/session-timeout-and-rate-limit",
@@ -6212,7 +7702,12 @@
         "session",
         "timeout"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/badges-solid-soft-outline",
@@ -6235,7 +7730,12 @@
         "soft",
         "solid"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/status-and-icon-badges",
@@ -6258,7 +7758,12 @@
         "icon",
         "status"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/chips-and-tags",
@@ -6280,7 +7785,12 @@
         "feedback",
         "tags"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/code-and-copy-chips",
@@ -6303,7 +7813,12 @@
         "copy",
         "feedback"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/feedback-widget",
@@ -6322,7 +7837,12 @@
         "feedback",
         "widget"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/notification-list",
@@ -6342,7 +7862,12 @@
         "list",
         "notification"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/push-notifications",
@@ -6362,7 +7887,12 @@
         "notifications",
         "push"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/onboarding-tooltip-step",
@@ -6383,7 +7913,12 @@
         "step",
         "tooltip"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/cookie-preferences",
@@ -6403,7 +7938,12 @@
         "feedback",
         "preferences"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/skeleton-and-result-morph",
@@ -6426,7 +7966,12 @@
         "result",
         "skeleton"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/progress-bars",
@@ -6446,7 +7991,12 @@
         "feedback",
         "progress"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/circular-progress",
@@ -6466,7 +8016,12 @@
         "feedback",
         "progress"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/step-progress-and-upload-list",
@@ -6489,7 +8044,12 @@
         "step",
         "upload"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/spinners",
@@ -6508,7 +8068,12 @@
         "feedback",
         "spinners"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/skeletons-card-and-list",
@@ -6530,7 +8095,12 @@
         "list",
         "skeletons"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/skeletons-table-and-grid",
@@ -6552,7 +8122,12 @@
         "skeletons",
         "table"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/typing-and-chat-loading",
@@ -6574,7 +8149,12 @@
         "loading",
         "typing"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/loading-overlays",
@@ -6594,7 +8174,12 @@
         "loading",
         "overlays"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/pull-to-refresh-and-load-more",
@@ -6618,7 +8203,12 @@
         "refresh",
         "to"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/dashboard-skeleton",
@@ -6638,7 +8228,12 @@
         "feedback",
         "skeleton"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/top-loading-bar-and-eta",
@@ -6661,7 +8256,12 @@
         "loading",
         "top"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/empty-states",
@@ -6681,7 +8281,12 @@
         "feedback",
         "states"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/error-pages",
@@ -6701,7 +8306,12 @@
         "feedback",
         "pages"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/success-and-error-animations",
@@ -6723,7 +8333,12 @@
         "feedback",
         "success"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/result-and-thank-you",
@@ -6745,7 +8360,12 @@
         "thank",
         "you"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/celebration",
@@ -6764,7 +8384,12 @@
         "celebration",
         "feedback"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/error-boundary-card",
@@ -6785,7 +8410,12 @@
         "error",
         "feedback"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/order-confirmed-page",
@@ -6806,7 +8436,12 @@
         "order",
         "page"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/status-legend",
@@ -6826,7 +8461,12 @@
         "legend",
         "status"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/toasts-icon-style",
@@ -6847,7 +8487,12 @@
         "style",
         "toasts"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/toasts-dark-and-solid",
@@ -6869,7 +8514,12 @@
         "solid",
         "toasts"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/toasts-with-timer-and-avatar",
@@ -6892,7 +8542,12 @@
         "toasts",
         "with"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/toast-stack-and-positions",
@@ -6914,7 +8569,12 @@
         "stack",
         "toast"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "feedback/toast-with-avatar-group",
@@ -6936,7 +8596,12 @@
         "toast",
         "with"
       ],
-      "wrapper": "feedback-preview"
+      "wrapper": "feedback-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/striped-and-bordered",
@@ -6957,7 +8622,12 @@
         "data",
         "striped"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/compact-and-totals",
@@ -6978,7 +8648,12 @@
         "data",
         "totals"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/expandable-rows-live",
@@ -6999,7 +8674,12 @@
         "live",
         "rows"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "data/horizontal-bars",
@@ -7019,7 +8699,12 @@
         "data",
         "horizontal"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/donut-and-pie",
@@ -7040,7 +8725,12 @@
         "donut",
         "pie"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/scatter-and-bubble",
@@ -7061,7 +8751,12 @@
         "data",
         "scatter"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/poll-results",
@@ -7082,7 +8777,12 @@
         "poll",
         "results"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/line-and-area-charts",
@@ -7104,7 +8804,12 @@
         "data",
         "line"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/multi-line-chart",
@@ -7125,7 +8830,12 @@
         "line",
         "multi"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/bar-charts",
@@ -7145,7 +8855,12 @@
         "charts",
         "data"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/radar-chart",
@@ -7165,7 +8880,12 @@
         "data",
         "radar"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/candlestick-chart",
@@ -7185,7 +8905,12 @@
         "chart",
         "data"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/heatmap",
@@ -7204,7 +8929,12 @@
         "data",
         "heatmap"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/funnel-and-treemap",
@@ -7225,7 +8955,12 @@
         "funnel",
         "treemap"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/gauges-and-kpis",
@@ -7246,7 +8981,12 @@
         "gauges",
         "kpis"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/org-chart",
@@ -7266,7 +9006,12 @@
         "data",
         "org"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/gantt-chart",
@@ -7286,7 +9031,12 @@
         "data",
         "gantt"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/waterfall-chart",
@@ -7306,7 +9056,12 @@
         "data",
         "waterfall"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/stacked-area-chart",
@@ -7327,7 +9082,12 @@
         "data",
         "stacked"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/kpi-sparkline-grid",
@@ -7348,7 +9108,12 @@
         "kpi",
         "sparkline"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/swipe-actions",
@@ -7368,7 +9133,12 @@
         "data",
         "swipe"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/contact-list",
@@ -7388,7 +9158,12 @@
         "data",
         "list"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/inbox-list",
@@ -7408,7 +9183,12 @@
         "inbox",
         "list"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/file-and-media-list",
@@ -7430,7 +9210,12 @@
         "list",
         "media"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/leaderboard",
@@ -7449,7 +9234,12 @@
         "data",
         "leaderboard"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/activity-feed-and-timeline",
@@ -7471,7 +9261,12 @@
         "feed",
         "timeline"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/horizontal-timeline",
@@ -7491,7 +9286,12 @@
         "horizontal",
         "timeline"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/calendar",
@@ -7510,7 +9310,12 @@
         "calendar",
         "data"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/comments-and-replies",
@@ -7531,7 +9336,12 @@
         "data",
         "replies"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/chat-bubbles",
@@ -7551,7 +9361,12 @@
         "chat",
         "data"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/description-list",
@@ -7571,7 +9386,12 @@
         "description",
         "list"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/kanban-board",
@@ -7591,7 +9411,12 @@
         "data",
         "kanban"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/code-block",
@@ -7611,7 +9436,12 @@
         "code",
         "data"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/terminal-and-diff",
@@ -7632,7 +9462,12 @@
         "diff",
         "terminal"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/json-viewer-and-inline-code",
@@ -7655,7 +9490,12 @@
         "json",
         "viewer"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/article-content",
@@ -7675,7 +9515,12 @@
         "content",
         "data"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/callouts-and-pull-quote",
@@ -7697,7 +9542,12 @@
         "pull",
         "quote"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/tags-qr-and-tag-cloud",
@@ -7720,7 +9570,12 @@
         "tag",
         "tags"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/basic-and-hover-table",
@@ -7742,7 +9597,12 @@
         "hover",
         "table"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/selectable-rows-live",
@@ -7763,7 +9623,12 @@
         "rows",
         "selectable"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "data/comparison-table",
@@ -7783,7 +9648,12 @@
         "data",
         "table"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/table-with-sparklines-and-avatars",
@@ -7806,7 +9676,12 @@
         "table",
         "with"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/invoice-and-receipt",
@@ -7827,7 +9702,12 @@
         "invoice",
         "receipt"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/progress-table",
@@ -7847,7 +9727,12 @@
         "progress",
         "table"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/conversion-table",
@@ -7867,7 +9752,12 @@
         "data",
         "table"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/heat-table",
@@ -7887,7 +9777,12 @@
         "heat",
         "table"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/pricing-table",
@@ -7907,7 +9802,12 @@
         "pricing",
         "table"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/video-player",
@@ -7927,7 +9827,12 @@
         "player",
         "video"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/live-stream-and-mini-player",
@@ -7950,7 +9855,12 @@
         "player",
         "stream"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "gallery/video-list-and-playlist",
@@ -7972,7 +9882,12 @@
         "playlist",
         "video"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/waveform-audio-player",
@@ -7993,7 +9908,12 @@
         "player",
         "waveform"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/vinyl-and-equalizer",
@@ -8014,7 +9934,12 @@
         "gallery",
         "vinyl"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/podcast-and-voice-message",
@@ -8036,7 +9961,12 @@
         "podcast",
         "voice"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/album-and-playlist-covers",
@@ -8058,7 +9988,12 @@
         "gallery",
         "playlist"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/queue-and-lyrics",
@@ -8079,7 +10014,12 @@
         "lyrics",
         "queue"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/avatar-sizes-and-shapes",
@@ -8101,7 +10041,12 @@
         "shapes",
         "sizes"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/status-stack-and-add",
@@ -8123,7 +10068,12 @@
         "stack",
         "status"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/logo-wall-and-marquee",
@@ -8145,7 +10095,12 @@
         "marquee",
         "wall"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/icon-set-outline",
@@ -8166,7 +10121,12 @@
         "outline",
         "set"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/icon-set-solid",
@@ -8187,7 +10147,12 @@
         "set",
         "solid"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/icon-set-duotone",
@@ -8208,7 +10173,12 @@
         "icon",
         "set"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/icon-sizes-and-weights",
@@ -8230,7 +10200,12 @@
         "sizes",
         "weights"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/icon-containers",
@@ -8250,7 +10225,12 @@
         "gallery",
         "icon"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/animated-icons",
@@ -8270,7 +10250,12 @@
         "gallery",
         "icons"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/icon-with-stat-and-feature-tile",
@@ -8294,7 +10279,12 @@
         "tile",
         "with"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/icon-lists",
@@ -8314,7 +10304,12 @@
         "icon",
         "lists"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/avatar-group-list",
@@ -8335,7 +10330,12 @@
         "group",
         "list"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/gradient-and-mesh-backgrounds",
@@ -8357,7 +10357,12 @@
         "gradient",
         "mesh"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/illustration-shapes",
@@ -8377,7 +10382,12 @@
         "illustration",
         "shapes"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/camera-and-photo-picker",
@@ -8399,7 +10409,12 @@
         "photo",
         "picker"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/filter-strip-and-map-card",
@@ -8422,7 +10437,12 @@
         "map",
         "strip"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/map-photo-pins",
@@ -8443,7 +10463,12 @@
         "photo",
         "pins"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/carousel-with-arrows-and-dots",
@@ -8466,7 +10491,12 @@
         "gallery",
         "with"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/thumbnail-gallery",
@@ -8485,7 +10515,12 @@
         "gallery",
         "thumbnail"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/coverflow-and-story-bars",
@@ -8507,7 +10542,12 @@
         "gallery",
         "story"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/lightbox-viewer",
@@ -8527,7 +10567,12 @@
         "lightbox",
         "viewer"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/image-comparison",
@@ -8547,7 +10592,12 @@
         "gallery",
         "image"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/story-rings-and-presence-list",
@@ -8570,7 +10620,12 @@
         "rings",
         "story"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/story-viewer",
@@ -8590,7 +10645,12 @@
         "story",
         "viewer"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/tagged-hotspots",
@@ -8610,7 +10670,12 @@
         "hotspots",
         "tagged"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/slideshow-with-captions",
@@ -8631,7 +10696,12 @@
         "slideshow",
         "with"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/uniform-grid",
@@ -8651,7 +10721,12 @@
         "grid",
         "uniform"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/masonry",
@@ -8670,7 +10745,12 @@
         "gallery",
         "masonry"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/bento-mosaic",
@@ -8690,7 +10770,12 @@
         "gallery",
         "mosaic"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/justified-rows",
@@ -8710,7 +10795,12 @@
         "justified",
         "rows"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/fan-and-collage",
@@ -8731,7 +10821,12 @@
         "fan",
         "gallery"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/polaroid-wall",
@@ -8751,7 +10846,12 @@
         "polaroid",
         "wall"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/photo-album-stack",
@@ -8772,7 +10872,12 @@
         "photo",
         "stack"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/drag-to-reorder-grid",
@@ -8794,7 +10899,12 @@
         "reorder",
         "to"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/image-shapes",
@@ -8814,7 +10924,12 @@
         "image",
         "shapes"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/borders-and-frames",
@@ -8835,7 +10950,12 @@
         "frames",
         "gallery"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/hover-effects-live",
@@ -8856,7 +10976,12 @@
         "hover",
         "live"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "gallery/overlays-and-badges",
@@ -8877,7 +11002,12 @@
         "gallery",
         "overlays"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/aspect-ratios",
@@ -8897,7 +11027,12 @@
         "gallery",
         "ratios"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/image-effects",
@@ -8917,7 +11052,12 @@
         "gallery",
         "image"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/video-thumbnail-grid-hover",
@@ -8939,7 +11079,12 @@
         "thumbnail",
         "video"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-cards",
@@ -8960,7 +11105,12 @@
         "music",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-album-card",
@@ -8982,7 +11132,12 @@
         "music",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-now-playing",
@@ -9004,7 +11159,12 @@
         "playing",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-mini-player-bars",
@@ -9027,7 +11187,12 @@
         "player",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-vinyl-record",
@@ -9049,7 +11214,12 @@
         "surfaces",
         "vinyl"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-waveform-track",
@@ -9071,7 +11241,12 @@
         "track",
         "waveform"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-playlist-card",
@@ -9093,7 +11268,12 @@
         "playlist",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-artist-card",
@@ -9115,7 +11295,12 @@
         "music",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-track-list",
@@ -9137,7 +11322,12 @@
         "surfaces",
         "track"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-lyrics-card",
@@ -9159,7 +11349,12 @@
         "music",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-podcast-episode",
@@ -9181,7 +11376,12 @@
         "podcast",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-radio-station",
@@ -9203,7 +11403,12 @@
         "station",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "surfaces/music-concert-ticket",
@@ -9225,7 +11430,12 @@
         "surfaces",
         "ticket"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-genre-and-mood-tiles",
@@ -9249,7 +11459,12 @@
         "surfaces",
         "tiles"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-top-charts",
@@ -9271,7 +11486,12 @@
         "surfaces",
         "top"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-queue-and-sleep-timer",
@@ -9295,7 +11515,12 @@
         "surfaces",
         "timer"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-audiobook",
@@ -9316,7 +11541,12 @@
         "music",
         "surfaces"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-voice-recorder",
@@ -9338,7 +11568,12 @@
         "surfaces",
         "voice"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "surfaces/music-home-screen-widget",
@@ -9361,7 +11596,12 @@
         "surfaces",
         "widget"
       ],
-      "wrapper": "surfaces-preview"
+      "wrapper": "surfaces-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/media-controls",
@@ -9382,7 +11622,12 @@
         "gallery",
         "media"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/record-and-call-buttons",
@@ -9404,7 +11649,12 @@
         "gallery",
         "record"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/play-and-pause-variety",
@@ -9427,7 +11677,12 @@
         "play",
         "variety"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/dashboard-speed-readout",
@@ -9449,7 +11704,12 @@
         "readout",
         "speed"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/turn-banner-and-trip-bar",
@@ -9473,7 +11733,12 @@
         "trip",
         "turn"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/route-options",
@@ -9494,7 +11759,12 @@
         "options",
         "route"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/charging-curve-and-battery",
@@ -9517,7 +11787,12 @@
         "curve",
         "data"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/climate-controls",
@@ -9538,7 +11813,12 @@
         "controls",
         "data"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/drive-modes-and-gear-selector",
@@ -9562,7 +11842,12 @@
         "modes",
         "selector"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/vehicle-status-cards",
@@ -9584,7 +11869,12 @@
         "status",
         "vehicle"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "data/dashboard-media-player",
@@ -9606,7 +11896,12 @@
         "media",
         "player"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/store-badges-and-qr",
@@ -9629,7 +11924,12 @@
         "qr",
         "store"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/sticky-purchase-bar",
@@ -9651,7 +11951,12 @@
         "purchase",
         "sticky"
       ],
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/sign-up-form",
@@ -9673,7 +11978,12 @@
         "sign",
         "up"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/contact-form",
@@ -9694,7 +12004,12 @@
         "form",
         "forms"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/change-password",
@@ -9715,7 +12030,12 @@
         "forms",
         "password"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/danger-zone",
@@ -9736,7 +12056,12 @@
         "forms",
         "zone"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/profile-edit",
@@ -9757,7 +12082,12 @@
         "forms",
         "profile"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/sign-up-with-social-options",
@@ -9781,7 +12111,12 @@
         "up",
         "with"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/address-form",
@@ -9802,7 +12137,12 @@
         "form",
         "forms"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/booking-form",
@@ -9823,7 +12163,12 @@
         "form",
         "forms"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/invite-people",
@@ -9844,7 +12189,12 @@
         "invite",
         "people"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "forms/verification-and-reset",
@@ -9866,7 +12216,12 @@
         "reset",
         "verification"
       ],
-      "wrapper": "forms-preview"
+      "wrapper": "forms-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/hero-banner",
@@ -9887,7 +12242,12 @@
         "gallery",
         "hero"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "gallery/hero-sections",
@@ -9908,7 +12268,12 @@
         "hero",
         "sections"
       ],
-      "wrapper": "data-preview"
+      "wrapper": "data-preview",
+      "capabilities": {
+        "implementation": "appearance",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "core/responsive-grid",
@@ -9928,7 +12293,12 @@
         "layout",
         "responsive 12-column grid"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/spacing-utilities",
@@ -9948,7 +12318,12 @@
         "layout",
         "logical spacing & responsive utilities"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/app-shell",
@@ -9968,7 +12343,12 @@
         "layout",
         "responsive application shell"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/tabs",
@@ -9990,7 +12370,12 @@
         "navigation",
         "keyboard accessible tabs"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/dropdown",
@@ -10012,7 +12397,12 @@
         "navigation",
         "dropdown & keyboard menu"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/breadcrumbs",
@@ -10032,7 +12422,12 @@
         "navigation",
         "breadcrumbs & pagination"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/accordion",
@@ -10054,7 +12449,12 @@
         "overlays",
         "accordion disclosure"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/collapse",
@@ -10075,7 +12475,12 @@
         "overlays",
         "toggle content region"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/dialog",
@@ -10098,7 +12503,12 @@
         "overlays",
         "modal dialog"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/drawer",
@@ -10121,7 +12531,12 @@
         "overlays",
         "offcanvas drawer"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/popover",
@@ -10143,7 +12558,12 @@
         "overlays",
         "popover & tooltip"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/command",
@@ -10165,7 +12585,12 @@
         "overlays",
         "command palette"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/fields",
@@ -10185,7 +12610,16 @@
         "forms",
         "input types & states"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": true,
+        "applicationIntegration": false
+      },
+      "customize": {
+        "type": "input",
+        "selector": "input.input"
+      }
     },
     {
       "key": "core/choices",
@@ -10205,7 +12639,12 @@
         "forms",
         "checkboxes, radios & switches"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/validation",
@@ -10225,7 +12664,12 @@
         "forms",
         "form validation & submission"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/combobox",
@@ -10247,7 +12691,12 @@
         "forms",
         "searchable combobox"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/multiselect",
@@ -10267,7 +12716,12 @@
         "forms",
         "multiple selection"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/date-range",
@@ -10287,7 +12741,12 @@
         "forms",
         "date & time range"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/upload",
@@ -10307,7 +12766,12 @@
         "forms",
         "file upload & removal"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/password",
@@ -10327,7 +12791,12 @@
         "forms",
         "password strength"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/markdown",
@@ -10349,7 +12818,12 @@
         "forms",
         "markdown heading preview"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/range",
@@ -10369,7 +12843,12 @@
         "sliders",
         "range with live value"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/stepper",
@@ -10389,7 +12868,12 @@
         "sliders",
         "bounded quantity stepper"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/rating",
@@ -10409,7 +12893,12 @@
         "forms",
         "accessible rating input"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/alert",
@@ -10429,7 +12918,16 @@
         "feedback",
         "dismissible alert"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": true,
+        "applicationIntegration": false
+      },
+      "customize": {
+        "type": "alert",
+        "selector": ".alert"
+      }
     },
     {
       "key": "core/toast",
@@ -10449,7 +12947,12 @@
         "feedback",
         "toast notifications"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/badges",
@@ -10469,7 +12972,16 @@
         "feedback",
         "badges & removable chips"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": true,
+        "applicationIntegration": false
+      },
+      "customize": {
+        "type": "badge",
+        "selector": ".badge"
+      }
     },
     {
       "key": "core/progress",
@@ -10489,7 +13001,16 @@
         "feedback",
         "progress, spinner & skeleton"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": true,
+        "applicationIntegration": false
+      },
+      "customize": {
+        "type": "progress",
+        "selector": "progress"
+      }
     },
     {
       "key": "core/empty",
@@ -10509,7 +13030,12 @@
         "feedback",
         "empty & error states"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/cards",
@@ -10529,7 +13055,16 @@
         "surfaces",
         "card appearance variants"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": true,
+        "applicationIntegration": false
+      },
+      "customize": {
+        "type": "card",
+        "selector": "article.card"
+      }
     },
     {
       "key": "core/table",
@@ -10549,7 +13084,12 @@
         "data",
         "sortable, filterable & selectable table"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/tree",
@@ -10569,7 +13109,12 @@
         "data",
         "disclosure tree"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/carousel",
@@ -10589,7 +13134,12 @@
         "gallery",
         "manual carousel"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/avatars",
@@ -10609,7 +13159,16 @@
         "gallery",
         "avatar sizes & presence"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": true,
+        "applicationIntegration": false
+      },
+      "customize": {
+        "type": "avatar",
+        "selector": ".avatar"
+      }
     },
     {
       "key": "core/checkout",
@@ -10631,7 +13190,12 @@
         "interactive",
         "application"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "application",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "core/dashboard",
@@ -10653,7 +13217,12 @@
         "interactive",
         "application"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "application",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "core/hero",
@@ -10673,7 +13242,12 @@
         "compositions",
         "responsive hero composition"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "application",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "core/pagination",
@@ -10693,7 +13267,12 @@
         "navigation",
         "interactive pagination"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/steps",
@@ -10713,7 +13292,12 @@
         "navigation",
         "step navigation"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/navbar",
@@ -10733,7 +13317,12 @@
         "navigation",
         "responsive navigation bar"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/input-groups",
@@ -10753,7 +13342,12 @@
         "forms",
         "input groups & addons"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/floating-label",
@@ -10773,7 +13367,12 @@
         "forms",
         "floating label fields"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/textarea-select",
@@ -10793,7 +13392,12 @@
         "forms",
         "textareas & native selects"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/selection-tree",
@@ -10813,7 +13417,12 @@
         "forms",
         "tree selection with mixed state"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/dual-range",
@@ -10833,7 +13442,12 @@
         "sliders",
         "bounded dual range"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/gradient-ranges",
@@ -10853,7 +13467,12 @@
         "sliders",
         "standard & gradient range tracks"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/chips",
@@ -10873,7 +13492,12 @@
         "feedback",
         "removable chips"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/alert-variants",
@@ -10893,7 +13517,12 @@
         "feedback",
         "standard & gradient alert appearances"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/image-comparison",
@@ -10913,7 +13542,12 @@
         "gallery",
         "interactive before & after comparison"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/lightbox",
@@ -10933,7 +13567,12 @@
         "gallery",
         "gallery lightbox"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/settings",
@@ -10955,7 +13594,12 @@
         "interactive",
         "application"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "application",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "buttons/link",
@@ -10977,7 +13621,16 @@
         "link"
       ],
       "added": true,
-      "wrapper": "buttons-preview"
+      "wrapper": "buttons-preview",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": true,
+        "applicationIntegration": false
+      },
+      "customize": {
+        "type": "btn",
+        "selector": "button.btn"
+      }
     },
     {
       "key": "core/login",
@@ -11000,7 +13653,12 @@
         "interactive",
         "application"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "application",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "core/data-management",
@@ -11023,7 +13681,12 @@
         "interactive",
         "application"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "application",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "core/action-workflows",
@@ -11046,7 +13709,12 @@
         "interactive",
         "application"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "application",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "core/editable-table",
@@ -11068,7 +13736,12 @@
         "editable-table",
         "application"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "application",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "core/status-states",
@@ -11090,7 +13763,12 @@
         "status-states",
         "application"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "native",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     },
     {
       "key": "core/multistep-form",
@@ -11112,7 +13790,12 @@
         "multistep-form",
         "application"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "application",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "core/filter-panel",
@@ -11134,7 +13817,12 @@
         "filter-panel",
         "application"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "application",
+        "customizable": false,
+        "applicationIntegration": true
+      }
     },
     {
       "key": "core/file-upload-workflow",
@@ -11156,7 +13844,47 @@
         "file-upload-workflow",
         "application"
       ],
-      "wrapper": "lumen"
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "application",
+        "customizable": false,
+        "applicationIntegration": true
+      }
+    },
+    {
+      "key": "core/workspace",
+      "id": "workspace",
+      "source": "core",
+      "added": true,
+      "category": "compositions",
+      "family": "01 · Application patterns",
+      "title": "Connected workspace application",
+      "template": "templates/workspace.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-patterns.css"
+      ],
+      "status": "composition",
+      "tags": [
+        "application",
+        "workspace",
+        "records",
+        "settings",
+        "files",
+        "async",
+        "connected"
+      ],
+      "wrapper": "lumen",
+      "capabilities": {
+        "implementation": "application",
+        "customizable": false,
+        "applicationIntegration": true,
+        "requests": "simulated adapter"
+      },
+      "scripts": [
+        "js/workspace.js"
+      ]
     }
   ],
   "aliases": {

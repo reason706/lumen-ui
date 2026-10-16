@@ -50,7 +50,7 @@
           detail,
         }),
       );
-    function toast(message) {
+    function toast(message, options = {}) {
       let region = root.querySelector(":is(.lm-toast-region,.toast-region)");
       if (!region) {
         region = document.createElement("div");
@@ -61,27 +61,157 @@
       }
       const el = document.createElement("div");
       el.className = "toast";
-      el.setAttribute("role", "status");
+      el.setAttribute(
+        "role",
+        options.politeness === "assertive" ? "alert" : "status",
+      );
       const text = document.createElement("span");
       text.textContent = message;
       const close = document.createElement("button");
-      close.className = "btn btn-style-ghost";
+      close.className = "btn btn-icon btn-style-ghost";
       close.type = "button";
       close.textContent = "×";
       close.setAttribute("aria-label", "Dismiss notification");
-      close.onclick = () => el.remove();
-      el.append(text, close);
+      let remaining =
+          Number.isFinite(options.duration) && options.duration >= 0
+            ? options.duration
+            : 5000,
+        started = 0,
+        timer = null,
+        hover = false;
+      const stop = () => {
+        if (timer !== null) {
+          clearTimeout(timer);
+          timers.delete(timer);
+          remaining = Math.max(0, remaining - (Date.now() - started));
+          timer = null;
+        }
+      };
+      const dismiss = () => {
+        stop();
+        el.remove();
+      };
+      const resume = () => {
+        if (
+          !remaining ||
+          hover ||
+          el.contains(root.activeElement || document.activeElement) ||
+          !el.isConnected
+        )
+          return;
+        started = Date.now();
+        timer = later(dismiss, remaining);
+      };
+      el.addEventListener(
+        "pointerenter",
+        () => {
+          hover = true;
+          stop();
+        },
+        { signal: abort.signal },
+      );
+      el.addEventListener(
+        "pointerleave",
+        () => {
+          hover = false;
+          resume();
+        },
+        { signal: abort.signal },
+      );
+      el.addEventListener("focusin", stop, { signal: abort.signal });
+      el.addEventListener("focusout", () => queueMicrotask(resume), {
+        signal: abort.signal,
+      });
+      close.onclick = dismiss;
+      el.append(text);
+      if (options.action) {
+        const action = document.createElement("button");
+        action.type = "button";
+        action.className = "btn btn-style-ghost";
+        action.textContent = options.action.label;
+        action.onclick = async () => {
+          try {
+            await options.action.run();
+            dismiss();
+          } catch (error) {
+            text.textContent = error.message;
+            el.setAttribute("role", "alert");
+          }
+        };
+        el.append(action);
+      }
+      el.append(close);
       region.append(el);
-      later(() => el.remove(), 5000);
+      resume();
       return el;
     }
-    function closeMenu(drop, focus = false) {
-      const btn = drop.querySelector("[data-lm-menu-toggle]");
-      const menu = drop.querySelector("[role=menu]");
-      if (menu) menu.hidden = true;
-      btn?.setAttribute("aria-expanded", "false");
-      if (focus) btn?.focus();
+    function positionMenu(drop) {
+      const button = drop.querySelector("[data-lm-menu-toggle]"),
+        menu = drop.querySelector("[role=menu]");
+      if (!button || !menu || menu.hidden) return;
+      const rect = button.getBoundingClientRect(),
+        size = menu.getBoundingClientRect(),
+        rtl = getComputedStyle(drop).direction === "rtl",
+        gap = 6;
+      const x = Math.max(
+        8,
+        Math.min(
+          innerWidth - size.width - 8,
+          rtl ? rect.right - size.width : rect.left,
+        ),
+      );
+      const below = innerHeight - rect.bottom - gap,
+        above = rect.top - gap;
+      const upward = below < Math.min(size.height, 180) && above > below;
+      const y = upward
+        ? Math.max(8, rect.top - size.height - gap)
+        : rect.bottom + gap;
+      Object.assign(menu.style, {
+        position: "fixed",
+        margin: "0",
+        inset: "auto",
+        left: x + "px",
+        top: y + "px",
+        maxHeight: Math.max(80, (upward ? above : below) - 8) + "px",
+      });
     }
+    function openMenu(drop, focus = false) {
+      const button = drop.querySelector("[data-lm-menu-toggle]"),
+        menu = drop.querySelector("[role=menu]");
+      if (!menu) return;
+      menu.hidden = false;
+      button?.setAttribute("aria-expanded", "true");
+      if (menu.showPopover) {
+        menu.setAttribute("popover", "manual");
+        if (!menu.matches(":popover-open")) menu.showPopover();
+      }
+      positionMenu(drop);
+      if (focus)
+        menu
+          .querySelector(
+            "[role=menuitem]:not(:disabled):not([aria-disabled=true])",
+          )
+          ?.focus();
+    }
+    function closeMenu(drop, focus = false) {
+      const button = drop.querySelector("[data-lm-menu-toggle]"),
+        menu = drop.querySelector("[role=menu]");
+      if (menu) {
+        if (menu.hidePopover && menu.matches(":popover-open"))
+          menu.hidePopover();
+        menu.hidden = true;
+      }
+      button?.setAttribute("aria-expanded", "false");
+      if (focus) button?.focus();
+    }
+    const menus = () => root.querySelectorAll(".dropdown,.lm-dropdown");
+    const reposition = () => menus().forEach(positionMenu);
+    global.addEventListener("resize", reposition, { signal: abort.signal });
+    root.addEventListener("scroll", reposition, {
+      capture: true,
+      signal: abort.signal,
+    });
+    cleanups.push(() => menus().forEach((drop) => closeMenu(drop)));
     function selectTab(tab) {
       const list = tab.closest("[role=tablist]");
       if (tab.dataset.lmRadio) {
@@ -208,7 +338,12 @@
       });
     });
     on("click", (e) => {
-      if (closest(e, "button:disabled,[aria-disabled=true],[aria-busy=true]")) {
+      if (
+        closest(
+          e,
+          "button:disabled,[aria-disabled=true],button[aria-busy=true],a[aria-busy=true]",
+        )
+      ) {
         e.preventDefault();
         return;
       }
@@ -243,17 +378,16 @@
         const target = query(remove.dataset.lmRemove);
         if (target) {
           target.hidden = true;
-          const message = toast("Item removed"),
-            undo = document.createElement("button");
-          undo.type = "button";
-          undo.className = "btn btn-style-ghost";
-          undo.textContent = "Undo";
-          undo.onclick = () => {
-            target.hidden = false;
-            message.remove();
-            remove.focus();
-          };
-          message.append(undo);
+          toast("Item removed", {
+            duration: 0,
+            action: {
+              label: "Undo",
+              run: () => {
+                target.hidden = false;
+                remove.focus();
+              },
+            },
+          });
           emit(target, "remove");
         }
         return;
@@ -285,7 +419,7 @@
         return;
       }
       const tab = closest(e, "[role=tab]");
-      if (tab) {
+      if (tab && !tab.hasAttribute("data-inspect")) {
         selectTab(tab);
         return;
       }
@@ -321,10 +455,8 @@
         const d = menuToggle.closest(":is(.lm-dropdown,.dropdown)"),
           m = d?.querySelector("[role=menu]");
         if (!m) return;
-        m.hidden = !m.hidden;
-        menuToggle.setAttribute("aria-expanded", String(!m.hidden));
-        if (!m.hidden)
-          m.querySelector("[role=menuitem]:not(:disabled)")?.focus();
+        if (m.hidden) openMenu(d, true);
+        else closeMenu(d, true);
         return;
       }
       const menuItem = closest(e, "[role=menuitem]");
@@ -558,10 +690,7 @@
           e.preventDefault();
         } else if (["ArrowDown", "ArrowUp", "Home", "End"].includes(e.key)) {
           e.preventDefault();
-          menu.hidden = false;
-          drop
-            .querySelector("[data-lm-menu-toggle]")
-            .setAttribute("aria-expanded", "true");
+          openMenu(drop);
           let i = items.indexOf(e.composedPath()[0]);
           i =
             e.key === "Home"
@@ -575,6 +704,22 @@
                   : (i + (e.key === "ArrowDown" ? 1 : -1) + items.length) %
                     items.length;
           items[i]?.focus();
+        }
+        if (e.key.length === 1 && !e.ctrlKey && !e.metaKey && !e.altKey) {
+          const now = Date.now(),
+            previous = drop._lumenSearch;
+          const term =
+            (previous && now - previous.time < 600 ? previous.term : "") +
+            e.key.toLowerCase();
+          drop._lumenSearch = { term, time: now };
+          const target = items.find((item) =>
+            item.textContent.trim().toLowerCase().startsWith(term),
+          );
+          if (target) {
+            e.preventDefault();
+            openMenu(drop);
+            target.focus();
+          }
         }
         return;
       }
@@ -644,8 +789,33 @@
         input.hasAttribute?.("aria-invalid") &&
         input.closest("[data-lm-validate]")
       ) {
+        if (!input.willValidate) return;
         const valid = input.checkValidity();
         input.setAttribute("aria-invalid", String(!valid));
+        if (
+          !valid &&
+          !input
+            .getAttribute("aria-describedby")
+            ?.split(/\s+/)
+            .some((id) => query(id)?.matches(".input-error,.lm-error"))
+        ) {
+          const field = input.closest(".field,.lm-field");
+          if (field) {
+            const error = document.createElement("span");
+            error.className = "input-error";
+            error.id = "lumen-error-" + ++seq;
+            error.hidden = true;
+            field.append(error);
+            input.setAttribute(
+              "aria-describedby",
+              (
+                (input.getAttribute("aria-describedby") || "") +
+                " " +
+                error.id
+              ).trim(),
+            );
+          }
+        }
         for (const id of (input.getAttribute("aria-describedby") || "").split(
           /\s+/,
         )) {
@@ -656,6 +826,9 @@
           }
         }
       }
+      const validated = input.closest?.("[data-lm-validate]");
+      if (validated?.querySelector("[data-lm-error-summary]:not([hidden])"))
+        validationSummary(validated);
       if (input.matches?.("[data-lm-compare]")) {
         const target = query(input.dataset.lmCompare);
         target?.style.setProperty("--lm-compare", input.value + "%");
@@ -762,6 +935,10 @@
         )
           pageTable(table);
         else syncSelection(table);
+        emit(table, "selection", {
+          count: table.querySelectorAll("tbody input[type=checkbox]:checked")
+            .length,
+        });
       }
       if (input.matches?.("[type=file]")) {
         const wrap = input.closest("[data-lm-upload]");
@@ -784,11 +961,80 @@
         }
       }
     });
+    function validationSummary(form) {
+      if (!form?.matches("[data-lm-validate]")) return;
+      let summary = form.querySelector("[data-lm-error-summary]");
+      if (!summary) {
+        summary = document.createElement("div");
+        summary.dataset.lmErrorSummary = "";
+        summary.setAttribute("role", "alert");
+        summary.hidden = true;
+        form.prepend(summary);
+      }
+      const invalid = [...form.querySelectorAll("[aria-invalid=true]")].filter(
+        (input) => !input.disabled && !input.closest("fieldset:disabled"),
+      );
+      summary.replaceChildren();
+      summary.hidden = !invalid.length;
+      if (!invalid.length) return;
+      const title = document.createElement("strong");
+      title.textContent =
+        "Please check " +
+        invalid.length +
+        " field" +
+        (invalid.length === 1 ? "" : "s") +
+        ".";
+      const list = document.createElement("ul");
+      for (const input of invalid) {
+        input.id ||= "lumen-field-" + ++seq;
+        const li = document.createElement("li"),
+          link = document.createElement("a");
+        link.href = "#" + input.id;
+        const label = input.labels?.[0];
+        link.textContent =
+          label?.querySelector(".input-label,.lm-label")?.textContent ||
+          input.getAttribute("aria-label") ||
+          input.name ||
+          "Field";
+        link.onclick = (event) => {
+          event.preventDefault();
+          input.focus();
+        };
+        li.append(link);
+        list.append(li);
+      }
+      summary.append(title, list);
+    }
     function validate(container) {
       let first = null;
       container.querySelectorAll("input,select,textarea").forEach((input) => {
+        if (!input.willValidate) return;
         const valid = input.checkValidity();
         input.setAttribute("aria-invalid", String(!valid));
+        if (
+          !valid &&
+          !input
+            .getAttribute("aria-describedby")
+            ?.split(/\s+/)
+            .some((id) => query(id)?.matches(".input-error,.lm-error"))
+        ) {
+          const field = input.closest(".field,.lm-field");
+          if (field) {
+            const error = document.createElement("span");
+            error.className = "input-error";
+            error.id = "lumen-error-" + ++seq;
+            error.hidden = true;
+            field.append(error);
+            input.setAttribute(
+              "aria-describedby",
+              (
+                (input.getAttribute("aria-describedby") || "") +
+                " " +
+                error.id
+              ).trim(),
+            );
+          }
+        }
         const errors = (input.getAttribute("aria-describedby") || "")
           .split(/\s+/)
           .map(query)
@@ -799,12 +1045,16 @@
         }
         if (!valid && !first) first = input;
       });
+      validationSummary(
+        container.matches("form") ? container : container.closest("form"),
+      );
       return first;
     }
     on("submit", (e) => {
       const form = closest(e, "[data-lm-validate]");
       if (!form) return;
       e.preventDefault();
+      if (form.dataset.state === "loading") return;
       const steps = [...form.querySelectorAll("[data-lm-step]")];
       steps.forEach((step) => (step.disabled = false));
       const first = validate(form);
@@ -830,6 +1080,7 @@
         );
         emit(form, "submit", payload);
         steps.forEach((step) => (step.disabled = step.hidden));
+        if (form.hasAttribute("data-lm-managed")) return;
         const status = form.querySelector("[data-lm-form-status]");
         if (status) status.textContent = "Details validated. Ready to submit.";
         const dialog = query(form.dataset.lmSuccessDialog);
@@ -841,6 +1092,11 @@
     });
     on("reset", (e) => {
       const form = e.composedPath()[0];
+      const summary = form.querySelector("[data-lm-error-summary]");
+      if (summary) {
+        summary.hidden = true;
+        summary.replaceChildren();
+      }
       form
         .querySelectorAll("[type=file]")
         .forEach((input) => input.setCustomValidity(""));
@@ -865,20 +1121,25 @@
       });
     });
     function refresh() {
+      prepare(root);
       root
         .querySelectorAll("[data-lm-collapse][data-lm-responsive]")
         .forEach((button) => {
           if (responsive.has(button)) return;
           responsive.add(button);
           let previousNarrow;
-          const media = matchMedia("(max-width:48rem)"),
+          const media = matchMedia(
+              "(max-width:" +
+                (global.LumenTokens?.breakpoints.md || "48rem") +
+                ")",
+            ),
             host = root.host,
             sync = () => {
               const target = query(button.dataset.lmCollapse);
               if (target) {
                 const narrow = host
                   ? host.clientWidth <=
-                    48 *
+                    parseFloat(global.LumenTokens?.breakpoints.md || "48rem") *
                       parseFloat(
                         getComputedStyle(document.documentElement).fontSize,
                       )
@@ -1098,10 +1359,243 @@
     });
     return template.content;
   }
+  function prepare(root) {
+    root.querySelectorAll(".field,.lm-field").forEach((field) => {
+      const input = field.querySelector("input,select,textarea"),
+        label = field.querySelector(".input-label,.lm-label");
+      if (
+        input &&
+        label &&
+        !input.hasAttribute("aria-label") &&
+        !input.hasAttribute("aria-labelledby")
+      ) {
+        label.id ||= "lumen-label-" + ++seq;
+        input.setAttribute("aria-labelledby", label.id);
+      }
+      if (input) {
+        const descriptions = (input.getAttribute("aria-describedby") || "")
+          .split(/\s+/)
+          .filter(Boolean);
+        field
+          .querySelectorAll(".input-help,.input-error,.lm-help,.lm-error")
+          .forEach((help) => {
+            help.id ||= "lumen-help-" + ++seq;
+            if (!descriptions.includes(help.id)) descriptions.push(help.id);
+          });
+        if (descriptions.length)
+          input.setAttribute("aria-describedby", descriptions.join(" "));
+      }
+    });
+    return root;
+  }
+  const fire = (element, name, detail) =>
+    element.dispatchEvent(
+      new CustomEvent("lumen:" + name, {
+        bubbles: true,
+        composed: true,
+        detail,
+      }),
+    );
+  function resource({ load, onState = () => {} }) {
+    let state = { status: "idle", data: null, error: null },
+      request = null,
+      sequence = 0,
+      disposed = false;
+    const publish = (next) => {
+      state = { ...state, ...next };
+      if (!disposed) onState(state);
+    };
+    return {
+      get state() {
+        return state;
+      },
+      async refresh(options) {
+        const generation = ++sequence;
+        request?.abort();
+        request = new AbortController();
+        publish({ status: "loading", error: null });
+        try {
+          const data = await load({ signal: request.signal, options });
+          if (disposed || generation !== sequence) return;
+          publish({
+            status: Array.isArray(data) && !data.length ? "empty" : "success",
+            data,
+            error: null,
+          });
+          return data;
+        } catch (error) {
+          if (
+            disposed ||
+            generation !== sequence ||
+            error.name === "AbortError"
+          )
+            return;
+          publish({ status: "error", error });
+          return undefined;
+        }
+      },
+      cancel() {
+        sequence++;
+        request?.abort();
+        publish({ status: "idle", error: null });
+      },
+      destroy() {
+        disposed = true;
+        sequence++;
+        request?.abort();
+      },
+    };
+  }
+  function formController(form, { submit, onState = () => {} }) {
+    const abort = new AbortController();
+    let pending = null,
+      disposed = false,
+      state = "idle",
+      dirty = false,
+      baseline = "",
+      generation = 0;
+    const signature = () =>
+      JSON.stringify(
+        [...new FormData(form)].map(([key, value]) => [
+          key,
+          typeof value === "string"
+            ? value
+            : [value.name, value.size, value.lastModified],
+        ]),
+      );
+    const publish = () => {
+      form.dataset.state = state;
+      form.dataset.dirty = String(dirty);
+      form.setAttribute("aria-busy", String(state === "loading"));
+      onState({ status: state, dirty });
+      fire(form, "formstate", { status: state, dirty });
+    };
+    const commit = () => {
+      for (const input of form.elements) {
+        if (input.type === "file") continue;
+        if (input.matches("input")) {
+          input.defaultValue = input.value;
+          input.defaultChecked = input.checked;
+        } else if (input.matches("textarea")) input.defaultValue = input.value;
+        else if (input.matches("select"))
+          for (const option of input.options)
+            option.defaultSelected = option.selected;
+      }
+      baseline = signature();
+      dirty = false;
+    };
+    const changed = () => {
+      dirty = signature() !== baseline;
+      if (state === "success" || state === "error") state = "idle";
+      publish();
+    };
+    form.setAttribute("data-lm-managed", "");
+    form.setAttribute("data-lm-validate", "");
+    form.noValidate = true;
+    commit();
+    publish();
+    for (const type of ["input", "change"])
+      form.addEventListener(type, changed, { signal: abort.signal });
+    form.addEventListener(
+      "reset",
+      () =>
+        queueMicrotask(() => {
+          if (!disposed) {
+            state = "idle";
+            dirty = false;
+            baseline = signature();
+            publish();
+          }
+        }),
+      { signal: abort.signal },
+    );
+    const busyButtons = new Set(),
+      lockedControls = new Map();
+    const unlock = () => {
+      for (const [input, disabled] of lockedControls) input.disabled = disabled;
+      lockedControls.clear();
+    };
+    const release = () => {
+      unlock();
+      const ui = mount(form.getRootNode());
+      for (const button of busyButtons) ui.busy(button, false);
+      busyButtons.clear();
+    };
+    form.addEventListener(
+      "lumen:submit",
+      async (event) => {
+        if (event.target !== form || state === "loading") return;
+        const current = ++generation;
+        pending = new AbortController();
+        state = "loading";
+        publish();
+        for (const input of form.querySelectorAll("input,select,textarea")) {
+          lockedControls.set(input, input.disabled);
+          input.disabled = true;
+        }
+        const buttons = form.querySelectorAll(
+          "button[type=submit],button:not([type])",
+        );
+        const ui = mount(form.getRootNode());
+        buttons.forEach((button) => {
+          busyButtons.add(button);
+          ui.busy(button, true);
+        });
+        try {
+          await submit(event.detail, { signal: pending.signal });
+          if (disposed || current !== generation) return;
+          unlock();
+          commit();
+          state = "success";
+          publish();
+        } catch (error) {
+          if (disposed || current !== generation || error.name === "AbortError")
+            return;
+          state = "error";
+          const output = form.querySelector("[data-lm-form-status]");
+          if (output) output.textContent = error.message;
+          publish();
+          fire(form, "formerror", { error });
+        } finally {
+          if (current === generation) release();
+        }
+      },
+      { signal: abort.signal },
+    );
+    return {
+      get state() {
+        return { status: state, dirty };
+      },
+      commit() {
+        commit();
+        state = "idle";
+        publish();
+      },
+      cancel() {
+        generation++;
+        pending?.abort();
+        release();
+        state = "idle";
+        publish();
+      },
+      destroy() {
+        disposed = true;
+        generation++;
+        pending?.abort();
+        release();
+        abort.abort();
+        form.removeAttribute("data-lm-managed");
+        form.removeAttribute("aria-busy");
+      },
+    };
+  }
   global.LumenUI = {
-    version: "3.2.0",
+    version: "3.3.0",
     mount,
     fragment,
+    prepare,
+    resource,
+    form: formController,
     async run(button, task) {
       if (button.getAttribute("aria-busy") === "true")
         throw Error("Action already in progress");

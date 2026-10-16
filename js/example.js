@@ -47,25 +47,48 @@
     const config = params.has("config")
       ? LumenVariants.normalize(JSON.parse(params.get("config")))
       : null;
-    const fragment = config
-        ? LumenVariants.create(config)
-        : template.content.cloneNode(true),
+    document.documentElement.dir = params.get("dir") === "rtl" ? "rtl" : "ltr";
+    if (params.has("brand"))
+      LumenDesign.apply(
+        document.documentElement,
+        LumenDesign.normalize(JSON.parse(params.get("brand"))),
+      );
+    const targeted = config && params.has("configTarget") && item.customize;
+    const fragment =
+        config && !targeted
+          ? LumenVariants.create(config)
+          : template.content.cloneNode(true),
       section = fragment.querySelector(".demo-section");
     if (section) {
       section.querySelector(".demo-heading")?.remove();
       section.removeAttribute("id");
       section.classList.remove("demo-section", "demo-span-2", "demo-span-full");
     }
+    if (targeted) {
+      const nodes = fragment.querySelectorAll(item.customize.selector);
+      const index = Math.max(
+        0,
+        Math.min(nodes.length - 1, Number(params.get("configTarget")) || 0),
+      );
+      if (nodes[index])
+        LumenVariants.apply(nodes[index], {
+          ...config,
+          type: item.customize.type,
+        });
+    }
     const main = document.getElementById("example");
     main.replaceChildren();
     const icons = doc.querySelector("template#icons");
     if (icons) main.append(icons.content.cloneNode(true));
     const wrap = document.createElement("div");
-    wrap.className = config ? "lumen" : item.wrapper || "lumen";
+    wrap.className =
+      config && !targeted ? "lumen" : "lumen " + (item.wrapper || "");
     wrap.append(fragment);
     main.append(wrap);
     main.dataset.ready = "true";
     LumenUI.mount(document);
+    const workspace = wrap.querySelector("[data-lumen-workspace]");
+    if (workspace) LumenWorkspace.mount(workspace);
   } catch (error) {
     document.getElementById("example").textContent = error.message;
     document.getElementById("example").dataset.ready = "error";

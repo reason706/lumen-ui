@@ -1737,10 +1737,7 @@
 }
 :is(.p,.buttons-preview) {
   font-family: var(--font-sans, system-ui, sans-serif);
-  background: var(--lm-bg, var(--lumen-color-surface, #f4f6fb));
   color: var(--lm-ink, var(--lumen-color-ink, #0f1630));
-  padding: 44px 5vw 72px;
-  min-height: 100%;
 }
 :where(.buttons-preview,.p)  :is(.g1,.color-gradient-violet) {
   --gr: linear-gradient(135deg, #6366f1, #8b5cf6);

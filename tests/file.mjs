@@ -36,7 +36,7 @@ sandbox.document = {
 vm.createContext(sandbox);
 vm.runInContext(source, sandbox);
 const fileCatalog = await sandbox.LumenAssets.json("catalog/components.json");
-assert(fileCatalog.items.length >= 529);
+assert(fileCatalog.items.length >= 530);
 assert.equal(scripts.length, 1);
 assert.equal(
   scripts[0],
@@ -49,7 +49,13 @@ const cssPath = sandbox.LumenAssets.path(
   ),
 );
 assert.equal(cssPath, "tokens/colors.css");
-assert((await sandbox.LumenAssets.text(cssPath)).includes("--indigo-700"));
+const colorModule = await sandbox.LumenAssets.text(cssPath);
+assert(colorModule.includes('@import url("./system.css")'));
+const systemPath = sandbox.LumenAssets.path(
+  new URL("./system.css", new URL(cssPath, sandbox.document.baseURI)),
+);
+assert.equal(systemPath, "tokens/system.css");
+assert((await sandbox.LumenAssets.text(systemPath)).includes("--indigo-700"));
 assert(
   (await sandbox.LumenAssets.text("templates/core.html")).includes(
     '<template id="dialog">',

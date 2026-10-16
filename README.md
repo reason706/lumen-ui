@@ -1,15 +1,21 @@
 # Lumen UI — Component Library & Live Studio
 
-![Version](https://img.shields.io/badge/version-3.2.0-6366f1)
+![Version](https://img.shields.io/badge/version-3.3.0-6366f1)
 ![Runtime](https://img.shields.io/badge/runtime-framework%20free-10b981)
-![Examples](https://img.shields.io/badge/examples-529-8b5cf6)
+![Examples](https://img.shields.io/badge/examples-530-8b5cf6)
 ![Themes](https://img.shields.io/badge/themes-8-ec4899)
 
-Lumen UI is a modular HTML, CSS, and JavaScript component library with **529 examples across 12 categories and 69 families**. Its live studio organizes related items so you can find, compare, inspect, and copy them into your own interfaces.
+Lumen UI is a modular HTML, CSS, and JavaScript component library with **530 examples across 12 categories and 69 families**. Its live studio organizes related items so you can find, compare, inspect, and copy them into your own interfaces.
 
-Version 3 preserves the content of all **473 original examples**, with repeated button demonstrations merged into canonical sections. The original color, typography, spacing, effects, and component styles remain available. It adds **59 public core examples**, a single catalog, native HTML templates, reusable interactions, and responsive utilities. Lumen follows a Bootstrap-style approach to composing interfaces with classes and optional JavaScript; migrating an existing Bootstrap application requires adapting its markup and classes to Lumen's API.
+Version 3 preserves the content of all **473 original examples**, with repeated button demonstrations merged into canonical sections. The original color, typography, spacing, effects, and component styles remain available. It adds **60 public core examples**, a single catalog, native HTML templates, reusable interactions, and responsive utilities. Lumen follows a Bootstrap-style approach to composing interfaces with classes and optional JavaScript; migrating an existing Bootstrap application requires adapting its markup and classes to Lumen's API.
 
 ## What's new
+
+- **3.3 foundation system:** one validated JSON token source generates shared roles, eight scoped themes, aliases, responsive breakpoints and component size recipes. Default medium and `size-md` now agree across 22 families; buttons and text/icon controls share their existing scale.
+- **Interaction contracts:** associated labels/errors, validation summaries, cancellable form/resource controllers, persistent undo, paused notifications and top-layer keyboard menus.
+- **Accurate workspace editing:** customization edits an existing supported instance while preserving its composition. Token editing, shareable workspace state and portable exports use the same configuration.
+- **Connected reference app:** open [workspace.html](workspace.html) for records, details, editing, settings, attachments, request failures/retry, permissions and undo. It uses public components and simulated, session-only data.
+
 
 - **3.2 consistency pass:** shared reference spacing/palette/focus tokens, logical directions, responsive grids, and control-size tokens; preview navigation uses one breakpoint decision for visibility and ARIA state.
 - **Source consolidation:** three shared reference fragments remove 2,720 repeated source blocks. The naming compiler expands them in each category's context, preserving existing names and useful variants.
@@ -41,8 +47,8 @@ Version 3 preserves the content of all **473 original examples**, with repeated 
 | Status & feedback | 50 |
 | Data & content | 49 |
 | Media & imagery | 75 |
-| Compositions | 34 |
-| **Total** | **529** |
+| Compositions | 35 |
+| **Total** | **530** |
 
 Examples are labeled by capability:
 
@@ -53,7 +59,7 @@ Examples are labeled by capability:
 | Visual reference | A styling example; full application behavior is not implied. |
 | Composition | An assembled interface whose application-specific actions and data need integration. |
 
-The 59 core examples include interactive controls, CSS/native examples, and compositions. Example counts are distinct from component-family counts and individual variant counts.
+The 60 core examples include interactive controls, CSS/native examples, and compositions. Example counts are distinct from component-family counts and individual variant counts.
 
 ## Open the studio
 
@@ -73,7 +79,7 @@ Use the category sidebar or **Ctrl / Command + K** to search. Select **Inspect**
 
 ## Ready-built files
 
-For a project that only needs the framework, copy `dist/lumen-core.css` and optionally `dist/lumen.js`. These files have no build-time dependencies or CSS imports. `dist/lumen.css` includes the larger reference collection. `dist/index.html` is a working starter page; `dist/manifest.json` records sizes and checksums. The compatibility core is about 32 KB gzip and the full collection about 129 KB gzip. New projects using only the agreed public names can choose `dist/lumen-core-modern.css` (about 25 KB gzip) or `dist/lumen-modern.css` (about 114 KB gzip). These optional bundles omit generated legacy selector aliases; the default bundles continue to support existing integrations. The minified optional runtime is about 7.5 KB gzip. Exact sizes and checksums are in the manifest; reviewed gzip limits in `bundle-budgets.json` are enforced during every build.
+For a project that only needs the framework, copy `dist/lumen-core.css` and optionally `dist/lumen.js`. These files have no build-time dependencies or CSS imports. `dist/lumen.css` includes the larger reference collection. `dist/index.html` is a working starter page; `dist/manifest.json` records sizes and checksums. The compatibility core is about 33 KB gzip and the full collection about 130 KB gzip. New projects using only the agreed public names can choose `dist/lumen-core-modern.css` (about 27 KB gzip) or `dist/lumen-modern.css` (about 116 KB gzip). These optional bundles omit generated legacy selector aliases; the default bundles continue to support existing integrations. The minified optional runtime is about 12 KB gzip. Exact sizes and checksums are in the manifest; reviewed gzip limits in `bundle-budgets.json` are enforced during every build.
 
 ```html
 <link rel="stylesheet" href="lumen-core.css">
@@ -87,11 +93,17 @@ Run `npm ci && npm run build` to regenerate icons, canonical styles, distributio
 
 ## Build and export a variant
 
-Open **Inspect → Customize** on a supported example. Choose a button, card, badge, input, alert, chip, avatar or progress control, then adjust its style, color/gradient, size, shape, state, label and icon where supported. Preview, HTML, copying and the standalone link use the same validated configuration. Focus/hover/pressed choices demonstrate those states; disabled and busy choices use native attributes.
+Open **Inspect → Customize** on a supported example. Select an existing instance on examples marked customizable, then adjust its style, color/gradient, size, shape, state, label and icon where supported. Preview, HTML, copying and the standalone link use the same validated configuration. Focus/hover/pressed choices demonstrate those states; disabled and busy choices use native attributes.
 
 **Copy HTML** supplies markup with its required scope, inline icon definitions where needed, and fresh IDs so repeated copies keep their labels and behavior targets independent. Stateful controls are copied with their complete context; individual selection is available for self-contained visual controls. **Copy CSS** supplies expanded stylesheet dependencies. **Copy complete example** includes the source stylesheet/script links and icon definitions. **Download HTML** embeds the CSS and interaction script so the downloaded page can run independently. External images in visual references retain their original URLs. Direct-file studio opening supports these tools through the generated snapshot.
 
 Search understands familiar synonyms including “IB,” “btn,” “soft,” and “modal.” Example labels distinguish shared interactive components, native controls, and appearance references that need application behavior.
+
+## Connected reference workspace
+
+Open `workspace.html`, or **Compositions → Connected workspace** in the studio. Overview, records, detail drawer, create/edit dialogs, settings and attachments share the public primitives. Search, sort, page selection, CSV, bulk archive/undo, dirty-change confirmation, errors/retry, upload cancellation and viewer/editor states work together. The **Fail next request** control makes error paths reproducible.
+
+Data and attachments remain in memory for the session. Viewer mode demonstrates UI permissions; production authorization belongs on your server. For application integration, `LumenWorkspace.mount(root, {adapter})` accepts optional asynchronous `list`, `save`, `archive`, `settings` and `upload` handlers, each receiving `(payload, {signal})`. `list` returns an array of records; the other handlers complete the operation before the local view updates. The standalone page and portable studio export use the same template and controller. This optional app controller stays outside the core runtime bundle.
 
 ## Application patterns
 
@@ -106,7 +118,13 @@ The Compositions category includes tested login, settings, checkout, dashboard, 
 - File inputs accept `data-lm-max-size` in bytes, announce selection/errors, and support clearing. Repeated form names produce arrays in `lumen:submit` details; single values retain their existing shape.
 - Status presentations demonstrate application states. Retry/create actions are integration examples, not backend requests.
 
-Matching older form entries redirect through catalog aliases instead of duplicating the working patterns. The inventory now includes 529 examples, retaining all original entries through examples and aliases.
+Matching older form entries redirect through catalog aliases instead of duplicating the working patterns. The inventory now includes 530 examples, retaining all original entries through examples and aliases.
+
+## Authoring design tokens
+
+Edit [tokens/design-tokens.json](tokens/design-tokens.json) for primitives, semantic roles, theme assignments, component roles, compatibility aliases, breakpoints and size recipes. `npm run build:tokens` generates the CSS modules, size stylesheet and JavaScript metadata. The build rejects unknown references, dependency cycles, incomplete themes and invalid customization contracts. Authored utilities live in `tokens/source/`; responsive utilities expand from one base definition at the shared breakpoints. Generated token modules, `components/utilities.css` and `components/sizes.css` should not be edited directly.
+
+The studio **Tokens** dialog adjusts palette, radii, spacing, control height and font, warns about configured text contrast and copies scoped CSS. `LumenDesign.apply(element, configuration)` and `LumenDesign.css(configuration, selector)` expose the same validated settings to applications and exports. Set `data-density="compact"` for denser surfaces/tables while keeping explicit control dimensions. [components/contracts.json](components/contracts.json) records anatomy, states, sizes and keyboard contracts. Existing class names and aliases remain supported.
 
 ## Shared foundations and parts
 
@@ -158,9 +176,9 @@ Use the same base, appearance, color, and size classes for both. Add `btn-icon` 
 <button type="button" class="btn btn-style-tonal color-success size-sm btn-icon" aria-label="Add">+</button>
 ```
 
-Sizes are `size-xs` (32px), `size-sm` (40px), default (44px), `size-lg` (52px), and `size-xl` (62px). Text buttons use horizontal padding; icon buttons use the same height as their square width with zero padding. Both APIs consume `tokens/controls.css`; original category styles share `components/button-base.css` instead of repeating button geometry. All icon examples now use `btn btn-icon`. The compiled styles also support the original `b ib`, standalone `ib`, and `lm-*` aliases. Public core button dimensions now match the original scale, including the previously different small and large sizes.
+Sizes are `size-xs` (32px), `size-sm` (40px), default (44px), `size-lg` (52px), and `size-xl` (62px). Text buttons use horizontal padding; icon buttons use the same height as their square width with zero padding. Both APIs consume the generated `tokens/controls.css`; original category styles share `components/button-base.css` instead of repeating button geometry. All icon examples now use `btn btn-icon`. The compiled styles also support the original `b ib`, standalone `ib`, and `lm-*` aliases. Public core button dimensions now match the original scale, including the previously different small and large sizes.
 
-The [framework plan](FRAMEWORK-PLAN.md) records the completed naming migration and remaining component consolidation work. Naming now applies to every catalog template; visual references retain their existing behavior status.
+The [framework plan](FRAMEWORK-PLAN.md) records the completed stages 1–7 and verification boundaries. Naming now applies to every catalog template; visual references retain their existing behavior status.
 
 ### Shared naming convention
 
@@ -199,7 +217,7 @@ The canonical mapping is in [naming/classes.json](naming/classes.json). New exam
 </div>
 ```
 
-Responsive prefixes are `sm`, `md`, `lg`, `xl`, and `xxl`. Spacing suffixes match the original `--space-*` tokens: for example, `p-4` uses `--space-4` (1rem), while `p-6` uses `--space-6` (1.5rem). Logical utilities such as `ps-4` and `me-4` support RTL layouts.
+Responsive prefixes are `sm`, `md`, `lg`, `xl`, and `xxl` (the `2xl` token). Their shared breakpoints are 40rem, 48rem, 64rem, 80rem and 96rem. Grid column gaps shrink when necessary to keep twelve tracks inside narrow containers, including enlarged text. Spacing suffixes match the original `--space-*` tokens: for example, `p-4` uses `--space-4` (1rem), while `p-6` uses `--space-6` (1.5rem). Logical utilities such as `ps-4` and `me-4` support RTL layouts.
 
 ### Themes
 
@@ -223,6 +241,35 @@ ui.refresh();
 ui.destroy();
 ```
 
+For request-backed forms and data, use the shared controllers:
+
+```js
+const form = LumenUI.form(document.querySelector('form'), {
+  submit: async (values, {signal}) => {
+    const response = await fetch('/api/settings', {
+      method: 'POST', body: JSON.stringify(values), signal,
+      headers: {'Content-Type': 'application/json'}
+    });
+    if (!response.ok) throw Error('Could not save. Try again.');
+  },
+  onState: ({status, dirty}) => { /* update your status presentation */ }
+});
+// form.state, form.commit(), form.cancel(), form.destroy()
+
+const resource = LumenUI.resource({
+  load: async ({signal}) => {
+    const response = await fetch('/api/records', {signal});
+    if (!response.ok) throw Error('Could not load records.');
+    return response.json();
+  },
+  onState: ({status, data, error}) => { /* render loading/empty/error/success */ }
+});
+await resource.refresh();
+// resource.cancel(); resource.destroy();
+```
+
+Forms lock data controls during submission, retain values on errors and commit reset defaults on success. Add an output with `data-lm-form-status` for errors. Call `cancel()` before resetting an in-flight form. Resource refresh aborts the preceding request and ignores stale results. `LumenUI.prepare(root)` supplies stable label/help/error associations before serializing markup. Notifications accept `{duration, action: {label, run}, politeness}`; duration zero keeps an undo action available until dismissed.
+
 Calling `LumenUI.mount` again on a mounted root refreshes it without adding duplicate delegated listeners. Components dispatch bubbling `lumen:*` events, including `lumen:action`, `lumen:tabchange`, `lumen:submit`, `lumen:select`, `lumen:sort`, and `lumen:page`, for application integration.
 
 The original theme manager, telemetry simulator, and automotive controls remain available in `js/theme-manager.js`, `js/telemetry.js`, `js/controls.js`, and `js/lumen.js`. They are optional modules and are separate from the public core interaction layer.
@@ -235,14 +282,20 @@ The original theme manager, telemetry simulator, and automotive controls remain 
  naming/classes.json      Canonical names, original aliases, per-template mappings
  components/public-*.css  Generated canonical selectors and compatibility aliases
  components/appearance.css Shared colors, sizes, typography and appearance utilities
- tokens/brand.css         Shared Foundation palette and gradient tokens
+ tokens/design-tokens.json Authoritative primitives, roles, themes and size contracts
+ tokens/source/           Authored utility source
+ components/contracts.json Public component anatomy and interaction contracts
+ tokens/brand.css         Generated Foundation palette aliases
  tokens/                  Original colors, typography, spacing, effects, breakpoints
  components/core.css      Component source styles; compiled names live in public-core.css
  components/utilities.css Responsive layout and logical spacing utilities
  components/*.css         Original component styles
  js/assets.js             Shared HTTP / direct-file asset loader
  js/studio-data.js         Generated direct-file snapshot
- js/components.js         Public interaction and lifecycle API
+ js/components.js         Public interaction, form/resource and lifecycle API
+ js/design.js             Shared validated branding API
+ js/workspace.js          Optional connected application controller
+ workspace.html           Connected reference application
  js/studio.js             Catalog-driven studio and inspector
  js/example.js            Standalone example loader
  js/theme-manager.js      Original theme manager
@@ -276,11 +329,15 @@ Browser checks require Chromium at `/usr/bin/chromium`, or an alternative execut
 The suite checks:
 
 - Catalog integrity, unique keys, template dependencies, and preservation of the original content through canonical sections and merged aliases.
-- Rendering all 529 previews over HTTP and through the offline snapshot loader, plus navigation, aliases, filtering, favorites, comparison, and standalone exports.
+- Rendering all 530 previews over HTTP and through the offline snapshot loader, plus navigation, aliases, filtering, favorites, comparison, and standalone exports.
 - Windows direct-file path resolution without fetch requests, offline snapshot rendering, HTML/CSS inspection, standalone interactions, paths containing spaces, and HTTP hosting under a subdirectory. The suite attempts real `file://` browser navigation; if an administrator policy blocks that scheme, it reports the check as skipped and tests the same snapshot loader using HTTP offline mode.
 - Core and selected original interactions, keyboard behavior, runtime lifecycle, responsive preview containers, and mobile layout.
 - Foundation/button palette parity, merged button aliases, text/icon hover and press states, disabled behavior, and 48 canonical button/theme accessibility checks.
-- **472 public core/theme combinations**: 59 core examples across eight themes, including open dialogs/menus, validation errors, automated WCAG checks through axe-core, and narrow-layout checks.
+- **480 public core/theme combinations**: 60 core examples across eight themes, including open dialogs/menus, validation errors, automated WCAG checks through axe-core, and narrow-layout checks.
+
+Additional checks cover token dependencies, scoped brand changes, every default/medium size contract, nested themes, request races, notification timing, anatomy-preserving configuration and branded exports. The connected app has workflow checks and 12 desktop/mobile-RTL/dark WCAG audits. `npm run test:compat` checks native forms, keyboard menus, app CRUD, 320px/200% text reflow and Chromium forced colors. Set `LUMEN_BROWSER=firefox` or `webkit` after installing that Playwright browser. GitHub Actions runs this compatibility matrix separately.
+
+Local 3.3 verification uses Chromium. Firefox/WebKit downloads and native `file://` navigation are blocked by this managed environment's network/browser policies; those engine runs and direct-file navigation are not claimed as locally verified. Snapshot-based offline loading is exercised with source requests disabled.
 
 Focused commands are `npm run test:catalog`, `npm run test:buttons`, `npm run test:file`, and `npm run test:themes`. Automated checks cover the public core and selected interactions; they are not an accessibility certification of every retained visual reference or a substitute for manual testing in target applications.
 
@@ -290,7 +347,7 @@ MIT. Copyright © 2026 Santosh Ghimire.
 
 ### Functional and visual regression checks
 
-`npm test` verifies generated assets, every retained preview, mixed components, interaction behavior, configured exports, distribution parity, token changes, themes and accessibility. The quality suite includes 52 application/configurator accessibility audits, plus eight committed desktop/mobile-RTL screenshot baselines. Pixel differences are written to `/tmp/lumen-visual-diffs` when a baseline fails.
+`npm test` verifies generated assets, every retained preview, mixed components, interaction behavior, configured exports, distribution parity, token changes, themes and accessibility. The quality suite includes 54 application/configurator accessibility audits, plus eight committed desktop/mobile-RTL screenshot baselines. Pixel differences are written to `/tmp/lumen-visual-diffs` when a baseline fails.
 
 Run `npm run test:quality` for this feature suite. After an intentional visual change, run `npm run test:visual:update`, inspect the changed PNG files in `tests/visual`, and commit the reviewed baselines. Test fonts use local fallbacks and reduced motion for repeatability. Browser snapshots complement semantic and keyboard checks; they do not replace them.
 

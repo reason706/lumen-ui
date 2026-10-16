@@ -100,6 +100,10 @@ for (const entry of [
     );
 }
 const runtime =
+  (await readFile("js/tokens.js", "utf8")) +
+  "\n" +
+  (await readFile("js/design.js", "utf8")) +
+  "\n" +
   (await readFile("js/icons.js", "utf8")) +
   "\n" +
   (await readFile("js/components.js", "utf8"));

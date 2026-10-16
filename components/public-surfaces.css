@@ -3115,10 +3115,7 @@
 
 :is(.p,.surfaces-preview) {
   font-family: var(--font-sans, system-ui, sans-serif);
-  background: var(--lumen-color-surface, #f4f6fb);
   color: var(--lumen-color-ink, #0f1630);
-  padding: 44px 5vw 72px;
-  min-height: 100%;
 }
 
 :where(.surfaces-preview,.p)  :is(.cdx,.card-reference) {

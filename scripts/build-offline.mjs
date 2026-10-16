@@ -11,6 +11,11 @@ const catalog = JSON.parse(catalogText);
 const files = new Set([
   "catalog/components.json",
   "js/components.js",
+  "js/tokens.js",
+  "js/design.js",
+  "tokens/design-tokens.json",
+  "components/contracts.json",
+  ...catalog.items.flatMap((item) => item.scripts || []),
   ...catalog.items.map((item) => item.template),
 ]);
 for (const directory of ["tokens", "components"])

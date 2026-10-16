@@ -1,0 +1,111 @@
+/* Generated component size contracts from tokens/design-tokens.json. */
+:where(.lumen,.lm-scope) .input.size-xs{min-height:var(--lm-control-xs);font-size:var(--text-xs);--lumen-input-size:var(--lm-control-xs);padding:0.5rem var(--lm-control-pad-xs);line-height:1.25;}
+:where(.lumen,.lm-scope) .input.size-sm{min-height:var(--lm-control-sm);font-size:var(--text-control-sm);--lumen-input-size:var(--lm-control-sm);padding:0.5rem var(--lm-control-pad-sm);line-height:1.25;}
+:where(.lumen,.lm-scope) .input.size-md,:where(.lumen,.lm-scope) .input:not([class*="size-"]){min-height:var(--lm-control-md);font-size:var(--text-sm);--lumen-input-size:var(--lm-control-md);padding:0.5rem var(--lm-control-pad-md);line-height:1.25;}
+:where(.lumen,.lm-scope) .input.size-lg{min-height:var(--lm-control-lg);font-size:var(--text-base);--lumen-input-size:var(--lm-control-lg);padding:0.5rem var(--lm-control-pad-lg);line-height:1.25;}
+:where(.lumen,.lm-scope) .input.size-xl{min-height:var(--lm-control-xl);font-size:var(--text-lg);--lumen-input-size:var(--lm-control-xl);padding:0.5rem var(--lm-control-pad-xl);line-height:1.25;}
+:where(.lumen,.lm-scope) .check.size-xs{min-height:var(--lm-control-xs);font-size:var(--text-xs);}
+:where(.lumen,.lm-scope) .check.size-sm{min-height:var(--lm-control-sm);font-size:var(--text-control-sm);}
+:where(.lumen,.lm-scope) .check.size-md,:where(.lumen,.lm-scope) .check:not([class*="size-"]){min-height:var(--lm-control-md);font-size:var(--text-sm);}
+:where(.lumen,.lm-scope) .check.size-lg{min-height:var(--lm-control-lg);font-size:var(--text-base);}
+:where(.lumen,.lm-scope) .check.size-xl{min-height:var(--lm-control-xl);font-size:var(--text-lg);}
+:where(.lumen,.lm-scope) .range.size-xs{min-height:var(--lm-control-xs);font-size:var(--text-xs);}
+:where(.lumen,.lm-scope) .range.size-sm{min-height:var(--lm-control-sm);font-size:var(--text-control-sm);}
+:where(.lumen,.lm-scope) .range.size-md,:where(.lumen,.lm-scope) .range:not([class*="size-"]){min-height:var(--lm-control-md);font-size:var(--text-sm);}
+:where(.lumen,.lm-scope) .range.size-lg{min-height:var(--lm-control-lg);font-size:var(--text-base);}
+:where(.lumen,.lm-scope) .range.size-xl{min-height:var(--lm-control-xl);font-size:var(--text-lg);}
+:where(.lumen,.lm-scope) .badge.size-xs{font-size:var(--text-xs);padding:.2em .65em;min-height:0;}
+:where(.lumen,.lm-scope) .badge.size-sm{font-size:var(--text-xs);padding:.2em .65em;min-height:0;}
+:where(.lumen,.lm-scope) .badge.size-md,:where(.lumen,.lm-scope) .badge:not([class*="size-"]){font-size:var(--text-sm);padding:.2em .65em;min-height:0;}
+:where(.lumen,.lm-scope) .badge.size-lg{font-size:var(--text-base);padding:.2em .65em;min-height:0;}
+:where(.lumen,.lm-scope) .badge.size-xl{font-size:var(--text-lg);padding:.2em .65em;min-height:0;}
+:where(.lumen,.lm-scope) .avatar.size-xs{width:var(--lm-control-xs);height:var(--lm-control-xs);font-size:var(--text-xs);padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .avatar.size-sm{width:var(--lm-control-sm);height:var(--lm-control-sm);font-size:var(--text-control-sm);padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .avatar.size-md,:where(.lumen,.lm-scope) .avatar:not([class*="size-"]){width:var(--lm-control-md);height:var(--lm-control-md);font-size:var(--text-sm);padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .avatar.size-lg{width:var(--lm-control-lg);height:var(--lm-control-lg);font-size:var(--text-base);padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .avatar.size-xl{width:var(--lm-control-xl);height:var(--lm-control-xl);font-size:var(--text-lg);padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .spinner.size-xs{width:16px;height:16px;padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .spinner.size-sm{width:20px;height:20px;padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .spinner.size-md,:where(.lumen,.lm-scope) .spinner:not([class*="size-"]){width:22px;height:22px;padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .spinner.size-lg{width:26px;height:26px;padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .spinner.size-xl{width:31px;height:31px;padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .progress.size-xs{height:4px;padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .progress.size-sm{height:6px;padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .progress.size-md,:where(.lumen,.lm-scope) .progress:not([class*="size-"]){height:8px;padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .progress.size-lg{height:12px;padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .progress.size-xl{height:16px;padding:0;min-height:0;}
+:where(.lumen,.lm-scope) .card.size-xs{padding:var(--space-2);font-size:inherit;min-height:0;}
+:where(.lumen,.lm-scope) .card.size-sm{padding:var(--space-3);font-size:inherit;min-height:0;}
+:where(.lumen,.lm-scope) .card.size-md,:where(.lumen,.lm-scope) .card:not([class*="size-"]){padding:var(--lumen-panel-pad);font-size:inherit;min-height:0;}
+:where(.lumen,.lm-scope) .card.size-lg{padding:var(--space-7);font-size:inherit;min-height:0;}
+:where(.lumen,.lm-scope) .card.size-xl{padding:var(--space-9);font-size:inherit;min-height:0;}
+:where(.lumen,.lm-scope) .panel.size-xs{padding:var(--space-2);font-size:inherit;min-height:0;}
+:where(.lumen,.lm-scope) .panel.size-sm{padding:var(--space-3);font-size:inherit;min-height:0;}
+:where(.lumen,.lm-scope) .panel.size-md,:where(.lumen,.lm-scope) .panel:not([class*="size-"]){padding:var(--lumen-panel-pad);font-size:inherit;min-height:0;}
+:where(.lumen,.lm-scope) .panel.size-lg{padding:var(--space-7);font-size:inherit;min-height:0;}
+:where(.lumen,.lm-scope) .panel.size-xl{padding:var(--space-9);font-size:inherit;min-height:0;}
+:where(.lumen,.lm-scope) .alert.size-xs{padding:var(--space-1_5);font-size:var(--text-xs);min-height:0;}
+:where(.lumen,.lm-scope) .alert.size-sm{padding:var(--space-2);font-size:var(--text-control-sm);min-height:0;}
+:where(.lumen,.lm-scope) .alert.size-md,:where(.lumen,.lm-scope) .alert:not([class*="size-"]){padding:var(--space-4);font-size:var(--text-sm);min-height:0;}
+:where(.lumen,.lm-scope) .alert.size-lg{padding:var(--space-5);font-size:var(--text-base);min-height:0;}
+:where(.lumen,.lm-scope) .alert.size-xl{padding:var(--space-6);font-size:var(--text-lg);min-height:0;}
+:where(.lumen,.lm-scope) .toast.size-xs{padding:var(--space-1_5);font-size:var(--text-xs);min-height:0;}
+:where(.lumen,.lm-scope) .toast.size-sm{padding:var(--space-2);font-size:var(--text-control-sm);min-height:0;}
+:where(.lumen,.lm-scope) .toast.size-md,:where(.lumen,.lm-scope) .toast:not([class*="size-"]){padding:var(--space-4);font-size:var(--text-sm);min-height:0;}
+:where(.lumen,.lm-scope) .toast.size-lg{padding:var(--space-5);font-size:var(--text-base);min-height:0;}
+:where(.lumen,.lm-scope) .toast.size-xl{padding:var(--space-6);font-size:var(--text-lg);min-height:0;}
+:where(.lumen,.lm-scope) .menu.size-xs{padding:var(--space-1_5);font-size:var(--text-xs);min-height:0;}
+:where(.lumen,.lm-scope) .menu.size-sm{padding:var(--space-2);font-size:var(--text-control-sm);min-height:0;}
+:where(.lumen,.lm-scope) .menu.size-md,:where(.lumen,.lm-scope) .menu:not([class*="size-"]){padding:var(--space-4);font-size:var(--text-sm);min-height:0;}
+:where(.lumen,.lm-scope) .menu.size-lg{padding:var(--space-5);font-size:var(--text-base);min-height:0;}
+:where(.lumen,.lm-scope) .menu.size-xl{padding:var(--space-6);font-size:var(--text-lg);min-height:0;}
+:where(.lumen,.lm-scope) .popover.size-xs{padding:var(--space-1_5);font-size:var(--text-xs);min-height:0;}
+:where(.lumen,.lm-scope) .popover.size-sm{padding:var(--space-2);font-size:var(--text-control-sm);min-height:0;}
+:where(.lumen,.lm-scope) .popover.size-md,:where(.lumen,.lm-scope) .popover:not([class*="size-"]){padding:var(--space-4);font-size:var(--text-sm);min-height:0;}
+:where(.lumen,.lm-scope) .popover.size-lg{padding:var(--space-5);font-size:var(--text-base);min-height:0;}
+:where(.lumen,.lm-scope) .popover.size-xl{padding:var(--space-6);font-size:var(--text-lg);min-height:0;}
+:where(.lumen,.lm-scope) .dialog.size-xs{width:20rem;max-width:calc(100% - 2rem);padding:var(--space-3);font-size:var(--text-xs);min-height:0;}
+:where(.lumen,.lm-scope) .dialog.size-sm{width:28rem;max-width:calc(100% - 2rem);padding:var(--space-4);font-size:var(--text-control-sm);min-height:0;}
+:where(.lumen,.lm-scope) .dialog.size-md,:where(.lumen,.lm-scope) .dialog:not([class*="size-"]){width:40rem;max-width:calc(100% - 2rem);padding:var(--space-6);font-size:var(--text-sm);min-height:0;}
+:where(.lumen,.lm-scope) .dialog.size-lg{width:56rem;max-width:calc(100% - 2rem);padding:var(--space-7);font-size:var(--text-base);min-height:0;}
+:where(.lumen,.lm-scope) .dialog.size-xl{width:72rem;max-width:calc(100% - 2rem);padding:var(--space-8);font-size:var(--text-lg);min-height:0;}
+:where(.lumen,.lm-scope) .drawer.size-xs{width:20rem;max-width:calc(100% - 2rem);padding:var(--space-3);font-size:var(--text-xs);min-height:0;}
+:where(.lumen,.lm-scope) .drawer.size-sm{width:28rem;max-width:calc(100% - 2rem);padding:var(--space-4);font-size:var(--text-control-sm);min-height:0;}
+:where(.lumen,.lm-scope) .drawer.size-md,:where(.lumen,.lm-scope) .drawer:not([class*="size-"]){width:40rem;max-width:calc(100% - 2rem);padding:var(--space-6);font-size:var(--text-sm);min-height:0;}
+:where(.lumen,.lm-scope) .drawer.size-lg{width:56rem;max-width:calc(100% - 2rem);padding:var(--space-7);font-size:var(--text-base);min-height:0;}
+:where(.lumen,.lm-scope) .drawer.size-xl{width:72rem;max-width:calc(100% - 2rem);padding:var(--space-8);font-size:var(--text-lg);min-height:0;}
+:where(.lumen,.lm-scope) .nav.size-xs{font-size:var(--text-xs);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .nav.size-sm{font-size:var(--text-control-sm);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .nav.size-md,:where(.lumen,.lm-scope) .nav:not([class*="size-"]){font-size:var(--text-sm);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .nav.size-lg{font-size:var(--text-base);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .nav.size-xl{font-size:var(--text-lg);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .tabs.size-xs{font-size:var(--text-xs);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .tabs.size-sm{font-size:var(--text-control-sm);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .tabs.size-md,:where(.lumen,.lm-scope) .tabs:not([class*="size-"]){font-size:var(--text-sm);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .tabs.size-lg{font-size:var(--text-base);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .tabs.size-xl{font-size:var(--text-lg);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .steps.size-xs{font-size:var(--text-xs);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .steps.size-sm{font-size:var(--text-control-sm);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .steps.size-md,:where(.lumen,.lm-scope) .steps:not([class*="size-"]){font-size:var(--text-sm);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .steps.size-lg{font-size:var(--text-base);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .steps.size-xl{font-size:var(--text-lg);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .list.size-xs{font-size:var(--text-xs);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .list.size-sm{font-size:var(--text-control-sm);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .list.size-md,:where(.lumen,.lm-scope) .list:not([class*="size-"]){font-size:var(--text-sm);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .list.size-lg{font-size:var(--text-base);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .list.size-xl{font-size:var(--text-lg);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .accordion.size-xs{font-size:var(--text-xs);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .accordion.size-sm{font-size:var(--text-control-sm);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .accordion.size-md,:where(.lumen,.lm-scope) .accordion:not([class*="size-"]){font-size:var(--text-sm);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .accordion.size-lg{font-size:var(--text-base);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .accordion.size-xl{font-size:var(--text-lg);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .table.size-xs{font-size:var(--text-xs);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .table.size-sm{font-size:var(--text-control-sm);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .table.size-md,:where(.lumen,.lm-scope) .table:not([class*="size-"]){font-size:var(--text-sm);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .table.size-lg{font-size:var(--text-base);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .table.size-xl{font-size:var(--text-lg);min-height:0;padding:0;}
+:where(.lumen,.lm-scope) .chip.size-xs{font-size:var(--text-xs);min-height:0;padding:.2em .65em;}
+:where(.lumen,.lm-scope) .chip.size-sm{font-size:var(--text-control-sm);min-height:0;padding:.2em .65em;}
+:where(.lumen,.lm-scope) .chip.size-md,:where(.lumen,.lm-scope) .chip:not([class*="size-"]){font-size:var(--text-sm);min-height:0;padding:.2em .65em;}
+:where(.lumen,.lm-scope) .chip.size-lg{font-size:var(--text-base);min-height:0;padding:.2em .65em;}
+:where(.lumen,.lm-scope) .chip.size-xl{font-size:var(--text-lg);min-height:0;padding:.2em .65em;}

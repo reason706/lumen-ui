@@ -32,6 +32,53 @@
     configuration = null;
   let favorites = read("favorites", []),
     recent = read("recent", []);
+  let brandConfiguration = LumenDesign.normalize(read("brand", {})),
+    activeTab = "preview",
+    restoringWorkspace = false;
+  const workspaceStates = new Map();
+  function currentWorkspace() {
+    return {
+      view: category,
+      q: $("search").value,
+      family: $("family-filter").value,
+      status: $("status-filter").value,
+      layout: $("layout-filter").value,
+      width,
+      theme: $("theme").value,
+      dir: document.documentElement.dir || "ltr",
+      compare: comparison,
+      brand: brandConfiguration,
+      item: $("inspector").open ? selected?.key : null,
+      tab: activeTab,
+      config: configured(selected || {}) ? configuration : null,
+    };
+  }
+  function saveWorkspace() {
+    if (!catalog || restoringWorkspace) return;
+    const state = currentWorkspace();
+    workspaceStates.set(category, state);
+    const url = new URL(location.href);
+    url.searchParams.set("workspace", JSON.stringify(state));
+    history.replaceState(null, "", url);
+    write("workspace", state);
+  }
+  function urlWorkspace() {
+    try {
+      const value = JSON.parse(
+        new URLSearchParams(location.search).get("workspace") || "null",
+      );
+      return value && typeof value === "object" ? value : null;
+    } catch {
+      return null;
+    }
+  }
+  function applyBrand() {
+    LumenDesign.apply(document.documentElement, brandConfiguration);
+    for (const preview of previews)
+      LumenDesign.apply(preview.host, brandConfiguration);
+    write("brand", brandConfiguration);
+    saveWorkspace();
+  }
   const icons = ["◈", "▦", "↗", "▤", "◉", "☷", "▣", "◇", "◌", "▥", "▷", "✦"];
   const typeLabels = {
     functional: "Interactive core",
@@ -103,10 +150,18 @@
       return true;
     });
   }
+  async function configuredContent(item) {
+    const fragment = legacySnippet(await content(item));
+    if (configured(item)) {
+      const node = fragment.querySelectorAll(item.customize.selector)[
+        configuration.index || 0
+      ];
+      if (node) LumenVariants.apply(node, configuration.value);
+    }
+    return fragment;
+  }
   async function markup(item, variant) {
-    let fragment = configured(item)
-      ? LumenVariants.create(configuration.value)
-      : legacySnippet(await content(item));
+    let fragment = await configuredContent(item);
     if (variant !== undefined && variant !== "all") {
       const candidates = copyCandidates(fragment);
       const node = candidates[Number(variant)];
@@ -116,11 +171,12 @@
       }
     }
     const holder = el("div");
-    if (item.source !== "core" && !configured(item)) {
+    if (item.source !== "core") {
       const wrapper = el("div", "lumen " + item.wrapper);
       wrapper.append(fragment);
       holder.append(wrapper);
     } else holder.append(fragment);
+    LumenUI.prepare(holder);
     if (holder.querySelector("use")) {
       holder.insertAdjacentHTML("afterbegin", await dependencies(item));
     }
@@ -136,20 +192,36 @@
     const snippet = await markup(item, variant);
     const links = stylesheetFiles(item);
     const theme = $("theme").value;
+    const scripts = [
+      "js/tokens.js",
+      "js/design.js",
+      "js/components.js",
+      ...(item.scripts || []),
+    ];
+    const brandCSS = LumenDesign.css(brandConfiguration);
     const assets = portable
       ? "<style>" +
-        (await Promise.all(links.map((file) => previewSheet(file, true))))
-          .join("\n")
-          .replace(/<\/style/gi, "<\\/style") +
+        (
+          (
+            await Promise.all(links.map((file) => previewSheet(file, true)))
+          ).join("\n") +
+          "\n" +
+          brandCSS
+        ).replace(/<\/style/gi, "<\\/style") +
         "</style>\n<script>" +
-        (await LumenAssets.text("js/components.js")).replace(
-          /<\/script/gi,
-          "<\\/script",
-        ) +
+        (await Promise.all(scripts.map((file) => LumenAssets.text(file))))
+          .join("\n")
+          .replace(/<\/script/gi, "<\\/script") +
         "</script>"
       : links
-          .map((f) => '<link rel="stylesheet" href="' + f + '">')
-          .join("\n") + '\n<script src="js/components.js" defer></script>';
+          .map((file) => '<link rel="stylesheet" href="' + file + '">')
+          .join("\n") +
+        "<style>" +
+        brandCSS +
+        "</style>" +
+        scripts
+          .map((file) => '<script src="' + file + '" defer></script>')
+          .join("\n");
     return (
       '<!doctype html>\n<html lang="en" dir="' +
       (document.documentElement.dir || "ltr") +
@@ -170,21 +242,24 @@
   async function preview(item, container, useConfiguration = false) {
     const custom = useConfiguration && configured(item);
     const host = el("div", "preview-host");
+    LumenDesign.apply(host, brandConfiguration);
     host.dataset.theme = $("theme").value;
     host.style.maxWidth = width === "full" ? "100%" : width + "px";
     host.style.containerType = "inline-size";
     host.style.containerName = "lm-preview";
     container.replaceChildren(host);
     const shadow = host.attachShadow({ mode: "open" });
-    const root = el("div", custom ? "lumen" : item.wrapper || "lumen");
+    const root = el("div", "lumen " + (item.wrapper || ""));
     let destroyed = false,
-      api;
+      api,
+      app;
     const handle = {
       host,
       item,
       shadow,
       destroy() {
         destroyed = true;
+        app?.destroy();
         api?.destroy();
         previews.delete(handle);
         host.remove();
@@ -193,15 +268,11 @@
     previews.add(handle);
     try {
       const [fragment, doc] = await Promise.all([
-        custom
-          ? Promise.resolve(LumenVariants.create(configuration.value))
-          : content(item),
+        custom ? configuredContent(item) : content(item).then(legacySnippet),
         loadTemplates(item.template),
       ]);
       if (destroyed) return handle;
-      for (const file of item.source === "core" || custom
-        ? ["lumen-core.css"]
-        : item.css) {
+      for (const file of stylesheetFiles(item)) {
         const sheet = el("style");
         sheet.textContent = await previewSheet(file);
         if (destroyed) return handle;
@@ -209,13 +280,15 @@
       }
       const style = el("style");
       style.textContent =
-        ':host{display:block;min-width:0;font-family:var(--lm-font,system-ui)}*{box-sizing:border-box}[hidden]{display:none!important}[class$="-preview"]{padding:0!important;min-height:0;background:transparent}.demo-section{padding:0!important;border:0!important;box-shadow:none!important;background:transparent;min-width:0;max-width:100%;margin:0}.demo-heading{display:none}.demo-span-2,.demo-span-full{grid-column:auto}.demo-variant-label{font-size:.75rem;font-weight:700;margin:1rem 0 .6rem;color:var(--lm-muted,#5b6486)}.row{flex-wrap:wrap!important}img{max-width:100%}';
+        ":host{display:block;min-width:0}[hidden]{display:none!important}";
       shadow.append(style);
       const defs = doc.querySelector("template#icons");
       if (defs) root.append(defs.content.cloneNode(true));
       root.append(fragment);
       shadow.append(root);
       api = LumenUI.mount(shadow);
+      const workspace = root.querySelector("[data-lumen-workspace]");
+      if (workspace) app = LumenWorkspace.mount(workspace);
       host.dataset.ready = "true";
     } catch (error) {
       if (!destroyed) {
@@ -246,6 +319,7 @@
             ? text
             : text
                 .replace(/:root\b/g, ":host")
+                .replace(/(-?\d*\.?\d+)vw\b/g, "$1cqw")
                 .replace(
                   /@media\s*\((min|max)-width\s*:\s*([^)]*)\)/g,
                   "@container lm-preview ($1-width: $2)",
@@ -261,7 +335,7 @@
   function resolve(hash) {
     const path = decodeURIComponent(hash.replace(/^#/, "")),
       parts = path.split("/");
-    if (["home", "favorites", "recent"].includes(path))
+    if (["home", "favorites", "recent", "compare"].includes(path))
       return { category: path };
     const item = catalog.items.find(
       (x) =>
@@ -463,14 +537,45 @@
     $("overview").hidden = true;
     $("browser").hidden = false;
     if (sequence !== renderSequence) return;
+    saveWorkspace();
   }
   function navigate() {
     if (!catalog) return;
     const route = resolve(location.hash);
     category = route.category;
-    $("family-filter").value = "";
-    $("status-filter").value = "";
-    $("search").value = "";
+    const queryState = urlWorkspace();
+    const state =
+      queryState?.view === category
+        ? queryState
+        : workspaceStates.get(category);
+    restoringWorkspace = true;
+    $("search").value = state?.q || "";
+    $("status-filter").value = state?.status || "";
+    $("layout-filter").value = ["grid", "list"].includes(state?.layout)
+      ? state.layout
+      : "grid";
+    if (state) {
+      width = ["full", "768", "375"].includes(state.width)
+        ? state.width
+        : "full";
+      comparison = Array.isArray(state.compare)
+        ? state.compare
+            .filter((key) => catalog.items.some((i) => i.key === key))
+            .slice(0, 4)
+        : [];
+      brandConfiguration = LumenDesign.normalize(
+        state.brand || brandConfiguration,
+      );
+      $("theme").value = LumenTokens.themes.includes(state.theme)
+        ? state.theme
+        : "light";
+      $("direction").value = state.dir === "rtl" ? "rtl" : "ltr";
+      document.documentElement.dir = $("direction").value;
+      setTheme($("theme").value);
+    }
+    $("compare-open").disabled = !comparison.length;
+    $("compare-open").textContent = "Compare (" + comparison.length + ")";
+    applyBrand();
     document.querySelectorAll("[data-category]").forEach((a) => {
       if (a.dataset.category === category)
         a.setAttribute("aria-current", "page");
@@ -483,11 +588,17 @@
       cleanup();
       $("overview").hidden = false;
       $("browser").hidden = true;
+      restoringWorkspace = false;
+      saveWorkspace();
       return;
     }
     const title =
       catalog.categories.find((c) => c.id === category)?.label ||
-      { favorites: "Favorites", recent: "Recently viewed" }[category];
+      {
+        favorites: "Favorites",
+        recent: "Recently viewed",
+        compare: "Compare components",
+      }[category];
     $("page-title").textContent = title;
     $("page-summary").textContent =
       "Compare related variants, inspect their markup, and copy an example.";
@@ -498,7 +609,32 @@
         .sort()
         .map((x) => new Option(x.replace(/^\d+ · /, ""), x)),
     );
+    $("family-filter").value = state?.family || "";
+    restoringWorkspace = false;
+    document
+      .querySelectorAll("[data-width]")
+      .forEach((b) =>
+        b.setAttribute("aria-pressed", String(b.dataset.width === width)),
+      );
     render();
+    saveWorkspace();
+    if (state?.item) {
+      const item = catalog.items.find((i) => i.key === state.item);
+      if (item) {
+        const config =
+          item.customize && state.config?.key === item.key
+            ? {
+                key: item.key,
+                index: Math.max(0, Math.trunc(Number(state.config.index) || 0)),
+                value: LumenVariants.normalize({
+                  ...state.config.value,
+                  type: item.customize.type,
+                }),
+              }
+            : null;
+        openInspector(item, config, state.tab);
+      }
+    } else if ($("inspector").open) $("inspector").close();
     if (route.key) {
       const item = catalog.items.find((x) => x.key === route.key);
       remember(item);
@@ -509,12 +645,20 @@
       node?.scrollIntoView({ block: "start" });
     }
   }
-  async function openInspector(item) {
-    configuration = null;
+  async function openInspector(item, restored = null, restoredTab = null) {
+    configuration = restored;
     selected = item;
     $("configure-tab").hidden = !LumenVariants.infer(item);
     remember(item);
     $("inspector-title").textContent = item.title;
+    $("inspector-capabilities").textContent =
+      typeLabels[item.status] +
+      (item.customize
+        ? " · Edit an existing " + item.customize.type + " instance"
+        : "") +
+      (item.capabilities?.applicationIntegration
+        ? " · Application integration required"
+        : "");
     $("standalone-link").href =
       "example.html?item=" +
       encodeURIComponent(item.key) +
@@ -527,19 +671,38 @@
       ? "★ Favorited"
       : "☆ Favorite";
     if (!$("inspector").open) $("inspector").showModal();
-    await inspectTab("preview");
+    await inspectTab(
+      [
+        "preview",
+        "html",
+        "css",
+        ...(item.customize ? ["configure"] : []),
+      ].includes(restoredTab)
+        ? restoredTab
+        : restored
+          ? "configure"
+          : "preview",
+    );
   }
   async function inspectTab(tab) {
     const item = selected;
     if (!item) return;
+    activeTab = tab;
+    $("inspector-body").setAttribute(
+      "aria-labelledby",
+      document.querySelector('[data-inspect="' + tab + '"]').id,
+    );
     inspectorPreview?.destroy();
     inspectorPreview = null;
     $("inspector-body").replaceChildren();
     document.querySelectorAll("[data-inspect]").forEach((b) => {
       const on = b.dataset.inspect === tab;
+      b.id ||= "inspector-tab-" + b.dataset.inspect;
+      b.setAttribute("aria-controls", "inspector-body");
       b.setAttribute("aria-selected", String(on));
       b.tabIndex = on ? 0 : -1;
     });
+    saveWorkspace();
     if (tab === "configure") {
       await configurePanel(item);
       return;
@@ -555,11 +718,10 @@
     const label = el("label", "variant-select", "Copy selection"),
       select = el("select");
     select.id = "variant-selection";
+    select.setAttribute("aria-label", "Copy selection");
     select.append(new Option("Complete example", "all"));
     if (tab === "html") {
-      let fragment = configured(item)
-        ? LumenVariants.create(configuration.value)
-        : await content(item);
+      const fragment = await configuredContent(item);
       copyCandidates(fragment).forEach((node, i) => {
         select.append(
           new Option(
@@ -588,7 +750,7 @@
     return [
       ...new Set([
         "lumen-core.css",
-        ...(item.source === "core" || configured(item) ? [] : item.css),
+        ...(item.source === "core" ? [] : item.css),
       ]),
     ];
   }
@@ -608,17 +770,31 @@
       item: item.key,
       theme: $("theme").value,
     });
-    if (configured(item))
+    if (configured(item)) {
       params.set("config", JSON.stringify(configuration.value));
+      params.set("configTarget", String(configuration.index || 0));
+    }
+    if (Object.keys(brandConfiguration).length)
+      params.set("brand", JSON.stringify(brandConfiguration));
+    params.set("dir", document.documentElement.dir || "ltr");
     if (LumenAssets.offline && location.protocol !== "file:")
       params.set("offline", "1");
     return "example.html?" + params;
   }
   async function configurePanel(item) {
+    const source = legacySnippet(await content(item)),
+      targets = [...source.querySelectorAll(item.customize.selector)];
+    if (!targets.length) {
+      $("inspector-body").append(
+        el("p", "", "This example has no supported editable primitive."),
+      );
+      return;
+    }
     if (!configured(item))
       configuration = {
         key: item.key,
-        value: LumenVariants.normalize({ type: LumenVariants.infer(item) }),
+        index: 0,
+        value: LumenVariants.read(targets[0], item.customize.type),
       };
     const panel = el("div", "variant-builder"),
       controls = el("div", "variant-controls"),
@@ -639,13 +815,20 @@
       inspectorPreview = handle;
       code.textContent = await markup(item);
       $("standalone-link").href = standaloneURL(item);
+      saveWorkspace();
     };
     function select(name, label, values) {
       const wrap = el("label", "", label),
         input = el("select");
       input.id = "configure-" + name;
+      input.setAttribute("aria-label", label);
       for (const value of values)
-        input.append(new Option(value || "Default", value));
+        input.append(
+          new Option(
+            value === "original" ? "Original icon" : value || "Default",
+            value,
+          ),
+        );
       input.value = configuration.value[name];
       input.onchange = async () => {
         configuration.value = LumenVariants.normalize({
@@ -661,11 +844,56 @@
       wrap.append(input);
       controls.append(wrap);
     }
+    const targetLabel = el("label", "", "Edit instance"),
+      targetSelect = el("select");
+    targetSelect.id = "configure-target";
+    targetSelect.setAttribute("aria-label", "Edit instance");
+    targets.forEach((node, index) =>
+      targetSelect.append(
+        new Option(
+          (
+            node.getAttribute("aria-label") ||
+            node.getAttribute("placeholder") ||
+            node.textContent.trim() ||
+            item.customize.type
+          ).slice(0, 60),
+          String(index),
+        ),
+      ),
+    );
+    targetSelect.value = String(configuration.index || 0);
+    targetSelect.onchange = async () => {
+      configuration.index = Number(targetSelect.value);
+      configuration.value = LumenVariants.read(
+        targets[configuration.index],
+        item.customize.type,
+      );
+      saveWorkspace();
+      await inspectTab("configure");
+    };
+    targetLabel.append(targetSelect);
+    controls.prepend(targetLabel);
+    const reset = el("button", "btn btn-style-ghost", "Reset customization");
+    reset.type = "button";
+    reset.id = "configure-reset";
+    reset.onclick = async () => {
+      configuration.value = LumenVariants.read(
+        targets[configuration.index || 0],
+        item.customize.type,
+      );
+      saveWorkspace();
+      await inspectTab("configure");
+    };
+    controls.append(reset);
+    configuration.index = Math.min(
+      targets.length - 1,
+      Math.max(0, configuration.index || 0),
+    );
     const c = configuration.value;
-    select("type", "Component", Object.keys(LumenVariants.types));
     if (LumenVariants.types[c.type].length)
       select("style", "Style", LumenVariants.types[c.type]);
     select("color", "Color", [
+      "",
       ...LumenVariants.colors,
       ...(!["input", "progress"].includes(c.type)
         ? LumenVariants.gradients
@@ -714,7 +942,10 @@
         label.append(box, document.createTextNode(title));
         controls.append(label);
       }
-      select("iconName", "Icon", LumenIcons.names);
+      select("iconName", "Icon", [
+        ...(c.iconName === "original" ? ["original"] : []),
+        ...LumenIcons.names,
+      ]);
     }
     await refresh();
   }
@@ -724,6 +955,8 @@
     write("theme", theme);
     for (const p of previews) p.host.dataset.theme = theme;
     if (selected) $("standalone-link").href = standaloneURL(selected);
+    applyBrand();
+    saveWorkspace();
   }
   $("compare-open").onclick = () => {
     if (!comparison.length) return;
@@ -736,9 +969,11 @@
     $("status-filter").value = "";
     $("layout-filter").value = "grid";
     render();
+    location.hash = "compare";
   };
   $("direction").onchange = () => {
     document.documentElement.dir = $("direction").value;
+    saveWorkspace();
   };
   $("theme").value = read("theme", "light");
   if (!$("theme").value) $("theme").value = "light";
@@ -786,12 +1021,14 @@
         .forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
       for (const p of previews)
         p.host.style.maxWidth = width === "full" ? "100%" : width + "px";
+      saveWorkspace();
     };
   $("inspector-close").onclick = () => $("inspector").close();
   $("inspector").addEventListener("close", () => {
     configuration = null;
     inspectorPreview?.destroy();
     inspectorPreview = null;
+    saveWorkspace();
   });
   document.querySelectorAll("[data-inspect]").forEach((b) => {
     b.onclick = () => inspectTab(b.dataset.inspect);
@@ -807,7 +1044,10 @@
             ? 0
             : e.key === "End"
               ? tabs.length - 1
-              : (i + (e.key === "ArrowRight" ? 1 : -1) + tabs.length) %
+              : (i +
+                  (e.key === "ArrowRight" ? 1 : -1) *
+                    (document.documentElement.dir === "rtl" ? -1 : 1) +
+                  tabs.length) %
                 tabs.length;
         tabs[i].focus();
         inspectTab(tabs[i].dataset.inspect);
@@ -875,6 +1115,84 @@
     }
   });
   window.addEventListener("hashchange", navigate);
+  window.addEventListener("popstate", () => {
+    if (catalog) navigate();
+  });
+  $("tokens-open").onclick = () => {
+    const form = $("tokens-form");
+    form.replaceChildren();
+    const labels = {
+      primary: "Primary color",
+      canvas: "Page background",
+      surface: "Panel background",
+      ink: "Main text",
+      muted: "Secondary text",
+      radius: "Corner radius (px)",
+      space: "Panel spacing (px)",
+      control: "Medium control height (px)",
+      font: "Font family",
+    };
+    for (const [key, title] of Object.entries(labels)) {
+      const label = el("label", "field", title),
+        input = key === "font" ? el("select", "input") : el("input", "input");
+      input.name = key;
+      if (key === "font")
+        for (const name of Object.keys(LumenDesign.fonts))
+          input.append(new Option(name, name));
+      else if (["radius", "space", "control"].includes(key)) {
+        input.type = "number";
+        input.min = key === "radius" ? "0" : key === "space" ? "8" : "32";
+        input.max = key === "radius" ? "32" : key === "space" ? "40" : "64";
+      } else input.type = "color";
+      const value =
+        brandConfiguration[key] ??
+        LumenDesign.current(document.documentElement)[key];
+      input.value = String(value);
+      input.oninput = () => {
+        brandConfiguration = LumenDesign.normalize({
+          ...brandConfiguration,
+          [key]: input.value,
+        });
+        applyBrand();
+        $("token-feedback").textContent =
+          LumenDesign.validate({
+            ...LumenDesign.current(document.documentElement),
+            ...brandConfiguration,
+          }).join(". ") ||
+          "Brand configuration applied to the workspace and exports.";
+      };
+      const caption = el("span", "input-label", title);
+      caption.id = "token-label-" + key;
+      label.replaceChildren(caption, input);
+      input.setAttribute("aria-labelledby", caption.id);
+      form.append(label);
+    }
+    $("tokens-dialog").showModal();
+  };
+  $("tokens-form").onsubmit = (event) => event.preventDefault();
+  $("tokens-close").onclick = () => $("tokens-dialog").close();
+  $("tokens-reset").onclick = () => {
+    brandConfiguration = {};
+    applyBrand();
+    $("tokens-dialog").close();
+  };
+  $("tokens-copy").onclick = async () => {
+    await LumenUI.copy(LumenDesign.css(brandConfiguration));
+    notice("Brand CSS copied");
+  };
+  $("share-workspace").onclick = async () => {
+    saveWorkspace();
+    await LumenUI.copy(location.href);
+    notice("Workspace link copied");
+  };
+  $("compare-clear").onclick = () => {
+    comparison = [];
+    $("compare-open").disabled = true;
+    $("compare-open").textContent = "Compare (0)";
+    saveWorkspace();
+    if (category === "compare") navigate();
+    else render();
+  };
   LumenAssets.json("catalog/components.json")
     .then((data) => {
       catalog = data;

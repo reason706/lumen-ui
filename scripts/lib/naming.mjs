@@ -15,6 +15,14 @@ export function compile(source, file, registry, compatibility = true) {
     ),
   ];
   css.walkRules((rule) => {
+    if (reference && rule.selector === ".p")
+      rule.nodes
+        .filter(
+          (n) =>
+            n.type === "decl" &&
+            ["padding", "min-height", "background"].includes(n.prop),
+        )
+        .forEach((n) => n.remove());
     // Reference selectors belong to their exported category scope. This prevents
     // full-bundle reference styles from changing unrelated core components.
     let keyframe = false;

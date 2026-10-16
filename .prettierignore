@@ -4,3 +4,7 @@ js/studio-data.js
 js/icons.js
 components/public-*.css
 tokens/public-*.css
+
+js/tokens.js
+components/sizes.css
+components/utilities.css
