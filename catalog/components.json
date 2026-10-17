@@ -56,7 +56,7 @@
       "id": "semantic-palette",
       "source": "foundations",
       "category": "foundations",
-      "family": "01 · Colors & themes",
+      "family": "01 \u00b7 Colors & themes",
       "title": "Semantic palette",
       "template": "templates/foundations.html",
       "css": [
@@ -81,7 +81,7 @@
       "id": "tonal-ramps",
       "source": "foundations",
       "category": "foundations",
-      "family": "01 · Colors & themes",
+      "family": "01 \u00b7 Colors & themes",
       "title": "Tonal ramps",
       "template": "templates/foundations.html",
       "css": [
@@ -106,7 +106,7 @@
       "id": "gradients",
       "source": "foundations",
       "category": "foundations",
-      "family": "01 · Colors & themes",
+      "family": "01 \u00b7 Colors & themes",
       "title": "Gradients",
       "template": "templates/foundations.html",
       "css": [
@@ -130,7 +130,7 @@
       "id": "palette-fintech-trust",
       "source": "foundations",
       "category": "foundations",
-      "family": "01 · Colors & themes",
+      "family": "01 \u00b7 Colors & themes",
       "title": "Palette: Fintech trust",
       "template": "templates/foundations.html",
       "css": [
@@ -156,7 +156,7 @@
       "id": "palette-wellness-calm",
       "source": "foundations",
       "category": "foundations",
-      "family": "01 · Colors & themes",
+      "family": "01 \u00b7 Colors & themes",
       "title": "Palette: Wellness calm",
       "template": "templates/foundations.html",
       "css": [
@@ -182,7 +182,7 @@
       "id": "palette-beauty-soft",
       "source": "foundations",
       "category": "foundations",
-      "family": "01 · Colors & themes",
+      "family": "01 \u00b7 Colors & themes",
       "title": "Palette: Beauty soft",
       "template": "templates/foundations.html",
       "css": [
@@ -208,7 +208,7 @@
       "id": "palette-gaming-neon",
       "source": "foundations",
       "category": "foundations",
-      "family": "01 · Colors & themes",
+      "family": "01 \u00b7 Colors & themes",
       "title": "Palette: Gaming neon",
       "template": "templates/foundations.html",
       "css": [
@@ -234,7 +234,7 @@
       "id": "palette-education-warm",
       "source": "foundations",
       "category": "foundations",
-      "family": "01 · Colors & themes",
+      "family": "01 \u00b7 Colors & themes",
       "title": "Palette: Education warm",
       "template": "templates/foundations.html",
       "css": [
@@ -260,7 +260,7 @@
       "id": "palette-energy-sunset",
       "source": "foundations",
       "category": "foundations",
-      "family": "01 · Colors & themes",
+      "family": "01 \u00b7 Colors & themes",
       "title": "Palette: Energy sunset",
       "template": "templates/foundations.html",
       "css": [
@@ -286,7 +286,7 @@
       "id": "palette-nature-earth",
       "source": "foundations",
       "category": "foundations",
-      "family": "01 · Colors & themes",
+      "family": "01 \u00b7 Colors & themes",
       "title": "Palette: Nature earth",
       "template": "templates/foundations.html",
       "css": [
@@ -312,7 +312,7 @@
       "id": "palette-luxury-mono",
       "source": "foundations",
       "category": "foundations",
-      "family": "01 · Colors & themes",
+      "family": "01 \u00b7 Colors & themes",
       "title": "Palette: Luxury mono",
       "template": "templates/foundations.html",
       "css": [
@@ -338,7 +338,7 @@
       "id": "contrast-checks",
       "source": "foundations",
       "category": "foundations",
-      "family": "01 · Colors & themes",
+      "family": "01 \u00b7 Colors & themes",
       "title": "Contrast checks",
       "template": "templates/foundations.html",
       "css": [
@@ -363,7 +363,7 @@
       "id": "dark-theme-tokens",
       "source": "foundations",
       "category": "foundations",
-      "family": "01 · Colors & themes",
+      "family": "01 \u00b7 Colors & themes",
       "title": "Dark theme tokens",
       "template": "templates/foundations.html",
       "css": [
@@ -389,7 +389,7 @@
       "id": "elevation-scale",
       "source": "surfaces",
       "category": "foundations",
-      "family": "03 · Spacing, borders & motion",
+      "family": "03 \u00b7 Spacing, borders & motion",
       "title": "Elevation scale",
       "template": "templates/surfaces.html",
       "css": [
@@ -415,7 +415,7 @@
       "id": "dividers",
       "source": "surfaces",
       "category": "foundations",
-      "family": "03 · Spacing, borders & motion",
+      "family": "03 \u00b7 Spacing, borders & motion",
       "title": "Dividers",
       "template": "templates/surfaces.html",
       "css": [
@@ -440,7 +440,7 @@
       "id": "touch-targets-and-focus",
       "source": "foundations",
       "category": "foundations",
-      "family": "05 · Interaction states",
+      "family": "05 \u00b7 Interaction states",
       "title": "Touch targets and focus",
       "template": "templates/foundations.html",
       "css": [
@@ -467,7 +467,7 @@
       "id": "motion",
       "source": "foundations",
       "category": "foundations",
-      "family": "05 · Interaction states",
+      "family": "05 \u00b7 Interaction states",
       "title": "Motion",
       "template": "templates/foundations.html",
       "css": [
@@ -491,7 +491,7 @@
       "id": "ux-checklist",
       "source": "foundations",
       "category": "foundations",
-      "family": "05 · Interaction states",
+      "family": "05 \u00b7 Interaction states",
       "title": "UX checklist",
       "template": "templates/foundations.html",
       "css": [
@@ -516,7 +516,7 @@
       "id": "state-matrix",
       "source": "foundations",
       "category": "foundations",
-      "family": "05 · Interaction states",
+      "family": "05 \u00b7 Interaction states",
       "title": "State matrix",
       "template": "templates/foundations.html",
       "css": [
@@ -541,7 +541,7 @@
       "id": "spacing-scale",
       "source": "foundations",
       "category": "foundations",
-      "family": "03 · Spacing, borders & motion",
+      "family": "03 \u00b7 Spacing, borders & motion",
       "title": "Spacing scale",
       "template": "templates/foundations.html",
       "css": [
@@ -566,7 +566,7 @@
       "id": "radius-scale",
       "source": "foundations",
       "category": "foundations",
-      "family": "03 · Spacing, borders & motion",
+      "family": "03 \u00b7 Spacing, borders & motion",
       "title": "Radius scale",
       "template": "templates/foundations.html",
       "css": [
@@ -591,7 +591,7 @@
       "id": "elevation",
       "source": "foundations",
       "category": "foundations",
-      "family": "03 · Spacing, borders & motion",
+      "family": "03 \u00b7 Spacing, borders & motion",
       "title": "Elevation",
       "template": "templates/foundations.html",
       "css": [
@@ -615,7 +615,7 @@
       "id": "borders-and-opacity",
       "source": "foundations",
       "category": "foundations",
-      "family": "03 · Spacing, borders & motion",
+      "family": "03 \u00b7 Spacing, borders & motion",
       "title": "Borders and opacity",
       "template": "templates/foundations.html",
       "css": [
@@ -641,7 +641,7 @@
       "id": "z-index-layers",
       "source": "foundations",
       "category": "foundations",
-      "family": "03 · Spacing, borders & motion",
+      "family": "03 \u00b7 Spacing, borders & motion",
       "title": "Z-index layers",
       "template": "templates/foundations.html",
       "css": [
@@ -667,7 +667,7 @@
       "id": "section",
       "source": "foundations",
       "category": "foundations",
-      "family": "04 · Surface styles",
+      "family": "04 \u00b7 Surface styles",
       "title": "Glassmorphism",
       "template": "templates/foundations.html",
       "css": [
@@ -691,7 +691,7 @@
       "id": "section-2",
       "source": "foundations",
       "category": "foundations",
-      "family": "04 · Surface styles",
+      "family": "04 \u00b7 Surface styles",
       "title": "Neumorphism",
       "template": "templates/foundations.html",
       "css": [
@@ -715,7 +715,7 @@
       "id": "section-3",
       "source": "foundations",
       "category": "foundations",
-      "family": "04 · Surface styles",
+      "family": "04 \u00b7 Surface styles",
       "title": "Neo-brutalism",
       "template": "templates/foundations.html",
       "css": [
@@ -740,7 +740,7 @@
       "id": "section-4",
       "source": "foundations",
       "category": "foundations",
-      "family": "04 · Surface styles",
+      "family": "04 \u00b7 Surface styles",
       "title": "Claymorphism",
       "template": "templates/foundations.html",
       "css": [
@@ -764,7 +764,7 @@
       "id": "section-5",
       "source": "foundations",
       "category": "foundations",
-      "family": "04 · Surface styles",
+      "family": "04 \u00b7 Surface styles",
       "title": "OLED & neon",
       "template": "templates/foundations.html",
       "css": [
@@ -789,7 +789,7 @@
       "id": "section-6",
       "source": "foundations",
       "category": "foundations",
-      "family": "04 · Surface styles",
+      "family": "04 \u00b7 Surface styles",
       "title": "Swiss minimalism",
       "template": "templates/foundations.html",
       "css": [
@@ -814,7 +814,7 @@
       "id": "section-7",
       "source": "foundations",
       "category": "foundations",
-      "family": "04 · Surface styles",
+      "family": "04 \u00b7 Surface styles",
       "title": "Gradient mesh",
       "template": "templates/foundations.html",
       "css": [
@@ -839,7 +839,7 @@
       "id": "section-8",
       "source": "foundations",
       "category": "foundations",
-      "family": "04 · Surface styles",
+      "family": "04 \u00b7 Surface styles",
       "title": "Paper & ink",
       "template": "templates/foundations.html",
       "css": [
@@ -864,7 +864,7 @@
       "id": "section-9",
       "source": "foundations",
       "category": "foundations",
-      "family": "04 · Surface styles",
+      "family": "04 \u00b7 Surface styles",
       "title": "Skeuomorphism",
       "template": "templates/foundations.html",
       "css": [
@@ -888,7 +888,7 @@
       "id": "section-10",
       "source": "foundations",
       "category": "foundations",
-      "family": "04 · Surface styles",
+      "family": "04 \u00b7 Surface styles",
       "title": "Terminal & pixel",
       "template": "templates/foundations.html",
       "css": [
@@ -913,7 +913,7 @@
       "id": "section-11",
       "source": "foundations",
       "category": "foundations",
-      "family": "04 · Surface styles",
+      "family": "04 \u00b7 Surface styles",
       "title": "Bento grid",
       "template": "templates/foundations.html",
       "css": [
@@ -938,7 +938,7 @@
       "id": "section-12",
       "source": "foundations",
       "category": "foundations",
-      "family": "04 · Surface styles",
+      "family": "04 \u00b7 Surface styles",
       "title": "Bold gradients",
       "template": "templates/foundations.html",
       "css": [
@@ -963,7 +963,7 @@
       "id": "design-tokens",
       "source": "foundations",
       "category": "foundations",
-      "family": "05 · Interaction states",
+      "family": "05 \u00b7 Interaction states",
       "title": "Design tokens",
       "template": "templates/foundations.html",
       "css": [
@@ -988,7 +988,7 @@
       "id": "chart-chooser",
       "source": "foundations",
       "category": "foundations",
-      "family": "05 · Interaction states",
+      "family": "05 \u00b7 Interaction states",
       "title": "Chart chooser",
       "template": "templates/foundations.html",
       "css": [
@@ -1013,7 +1013,7 @@
       "id": "component-anatomy",
       "source": "foundations",
       "category": "foundations",
-      "family": "05 · Interaction states",
+      "family": "05 \u00b7 Interaction states",
       "title": "Component anatomy",
       "template": "templates/foundations.html",
       "css": [
@@ -1038,7 +1038,7 @@
       "id": "naming-conventions",
       "source": "foundations",
       "category": "foundations",
-      "family": "05 · Interaction states",
+      "family": "05 \u00b7 Interaction states",
       "title": "Naming conventions",
       "template": "templates/foundations.html",
       "css": [
@@ -1063,7 +1063,7 @@
       "id": "type-scale",
       "source": "foundations",
       "category": "foundations",
-      "family": "02 · Typography & pairings",
+      "family": "02 \u00b7 Typography & pairings",
       "title": "Type scale",
       "template": "templates/foundations.html",
       "css": [
@@ -1088,7 +1088,7 @@
       "id": "weights-and-styles",
       "source": "foundations",
       "category": "foundations",
-      "family": "02 · Typography & pairings",
+      "family": "02 \u00b7 Typography & pairings",
       "title": "Weights and styles",
       "template": "templates/foundations.html",
       "css": [
@@ -1114,7 +1114,7 @@
       "id": "pairing-plus-jakarta-sans",
       "source": "foundations",
       "category": "foundations",
-      "family": "02 · Typography & pairings",
+      "family": "02 \u00b7 Typography & pairings",
       "title": "Pairing: Plus Jakarta Sans",
       "template": "templates/foundations.html",
       "css": [
@@ -1141,7 +1141,7 @@
       "id": "pairing-playfair-display-inter",
       "source": "foundations",
       "category": "foundations",
-      "family": "02 · Typography & pairings",
+      "family": "02 \u00b7 Typography & pairings",
       "title": "Pairing: Playfair Display + Inter",
       "template": "templates/foundations.html",
       "css": [
@@ -1168,7 +1168,7 @@
       "id": "pairing-space-grotesk-dm-sans",
       "source": "foundations",
       "category": "foundations",
-      "family": "02 · Typography & pairings",
+      "family": "02 \u00b7 Typography & pairings",
       "title": "Pairing: Space Grotesk + DM Sans",
       "template": "templates/foundations.html",
       "css": [
@@ -1196,7 +1196,7 @@
       "id": "pairing-sora-inter",
       "source": "foundations",
       "category": "foundations",
-      "family": "02 · Typography & pairings",
+      "family": "02 \u00b7 Typography & pairings",
       "title": "Pairing: Sora + Inter",
       "template": "templates/foundations.html",
       "css": [
@@ -1222,7 +1222,7 @@
       "id": "pairing-dm-serif-display-dm-sans",
       "source": "foundations",
       "category": "foundations",
-      "family": "02 · Typography & pairings",
+      "family": "02 \u00b7 Typography & pairings",
       "title": "Pairing: DM Serif Display + DM Sans",
       "template": "templates/foundations.html",
       "css": [
@@ -1250,7 +1250,7 @@
       "id": "pairing-outfit-work-sans",
       "source": "foundations",
       "category": "foundations",
-      "family": "02 · Typography & pairings",
+      "family": "02 \u00b7 Typography & pairings",
       "title": "Pairing: Outfit + Work Sans",
       "template": "templates/foundations.html",
       "css": [
@@ -1277,7 +1277,7 @@
       "id": "text-in-context",
       "source": "foundations",
       "category": "foundations",
-      "family": "02 · Typography & pairings",
+      "family": "02 \u00b7 Typography & pairings",
       "title": "Text in context",
       "template": "templates/foundations.html",
       "css": [
@@ -1303,7 +1303,7 @@
       "id": "text-effects",
       "source": "foundations",
       "category": "foundations",
-      "family": "02 · Typography & pairings",
+      "family": "02 \u00b7 Typography & pairings",
       "title": "Text effects",
       "template": "templates/foundations.html",
       "css": [
@@ -1328,7 +1328,7 @@
       "id": "voice-and-microcopy",
       "source": "foundations",
       "category": "foundations",
-      "family": "02 · Typography & pairings",
+      "family": "02 \u00b7 Typography & pairings",
       "title": "Voice and microcopy",
       "template": "templates/foundations.html",
       "css": [
@@ -1486,7 +1486,7 @@
       "id": "solid",
       "source": "buttons",
       "category": "buttons",
-      "family": "01 · Appearance",
+      "family": "01 \u00b7 Appearance",
       "title": "Solid",
       "template": "templates/buttons.html",
       "css": [
@@ -1514,7 +1514,7 @@
       "id": "soft-tinted",
       "source": "buttons",
       "category": "buttons",
-      "family": "01 · Appearance",
+      "family": "01 \u00b7 Appearance",
       "title": "Tonal (soft)",
       "template": "templates/buttons.html",
       "css": [
@@ -1543,7 +1543,7 @@
       "id": "outline",
       "source": "buttons",
       "category": "buttons",
-      "family": "01 · Appearance",
+      "family": "01 \u00b7 Appearance",
       "title": "Outline",
       "template": "templates/buttons.html",
       "css": [
@@ -1571,7 +1571,7 @@
       "id": "ghost-and-link",
       "source": "buttons",
       "category": "buttons",
-      "family": "01 · Appearance",
+      "family": "01 \u00b7 Appearance",
       "title": "Ghost",
       "template": "templates/buttons.html",
       "css": [
@@ -1601,7 +1601,7 @@
       "id": "gradient-variants",
       "source": "buttons",
       "category": "buttons",
-      "family": "03 · Size & shape",
+      "family": "03 \u00b7 Size & shape",
       "title": "Gradient shapes & effects",
       "template": "templates/buttons.html",
       "css": [
@@ -1626,7 +1626,7 @@
       "id": "sizes",
       "source": "buttons",
       "category": "buttons",
-      "family": "03 · Size & shape",
+      "family": "03 \u00b7 Size & shape",
       "title": "Sizes",
       "template": "templates/buttons.html",
       "css": [
@@ -1650,7 +1650,7 @@
       "id": "shapes-and-widths",
       "source": "buttons",
       "category": "buttons",
-      "family": "03 · Size & shape",
+      "family": "03 \u00b7 Size & shape",
       "title": "Shapes and widths",
       "template": "templates/buttons.html",
       "css": [
@@ -1676,7 +1676,7 @@
       "id": "buttons-with-icons",
       "source": "buttons",
       "category": "buttons",
-      "family": "04 · Icons & content",
+      "family": "04 \u00b7 Icons & content",
       "title": "Buttons with icons",
       "template": "templates/buttons.html",
       "css": [
@@ -1701,7 +1701,7 @@
       "id": "icon-buttons-variants",
       "source": "buttons",
       "category": "buttons",
-      "family": "04 · Icons & content",
+      "family": "04 \u00b7 Icons & content",
       "title": "Icon buttons: variants",
       "template": "templates/buttons.html",
       "css": [
@@ -1730,7 +1730,7 @@
       "id": "icon-buttons-sizes-and-shapes",
       "source": "buttons",
       "category": "buttons",
-      "family": "04 · Icons & content",
+      "family": "04 \u00b7 Icons & content",
       "title": "Icon buttons: sizes and shapes",
       "template": "templates/buttons.html",
       "css": [
@@ -1757,7 +1757,7 @@
       "id": "loading-and-result-states",
       "source": "buttons",
       "category": "buttons",
-      "family": "05 · States",
+      "family": "05 \u00b7 States",
       "title": "Loading and result states",
       "template": "templates/buttons.html",
       "css": [
@@ -1784,7 +1784,7 @@
       "id": "button-states",
       "source": "buttons",
       "category": "buttons",
-      "family": "05 · States",
+      "family": "05 \u00b7 States",
       "title": "Button states",
       "template": "templates/buttons.html",
       "css": [
@@ -1809,7 +1809,7 @@
       "id": "button-groups",
       "source": "buttons",
       "category": "buttons",
-      "family": "06 · Groups & toolbars",
+      "family": "06 \u00b7 Groups & toolbars",
       "title": "Button groups",
       "template": "templates/buttons.html",
       "css": [
@@ -1834,7 +1834,7 @@
       "id": "split-and-dropdown-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "06 · Groups & toolbars",
+      "family": "06 \u00b7 Groups & toolbars",
       "title": "Split and dropdown buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -1860,7 +1860,7 @@
       "id": "floating-action-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Floating action buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -1885,7 +1885,7 @@
       "id": "confirm-actions",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Confirm actions",
       "template": "templates/buttons.html",
       "css": [
@@ -1910,7 +1910,7 @@
       "id": "sign-in-actions",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Sign-in actions",
       "template": "templates/buttons.html",
       "css": [
@@ -1936,7 +1936,7 @@
       "id": "link-actions",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Link actions",
       "template": "templates/buttons.html",
       "css": [
@@ -1961,7 +1961,7 @@
       "id": "action-bars",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Action bars",
       "template": "templates/buttons.html",
       "css": [
@@ -1986,7 +1986,7 @@
       "id": "profile-and-account-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Profile and account buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -2012,7 +2012,7 @@
       "id": "notification-actions",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Notification actions",
       "template": "templates/buttons.html",
       "css": [
@@ -2037,7 +2037,7 @@
       "id": "card-call-to-actions",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Card call-to-actions",
       "template": "templates/buttons.html",
       "css": [
@@ -2064,7 +2064,7 @@
       "id": "floating-helpers",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Floating helpers",
       "template": "templates/buttons.html",
       "css": [
@@ -2089,7 +2089,7 @@
       "id": "share-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Share buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -2113,7 +2113,7 @@
       "id": "payment-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Payment buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -2137,7 +2137,7 @@
       "id": "subscribe-and-follow-states",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Subscribe and follow states",
       "template": "templates/buttons.html",
       "css": [
@@ -2164,7 +2164,7 @@
       "id": "download-states",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Download states",
       "template": "templates/buttons.html",
       "css": [
@@ -2189,7 +2189,7 @@
       "id": "quick-action-grid",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Quick action grid",
       "template": "templates/buttons.html",
       "css": [
@@ -2215,7 +2215,7 @@
       "id": "list-row-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "List-row buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -2240,7 +2240,7 @@
       "id": "overlay-and-select-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "08 · Action workflows",
+      "family": "08 \u00b7 Action workflows",
       "title": "Overlay and select buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -2266,7 +2266,7 @@
       "id": "depth-and-effects",
       "source": "buttons",
       "category": "buttons",
-      "family": "03 · Size & shape",
+      "family": "03 \u00b7 Size & shape",
       "title": "Depth and effects",
       "template": "templates/buttons.html",
       "css": [
@@ -2292,7 +2292,7 @@
       "id": "on-dark-surfaces",
       "source": "buttons",
       "category": "buttons",
-      "family": "05 · States",
+      "family": "05 \u00b7 States",
       "title": "On dark surfaces",
       "template": "templates/buttons.html",
       "css": [
@@ -2318,7 +2318,7 @@
       "id": "micro-interactions",
       "source": "buttons",
       "category": "buttons",
-      "family": "05 · States",
+      "family": "05 \u00b7 States",
       "title": "Micro-interactions",
       "template": "templates/buttons.html",
       "css": [
@@ -2343,7 +2343,7 @@
       "id": "hover-animations",
       "source": "buttons",
       "category": "buttons",
-      "family": "05 · States",
+      "family": "05 \u00b7 States",
       "title": "Hover animations",
       "template": "templates/buttons.html",
       "css": [
@@ -2368,7 +2368,7 @@
       "id": "animated-borders-and-glow",
       "source": "buttons",
       "category": "buttons",
-      "family": "03 · Size & shape",
+      "family": "03 \u00b7 Size & shape",
       "title": "Animated borders and glow",
       "template": "templates/buttons.html",
       "css": [
@@ -2395,7 +2395,7 @@
       "id": "shaped-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "03 · Size & shape",
+      "family": "03 \u00b7 Size & shape",
       "title": "Shaped buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -2419,7 +2419,7 @@
       "id": "focus-ring-styles",
       "source": "buttons",
       "category": "buttons",
-      "family": "05 · States",
+      "family": "05 \u00b7 States",
       "title": "Focus ring styles",
       "template": "templates/buttons.html",
       "css": [
@@ -2445,7 +2445,7 @@
       "id": "reaction-picker-hover",
       "source": "buttons",
       "category": "buttons",
-      "family": "05 · States",
+      "family": "05 \u00b7 States",
       "title": "Reaction picker (hover)",
       "template": "templates/buttons.html",
       "css": [
@@ -2471,7 +2471,7 @@
       "id": "ripple-press-feedback",
       "source": "buttons",
       "category": "buttons",
-      "family": "05 · States",
+      "family": "05 \u00b7 States",
       "title": "Ripple press feedback",
       "template": "templates/buttons.html",
       "css": [
@@ -2497,7 +2497,7 @@
       "id": "buttons-with-counters",
       "source": "buttons",
       "category": "buttons",
-      "family": "04 · Icons & content",
+      "family": "04 \u00b7 Icons & content",
       "title": "Buttons with counters",
       "template": "templates/buttons.html",
       "css": [
@@ -2522,7 +2522,7 @@
       "id": "morphing-icon-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "04 · Icons & content",
+      "family": "04 \u00b7 Icons & content",
       "title": "Morphing icon buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -2547,7 +2547,7 @@
       "id": "two-line-and-promo-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "04 · Icons & content",
+      "family": "04 \u00b7 Icons & content",
       "title": "Two-line and promo buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -2574,7 +2574,7 @@
       "id": "shortcut-hint-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "04 · Icons & content",
+      "family": "04 \u00b7 Icons & content",
       "title": "Shortcut hint buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -2599,7 +2599,7 @@
       "id": "toolbars-and-docks",
       "source": "buttons",
       "category": "buttons",
-      "family": "04 · Icons & content",
+      "family": "04 \u00b7 Icons & content",
       "title": "Toolbars and docks",
       "template": "templates/buttons.html",
       "css": [
@@ -2625,7 +2625,7 @@
       "id": "countdown-and-undo",
       "source": "buttons",
       "category": "buttons",
-      "family": "05 · States",
+      "family": "05 \u00b7 States",
       "title": "Countdown and undo",
       "template": "templates/buttons.html",
       "css": [
@@ -2651,7 +2651,7 @@
       "id": "progress-ring-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "05 · States",
+      "family": "05 \u00b7 States",
       "title": "Progress ring buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -2676,7 +2676,7 @@
       "id": "toggle-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "07 · Selection & toggles",
+      "family": "07 \u00b7 Selection & toggles",
       "title": "Toggle buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -2700,7 +2700,7 @@
       "id": "vote-and-rating-buttons",
       "source": "buttons",
       "category": "buttons",
-      "family": "07 · Selection & toggles",
+      "family": "07 \u00b7 Selection & toggles",
       "title": "Vote and rating buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -2726,7 +2726,7 @@
       "id": "theme-and-view-switch",
       "source": "buttons",
       "category": "buttons",
-      "family": "07 · Selection & toggles",
+      "family": "07 \u00b7 Selection & toggles",
       "title": "Theme and view switch",
       "template": "templates/buttons.html",
       "css": [
@@ -2753,7 +2753,7 @@
       "id": "option-pickers",
       "source": "buttons",
       "category": "buttons",
-      "family": "07 · Selection & toggles",
+      "family": "07 \u00b7 Selection & toggles",
       "title": "Option pickers",
       "template": "templates/buttons.html",
       "css": [
@@ -2778,7 +2778,7 @@
       "id": "sliding-segmented-control-live",
       "source": "buttons",
       "category": "buttons",
-      "family": "07 · Selection & toggles",
+      "family": "07 \u00b7 Selection & toggles",
       "title": "Sliding segmented control (live)",
       "template": "templates/buttons.html",
       "css": [
@@ -2805,7 +2805,7 @@
       "id": "checkboxes",
       "source": "forms",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Checkboxes",
       "template": "templates/forms.html",
       "css": [
@@ -2829,7 +2829,7 @@
       "id": "checkbox-groups-and-tree",
       "source": "forms",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Checkbox groups and tree",
       "template": "templates/forms.html",
       "css": [
@@ -2856,7 +2856,7 @@
       "id": "radio-buttons",
       "source": "forms",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Radio buttons",
       "template": "templates/forms.html",
       "css": [
@@ -2881,7 +2881,7 @@
       "id": "choice-cards",
       "source": "forms",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Choice cards",
       "template": "templates/forms.html",
       "css": [
@@ -2906,7 +2906,7 @@
       "id": "icon-choice-tiles",
       "source": "forms",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Icon choice tiles",
       "template": "templates/forms.html",
       "css": [
@@ -2932,7 +2932,7 @@
       "id": "switches",
       "source": "forms",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Switches",
       "template": "templates/forms.html",
       "css": [
@@ -2956,7 +2956,7 @@
       "id": "settings-list",
       "source": "forms",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Settings list",
       "template": "templates/forms.html",
       "css": [
@@ -2981,7 +2981,7 @@
       "id": "likert-and-matrix",
       "source": "forms",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Likert and matrix",
       "template": "templates/forms.html",
       "css": [
@@ -3007,7 +3007,7 @@
       "id": "quiz-answers",
       "source": "forms",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Quiz answers",
       "template": "templates/forms.html",
       "css": [
@@ -3032,7 +3032,7 @@
       "id": "consent-and-cookies",
       "source": "forms",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Consent and cookies",
       "template": "templates/forms.html",
       "css": [
@@ -3058,7 +3058,7 @@
       "id": "payment-card",
       "source": "forms",
       "category": "forms",
-      "family": "08 · Form layouts",
+      "family": "08 \u00b7 Form layouts",
       "title": "Payment card",
       "template": "templates/forms.html",
       "css": [
@@ -3083,7 +3083,7 @@
       "id": "horizontal-form",
       "source": "forms",
       "category": "forms",
-      "family": "08 · Form layouts",
+      "family": "08 \u00b7 Form layouts",
       "title": "Horizontal form",
       "template": "templates/forms.html",
       "css": [
@@ -3108,7 +3108,7 @@
       "id": "inline-subscribe",
       "source": "forms",
       "category": "forms",
-      "family": "08 · Form layouts",
+      "family": "08 \u00b7 Form layouts",
       "title": "Inline subscribe",
       "template": "templates/forms.html",
       "css": [
@@ -3133,7 +3133,7 @@
       "id": "multi-step-form",
       "source": "forms",
       "category": "forms",
-      "family": "08 · Form layouts",
+      "family": "08 \u00b7 Form layouts",
       "title": "Multi-step form",
       "template": "templates/forms.html",
       "css": [
@@ -3159,7 +3159,7 @@
       "id": "validation-patterns",
       "source": "forms",
       "category": "forms",
-      "family": "08 · Form layouts",
+      "family": "08 \u00b7 Form layouts",
       "title": "Validation patterns",
       "template": "templates/forms.html",
       "css": [
@@ -3184,7 +3184,7 @@
       "id": "feedback-and-survey",
       "source": "forms",
       "category": "forms",
-      "family": "08 · Form layouts",
+      "family": "08 \u00b7 Form layouts",
       "title": "Feedback and survey",
       "template": "templates/forms.html",
       "css": [
@@ -3210,7 +3210,7 @@
       "id": "promo-and-gift-codes",
       "source": "forms",
       "category": "forms",
-      "family": "08 · Form layouts",
+      "family": "08 \u00b7 Form layouts",
       "title": "Promo and gift codes",
       "template": "templates/forms.html",
       "css": [
@@ -3237,7 +3237,7 @@
       "id": "success-confirmation",
       "source": "forms",
       "category": "forms",
-      "family": "08 · Form layouts",
+      "family": "08 \u00b7 Form layouts",
       "title": "Success confirmation",
       "template": "templates/forms.html",
       "css": [
@@ -3262,7 +3262,7 @@
       "id": "survey-question-types",
       "source": "forms",
       "category": "forms",
-      "family": "08 · Form layouts",
+      "family": "08 \u00b7 Form layouts",
       "title": "Survey question types",
       "template": "templates/forms.html",
       "css": [
@@ -3288,7 +3288,7 @@
       "id": "text-field-states",
       "source": "forms",
       "category": "forms",
-      "family": "01 · Text fields",
+      "family": "01 \u00b7 Text fields",
       "title": "Text field states",
       "template": "templates/forms.html",
       "css": [
@@ -3314,7 +3314,7 @@
       "id": "styles",
       "source": "forms",
       "category": "forms",
-      "family": "01 · Text fields",
+      "family": "01 \u00b7 Text fields",
       "title": "Styles",
       "template": "templates/forms.html",
       "css": [
@@ -3338,7 +3338,7 @@
       "id": "sizes",
       "source": "forms",
       "category": "forms",
-      "family": "01 · Text fields",
+      "family": "01 \u00b7 Text fields",
       "title": "Sizes",
       "template": "templates/forms.html",
       "css": [
@@ -3362,7 +3362,7 @@
       "id": "floating-labels",
       "source": "forms",
       "category": "forms",
-      "family": "01 · Text fields",
+      "family": "01 \u00b7 Text fields",
       "title": "Floating labels",
       "template": "templates/forms.html",
       "css": [
@@ -3387,7 +3387,7 @@
       "id": "icons-and-actions",
       "source": "forms",
       "category": "forms",
-      "family": "01 · Text fields",
+      "family": "01 \u00b7 Text fields",
       "title": "Icons and actions",
       "template": "templates/forms.html",
       "css": [
@@ -3413,7 +3413,7 @@
       "id": "input-groups-and-addons",
       "source": "forms",
       "category": "forms",
-      "family": "01 · Text fields",
+      "family": "01 \u00b7 Text fields",
       "title": "Input groups and addons",
       "template": "templates/forms.html",
       "css": [
@@ -3440,7 +3440,7 @@
       "id": "textareas",
       "source": "forms",
       "category": "forms",
-      "family": "01 · Text fields",
+      "family": "01 \u00b7 Text fields",
       "title": "Textareas",
       "template": "templates/forms.html",
       "css": [
@@ -3464,7 +3464,7 @@
       "id": "otp-and-pin",
       "source": "forms",
       "category": "forms",
-      "family": "01 · Text fields",
+      "family": "01 \u00b7 Text fields",
       "title": "OTP and PIN",
       "template": "templates/forms.html",
       "css": [
@@ -3490,7 +3490,7 @@
       "id": "phone-currency-and-url",
       "source": "forms",
       "category": "forms",
-      "family": "01 · Text fields",
+      "family": "01 \u00b7 Text fields",
       "title": "Phone, currency and URL",
       "template": "templates/forms.html",
       "css": [
@@ -3517,7 +3517,7 @@
       "id": "password-and-strength",
       "source": "forms",
       "category": "forms",
-      "family": "01 · Text fields",
+      "family": "01 \u00b7 Text fields",
       "title": "Password and strength",
       "template": "templates/forms.html",
       "css": [
@@ -3543,7 +3543,7 @@
       "id": "search-forms",
       "source": "forms",
       "category": "forms",
-      "family": "07 · Filtering & editing",
+      "family": "07 \u00b7 Filtering & editing",
       "title": "Search forms",
       "template": "templates/forms.html",
       "css": [
@@ -3567,7 +3567,7 @@
       "id": "mobile-grouped-list",
       "source": "forms",
       "category": "forms",
-      "family": "07 · Filtering & editing",
+      "family": "07 \u00b7 Filtering & editing",
       "title": "Mobile grouped list",
       "template": "templates/forms.html",
       "css": [
@@ -3593,7 +3593,7 @@
       "id": "inline-editing",
       "source": "forms",
       "category": "forms",
-      "family": "07 · Filtering & editing",
+      "family": "07 \u00b7 Filtering & editing",
       "title": "Inline editing",
       "template": "templates/forms.html",
       "css": [
@@ -3618,7 +3618,7 @@
       "id": "add-and-remove-rows",
       "source": "forms",
       "category": "forms",
-      "family": "07 · Filtering & editing",
+      "family": "07 \u00b7 Filtering & editing",
       "title": "Add and remove rows",
       "template": "templates/forms.html",
       "css": [
@@ -3645,7 +3645,7 @@
       "id": "filter-sidebar",
       "source": "forms",
       "category": "forms",
-      "family": "07 · Filtering & editing",
+      "family": "07 \u00b7 Filtering & editing",
       "title": "Filter sidebar",
       "template": "templates/forms.html",
       "css": [
@@ -3670,7 +3670,7 @@
       "id": "autosave-and-status",
       "source": "forms",
       "category": "forms",
-      "family": "07 · Filtering & editing",
+      "family": "07 \u00b7 Filtering & editing",
       "title": "Autosave and status",
       "template": "templates/forms.html",
       "css": [
@@ -3696,7 +3696,7 @@
       "id": "accordion-form",
       "source": "forms",
       "category": "forms",
-      "family": "07 · Filtering & editing",
+      "family": "07 \u00b7 Filtering & editing",
       "title": "Accordion form",
       "template": "templates/forms.html",
       "css": [
@@ -3721,7 +3721,7 @@
       "id": "loading-and-disabled-form",
       "source": "forms",
       "category": "forms",
-      "family": "07 · Filtering & editing",
+      "family": "07 \u00b7 Filtering & editing",
       "title": "Loading and disabled form",
       "template": "templates/forms.html",
       "css": [
@@ -3748,7 +3748,7 @@
       "id": "filters-panel",
       "source": "forms",
       "category": "forms",
-      "family": "07 · Filtering & editing",
+      "family": "07 \u00b7 Filtering & editing",
       "title": "Filters panel",
       "template": "templates/forms.html",
       "css": [
@@ -3773,7 +3773,7 @@
       "id": "star-rating-live",
       "source": "sliders",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Star rating (live)",
       "template": "templates/sliders.html",
       "css": [
@@ -3800,7 +3800,7 @@
       "id": "rating-prompt",
       "source": "feedback",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Rating prompt",
       "template": "templates/feedback.html",
       "css": [
@@ -3826,7 +3826,7 @@
       "id": "select-menus",
       "source": "forms",
       "category": "forms",
-      "family": "02 · Selects & specialized inputs",
+      "family": "02 \u00b7 Selects & specialized inputs",
       "title": "Select menus",
       "template": "templates/forms.html",
       "css": [
@@ -3851,7 +3851,7 @@
       "id": "grouped-and-multi-select",
       "source": "forms",
       "category": "forms",
-      "family": "02 · Selects & specialized inputs",
+      "family": "02 \u00b7 Selects & specialized inputs",
       "title": "Grouped and multi select",
       "template": "templates/forms.html",
       "css": [
@@ -3878,7 +3878,7 @@
       "id": "tags-and-mentions",
       "source": "forms",
       "category": "forms",
-      "family": "02 · Selects & specialized inputs",
+      "family": "02 \u00b7 Selects & specialized inputs",
       "title": "Tags and mentions",
       "template": "templates/forms.html",
       "css": [
@@ -3904,7 +3904,7 @@
       "id": "dates-and-times",
       "source": "forms",
       "category": "forms",
-      "family": "02 · Selects & specialized inputs",
+      "family": "02 \u00b7 Selects & specialized inputs",
       "title": "Dates and times",
       "template": "templates/forms.html",
       "css": [
@@ -3930,7 +3930,7 @@
       "id": "date-range-calendar",
       "source": "forms",
       "category": "forms",
-      "family": "02 · Selects & specialized inputs",
+      "family": "02 \u00b7 Selects & specialized inputs",
       "title": "Date range calendar",
       "template": "templates/forms.html",
       "css": [
@@ -3956,7 +3956,7 @@
       "id": "time-wheel",
       "source": "forms",
       "category": "forms",
-      "family": "02 · Selects & specialized inputs",
+      "family": "02 \u00b7 Selects & specialized inputs",
       "title": "Time wheel",
       "template": "templates/forms.html",
       "css": [
@@ -3981,7 +3981,7 @@
       "id": "address-autocomplete",
       "source": "forms",
       "category": "forms",
-      "family": "02 · Selects & specialized inputs",
+      "family": "02 \u00b7 Selects & specialized inputs",
       "title": "Address autocomplete",
       "template": "templates/forms.html",
       "css": [
@@ -4006,7 +4006,7 @@
       "id": "country-and-language-pickers",
       "source": "forms",
       "category": "forms",
-      "family": "02 · Selects & specialized inputs",
+      "family": "02 \u00b7 Selects & specialized inputs",
       "title": "Country and language pickers",
       "template": "templates/forms.html",
       "css": [
@@ -4033,7 +4033,7 @@
       "id": "date-presets",
       "source": "forms",
       "category": "forms",
-      "family": "02 · Selects & specialized inputs",
+      "family": "02 \u00b7 Selects & specialized inputs",
       "title": "Date presets",
       "template": "templates/forms.html",
       "css": [
@@ -4058,7 +4058,7 @@
       "id": "payment-method-selector",
       "source": "forms",
       "category": "forms",
-      "family": "02 · Selects & specialized inputs",
+      "family": "02 \u00b7 Selects & specialized inputs",
       "title": "Payment method selector",
       "template": "templates/forms.html",
       "css": [
@@ -4084,7 +4084,7 @@
       "id": "file-upload",
       "source": "forms",
       "category": "forms",
-      "family": "05 · Uploads & editors",
+      "family": "05 \u00b7 Uploads & editors",
       "title": "File upload",
       "template": "templates/forms.html",
       "css": [
@@ -4109,7 +4109,7 @@
       "id": "image-and-avatar-upload",
       "source": "forms",
       "category": "forms",
-      "family": "05 · Uploads & editors",
+      "family": "05 \u00b7 Uploads & editors",
       "title": "Image and avatar upload",
       "template": "templates/forms.html",
       "css": [
@@ -4136,7 +4136,7 @@
       "id": "signature-and-captcha",
       "source": "forms",
       "category": "forms",
-      "family": "05 · Uploads & editors",
+      "family": "05 \u00b7 Uploads & editors",
       "title": "Signature and captcha",
       "template": "templates/forms.html",
       "css": [
@@ -4162,7 +4162,7 @@
       "id": "markdown-editor",
       "source": "forms",
       "category": "forms",
-      "family": "05 · Uploads & editors",
+      "family": "05 \u00b7 Uploads & editors",
       "title": "Markdown editor",
       "template": "templates/forms.html",
       "css": [
@@ -4187,7 +4187,7 @@
       "id": "image-upload-manager",
       "source": "forms",
       "category": "forms",
-      "family": "05 · Uploads & editors",
+      "family": "05 \u00b7 Uploads & editors",
       "title": "Image upload manager",
       "template": "templates/forms.html",
       "css": [
@@ -4213,7 +4213,7 @@
       "id": "rgb-colour-mixer",
       "source": "sliders",
       "category": "sliders",
-      "family": "03 · Circular & specialty controls",
+      "family": "03 \u00b7 Circular & specialty controls",
       "title": "RGB colour mixer",
       "template": "templates/sliders.html",
       "css": [
@@ -4239,7 +4239,7 @@
       "id": "thermostat-dial",
       "source": "sliders",
       "category": "sliders",
-      "family": "03 · Circular & specialty controls",
+      "family": "03 \u00b7 Circular & specialty controls",
       "title": "Thermostat dial",
       "template": "templates/sliders.html",
       "css": [
@@ -4264,7 +4264,7 @@
       "id": "fan-and-mode-selectors",
       "source": "sliders",
       "category": "sliders",
-      "family": "03 · Circular & specialty controls",
+      "family": "03 \u00b7 Circular & specialty controls",
       "title": "Fan and mode selectors",
       "template": "templates/sliders.html",
       "css": [
@@ -4291,7 +4291,7 @@
       "id": "before-and-after-compare",
       "source": "sliders",
       "category": "sliders",
-      "family": "05 · Comparison & allocation",
+      "family": "05 \u00b7 Comparison & allocation",
       "title": "Before and after compare",
       "template": "templates/sliders.html",
       "css": [
@@ -4318,7 +4318,7 @@
       "id": "slider-basics",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Slider basics",
       "template": "templates/sliders.html",
       "css": [
@@ -4343,7 +4343,7 @@
       "id": "value-tooltip",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Value tooltip",
       "template": "templates/sliders.html",
       "css": [
@@ -4368,7 +4368,7 @@
       "id": "stepped-with-ticks",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Stepped with ticks",
       "template": "templates/sliders.html",
       "css": [
@@ -4394,7 +4394,7 @@
       "id": "volume-and-brightness",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Volume and brightness",
       "template": "templates/sliders.html",
       "css": [
@@ -4420,7 +4420,7 @@
       "id": "gradient-track-sliders",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Gradient track sliders",
       "template": "templates/sliders.html",
       "css": [
@@ -4445,7 +4445,7 @@
       "id": "dual-range-with-histogram",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Dual range with histogram",
       "template": "templates/sliders.html",
       "css": [
@@ -4472,7 +4472,7 @@
       "id": "vertical-sliders-and-equalizer",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Vertical sliders and equalizer",
       "template": "templates/sliders.html",
       "css": [
@@ -4498,7 +4498,7 @@
       "id": "slider-with-number-inputs",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Slider with number inputs",
       "template": "templates/sliders.html",
       "css": [
@@ -4525,7 +4525,7 @@
       "id": "seek-bar",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Seek bar",
       "template": "templates/sliders.html",
       "css": [
@@ -4550,7 +4550,7 @@
       "id": "age-range-two-handles",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Age range (two handles)",
       "template": "templates/sliders.html",
       "css": [
@@ -4577,7 +4577,7 @@
       "id": "circular-dial-slider",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Circular dial slider",
       "template": "templates/sliders.html",
       "css": [
@@ -4603,7 +4603,7 @@
       "id": "vertical-volume-with-ticks",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Vertical volume with ticks",
       "template": "templates/sliders.html",
       "css": [
@@ -4630,7 +4630,7 @@
       "id": "time-range-on-a-day-bar",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Time range on a day bar",
       "template": "templates/sliders.html",
       "css": [
@@ -4659,7 +4659,7 @@
       "id": "milestone-slider",
       "source": "sliders",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Milestone slider",
       "template": "templates/sliders.html",
       "css": [
@@ -4684,7 +4684,7 @@
       "id": "number-steppers",
       "source": "sliders",
       "category": "sliders",
-      "family": "02 · Numeric entry & steppers",
+      "family": "02 \u00b7 Numeric entry & steppers",
       "title": "Number steppers",
       "template": "templates/sliders.html",
       "css": [
@@ -4709,7 +4709,7 @@
       "id": "quantity-selectors",
       "source": "sliders",
       "category": "sliders",
-      "family": "02 · Numeric entry & steppers",
+      "family": "02 \u00b7 Numeric entry & steppers",
       "title": "Quantity selectors",
       "template": "templates/sliders.html",
       "css": [
@@ -4734,7 +4734,7 @@
       "id": "tip-and-amount-pickers",
       "source": "sliders",
       "category": "sliders",
-      "family": "02 · Numeric entry & steppers",
+      "family": "02 \u00b7 Numeric entry & steppers",
       "title": "Tip and amount pickers",
       "template": "templates/sliders.html",
       "css": [
@@ -4761,7 +4761,7 @@
       "id": "keypad-and-calculator",
       "source": "sliders",
       "category": "sliders",
-      "family": "02 · Numeric entry & steppers",
+      "family": "02 \u00b7 Numeric entry & steppers",
       "title": "Keypad and calculator",
       "template": "templates/sliders.html",
       "css": [
@@ -4787,7 +4787,7 @@
       "id": "date-and-number-wheels",
       "source": "sliders",
       "category": "sliders",
-      "family": "02 · Numeric entry & steppers",
+      "family": "02 \u00b7 Numeric entry & steppers",
       "title": "Date and number wheels",
       "template": "templates/sliders.html",
       "css": [
@@ -4814,7 +4814,7 @@
       "id": "score-counters",
       "source": "sliders",
       "category": "sliders",
-      "family": "02 · Numeric entry & steppers",
+      "family": "02 \u00b7 Numeric entry & steppers",
       "title": "Score counters",
       "template": "templates/sliders.html",
       "css": [
@@ -4839,7 +4839,7 @@
       "id": "percentage-inputs",
       "source": "sliders",
       "category": "sliders",
-      "family": "02 · Numeric entry & steppers",
+      "family": "02 \u00b7 Numeric entry & steppers",
       "title": "Percentage inputs",
       "template": "templates/sliders.html",
       "css": [
@@ -4864,7 +4864,7 @@
       "id": "segmented-level",
       "source": "sliders",
       "category": "sliders",
-      "family": "04 · Choices & levels",
+      "family": "04 \u00b7 Choices & levels",
       "title": "Segmented level",
       "template": "templates/sliders.html",
       "css": [
@@ -4889,7 +4889,7 @@
       "id": "read-only-rating",
       "source": "sliders",
       "category": "sliders",
-      "family": "04 · Choices & levels",
+      "family": "04 \u00b7 Choices & levels",
       "title": "Read-only rating",
       "template": "templates/sliders.html",
       "css": [
@@ -4915,7 +4915,7 @@
       "id": "emoji-thumbs-and-nps",
       "source": "sliders",
       "category": "sliders",
-      "family": "04 · Choices & levels",
+      "family": "04 \u00b7 Choices & levels",
       "title": "Emoji, thumbs and NPS",
       "template": "templates/sliders.html",
       "css": [
@@ -4942,7 +4942,7 @@
       "id": "budget-allocation",
       "source": "sliders",
       "category": "sliders",
-      "family": "06 · Time, budgets & targets",
+      "family": "06 \u00b7 Time, budgets & targets",
       "title": "Budget allocation",
       "template": "templates/sliders.html",
       "css": [
@@ -4967,7 +4967,7 @@
       "id": "duration-and-timer",
       "source": "sliders",
       "category": "sliders",
-      "family": "06 · Time, budgets & targets",
+      "family": "06 \u00b7 Time, budgets & targets",
       "title": "Duration and timer",
       "template": "templates/sliders.html",
       "css": [
@@ -4993,7 +4993,7 @@
       "id": "split-value-bar",
       "source": "sliders",
       "category": "sliders",
-      "family": "06 · Time, budgets & targets",
+      "family": "06 \u00b7 Time, budgets & targets",
       "title": "Split value bar",
       "template": "templates/sliders.html",
       "css": [
@@ -5019,7 +5019,7 @@
       "id": "bullet-and-target-bars",
       "source": "sliders",
       "category": "sliders",
-      "family": "06 · Time, budgets & targets",
+      "family": "06 \u00b7 Time, budgets & targets",
       "title": "Bullet and target bars",
       "template": "templates/sliders.html",
       "css": [
@@ -5046,7 +5046,7 @@
       "id": "navbars",
       "source": "navigation",
       "category": "navigation",
-      "family": "01 · Global & responsive navigation",
+      "family": "01 \u00b7 Global & responsive navigation",
       "title": "Navbars",
       "template": "templates/navigation.html",
       "css": [
@@ -5070,7 +5070,7 @@
       "id": "navbar-with-search-and-profile",
       "source": "navigation",
       "category": "navigation",
-      "family": "01 · Global & responsive navigation",
+      "family": "01 \u00b7 Global & responsive navigation",
       "title": "Navbar with search and profile",
       "template": "templates/navigation.html",
       "css": [
@@ -5098,7 +5098,7 @@
       "id": "mobile-app-bars",
       "source": "navigation",
       "category": "navigation",
-      "family": "01 · Global & responsive navigation",
+      "family": "01 \u00b7 Global & responsive navigation",
       "title": "Mobile app bars",
       "template": "templates/navigation.html",
       "css": [
@@ -5124,7 +5124,7 @@
       "id": "responsive-menu",
       "source": "navigation",
       "category": "navigation",
-      "family": "01 · Global & responsive navigation",
+      "family": "01 \u00b7 Global & responsive navigation",
       "title": "Responsive menu",
       "template": "templates/navigation.html",
       "css": [
@@ -5149,7 +5149,7 @@
       "id": "mega-menu",
       "source": "navigation",
       "category": "navigation",
-      "family": "01 · Global & responsive navigation",
+      "family": "01 \u00b7 Global & responsive navigation",
       "title": "Mega menu",
       "template": "templates/navigation.html",
       "css": [
@@ -5174,7 +5174,7 @@
       "id": "sidebars",
       "source": "navigation",
       "category": "navigation",
-      "family": "01 · Global & responsive navigation",
+      "family": "01 \u00b7 Global & responsive navigation",
       "title": "Sidebars",
       "template": "templates/navigation.html",
       "css": [
@@ -5198,7 +5198,7 @@
       "id": "navigation-rails",
       "source": "navigation",
       "category": "navigation",
-      "family": "01 · Global & responsive navigation",
+      "family": "01 \u00b7 Global & responsive navigation",
       "title": "Navigation rails",
       "template": "templates/navigation.html",
       "css": [
@@ -5222,7 +5222,7 @@
       "id": "bottom-navigation",
       "source": "navigation",
       "category": "navigation",
-      "family": "01 · Global & responsive navigation",
+      "family": "01 \u00b7 Global & responsive navigation",
       "title": "Bottom navigation",
       "template": "templates/navigation.html",
       "css": [
@@ -5246,7 +5246,7 @@
       "id": "app-and-workspace-switcher",
       "source": "navigation",
       "category": "navigation",
-      "family": "01 · Global & responsive navigation",
+      "family": "01 \u00b7 Global & responsive navigation",
       "title": "App and workspace switcher",
       "template": "templates/navigation.html",
       "css": [
@@ -5273,7 +5273,7 @@
       "id": "mobile-tab-bar-styles",
       "source": "navigation",
       "category": "navigation",
-      "family": "01 · Global & responsive navigation",
+      "family": "01 \u00b7 Global & responsive navigation",
       "title": "Mobile tab bar styles",
       "template": "templates/navigation.html",
       "css": [
@@ -5300,7 +5300,7 @@
       "id": "collapsed-sidebar-rail-hover",
       "source": "navigation",
       "category": "navigation",
-      "family": "01 · Global & responsive navigation",
+      "family": "01 \u00b7 Global & responsive navigation",
       "title": "Collapsed sidebar rail (hover)",
       "template": "templates/navigation.html",
       "css": [
@@ -5327,7 +5327,7 @@
       "id": "sticky-navbar-top-and-shrunk",
       "source": "navigation",
       "category": "navigation",
-      "family": "01 · Global & responsive navigation",
+      "family": "01 \u00b7 Global & responsive navigation",
       "title": "Sticky navbar: top and shrunk",
       "template": "templates/navigation.html",
       "css": [
@@ -5355,7 +5355,7 @@
       "id": "footers",
       "source": "navigation",
       "category": "navigation",
-      "family": "06 · Headers & footers",
+      "family": "06 \u00b7 Headers & footers",
       "title": "Footers",
       "template": "templates/navigation.html",
       "css": [
@@ -5379,7 +5379,7 @@
       "id": "page-headers",
       "source": "navigation",
       "category": "navigation",
-      "family": "06 · Headers & footers",
+      "family": "06 \u00b7 Headers & footers",
       "title": "Page headers",
       "template": "templates/navigation.html",
       "css": [
@@ -5404,7 +5404,7 @@
       "id": "newsletter-footer",
       "source": "navigation",
       "category": "navigation",
-      "family": "06 · Headers & footers",
+      "family": "06 \u00b7 Headers & footers",
       "title": "Newsletter footer",
       "template": "templates/navigation.html",
       "css": [
@@ -5429,7 +5429,7 @@
       "id": "breadcrumbs",
       "source": "navigation",
       "category": "navigation",
-      "family": "05 · In-page navigation",
+      "family": "05 \u00b7 In-page navigation",
       "title": "Breadcrumbs",
       "template": "templates/navigation.html",
       "css": [
@@ -5453,7 +5453,7 @@
       "id": "on-this-page",
       "source": "navigation",
       "category": "navigation",
-      "family": "05 · In-page navigation",
+      "family": "05 \u00b7 In-page navigation",
       "title": "On this page",
       "template": "templates/navigation.html",
       "css": [
@@ -5479,7 +5479,7 @@
       "id": "tree-and-file-explorer",
       "source": "navigation",
       "category": "navigation",
-      "family": "05 · In-page navigation",
+      "family": "05 \u00b7 In-page navigation",
       "title": "Tree and file explorer",
       "template": "templates/navigation.html",
       "css": [
@@ -5506,7 +5506,7 @@
       "id": "carousel-navigation",
       "source": "navigation",
       "category": "navigation",
-      "family": "05 · In-page navigation",
+      "family": "05 \u00b7 In-page navigation",
       "title": "Carousel navigation",
       "template": "templates/navigation.html",
       "css": [
@@ -5530,7 +5530,7 @@
       "id": "dropdown-menu",
       "source": "navigation",
       "category": "navigation",
-      "family": "02 · Menus & commands",
+      "family": "02 \u00b7 Menus & commands",
       "title": "Dropdown menu",
       "template": "templates/navigation.html",
       "css": [
@@ -5555,7 +5555,7 @@
       "id": "user-menu",
       "source": "navigation",
       "category": "navigation",
-      "family": "02 · Menus & commands",
+      "family": "02 \u00b7 Menus & commands",
       "title": "User menu",
       "template": "templates/navigation.html",
       "css": [
@@ -5580,7 +5580,7 @@
       "id": "grouped-and-nested-menu",
       "source": "navigation",
       "category": "navigation",
-      "family": "02 · Menus & commands",
+      "family": "02 \u00b7 Menus & commands",
       "title": "Grouped and nested menu",
       "template": "templates/navigation.html",
       "css": [
@@ -5607,7 +5607,7 @@
       "id": "context-menu",
       "source": "navigation",
       "category": "navigation",
-      "family": "02 · Menus & commands",
+      "family": "02 \u00b7 Menus & commands",
       "title": "Context menu",
       "template": "templates/navigation.html",
       "css": [
@@ -5632,7 +5632,7 @@
       "id": "list-menus",
       "source": "navigation",
       "category": "navigation",
-      "family": "02 · Menus & commands",
+      "family": "02 \u00b7 Menus & commands",
       "title": "List menus",
       "template": "templates/navigation.html",
       "css": [
@@ -5657,7 +5657,7 @@
       "id": "pagination-and-load-more",
       "source": "buttons",
       "category": "navigation",
-      "family": "04 · Pagination",
+      "family": "04 \u00b7 Pagination",
       "title": "Pagination and load more",
       "template": "templates/buttons.html",
       "css": [
@@ -5685,7 +5685,7 @@
       "id": "tabs-underline-live",
       "source": "navigation",
       "category": "navigation",
-      "family": "03 · Tabs & steps",
+      "family": "03 \u00b7 Tabs & steps",
       "title": "Tabs: underline (live)",
       "template": "templates/navigation.html",
       "css": [
@@ -5711,7 +5711,7 @@
       "id": "tabs-pills-live",
       "source": "navigation",
       "category": "navigation",
-      "family": "03 · Tabs & steps",
+      "family": "03 \u00b7 Tabs & steps",
       "title": "Tabs: pills (live)",
       "template": "templates/navigation.html",
       "css": [
@@ -5737,7 +5737,7 @@
       "id": "tabs-boxed-and-full-width-live",
       "source": "navigation",
       "category": "navigation",
-      "family": "03 · Tabs & steps",
+      "family": "03 \u00b7 Tabs & steps",
       "title": "Tabs: boxed and full width (live)",
       "template": "templates/navigation.html",
       "css": [
@@ -5766,7 +5766,7 @@
       "id": "tabs-vertical-live",
       "source": "navigation",
       "category": "navigation",
-      "family": "03 · Tabs & steps",
+      "family": "03 \u00b7 Tabs & steps",
       "title": "Tabs: vertical (live)",
       "template": "templates/navigation.html",
       "css": [
@@ -5792,7 +5792,7 @@
       "id": "pagination",
       "source": "navigation",
       "category": "navigation",
-      "family": "04 · Pagination",
+      "family": "04 \u00b7 Pagination",
       "title": "Pagination",
       "template": "templates/navigation.html",
       "css": [
@@ -5816,7 +5816,7 @@
       "id": "steppers",
       "source": "navigation",
       "category": "navigation",
-      "family": "03 · Tabs & steps",
+      "family": "03 \u00b7 Tabs & steps",
       "title": "Steppers",
       "template": "templates/navigation.html",
       "css": [
@@ -5840,7 +5840,7 @@
       "id": "category-pills-and-view-switch",
       "source": "navigation",
       "category": "navigation",
-      "family": "03 · Tabs & steps",
+      "family": "03 \u00b7 Tabs & steps",
       "title": "Category pills and view switch",
       "template": "templates/navigation.html",
       "css": [
@@ -5868,7 +5868,7 @@
       "id": "back-and-next-bars",
       "source": "navigation",
       "category": "navigation",
-      "family": "03 · Tabs & steps",
+      "family": "03 \u00b7 Tabs & steps",
       "title": "Back and next bars",
       "template": "templates/navigation.html",
       "css": [
@@ -5895,7 +5895,7 @@
       "id": "stepper-variants",
       "source": "navigation",
       "category": "navigation",
-      "family": "03 · Tabs & steps",
+      "family": "03 \u00b7 Tabs & steps",
       "title": "Stepper variants",
       "template": "templates/navigation.html",
       "css": [
@@ -5920,7 +5920,7 @@
       "id": "closable-tabs-and-menu-bar",
       "source": "navigation",
       "category": "navigation",
-      "family": "03 · Tabs & steps",
+      "family": "03 \u00b7 Tabs & steps",
       "title": "Closable tabs and menu bar",
       "template": "templates/navigation.html",
       "css": [
@@ -5948,7 +5948,7 @@
       "id": "pagination-variants",
       "source": "navigation",
       "category": "navigation",
-      "family": "04 · Pagination",
+      "family": "04 \u00b7 Pagination",
       "title": "Pagination variants",
       "template": "templates/navigation.html",
       "css": [
@@ -5973,7 +5973,7 @@
       "id": "pricing-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "03 · Commerce & business cards",
+      "family": "03 \u00b7 Commerce & business cards",
       "title": "Pricing cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -5998,7 +5998,7 @@
       "id": "product-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "03 · Commerce & business cards",
+      "family": "03 \u00b7 Commerce & business cards",
       "title": "Product cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6023,7 +6023,7 @@
       "id": "credit-card-and-boarding-pass",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "03 · Commerce & business cards",
+      "family": "03 \u00b7 Commerce & business cards",
       "title": "Credit card and boarding pass",
       "template": "templates/surfaces.html",
       "css": [
@@ -6051,7 +6051,7 @@
       "id": "job-listing-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "03 · Commerce & business cards",
+      "family": "03 \u00b7 Commerce & business cards",
       "title": "Job listing card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6077,7 +6077,7 @@
       "id": "property-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "03 · Commerce & business cards",
+      "family": "03 \u00b7 Commerce & business cards",
       "title": "Property card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6102,7 +6102,7 @@
       "id": "delivery-tracking-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "03 · Commerce & business cards",
+      "family": "03 \u00b7 Commerce & business cards",
       "title": "Delivery tracking card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6128,7 +6128,7 @@
       "id": "bank-account-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "03 · Commerce & business cards",
+      "family": "03 \u00b7 Commerce & business cards",
       "title": "Bank account card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6154,7 +6154,7 @@
       "id": "stock-and-crypto-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "03 · Commerce & business cards",
+      "family": "03 \u00b7 Commerce & business cards",
       "title": "Stock and crypto card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6181,7 +6181,7 @@
       "id": "subscription-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "03 · Commerce & business cards",
+      "family": "03 \u00b7 Commerce & business cards",
       "title": "Subscription card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6206,7 +6206,7 @@
       "id": "app-promo-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "03 · Commerce & business cards",
+      "family": "03 \u00b7 Commerce & business cards",
       "title": "App promo card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6232,7 +6232,7 @@
       "id": "video-and-podcast-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "05 · Content & lifestyle cards",
+      "family": "05 \u00b7 Content & lifestyle cards",
       "title": "Video and podcast cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6259,7 +6259,7 @@
       "id": "article-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "05 · Content & lifestyle cards",
+      "family": "05 \u00b7 Content & lifestyle cards",
       "title": "Article cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6284,7 +6284,7 @@
       "id": "event-and-ticket-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "05 · Content & lifestyle cards",
+      "family": "05 \u00b7 Content & lifestyle cards",
       "title": "Event and ticket cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6311,7 +6311,7 @@
       "id": "weather-and-info-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "05 · Content & lifestyle cards",
+      "family": "05 \u00b7 Content & lifestyle cards",
       "title": "Weather and info cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6338,7 +6338,7 @@
       "id": "course-and-progress-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "05 · Content & lifestyle cards",
+      "family": "05 \u00b7 Content & lifestyle cards",
       "title": "Course and progress cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6365,7 +6365,7 @@
       "id": "recipe-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "05 · Content & lifestyle cards",
+      "family": "05 \u00b7 Content & lifestyle cards",
       "title": "Recipe card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6390,7 +6390,7 @@
       "id": "travel-destination-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "05 · Content & lifestyle cards",
+      "family": "05 \u00b7 Content & lifestyle cards",
       "title": "Travel destination card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6416,7 +6416,7 @@
       "id": "news-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "05 · Content & lifestyle cards",
+      "family": "05 \u00b7 Content & lifestyle cards",
       "title": "News card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6441,7 +6441,7 @@
       "id": "fitness-rings-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "05 · Content & lifestyle cards",
+      "family": "05 \u00b7 Content & lifestyle cards",
       "title": "Fitness rings card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6467,7 +6467,7 @@
       "id": "habit-tracker-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "05 · Content & lifestyle cards",
+      "family": "05 \u00b7 Content & lifestyle cards",
       "title": "Habit tracker card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6493,7 +6493,7 @@
       "id": "appointment-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "05 · Content & lifestyle cards",
+      "family": "05 \u00b7 Content & lifestyle cards",
       "title": "Appointment card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6518,7 +6518,7 @@
       "id": "achievement-badge-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "05 · Content & lifestyle cards",
+      "family": "05 \u00b7 Content & lifestyle cards",
       "title": "Achievement badge card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6544,7 +6544,7 @@
       "id": "stat-and-kpi-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "04 · Dashboard & workflow cards",
+      "family": "04 \u00b7 Dashboard & workflow cards",
       "title": "Stat and KPI cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6571,7 +6571,7 @@
       "id": "feature-and-icon-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "04 · Dashboard & workflow cards",
+      "family": "04 \u00b7 Dashboard & workflow cards",
       "title": "Feature and icon cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6598,7 +6598,7 @@
       "id": "file-and-download-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "04 · Dashboard & workflow cards",
+      "family": "04 \u00b7 Dashboard & workflow cards",
       "title": "File and download cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6625,7 +6625,7 @@
       "id": "checklist-and-task-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "04 · Dashboard & workflow cards",
+      "family": "04 \u00b7 Dashboard & workflow cards",
       "title": "Checklist and task cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6652,7 +6652,7 @@
       "id": "kanban-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "04 · Dashboard & workflow cards",
+      "family": "04 \u00b7 Dashboard & workflow cards",
       "title": "Kanban cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6677,7 +6677,7 @@
       "id": "interactive-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "04 · Dashboard & workflow cards",
+      "family": "04 \u00b7 Dashboard & workflow cards",
       "title": "Interactive cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6702,7 +6702,7 @@
       "id": "masonry-and-list-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "04 · Dashboard & workflow cards",
+      "family": "04 \u00b7 Dashboard & workflow cards",
       "title": "Masonry and list cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6729,7 +6729,7 @@
       "id": "empty-and-call-to-action-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "04 · Dashboard & workflow cards",
+      "family": "04 \u00b7 Dashboard & workflow cards",
       "title": "Empty and call-to-action cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6758,7 +6758,7 @@
       "id": "profile-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "02 · Profiles & social cards",
+      "family": "02 \u00b7 Profiles & social cards",
       "title": "Profile cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6783,7 +6783,7 @@
       "id": "team-member-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "02 · Profiles & social cards",
+      "family": "02 \u00b7 Profiles & social cards",
       "title": "Team member cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6809,7 +6809,7 @@
       "id": "testimonial-and-quote",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "02 · Profiles & social cards",
+      "family": "02 \u00b7 Profiles & social cards",
       "title": "Testimonial and quote",
       "template": "templates/surfaces.html",
       "css": [
@@ -6835,7 +6835,7 @@
       "id": "notification-and-message-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "02 · Profiles & social cards",
+      "family": "02 \u00b7 Profiles & social cards",
       "title": "Notification and message cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6862,7 +6862,7 @@
       "id": "social-post-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "02 · Profiles & social cards",
+      "family": "02 \u00b7 Profiles & social cards",
       "title": "Social post card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6888,7 +6888,7 @@
       "id": "review-card",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "02 · Profiles & social cards",
+      "family": "02 \u00b7 Profiles & social cards",
       "title": "Review card",
       "template": "templates/surfaces.html",
       "css": [
@@ -6913,7 +6913,7 @@
       "id": "panel-styles",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "01 · Surfaces & treatments",
+      "family": "01 \u00b7 Surfaces & treatments",
       "title": "Panel styles",
       "template": "templates/surfaces.html",
       "css": [
@@ -6938,7 +6938,7 @@
       "id": "glass-and-gradient-surfaces",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "01 · Surfaces & treatments",
+      "family": "01 \u00b7 Surfaces & treatments",
       "title": "Glass and gradient surfaces",
       "template": "templates/surfaces.html",
       "css": [
@@ -6964,7 +6964,7 @@
       "id": "gradient-border-header-and-ribbon-cards",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "01 · Surfaces & treatments",
+      "family": "01 \u00b7 Surfaces & treatments",
       "title": "Gradient border, header and ribbon cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -6993,7 +6993,7 @@
       "id": "device-frames",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "01 · Surfaces & treatments",
+      "family": "01 \u00b7 Surfaces & treatments",
       "title": "Device frames",
       "template": "templates/surfaces.html",
       "css": [
@@ -7018,7 +7018,7 @@
       "id": "dark-and-inverted-surfaces",
       "source": "surfaces",
       "category": "surfaces",
-      "family": "01 · Surfaces & treatments",
+      "family": "01 \u00b7 Surfaces & treatments",
       "title": "Dark and inverted surfaces",
       "template": "templates/surfaces.html",
       "css": [
@@ -7044,7 +7044,7 @@
       "id": "modal-confirm-and-alert",
       "source": "surfaces",
       "category": "overlays",
-      "family": "02 · Dialogs & lightboxes",
+      "family": "02 \u00b7 Dialogs & lightboxes",
       "title": "Modal: confirm and alert",
       "template": "templates/surfaces.html",
       "css": [
@@ -7074,7 +7074,7 @@
       "id": "modal-form-and-fullscreen",
       "source": "surfaces",
       "category": "overlays",
-      "family": "02 · Dialogs & lightboxes",
+      "family": "02 \u00b7 Dialogs & lightboxes",
       "title": "Modal: form and fullscreen",
       "template": "templates/surfaces.html",
       "css": [
@@ -7104,7 +7104,7 @@
       "id": "lightbox-and-image-viewer",
       "source": "surfaces",
       "category": "overlays",
-      "family": "02 · Dialogs & lightboxes",
+      "family": "02 \u00b7 Dialogs & lightboxes",
       "title": "Lightbox and image viewer",
       "template": "templates/surfaces.html",
       "css": [
@@ -7134,7 +7134,7 @@
       "id": "popovers",
       "source": "surfaces",
       "category": "overlays",
-      "family": "04 · Tooltips & popovers",
+      "family": "04 \u00b7 Tooltips & popovers",
       "title": "Popovers",
       "template": "templates/surfaces.html",
       "css": [
@@ -7161,7 +7161,7 @@
       "id": "tooltips",
       "source": "surfaces",
       "category": "overlays",
-      "family": "04 · Tooltips & popovers",
+      "family": "04 \u00b7 Tooltips & popovers",
       "title": "Tooltips",
       "template": "templates/surfaces.html",
       "css": [
@@ -7188,7 +7188,7 @@
       "id": "hover-card",
       "source": "surfaces",
       "category": "overlays",
-      "family": "04 · Tooltips & popovers",
+      "family": "04 \u00b7 Tooltips & popovers",
       "title": "Hover card",
       "template": "templates/surfaces.html",
       "css": [
@@ -7216,7 +7216,7 @@
       "id": "bottom-sheet-and-action-sheet",
       "source": "surfaces",
       "category": "overlays",
-      "family": "03 · Drawers & sheets",
+      "family": "03 \u00b7 Drawers & sheets",
       "title": "Bottom sheet and action sheet",
       "template": "templates/surfaces.html",
       "css": [
@@ -7246,7 +7246,7 @@
       "id": "side-panel",
       "source": "surfaces",
       "category": "overlays",
-      "family": "03 · Drawers & sheets",
+      "family": "03 \u00b7 Drawers & sheets",
       "title": "Side panel",
       "template": "templates/surfaces.html",
       "css": [
@@ -7274,7 +7274,7 @@
       "id": "backdrops-and-scrims",
       "source": "surfaces",
       "category": "overlays",
-      "family": "06 · Prompts & backdrops",
+      "family": "06 \u00b7 Prompts & backdrops",
       "title": "Backdrops and scrims",
       "template": "templates/surfaces.html",
       "css": [
@@ -7303,7 +7303,7 @@
       "id": "cookie-banner-and-promo-popup",
       "source": "surfaces",
       "category": "overlays",
-      "family": "06 · Prompts & backdrops",
+      "family": "06 \u00b7 Prompts & backdrops",
       "title": "Cookie banner and promo popup",
       "template": "templates/surfaces.html",
       "css": [
@@ -7334,7 +7334,7 @@
       "id": "coach-mark-and-spotlight",
       "source": "surfaces",
       "category": "overlays",
-      "family": "06 · Prompts & backdrops",
+      "family": "06 \u00b7 Prompts & backdrops",
       "title": "Coach mark and spotlight",
       "template": "templates/surfaces.html",
       "css": [
@@ -7364,7 +7364,7 @@
       "id": "accordions-live",
       "source": "navigation",
       "category": "overlays",
-      "family": "01 · Disclosure",
+      "family": "01 \u00b7 Disclosure",
       "title": "Accordions (live)",
       "template": "templates/navigation.html",
       "css": [
@@ -7392,7 +7392,7 @@
       "id": "drawers-and-sheets",
       "source": "navigation",
       "category": "overlays",
-      "family": "03 · Drawers & sheets",
+      "family": "03 \u00b7 Drawers & sheets",
       "title": "Drawers and sheets",
       "template": "templates/navigation.html",
       "css": [
@@ -7421,7 +7421,7 @@
       "id": "command-palette",
       "source": "navigation",
       "category": "overlays",
-      "family": "05 · Commands & search",
+      "family": "05 \u00b7 Commands & search",
       "title": "Command palette",
       "template": "templates/navigation.html",
       "css": [
@@ -7449,7 +7449,7 @@
       "id": "search-overlay",
       "source": "navigation",
       "category": "overlays",
-      "family": "05 · Commands & search",
+      "family": "05 \u00b7 Commands & search",
       "title": "Search overlay",
       "template": "templates/navigation.html",
       "css": [
@@ -7477,7 +7477,7 @@
       "id": "indeterminate-and-buffer",
       "source": "feedback",
       "category": "feedback",
-      "family": "06 · Prompts & status",
+      "family": "06 \u00b7 Prompts & status",
       "title": "Indeterminate and buffer",
       "template": "templates/feedback.html",
       "css": [
@@ -7503,7 +7503,7 @@
       "id": "alerts-soft-and-outline-dismiss-live",
       "source": "feedback",
       "category": "feedback",
-      "family": "02 · Alerts & banners",
+      "family": "02 \u00b7 Alerts & banners",
       "title": "Alerts: soft and outline (dismiss live)",
       "template": "templates/feedback.html",
       "css": [
@@ -7532,7 +7532,7 @@
       "id": "alerts-solid-and-with-actions",
       "source": "feedback",
       "category": "feedback",
-      "family": "02 · Alerts & banners",
+      "family": "02 \u00b7 Alerts & banners",
       "title": "Alerts: solid and with actions",
       "template": "templates/feedback.html",
       "css": [
@@ -7560,7 +7560,7 @@
       "id": "alert-with-list",
       "source": "feedback",
       "category": "feedback",
-      "family": "02 · Alerts & banners",
+      "family": "02 \u00b7 Alerts & banners",
       "title": "Alert with list",
       "template": "templates/feedback.html",
       "css": [
@@ -7586,7 +7586,7 @@
       "id": "banners",
       "source": "feedback",
       "category": "feedback",
-      "family": "02 · Alerts & banners",
+      "family": "02 \u00b7 Alerts & banners",
       "title": "Banners",
       "template": "templates/feedback.html",
       "css": [
@@ -7610,7 +7610,7 @@
       "id": "permission-and-maintenance",
       "source": "feedback",
       "category": "feedback",
-      "family": "02 · Alerts & banners",
+      "family": "02 \u00b7 Alerts & banners",
       "title": "Permission and maintenance",
       "template": "templates/feedback.html",
       "css": [
@@ -7636,7 +7636,7 @@
       "id": "system-status",
       "source": "feedback",
       "category": "feedback",
-      "family": "02 · Alerts & banners",
+      "family": "02 \u00b7 Alerts & banners",
       "title": "System status",
       "template": "templates/feedback.html",
       "css": [
@@ -7661,7 +7661,7 @@
       "id": "connectivity-bars",
       "source": "feedback",
       "category": "feedback",
-      "family": "02 · Alerts & banners",
+      "family": "02 \u00b7 Alerts & banners",
       "title": "Connectivity bars",
       "template": "templates/feedback.html",
       "css": [
@@ -7686,7 +7686,7 @@
       "id": "session-timeout-and-rate-limit",
       "source": "feedback",
       "category": "feedback",
-      "family": "02 · Alerts & banners",
+      "family": "02 \u00b7 Alerts & banners",
       "title": "Session timeout and rate limit",
       "template": "templates/feedback.html",
       "css": [
@@ -7714,7 +7714,7 @@
       "id": "badges-solid-soft-outline",
       "source": "buttons",
       "category": "feedback",
-      "family": "01 · Badges, chips & tags",
+      "family": "01 \u00b7 Badges, chips & tags",
       "title": "Badges: solid, soft, outline",
       "template": "templates/buttons.html",
       "css": [
@@ -7742,7 +7742,7 @@
       "id": "status-and-icon-badges",
       "source": "buttons",
       "category": "feedback",
-      "family": "01 · Badges, chips & tags",
+      "family": "01 \u00b7 Badges, chips & tags",
       "title": "Status and icon badges",
       "template": "templates/buttons.html",
       "css": [
@@ -7770,7 +7770,7 @@
       "id": "chips-and-tags",
       "source": "buttons",
       "category": "feedback",
-      "family": "01 · Badges, chips & tags",
+      "family": "01 \u00b7 Badges, chips & tags",
       "title": "Chips and tags",
       "template": "templates/buttons.html",
       "css": [
@@ -7797,7 +7797,7 @@
       "id": "code-and-copy-chips",
       "source": "buttons",
       "category": "feedback",
-      "family": "01 · Badges, chips & tags",
+      "family": "01 \u00b7 Badges, chips & tags",
       "title": "Code and copy chips",
       "template": "templates/buttons.html",
       "css": [
@@ -7825,7 +7825,7 @@
       "id": "feedback-widget",
       "source": "feedback",
       "category": "feedback",
-      "family": "06 · Prompts & status",
+      "family": "06 \u00b7 Prompts & status",
       "title": "Feedback widget",
       "template": "templates/feedback.html",
       "css": [
@@ -7849,7 +7849,7 @@
       "id": "notification-list",
       "source": "feedback",
       "category": "feedback",
-      "family": "06 · Prompts & status",
+      "family": "06 \u00b7 Prompts & status",
       "title": "Notification list",
       "template": "templates/feedback.html",
       "css": [
@@ -7874,7 +7874,7 @@
       "id": "push-notifications",
       "source": "feedback",
       "category": "feedback",
-      "family": "06 · Prompts & status",
+      "family": "06 \u00b7 Prompts & status",
       "title": "Push notifications",
       "template": "templates/feedback.html",
       "css": [
@@ -7899,7 +7899,7 @@
       "id": "onboarding-tooltip-step",
       "source": "feedback",
       "category": "feedback",
-      "family": "06 · Prompts & status",
+      "family": "06 \u00b7 Prompts & status",
       "title": "Onboarding tooltip step",
       "template": "templates/feedback.html",
       "css": [
@@ -7925,7 +7925,7 @@
       "id": "cookie-preferences",
       "source": "feedback",
       "category": "feedback",
-      "family": "06 · Prompts & status",
+      "family": "06 \u00b7 Prompts & status",
       "title": "Cookie preferences",
       "template": "templates/feedback.html",
       "css": [
@@ -7950,7 +7950,7 @@
       "id": "skeleton-and-result-morph",
       "source": "buttons",
       "category": "feedback",
-      "family": "04 · Progress & loading",
+      "family": "04 \u00b7 Progress & loading",
       "title": "Skeleton and result morph",
       "template": "templates/buttons.html",
       "css": [
@@ -7978,7 +7978,7 @@
       "id": "progress-bars",
       "source": "feedback",
       "category": "feedback",
-      "family": "04 · Progress & loading",
+      "family": "04 \u00b7 Progress & loading",
       "title": "Progress bars",
       "template": "templates/feedback.html",
       "css": [
@@ -8003,7 +8003,7 @@
       "id": "circular-progress",
       "source": "feedback",
       "category": "feedback",
-      "family": "04 · Progress & loading",
+      "family": "04 \u00b7 Progress & loading",
       "title": "Circular progress",
       "template": "templates/feedback.html",
       "css": [
@@ -8028,7 +8028,7 @@
       "id": "step-progress-and-upload-list",
       "source": "feedback",
       "category": "feedback",
-      "family": "04 · Progress & loading",
+      "family": "04 \u00b7 Progress & loading",
       "title": "Step progress and upload list",
       "template": "templates/feedback.html",
       "css": [
@@ -8056,7 +8056,7 @@
       "id": "spinners",
       "source": "feedback",
       "category": "feedback",
-      "family": "04 · Progress & loading",
+      "family": "04 \u00b7 Progress & loading",
       "title": "Spinners",
       "template": "templates/feedback.html",
       "css": [
@@ -8080,7 +8080,7 @@
       "id": "skeletons-card-and-list",
       "source": "feedback",
       "category": "feedback",
-      "family": "04 · Progress & loading",
+      "family": "04 \u00b7 Progress & loading",
       "title": "Skeletons: card and list",
       "template": "templates/feedback.html",
       "css": [
@@ -8107,7 +8107,7 @@
       "id": "skeletons-table-and-grid",
       "source": "feedback",
       "category": "feedback",
-      "family": "04 · Progress & loading",
+      "family": "04 \u00b7 Progress & loading",
       "title": "Skeletons: table and grid",
       "template": "templates/feedback.html",
       "css": [
@@ -8134,7 +8134,7 @@
       "id": "typing-and-chat-loading",
       "source": "feedback",
       "category": "feedback",
-      "family": "04 · Progress & loading",
+      "family": "04 \u00b7 Progress & loading",
       "title": "Typing and chat loading",
       "template": "templates/feedback.html",
       "css": [
@@ -8161,7 +8161,7 @@
       "id": "loading-overlays",
       "source": "feedback",
       "category": "feedback",
-      "family": "04 · Progress & loading",
+      "family": "04 \u00b7 Progress & loading",
       "title": "Loading overlays",
       "template": "templates/feedback.html",
       "css": [
@@ -8186,7 +8186,7 @@
       "id": "pull-to-refresh-and-load-more",
       "source": "feedback",
       "category": "feedback",
-      "family": "04 · Progress & loading",
+      "family": "04 \u00b7 Progress & loading",
       "title": "Pull to refresh and load more",
       "template": "templates/feedback.html",
       "css": [
@@ -8215,7 +8215,7 @@
       "id": "dashboard-skeleton",
       "source": "feedback",
       "category": "feedback",
-      "family": "04 · Progress & loading",
+      "family": "04 \u00b7 Progress & loading",
       "title": "Dashboard skeleton",
       "template": "templates/feedback.html",
       "css": [
@@ -8240,7 +8240,7 @@
       "id": "top-loading-bar-and-eta",
       "source": "feedback",
       "category": "feedback",
-      "family": "04 · Progress & loading",
+      "family": "04 \u00b7 Progress & loading",
       "title": "Top loading bar and ETA",
       "template": "templates/feedback.html",
       "css": [
@@ -8268,7 +8268,7 @@
       "id": "empty-states",
       "source": "feedback",
       "category": "feedback",
-      "family": "05 · Results & empty states",
+      "family": "05 \u00b7 Results & empty states",
       "title": "Empty states",
       "template": "templates/feedback.html",
       "css": [
@@ -8293,7 +8293,7 @@
       "id": "error-pages",
       "source": "feedback",
       "category": "feedback",
-      "family": "05 · Results & empty states",
+      "family": "05 \u00b7 Results & empty states",
       "title": "Error pages",
       "template": "templates/feedback.html",
       "css": [
@@ -8318,7 +8318,7 @@
       "id": "success-and-error-animations",
       "source": "feedback",
       "category": "feedback",
-      "family": "05 · Results & empty states",
+      "family": "05 \u00b7 Results & empty states",
       "title": "Success and error animations",
       "template": "templates/feedback.html",
       "css": [
@@ -8345,7 +8345,7 @@
       "id": "result-and-thank-you",
       "source": "feedback",
       "category": "feedback",
-      "family": "05 · Results & empty states",
+      "family": "05 \u00b7 Results & empty states",
       "title": "Result and thank you",
       "template": "templates/feedback.html",
       "css": [
@@ -8372,7 +8372,7 @@
       "id": "celebration",
       "source": "feedback",
       "category": "feedback",
-      "family": "05 · Results & empty states",
+      "family": "05 \u00b7 Results & empty states",
       "title": "Celebration",
       "template": "templates/feedback.html",
       "css": [
@@ -8396,7 +8396,7 @@
       "id": "error-boundary-card",
       "source": "feedback",
       "category": "feedback",
-      "family": "05 · Results & empty states",
+      "family": "05 \u00b7 Results & empty states",
       "title": "Error boundary card",
       "template": "templates/feedback.html",
       "css": [
@@ -8422,7 +8422,7 @@
       "id": "order-confirmed-page",
       "source": "feedback",
       "category": "feedback",
-      "family": "05 · Results & empty states",
+      "family": "05 \u00b7 Results & empty states",
       "title": "Order confirmed page",
       "template": "templates/feedback.html",
       "css": [
@@ -8448,7 +8448,7 @@
       "id": "status-legend",
       "source": "feedback",
       "category": "feedback",
-      "family": "06 · Prompts & status",
+      "family": "06 \u00b7 Prompts & status",
       "title": "Status legend",
       "template": "templates/feedback.html",
       "css": [
@@ -8473,7 +8473,7 @@
       "id": "toasts-icon-style",
       "source": "feedback",
       "category": "feedback",
-      "family": "03 · Toasts",
+      "family": "03 \u00b7 Toasts",
       "title": "Toasts: icon style",
       "template": "templates/feedback.html",
       "css": [
@@ -8499,7 +8499,7 @@
       "id": "toasts-dark-and-solid",
       "source": "feedback",
       "category": "feedback",
-      "family": "03 · Toasts",
+      "family": "03 \u00b7 Toasts",
       "title": "Toasts: dark and solid",
       "template": "templates/feedback.html",
       "css": [
@@ -8526,7 +8526,7 @@
       "id": "toasts-with-timer-and-avatar",
       "source": "feedback",
       "category": "feedback",
-      "family": "03 · Toasts",
+      "family": "03 \u00b7 Toasts",
       "title": "Toasts with timer and avatar",
       "template": "templates/feedback.html",
       "css": [
@@ -8554,7 +8554,7 @@
       "id": "toast-stack-and-positions",
       "source": "feedback",
       "category": "feedback",
-      "family": "03 · Toasts",
+      "family": "03 \u00b7 Toasts",
       "title": "Toast stack and positions",
       "template": "templates/feedback.html",
       "css": [
@@ -8581,7 +8581,7 @@
       "id": "toast-with-avatar-group",
       "source": "feedback",
       "category": "feedback",
-      "family": "03 · Toasts",
+      "family": "03 \u00b7 Toasts",
       "title": "Toast with avatar group",
       "template": "templates/feedback.html",
       "css": [
@@ -8608,7 +8608,7 @@
       "id": "striped-and-bordered",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Striped and bordered",
       "template": "templates/data.html",
       "css": [
@@ -8634,7 +8634,7 @@
       "id": "compact-and-totals",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Compact and totals",
       "template": "templates/data.html",
       "css": [
@@ -8660,7 +8660,7 @@
       "id": "expandable-rows-live",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Expandable rows (live)",
       "template": "templates/data.html",
       "css": [
@@ -8686,7 +8686,7 @@
       "id": "horizontal-bars",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Horizontal bars",
       "template": "templates/data.html",
       "css": [
@@ -8711,7 +8711,7 @@
       "id": "donut-and-pie",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Donut and pie",
       "template": "templates/data.html",
       "css": [
@@ -8737,7 +8737,7 @@
       "id": "scatter-and-bubble",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Scatter and bubble",
       "template": "templates/data.html",
       "css": [
@@ -8763,7 +8763,7 @@
       "id": "poll-results",
       "source": "forms",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Poll results",
       "template": "templates/forms.html",
       "css": [
@@ -8789,7 +8789,7 @@
       "id": "line-and-area-charts",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Line and area charts",
       "template": "templates/data.html",
       "css": [
@@ -8816,7 +8816,7 @@
       "id": "multi-line-chart",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Multi-line chart",
       "template": "templates/data.html",
       "css": [
@@ -8842,7 +8842,7 @@
       "id": "bar-charts",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Bar charts",
       "template": "templates/data.html",
       "css": [
@@ -8867,7 +8867,7 @@
       "id": "radar-chart",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Radar chart",
       "template": "templates/data.html",
       "css": [
@@ -8892,7 +8892,7 @@
       "id": "candlestick-chart",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Candlestick chart",
       "template": "templates/data.html",
       "css": [
@@ -8917,7 +8917,7 @@
       "id": "heatmap",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Heatmap",
       "template": "templates/data.html",
       "css": [
@@ -8941,7 +8941,7 @@
       "id": "funnel-and-treemap",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Funnel and treemap",
       "template": "templates/data.html",
       "css": [
@@ -8967,7 +8967,7 @@
       "id": "gauges-and-kpis",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Gauges and KPIs",
       "template": "templates/data.html",
       "css": [
@@ -8993,7 +8993,7 @@
       "id": "org-chart",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Org chart",
       "template": "templates/data.html",
       "css": [
@@ -9018,7 +9018,7 @@
       "id": "gantt-chart",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Gantt chart",
       "template": "templates/data.html",
       "css": [
@@ -9043,7 +9043,7 @@
       "id": "waterfall-chart",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Waterfall chart",
       "template": "templates/data.html",
       "css": [
@@ -9068,7 +9068,7 @@
       "id": "stacked-area-chart",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "Stacked area chart",
       "template": "templates/data.html",
       "css": [
@@ -9094,7 +9094,7 @@
       "id": "kpi-sparkline-grid",
       "source": "data",
       "category": "data",
-      "family": "02 · Charts & visualization",
+      "family": "02 \u00b7 Charts & visualization",
       "title": "KPI sparkline grid",
       "template": "templates/data.html",
       "css": [
@@ -9120,7 +9120,7 @@
       "id": "swipe-actions",
       "source": "data",
       "category": "data",
-      "family": "05 · Specialized data",
+      "family": "05 \u00b7 Specialized data",
       "title": "Swipe actions",
       "template": "templates/data.html",
       "css": [
@@ -9145,7 +9145,7 @@
       "id": "contact-list",
       "source": "data",
       "category": "data",
-      "family": "03 · Lists & timelines",
+      "family": "03 \u00b7 Lists & timelines",
       "title": "Contact list",
       "template": "templates/data.html",
       "css": [
@@ -9170,7 +9170,7 @@
       "id": "inbox-list",
       "source": "data",
       "category": "data",
-      "family": "03 · Lists & timelines",
+      "family": "03 \u00b7 Lists & timelines",
       "title": "Inbox list",
       "template": "templates/data.html",
       "css": [
@@ -9195,7 +9195,7 @@
       "id": "file-and-media-list",
       "source": "data",
       "category": "data",
-      "family": "03 · Lists & timelines",
+      "family": "03 \u00b7 Lists & timelines",
       "title": "File and media list",
       "template": "templates/data.html",
       "css": [
@@ -9222,7 +9222,7 @@
       "id": "leaderboard",
       "source": "data",
       "category": "data",
-      "family": "03 · Lists & timelines",
+      "family": "03 \u00b7 Lists & timelines",
       "title": "Leaderboard",
       "template": "templates/data.html",
       "css": [
@@ -9246,7 +9246,7 @@
       "id": "activity-feed-and-timeline",
       "source": "data",
       "category": "data",
-      "family": "03 · Lists & timelines",
+      "family": "03 \u00b7 Lists & timelines",
       "title": "Activity feed and timeline",
       "template": "templates/data.html",
       "css": [
@@ -9273,7 +9273,7 @@
       "id": "horizontal-timeline",
       "source": "data",
       "category": "data",
-      "family": "03 · Lists & timelines",
+      "family": "03 \u00b7 Lists & timelines",
       "title": "Horizontal timeline",
       "template": "templates/data.html",
       "css": [
@@ -9298,7 +9298,7 @@
       "id": "calendar",
       "source": "data",
       "category": "data",
-      "family": "03 · Lists & timelines",
+      "family": "03 \u00b7 Lists & timelines",
       "title": "Calendar",
       "template": "templates/data.html",
       "css": [
@@ -9322,7 +9322,7 @@
       "id": "comments-and-replies",
       "source": "data",
       "category": "data",
-      "family": "03 · Lists & timelines",
+      "family": "03 \u00b7 Lists & timelines",
       "title": "Comments and replies",
       "template": "templates/data.html",
       "css": [
@@ -9348,7 +9348,7 @@
       "id": "chat-bubbles",
       "source": "data",
       "category": "data",
-      "family": "03 · Lists & timelines",
+      "family": "03 \u00b7 Lists & timelines",
       "title": "Chat bubbles",
       "template": "templates/data.html",
       "css": [
@@ -9373,7 +9373,7 @@
       "id": "description-list",
       "source": "data",
       "category": "data",
-      "family": "03 · Lists & timelines",
+      "family": "03 \u00b7 Lists & timelines",
       "title": "Description list",
       "template": "templates/data.html",
       "css": [
@@ -9398,7 +9398,7 @@
       "id": "kanban-board",
       "source": "data",
       "category": "data",
-      "family": "04 · Structured content",
+      "family": "04 \u00b7 Structured content",
       "title": "Kanban board",
       "template": "templates/data.html",
       "css": [
@@ -9423,7 +9423,7 @@
       "id": "code-block",
       "source": "data",
       "category": "data",
-      "family": "04 · Structured content",
+      "family": "04 \u00b7 Structured content",
       "title": "Code block",
       "template": "templates/data.html",
       "css": [
@@ -9448,7 +9448,7 @@
       "id": "terminal-and-diff",
       "source": "data",
       "category": "data",
-      "family": "04 · Structured content",
+      "family": "04 \u00b7 Structured content",
       "title": "Terminal and diff",
       "template": "templates/data.html",
       "css": [
@@ -9474,7 +9474,7 @@
       "id": "json-viewer-and-inline-code",
       "source": "data",
       "category": "data",
-      "family": "04 · Structured content",
+      "family": "04 \u00b7 Structured content",
       "title": "JSON viewer and inline code",
       "template": "templates/data.html",
       "css": [
@@ -9502,7 +9502,7 @@
       "id": "article-content",
       "source": "data",
       "category": "data",
-      "family": "04 · Structured content",
+      "family": "04 \u00b7 Structured content",
       "title": "Article content",
       "template": "templates/data.html",
       "css": [
@@ -9527,7 +9527,7 @@
       "id": "callouts-and-pull-quote",
       "source": "data",
       "category": "data",
-      "family": "04 · Structured content",
+      "family": "04 \u00b7 Structured content",
       "title": "Callouts and pull quote",
       "template": "templates/data.html",
       "css": [
@@ -9554,7 +9554,7 @@
       "id": "tags-qr-and-tag-cloud",
       "source": "data",
       "category": "data",
-      "family": "04 · Structured content",
+      "family": "04 \u00b7 Structured content",
       "title": "Tags, QR and tag cloud",
       "template": "templates/data.html",
       "css": [
@@ -9582,7 +9582,7 @@
       "id": "basic-and-hover-table",
       "source": "data",
       "category": "data",
-      "family": "01 · Tables",
+      "family": "01 \u00b7 Tables",
       "title": "Basic and hover table",
       "template": "templates/data.html",
       "css": [
@@ -9609,7 +9609,7 @@
       "id": "selectable-rows-live",
       "source": "data",
       "category": "data",
-      "family": "01 · Tables",
+      "family": "01 \u00b7 Tables",
       "title": "Selectable rows (live)",
       "template": "templates/data.html",
       "css": [
@@ -9635,7 +9635,7 @@
       "id": "comparison-table",
       "source": "data",
       "category": "data",
-      "family": "01 · Tables",
+      "family": "01 \u00b7 Tables",
       "title": "Comparison table",
       "template": "templates/data.html",
       "css": [
@@ -9660,7 +9660,7 @@
       "id": "table-with-sparklines-and-avatars",
       "source": "data",
       "category": "data",
-      "family": "01 · Tables",
+      "family": "01 \u00b7 Tables",
       "title": "Table with sparklines and avatars",
       "template": "templates/data.html",
       "css": [
@@ -9688,7 +9688,7 @@
       "id": "invoice-and-receipt",
       "source": "data",
       "category": "data",
-      "family": "01 · Tables",
+      "family": "01 \u00b7 Tables",
       "title": "Invoice and receipt",
       "template": "templates/data.html",
       "css": [
@@ -9714,7 +9714,7 @@
       "id": "progress-table",
       "source": "data",
       "category": "data",
-      "family": "01 · Tables",
+      "family": "01 \u00b7 Tables",
       "title": "Progress table",
       "template": "templates/data.html",
       "css": [
@@ -9739,7 +9739,7 @@
       "id": "conversion-table",
       "source": "data",
       "category": "data",
-      "family": "01 · Tables",
+      "family": "01 \u00b7 Tables",
       "title": "Conversion table",
       "template": "templates/data.html",
       "css": [
@@ -9764,7 +9764,7 @@
       "id": "heat-table",
       "source": "data",
       "category": "data",
-      "family": "01 · Tables",
+      "family": "01 \u00b7 Tables",
       "title": "Heat table",
       "template": "templates/data.html",
       "css": [
@@ -9789,7 +9789,7 @@
       "id": "pricing-table",
       "source": "data",
       "category": "data",
-      "family": "01 · Tables",
+      "family": "01 \u00b7 Tables",
       "title": "Pricing table",
       "template": "templates/data.html",
       "css": [
@@ -9814,7 +9814,7 @@
       "id": "video-player",
       "source": "gallery",
       "category": "gallery",
-      "family": "05 · Audio & video",
+      "family": "05 \u00b7 Audio & video",
       "title": "Video player",
       "template": "templates/gallery.html",
       "css": [
@@ -9839,7 +9839,7 @@
       "id": "live-stream-and-mini-player",
       "source": "gallery",
       "category": "gallery",
-      "family": "05 · Audio & video",
+      "family": "05 \u00b7 Audio & video",
       "title": "Live stream and mini player",
       "template": "templates/gallery.html",
       "css": [
@@ -9867,7 +9867,7 @@
       "id": "video-list-and-playlist",
       "source": "gallery",
       "category": "gallery",
-      "family": "05 · Audio & video",
+      "family": "05 \u00b7 Audio & video",
       "title": "Video list and playlist",
       "template": "templates/gallery.html",
       "css": [
@@ -9894,7 +9894,7 @@
       "id": "waveform-audio-player",
       "source": "gallery",
       "category": "gallery",
-      "family": "05 · Audio & video",
+      "family": "05 \u00b7 Audio & video",
       "title": "Waveform audio player",
       "template": "templates/gallery.html",
       "css": [
@@ -9920,7 +9920,7 @@
       "id": "vinyl-and-equalizer",
       "source": "gallery",
       "category": "gallery",
-      "family": "05 · Audio & video",
+      "family": "05 \u00b7 Audio & video",
       "title": "Vinyl and equalizer",
       "template": "templates/gallery.html",
       "css": [
@@ -9946,7 +9946,7 @@
       "id": "podcast-and-voice-message",
       "source": "gallery",
       "category": "gallery",
-      "family": "05 · Audio & video",
+      "family": "05 \u00b7 Audio & video",
       "title": "Podcast and voice message",
       "template": "templates/gallery.html",
       "css": [
@@ -9973,7 +9973,7 @@
       "id": "album-and-playlist-covers",
       "source": "gallery",
       "category": "gallery",
-      "family": "05 · Audio & video",
+      "family": "05 \u00b7 Audio & video",
       "title": "Album and playlist covers",
       "template": "templates/gallery.html",
       "css": [
@@ -10000,7 +10000,7 @@
       "id": "queue-and-lyrics",
       "source": "gallery",
       "category": "gallery",
-      "family": "05 · Audio & video",
+      "family": "05 \u00b7 Audio & video",
       "title": "Queue and lyrics",
       "template": "templates/gallery.html",
       "css": [
@@ -10026,7 +10026,7 @@
       "id": "avatar-sizes-and-shapes",
       "source": "gallery",
       "category": "gallery",
-      "family": "04 · Avatars & icons",
+      "family": "04 \u00b7 Avatars & icons",
       "title": "Avatar sizes and shapes",
       "template": "templates/gallery.html",
       "css": [
@@ -10053,7 +10053,7 @@
       "id": "status-stack-and-add",
       "source": "gallery",
       "category": "gallery",
-      "family": "04 · Avatars & icons",
+      "family": "04 \u00b7 Avatars & icons",
       "title": "Status, stack and add",
       "template": "templates/gallery.html",
       "css": [
@@ -10080,7 +10080,7 @@
       "id": "logo-wall-and-marquee",
       "source": "gallery",
       "category": "gallery",
-      "family": "04 · Avatars & icons",
+      "family": "04 \u00b7 Avatars & icons",
       "title": "Logo wall and marquee",
       "template": "templates/gallery.html",
       "css": [
@@ -10107,7 +10107,7 @@
       "id": "icon-set-outline",
       "source": "gallery",
       "category": "gallery",
-      "family": "04 · Avatars & icons",
+      "family": "04 \u00b7 Avatars & icons",
       "title": "Icon set: outline",
       "template": "templates/gallery.html",
       "css": [
@@ -10133,7 +10133,7 @@
       "id": "icon-set-solid",
       "source": "gallery",
       "category": "gallery",
-      "family": "04 · Avatars & icons",
+      "family": "04 \u00b7 Avatars & icons",
       "title": "Icon set: solid",
       "template": "templates/gallery.html",
       "css": [
@@ -10159,7 +10159,7 @@
       "id": "icon-set-duotone",
       "source": "gallery",
       "category": "gallery",
-      "family": "04 · Avatars & icons",
+      "family": "04 \u00b7 Avatars & icons",
       "title": "Icon set: duotone",
       "template": "templates/gallery.html",
       "css": [
@@ -10185,7 +10185,7 @@
       "id": "icon-sizes-and-weights",
       "source": "gallery",
       "category": "gallery",
-      "family": "04 · Avatars & icons",
+      "family": "04 \u00b7 Avatars & icons",
       "title": "Icon sizes and weights",
       "template": "templates/gallery.html",
       "css": [
@@ -10212,7 +10212,7 @@
       "id": "icon-containers",
       "source": "gallery",
       "category": "gallery",
-      "family": "04 · Avatars & icons",
+      "family": "04 \u00b7 Avatars & icons",
       "title": "Icon containers",
       "template": "templates/gallery.html",
       "css": [
@@ -10237,7 +10237,7 @@
       "id": "animated-icons",
       "source": "gallery",
       "category": "gallery",
-      "family": "04 · Avatars & icons",
+      "family": "04 \u00b7 Avatars & icons",
       "title": "Animated icons",
       "template": "templates/gallery.html",
       "css": [
@@ -10262,7 +10262,7 @@
       "id": "icon-with-stat-and-feature-tile",
       "source": "gallery",
       "category": "gallery",
-      "family": "04 · Avatars & icons",
+      "family": "04 \u00b7 Avatars & icons",
       "title": "Icon with stat and feature tile",
       "template": "templates/gallery.html",
       "css": [
@@ -10291,7 +10291,7 @@
       "id": "icon-lists",
       "source": "gallery",
       "category": "gallery",
-      "family": "04 · Avatars & icons",
+      "family": "04 \u00b7 Avatars & icons",
       "title": "Icon lists",
       "template": "templates/gallery.html",
       "css": [
@@ -10316,7 +10316,7 @@
       "id": "avatar-group-list",
       "source": "gallery",
       "category": "gallery",
-      "family": "04 · Avatars & icons",
+      "family": "04 \u00b7 Avatars & icons",
       "title": "Avatar group list",
       "template": "templates/gallery.html",
       "css": [
@@ -10342,7 +10342,7 @@
       "id": "gradient-and-mesh-backgrounds",
       "source": "gallery",
       "category": "gallery",
-      "family": "07 · Brand & illustration",
+      "family": "07 \u00b7 Brand & illustration",
       "title": "Gradient and mesh backgrounds",
       "template": "templates/gallery.html",
       "css": [
@@ -10369,7 +10369,7 @@
       "id": "illustration-shapes",
       "source": "gallery",
       "category": "gallery",
-      "family": "07 · Brand & illustration",
+      "family": "07 \u00b7 Brand & illustration",
       "title": "Illustration shapes",
       "template": "templates/gallery.html",
       "css": [
@@ -10394,7 +10394,7 @@
       "id": "camera-and-photo-picker",
       "source": "gallery",
       "category": "gallery",
-      "family": "08 · Capture & location",
+      "family": "08 \u00b7 Capture & location",
       "title": "Camera and photo picker",
       "template": "templates/gallery.html",
       "css": [
@@ -10421,7 +10421,7 @@
       "id": "filter-strip-and-map-card",
       "source": "gallery",
       "category": "gallery",
-      "family": "08 · Capture & location",
+      "family": "08 \u00b7 Capture & location",
       "title": "Filter strip and map card",
       "template": "templates/gallery.html",
       "css": [
@@ -10449,7 +10449,7 @@
       "id": "map-photo-pins",
       "source": "gallery",
       "category": "gallery",
-      "family": "08 · Capture & location",
+      "family": "08 \u00b7 Capture & location",
       "title": "Map photo pins",
       "template": "templates/gallery.html",
       "css": [
@@ -10475,7 +10475,7 @@
       "id": "carousel-with-arrows-and-dots",
       "source": "gallery",
       "category": "gallery",
-      "family": "03 · Carousels & viewers",
+      "family": "03 \u00b7 Carousels & viewers",
       "title": "Carousel with arrows and dots",
       "template": "templates/gallery.html",
       "css": [
@@ -10503,7 +10503,7 @@
       "id": "thumbnail-gallery",
       "source": "gallery",
       "category": "gallery",
-      "family": "03 · Carousels & viewers",
+      "family": "03 \u00b7 Carousels & viewers",
       "title": "Thumbnail gallery",
       "template": "templates/gallery.html",
       "css": [
@@ -10527,7 +10527,7 @@
       "id": "coverflow-and-story-bars",
       "source": "gallery",
       "category": "gallery",
-      "family": "03 · Carousels & viewers",
+      "family": "03 \u00b7 Carousels & viewers",
       "title": "Coverflow and story bars",
       "template": "templates/gallery.html",
       "css": [
@@ -10554,7 +10554,7 @@
       "id": "lightbox-viewer",
       "source": "gallery",
       "category": "gallery",
-      "family": "03 · Carousels & viewers",
+      "family": "03 \u00b7 Carousels & viewers",
       "title": "Lightbox viewer",
       "template": "templates/gallery.html",
       "css": [
@@ -10579,7 +10579,7 @@
       "id": "image-comparison",
       "source": "gallery",
       "category": "gallery",
-      "family": "03 · Carousels & viewers",
+      "family": "03 \u00b7 Carousels & viewers",
       "title": "Image comparison",
       "template": "templates/gallery.html",
       "css": [
@@ -10604,7 +10604,7 @@
       "id": "story-rings-and-presence-list",
       "source": "gallery",
       "category": "gallery",
-      "family": "03 · Carousels & viewers",
+      "family": "03 \u00b7 Carousels & viewers",
       "title": "Story rings and presence list",
       "template": "templates/gallery.html",
       "css": [
@@ -10632,7 +10632,7 @@
       "id": "story-viewer",
       "source": "gallery",
       "category": "gallery",
-      "family": "03 · Carousels & viewers",
+      "family": "03 \u00b7 Carousels & viewers",
       "title": "Story viewer",
       "template": "templates/gallery.html",
       "css": [
@@ -10657,7 +10657,7 @@
       "id": "tagged-hotspots",
       "source": "gallery",
       "category": "gallery",
-      "family": "03 · Carousels & viewers",
+      "family": "03 \u00b7 Carousels & viewers",
       "title": "Tagged hotspots",
       "template": "templates/gallery.html",
       "css": [
@@ -10682,7 +10682,7 @@
       "id": "slideshow-with-captions",
       "source": "gallery",
       "category": "gallery",
-      "family": "03 · Carousels & viewers",
+      "family": "03 \u00b7 Carousels & viewers",
       "title": "Slideshow with captions",
       "template": "templates/gallery.html",
       "css": [
@@ -10708,7 +10708,7 @@
       "id": "uniform-grid",
       "source": "gallery",
       "category": "gallery",
-      "family": "02 · Galleries & grids",
+      "family": "02 \u00b7 Galleries & grids",
       "title": "Uniform grid",
       "template": "templates/gallery.html",
       "css": [
@@ -10733,7 +10733,7 @@
       "id": "masonry",
       "source": "gallery",
       "category": "gallery",
-      "family": "02 · Galleries & grids",
+      "family": "02 \u00b7 Galleries & grids",
       "title": "Masonry",
       "template": "templates/gallery.html",
       "css": [
@@ -10757,7 +10757,7 @@
       "id": "bento-mosaic",
       "source": "gallery",
       "category": "gallery",
-      "family": "02 · Galleries & grids",
+      "family": "02 \u00b7 Galleries & grids",
       "title": "Bento mosaic",
       "template": "templates/gallery.html",
       "css": [
@@ -10782,7 +10782,7 @@
       "id": "justified-rows",
       "source": "gallery",
       "category": "gallery",
-      "family": "02 · Galleries & grids",
+      "family": "02 \u00b7 Galleries & grids",
       "title": "Justified rows",
       "template": "templates/gallery.html",
       "css": [
@@ -10807,7 +10807,7 @@
       "id": "fan-and-collage",
       "source": "gallery",
       "category": "gallery",
-      "family": "02 · Galleries & grids",
+      "family": "02 \u00b7 Galleries & grids",
       "title": "Fan and collage",
       "template": "templates/gallery.html",
       "css": [
@@ -10833,7 +10833,7 @@
       "id": "polaroid-wall",
       "source": "gallery",
       "category": "gallery",
-      "family": "02 · Galleries & grids",
+      "family": "02 \u00b7 Galleries & grids",
       "title": "Polaroid wall",
       "template": "templates/gallery.html",
       "css": [
@@ -10858,7 +10858,7 @@
       "id": "photo-album-stack",
       "source": "gallery",
       "category": "gallery",
-      "family": "02 · Galleries & grids",
+      "family": "02 \u00b7 Galleries & grids",
       "title": "Photo album stack",
       "template": "templates/gallery.html",
       "css": [
@@ -10884,7 +10884,7 @@
       "id": "drag-to-reorder-grid",
       "source": "gallery",
       "category": "gallery",
-      "family": "02 · Galleries & grids",
+      "family": "02 \u00b7 Galleries & grids",
       "title": "Drag to reorder grid",
       "template": "templates/gallery.html",
       "css": [
@@ -10911,7 +10911,7 @@
       "id": "image-shapes",
       "source": "gallery",
       "category": "gallery",
-      "family": "01 · Image treatments",
+      "family": "01 \u00b7 Image treatments",
       "title": "Image shapes",
       "template": "templates/gallery.html",
       "css": [
@@ -10936,7 +10936,7 @@
       "id": "borders-and-frames",
       "source": "gallery",
       "category": "gallery",
-      "family": "01 · Image treatments",
+      "family": "01 \u00b7 Image treatments",
       "title": "Borders and frames",
       "template": "templates/gallery.html",
       "css": [
@@ -10962,7 +10962,7 @@
       "id": "hover-effects-live",
       "source": "gallery",
       "category": "gallery",
-      "family": "01 · Image treatments",
+      "family": "01 \u00b7 Image treatments",
       "title": "Hover effects (live)",
       "template": "templates/gallery.html",
       "css": [
@@ -10988,7 +10988,7 @@
       "id": "overlays-and-badges",
       "source": "gallery",
       "category": "gallery",
-      "family": "01 · Image treatments",
+      "family": "01 \u00b7 Image treatments",
       "title": "Overlays and badges",
       "template": "templates/gallery.html",
       "css": [
@@ -11014,7 +11014,7 @@
       "id": "aspect-ratios",
       "source": "gallery",
       "category": "gallery",
-      "family": "01 · Image treatments",
+      "family": "01 \u00b7 Image treatments",
       "title": "Aspect ratios",
       "template": "templates/gallery.html",
       "css": [
@@ -11039,7 +11039,7 @@
       "id": "image-effects",
       "source": "gallery",
       "category": "gallery",
-      "family": "01 · Image treatments",
+      "family": "01 \u00b7 Image treatments",
       "title": "Image effects",
       "template": "templates/gallery.html",
       "css": [
@@ -11064,7 +11064,7 @@
       "id": "video-thumbnail-grid-hover",
       "source": "gallery",
       "category": "gallery",
-      "family": "01 · Image treatments",
+      "family": "01 \u00b7 Image treatments",
       "title": "Video thumbnail grid (hover)",
       "template": "templates/gallery.html",
       "css": [
@@ -11091,7 +11091,7 @@
       "id": "music-cards",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music cards",
       "template": "templates/surfaces.html",
       "css": [
@@ -11117,7 +11117,7 @@
       "id": "music-album-card",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: album card",
       "template": "templates/surfaces.html",
       "css": [
@@ -11144,7 +11144,7 @@
       "id": "music-now-playing",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: now playing",
       "template": "templates/surfaces.html",
       "css": [
@@ -11171,7 +11171,7 @@
       "id": "music-mini-player-bars",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: mini player bars",
       "template": "templates/surfaces.html",
       "css": [
@@ -11199,7 +11199,7 @@
       "id": "music-vinyl-record",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: vinyl record",
       "template": "templates/surfaces.html",
       "css": [
@@ -11226,7 +11226,7 @@
       "id": "music-waveform-track",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: waveform track",
       "template": "templates/surfaces.html",
       "css": [
@@ -11253,7 +11253,7 @@
       "id": "music-playlist-card",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: playlist card",
       "template": "templates/surfaces.html",
       "css": [
@@ -11280,7 +11280,7 @@
       "id": "music-artist-card",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: artist card",
       "template": "templates/surfaces.html",
       "css": [
@@ -11307,7 +11307,7 @@
       "id": "music-track-list",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: track list",
       "template": "templates/surfaces.html",
       "css": [
@@ -11334,7 +11334,7 @@
       "id": "music-lyrics-card",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: lyrics card",
       "template": "templates/surfaces.html",
       "css": [
@@ -11361,7 +11361,7 @@
       "id": "music-podcast-episode",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: podcast episode",
       "template": "templates/surfaces.html",
       "css": [
@@ -11388,7 +11388,7 @@
       "id": "music-radio-station",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: radio station",
       "template": "templates/surfaces.html",
       "css": [
@@ -11415,7 +11415,7 @@
       "id": "music-concert-ticket",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: concert ticket",
       "template": "templates/surfaces.html",
       "css": [
@@ -11442,7 +11442,7 @@
       "id": "music-genre-and-mood-tiles",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: genre and mood tiles",
       "template": "templates/surfaces.html",
       "css": [
@@ -11471,7 +11471,7 @@
       "id": "music-top-charts",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: top charts",
       "template": "templates/surfaces.html",
       "css": [
@@ -11498,7 +11498,7 @@
       "id": "music-queue-and-sleep-timer",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: queue and sleep timer",
       "template": "templates/surfaces.html",
       "css": [
@@ -11527,7 +11527,7 @@
       "id": "music-audiobook",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: audiobook",
       "template": "templates/surfaces.html",
       "css": [
@@ -11553,7 +11553,7 @@
       "id": "music-voice-recorder",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: voice recorder",
       "template": "templates/surfaces.html",
       "css": [
@@ -11580,7 +11580,7 @@
       "id": "music-home-screen-widget",
       "source": "surfaces",
       "category": "gallery",
-      "family": "06 · Music & audio patterns",
+      "family": "06 \u00b7 Music & audio patterns",
       "title": "Music: home-screen widget",
       "template": "templates/surfaces.html",
       "css": [
@@ -11608,7 +11608,7 @@
       "id": "media-controls",
       "source": "buttons",
       "category": "gallery",
-      "family": "05 · Audio & video",
+      "family": "05 \u00b7 Audio & video",
       "title": "Media controls",
       "template": "templates/buttons.html",
       "css": [
@@ -11634,7 +11634,7 @@
       "id": "record-and-call-buttons",
       "source": "buttons",
       "category": "gallery",
-      "family": "05 · Audio & video",
+      "family": "05 \u00b7 Audio & video",
       "title": "Record and call buttons",
       "template": "templates/buttons.html",
       "css": [
@@ -11661,7 +11661,7 @@
       "id": "play-and-pause-variety",
       "source": "buttons",
       "category": "gallery",
-      "family": "05 · Audio & video",
+      "family": "05 \u00b7 Audio & video",
       "title": "Play and pause variety",
       "template": "templates/buttons.html",
       "css": [
@@ -11689,7 +11689,7 @@
       "id": "dashboard-speed-readout",
       "source": "data",
       "category": "compositions",
-      "family": "05 · Automotive dashboards",
+      "family": "05 \u00b7 Automotive dashboards",
       "title": "Dashboard: speed readout",
       "template": "templates/data.html",
       "css": [
@@ -11716,7 +11716,7 @@
       "id": "turn-banner-and-trip-bar",
       "source": "data",
       "category": "compositions",
-      "family": "05 · Automotive dashboards",
+      "family": "05 \u00b7 Automotive dashboards",
       "title": "Turn banner and trip bar",
       "template": "templates/data.html",
       "css": [
@@ -11745,7 +11745,7 @@
       "id": "route-options",
       "source": "data",
       "category": "compositions",
-      "family": "05 · Automotive dashboards",
+      "family": "05 \u00b7 Automotive dashboards",
       "title": "Route options",
       "template": "templates/data.html",
       "css": [
@@ -11771,7 +11771,7 @@
       "id": "charging-curve-and-battery",
       "source": "data",
       "category": "compositions",
-      "family": "05 · Automotive dashboards",
+      "family": "05 \u00b7 Automotive dashboards",
       "title": "Charging curve and battery",
       "template": "templates/data.html",
       "css": [
@@ -11799,7 +11799,7 @@
       "id": "climate-controls",
       "source": "data",
       "category": "compositions",
-      "family": "05 · Automotive dashboards",
+      "family": "05 \u00b7 Automotive dashboards",
       "title": "Climate controls",
       "template": "templates/data.html",
       "css": [
@@ -11825,7 +11825,7 @@
       "id": "drive-modes-and-gear-selector",
       "source": "data",
       "category": "compositions",
-      "family": "05 · Automotive dashboards",
+      "family": "05 \u00b7 Automotive dashboards",
       "title": "Drive modes and gear selector",
       "template": "templates/data.html",
       "css": [
@@ -11854,7 +11854,7 @@
       "id": "vehicle-status-cards",
       "source": "data",
       "category": "compositions",
-      "family": "05 · Automotive dashboards",
+      "family": "05 \u00b7 Automotive dashboards",
       "title": "Vehicle status cards",
       "template": "templates/data.html",
       "css": [
@@ -11881,7 +11881,7 @@
       "id": "dashboard-media-player",
       "source": "data",
       "category": "compositions",
-      "family": "05 · Automotive dashboards",
+      "family": "05 \u00b7 Automotive dashboards",
       "title": "Dashboard media player",
       "template": "templates/data.html",
       "css": [
@@ -11908,7 +11908,7 @@
       "id": "store-badges-and-qr",
       "source": "buttons",
       "category": "compositions",
-      "family": "02 · Commerce",
+      "family": "02 \u00b7 Commerce",
       "title": "Store badges and QR",
       "template": "templates/buttons.html",
       "css": [
@@ -11936,7 +11936,7 @@
       "id": "sticky-purchase-bar",
       "source": "buttons",
       "category": "compositions",
-      "family": "02 · Commerce",
+      "family": "02 \u00b7 Commerce",
       "title": "Sticky purchase bar",
       "template": "templates/buttons.html",
       "css": [
@@ -11963,7 +11963,7 @@
       "id": "sign-up-form",
       "source": "forms",
       "category": "compositions",
-      "family": "01 · Account & form flows",
+      "family": "01 \u00b7 Account & form flows",
       "title": "Sign-up form",
       "template": "templates/forms.html",
       "css": [
@@ -11990,7 +11990,7 @@
       "id": "contact-form",
       "source": "forms",
       "category": "compositions",
-      "family": "01 · Account & form flows",
+      "family": "01 \u00b7 Account & form flows",
       "title": "Contact form",
       "template": "templates/forms.html",
       "css": [
@@ -12016,7 +12016,7 @@
       "id": "change-password",
       "source": "forms",
       "category": "compositions",
-      "family": "01 · Account & form flows",
+      "family": "01 \u00b7 Account & form flows",
       "title": "Change password",
       "template": "templates/forms.html",
       "css": [
@@ -12042,7 +12042,7 @@
       "id": "danger-zone",
       "source": "forms",
       "category": "compositions",
-      "family": "01 · Account & form flows",
+      "family": "01 \u00b7 Account & form flows",
       "title": "Danger zone",
       "template": "templates/forms.html",
       "css": [
@@ -12068,7 +12068,7 @@
       "id": "profile-edit",
       "source": "forms",
       "category": "compositions",
-      "family": "01 · Account & form flows",
+      "family": "01 \u00b7 Account & form flows",
       "title": "Profile edit",
       "template": "templates/forms.html",
       "css": [
@@ -12094,7 +12094,7 @@
       "id": "sign-up-with-social-options",
       "source": "forms",
       "category": "compositions",
-      "family": "01 · Account & form flows",
+      "family": "01 \u00b7 Account & form flows",
       "title": "Sign-up with social options",
       "template": "templates/forms.html",
       "css": [
@@ -12123,7 +12123,7 @@
       "id": "address-form",
       "source": "forms",
       "category": "compositions",
-      "family": "01 · Account & form flows",
+      "family": "01 \u00b7 Account & form flows",
       "title": "Address form",
       "template": "templates/forms.html",
       "css": [
@@ -12149,7 +12149,7 @@
       "id": "booking-form",
       "source": "forms",
       "category": "compositions",
-      "family": "01 · Account & form flows",
+      "family": "01 \u00b7 Account & form flows",
       "title": "Booking form",
       "template": "templates/forms.html",
       "css": [
@@ -12175,7 +12175,7 @@
       "id": "invite-people",
       "source": "forms",
       "category": "compositions",
-      "family": "01 · Account & form flows",
+      "family": "01 \u00b7 Account & form flows",
       "title": "Invite people",
       "template": "templates/forms.html",
       "css": [
@@ -12201,7 +12201,7 @@
       "id": "verification-and-reset",
       "source": "forms",
       "category": "compositions",
-      "family": "01 · Account & form flows",
+      "family": "01 \u00b7 Account & form flows",
       "title": "Verification and reset",
       "template": "templates/forms.html",
       "css": [
@@ -12228,7 +12228,7 @@
       "id": "hero-banner",
       "source": "gallery",
       "category": "compositions",
-      "family": "03 · Marketing sections",
+      "family": "03 \u00b7 Marketing sections",
       "title": "Hero banner",
       "template": "templates/gallery.html",
       "css": [
@@ -12254,7 +12254,7 @@
       "id": "hero-sections",
       "source": "gallery",
       "category": "compositions",
-      "family": "03 · Marketing sections",
+      "family": "03 \u00b7 Marketing sections",
       "title": "Hero sections",
       "template": "templates/gallery.html",
       "css": [
@@ -12355,7 +12355,7 @@
       "id": "tabs",
       "source": "core",
       "category": "navigation",
-      "family": "03 · Tabs & steps",
+      "family": "03 \u00b7 Tabs & steps",
       "title": "Keyboard accessible tabs",
       "template": "templates/core.html",
       "css": [
@@ -12382,7 +12382,7 @@
       "id": "dropdown",
       "source": "core",
       "category": "navigation",
-      "family": "02 · Menus & commands",
+      "family": "02 \u00b7 Menus & commands",
       "title": "Dropdown & keyboard menu",
       "template": "templates/core.html",
       "css": [
@@ -12409,7 +12409,7 @@
       "id": "breadcrumbs",
       "source": "core",
       "category": "navigation",
-      "family": "04 · Pagination",
+      "family": "04 \u00b7 Pagination",
       "title": "Breadcrumbs & pagination",
       "template": "templates/core.html",
       "css": [
@@ -12434,7 +12434,7 @@
       "id": "accordion",
       "source": "core",
       "category": "overlays",
-      "family": "01 · Disclosure",
+      "family": "01 \u00b7 Disclosure",
       "title": "Accordion disclosure",
       "template": "templates/core.html",
       "css": [
@@ -12461,7 +12461,7 @@
       "id": "collapse",
       "source": "core",
       "category": "overlays",
-      "family": "01 · Disclosure",
+      "family": "01 \u00b7 Disclosure",
       "title": "Toggle content region",
       "template": "templates/core.html",
       "css": [
@@ -12487,7 +12487,7 @@
       "id": "dialog",
       "source": "core",
       "category": "overlays",
-      "family": "02 · Dialogs & lightboxes",
+      "family": "02 \u00b7 Dialogs & lightboxes",
       "title": "Modal dialog",
       "template": "templates/core.html",
       "css": [
@@ -12515,7 +12515,7 @@
       "id": "drawer",
       "source": "core",
       "category": "overlays",
-      "family": "03 · Drawers & sheets",
+      "family": "03 \u00b7 Drawers & sheets",
       "title": "Offcanvas drawer",
       "template": "templates/core.html",
       "css": [
@@ -12543,7 +12543,7 @@
       "id": "popover",
       "source": "core",
       "category": "overlays",
-      "family": "04 · Tooltips & popovers",
+      "family": "04 \u00b7 Tooltips & popovers",
       "title": "Popover & tooltip",
       "template": "templates/core.html",
       "css": [
@@ -12570,7 +12570,7 @@
       "id": "command",
       "source": "core",
       "category": "overlays",
-      "family": "05 · Commands & search",
+      "family": "05 \u00b7 Commands & search",
       "title": "Command palette",
       "template": "templates/core.html",
       "css": [
@@ -12597,7 +12597,7 @@
       "id": "fields",
       "source": "core",
       "category": "forms",
-      "family": "01 · Text fields",
+      "family": "01 \u00b7 Text fields",
       "title": "Input types & states",
       "template": "templates/core.html",
       "css": [
@@ -12626,7 +12626,7 @@
       "id": "choices",
       "source": "core",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Checkboxes, radios & switches",
       "template": "templates/core.html",
       "css": [
@@ -12651,7 +12651,7 @@
       "id": "validation",
       "source": "core",
       "category": "forms",
-      "family": "06 · Validation & states",
+      "family": "06 \u00b7 Validation & states",
       "title": "Form validation & submission",
       "template": "templates/core.html",
       "css": [
@@ -12676,7 +12676,7 @@
       "id": "combobox",
       "source": "core",
       "category": "forms",
-      "family": "02 · Selects & specialized inputs",
+      "family": "02 \u00b7 Selects & specialized inputs",
       "title": "Searchable combobox",
       "template": "templates/core.html",
       "css": [
@@ -12703,7 +12703,7 @@
       "id": "multiselect",
       "source": "core",
       "category": "forms",
-      "family": "02 · Selects & specialized inputs",
+      "family": "02 \u00b7 Selects & specialized inputs",
       "title": "Multiple selection",
       "template": "templates/core.html",
       "css": [
@@ -12728,7 +12728,7 @@
       "id": "date-range",
       "source": "core",
       "category": "forms",
-      "family": "04 · Dates & times",
+      "family": "04 \u00b7 Dates & times",
       "title": "Date & time range",
       "template": "templates/core.html",
       "css": [
@@ -12753,7 +12753,7 @@
       "id": "upload",
       "source": "core",
       "category": "forms",
-      "family": "05 · Uploads & editors",
+      "family": "05 \u00b7 Uploads & editors",
       "title": "File upload & removal",
       "template": "templates/core.html",
       "css": [
@@ -12778,7 +12778,7 @@
       "id": "password",
       "source": "core",
       "category": "forms",
-      "family": "06 · Validation & states",
+      "family": "06 \u00b7 Validation & states",
       "title": "Password strength",
       "template": "templates/core.html",
       "css": [
@@ -12803,7 +12803,7 @@
       "id": "markdown",
       "source": "core",
       "category": "forms",
-      "family": "05 · Uploads & editors",
+      "family": "05 \u00b7 Uploads & editors",
       "title": "Markdown heading preview",
       "template": "templates/core.html",
       "css": [
@@ -12830,7 +12830,7 @@
       "id": "range",
       "source": "core",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Range with live value",
       "template": "templates/core.html",
       "css": [
@@ -12855,7 +12855,7 @@
       "id": "stepper",
       "source": "core",
       "category": "sliders",
-      "family": "02 · Numeric entry & steppers",
+      "family": "02 \u00b7 Numeric entry & steppers",
       "title": "Bounded quantity stepper",
       "template": "templates/core.html",
       "css": [
@@ -12880,7 +12880,7 @@
       "id": "rating",
       "source": "core",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Accessible rating input",
       "template": "templates/core.html",
       "css": [
@@ -12905,7 +12905,7 @@
       "id": "alert",
       "source": "core",
       "category": "feedback",
-      "family": "02 · Alerts & banners",
+      "family": "02 \u00b7 Alerts & banners",
       "title": "Dismissible alert",
       "template": "templates/core.html",
       "css": [
@@ -12934,7 +12934,7 @@
       "id": "toast",
       "source": "core",
       "category": "feedback",
-      "family": "03 · Toasts",
+      "family": "03 \u00b7 Toasts",
       "title": "Toast notifications",
       "template": "templates/core.html",
       "css": [
@@ -12959,7 +12959,7 @@
       "id": "badges",
       "source": "core",
       "category": "feedback",
-      "family": "01 · Badges, chips & tags",
+      "family": "01 \u00b7 Badges, chips & tags",
       "title": "Badges & removable chips",
       "template": "templates/core.html",
       "css": [
@@ -12988,7 +12988,7 @@
       "id": "progress",
       "source": "core",
       "category": "feedback",
-      "family": "04 · Progress & loading",
+      "family": "04 \u00b7 Progress & loading",
       "title": "Progress, spinner & skeleton",
       "template": "templates/core.html",
       "css": [
@@ -13017,7 +13017,7 @@
       "id": "empty",
       "source": "core",
       "category": "feedback",
-      "family": "05 · Results & empty states",
+      "family": "05 \u00b7 Results & empty states",
       "title": "Empty & error states",
       "template": "templates/core.html",
       "css": [
@@ -13042,7 +13042,7 @@
       "id": "cards",
       "source": "core",
       "category": "surfaces",
-      "family": "01 · Surfaces & treatments",
+      "family": "01 \u00b7 Surfaces & treatments",
       "title": "Card appearance variants",
       "template": "templates/core.html",
       "css": [
@@ -13071,7 +13071,7 @@
       "id": "table",
       "source": "core",
       "category": "data",
-      "family": "01 · Tables",
+      "family": "01 \u00b7 Tables",
       "title": "Sortable, filterable & selectable table",
       "template": "templates/core.html",
       "css": [
@@ -13096,7 +13096,7 @@
       "id": "tree",
       "source": "core",
       "category": "data",
-      "family": "03 · Lists & timelines",
+      "family": "03 \u00b7 Lists & timelines",
       "title": "Disclosure tree",
       "template": "templates/core.html",
       "css": [
@@ -13121,7 +13121,7 @@
       "id": "carousel",
       "source": "core",
       "category": "gallery",
-      "family": "03 · Carousels & viewers",
+      "family": "03 \u00b7 Carousels & viewers",
       "title": "Manual carousel",
       "template": "templates/core.html",
       "css": [
@@ -13146,7 +13146,7 @@
       "id": "avatars",
       "source": "core",
       "category": "gallery",
-      "family": "04 · Avatars & icons",
+      "family": "04 \u00b7 Avatars & icons",
       "title": "Avatar sizes & presence",
       "template": "templates/core.html",
       "css": [
@@ -13175,7 +13175,7 @@
       "id": "checkout",
       "source": "core",
       "category": "compositions",
-      "family": "01 · Application patterns",
+      "family": "01 \u00b7 Application patterns",
       "title": "Checkout",
       "template": "templates/recipes.html",
       "css": [
@@ -13202,7 +13202,7 @@
       "id": "dashboard",
       "source": "core",
       "category": "compositions",
-      "family": "01 · Application patterns",
+      "family": "01 \u00b7 Application patterns",
       "title": "Dashboard",
       "template": "templates/recipes.html",
       "css": [
@@ -13229,7 +13229,7 @@
       "id": "hero",
       "source": "core",
       "category": "compositions",
-      "family": "03 · Marketing sections",
+      "family": "03 \u00b7 Marketing sections",
       "title": "Responsive hero composition",
       "template": "templates/core.html",
       "css": [
@@ -13254,7 +13254,7 @@
       "id": "pagination",
       "source": "core",
       "category": "navigation",
-      "family": "04 · Pagination",
+      "family": "04 \u00b7 Pagination",
       "title": "Interactive pagination",
       "template": "templates/core.html",
       "css": [
@@ -13279,7 +13279,7 @@
       "id": "steps",
       "source": "core",
       "category": "navigation",
-      "family": "03 · Tabs & steps",
+      "family": "03 \u00b7 Tabs & steps",
       "title": "Step navigation",
       "template": "templates/core.html",
       "css": [
@@ -13304,7 +13304,7 @@
       "id": "navbar",
       "source": "core",
       "category": "navigation",
-      "family": "01 · Global & responsive navigation",
+      "family": "01 \u00b7 Global & responsive navigation",
       "title": "Responsive navigation bar",
       "template": "templates/core.html",
       "css": [
@@ -13329,7 +13329,7 @@
       "id": "input-groups",
       "source": "core",
       "category": "forms",
-      "family": "01 · Text fields",
+      "family": "01 \u00b7 Text fields",
       "title": "Input groups & addons",
       "template": "templates/core.html",
       "css": [
@@ -13354,7 +13354,7 @@
       "id": "floating-label",
       "source": "core",
       "category": "forms",
-      "family": "01 · Text fields",
+      "family": "01 \u00b7 Text fields",
       "title": "Floating label fields",
       "template": "templates/core.html",
       "css": [
@@ -13379,7 +13379,7 @@
       "id": "textarea-select",
       "source": "core",
       "category": "forms",
-      "family": "02 · Selects & specialized inputs",
+      "family": "02 \u00b7 Selects & specialized inputs",
       "title": "Textareas & native selects",
       "template": "templates/core.html",
       "css": [
@@ -13404,7 +13404,7 @@
       "id": "selection-tree",
       "source": "core",
       "category": "forms",
-      "family": "03 · Choice & rating controls",
+      "family": "03 \u00b7 Choice & rating controls",
       "title": "Tree selection with mixed state",
       "template": "templates/core.html",
       "css": [
@@ -13429,7 +13429,7 @@
       "id": "dual-range",
       "source": "core",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Bounded dual range",
       "template": "templates/core.html",
       "css": [
@@ -13454,7 +13454,7 @@
       "id": "gradient-ranges",
       "source": "core",
       "category": "sliders",
-      "family": "01 · Linear range controls",
+      "family": "01 \u00b7 Linear range controls",
       "title": "Standard & gradient range tracks",
       "template": "templates/core.html",
       "css": [
@@ -13479,7 +13479,7 @@
       "id": "chips",
       "source": "core",
       "category": "feedback",
-      "family": "01 · Badges, chips & tags",
+      "family": "01 \u00b7 Badges, chips & tags",
       "title": "Removable chips",
       "template": "templates/core.html",
       "css": [
@@ -13504,7 +13504,7 @@
       "id": "alert-variants",
       "source": "core",
       "category": "feedback",
-      "family": "02 · Alerts & banners",
+      "family": "02 \u00b7 Alerts & banners",
       "title": "Standard & gradient alert appearances",
       "template": "templates/core.html",
       "css": [
@@ -13529,7 +13529,7 @@
       "id": "image-comparison",
       "source": "core",
       "category": "gallery",
-      "family": "01 · Image treatments",
+      "family": "01 \u00b7 Image treatments",
       "title": "Interactive before & after comparison",
       "template": "templates/core.html",
       "css": [
@@ -13554,7 +13554,7 @@
       "id": "lightbox",
       "source": "core",
       "category": "gallery",
-      "family": "03 · Carousels & viewers",
+      "family": "03 \u00b7 Carousels & viewers",
       "title": "Gallery lightbox",
       "template": "templates/core.html",
       "css": [
@@ -13579,7 +13579,7 @@
       "id": "settings",
       "source": "core",
       "category": "compositions",
-      "family": "01 · Application patterns",
+      "family": "01 \u00b7 Application patterns",
       "title": "Settings",
       "template": "templates/recipes.html",
       "css": [
@@ -13606,7 +13606,7 @@
       "id": "link",
       "source": "buttons",
       "category": "buttons",
-      "family": "01 · Appearance",
+      "family": "01 \u00b7 Appearance",
       "title": "Link",
       "template": "templates/buttons.html",
       "css": [
@@ -13638,7 +13638,7 @@
       "source": "core",
       "added": true,
       "category": "compositions",
-      "family": "01 · Application patterns",
+      "family": "01 \u00b7 Application patterns",
       "title": "Login form",
       "template": "templates/recipes.html",
       "css": [
@@ -13666,7 +13666,7 @@
       "source": "core",
       "added": true,
       "category": "compositions",
-      "family": "01 · Application patterns",
+      "family": "01 \u00b7 Application patterns",
       "title": "Order management",
       "template": "templates/recipes.html",
       "css": [
@@ -13694,7 +13694,7 @@
       "source": "core",
       "added": true,
       "category": "compositions",
-      "family": "01 · Application patterns",
+      "family": "01 \u00b7 Application patterns",
       "title": "Confirm and undo actions",
       "template": "templates/recipes.html",
       "css": [
@@ -13722,7 +13722,7 @@
       "source": "core",
       "added": true,
       "category": "compositions",
-      "family": "01 · Application patterns",
+      "family": "01 \u00b7 Application patterns",
       "title": "Editable inventory",
       "template": "templates/recipes.html",
       "css": [
@@ -13749,7 +13749,7 @@
       "source": "core",
       "added": true,
       "category": "compositions",
-      "family": "01 · Application patterns",
+      "family": "01 \u00b7 Application patterns",
       "title": "Empty, loading and error states",
       "template": "templates/recipes.html",
       "css": [
@@ -13776,7 +13776,7 @@
       "source": "core",
       "added": true,
       "category": "compositions",
-      "family": "01 · Application patterns",
+      "family": "01 \u00b7 Application patterns",
       "title": "Multi-step project form",
       "template": "templates/recipes.html",
       "css": [
@@ -13803,7 +13803,7 @@
       "source": "core",
       "added": true,
       "category": "compositions",
-      "family": "01 · Application patterns",
+      "family": "01 \u00b7 Application patterns",
       "title": "Search and filter panel",
       "template": "templates/recipes.html",
       "css": [
@@ -13830,7 +13830,7 @@
       "source": "core",
       "added": true,
       "category": "compositions",
-      "family": "01 · Application patterns",
+      "family": "01 \u00b7 Application patterns",
       "title": "File selection and validation",
       "template": "templates/recipes.html",
       "css": [
@@ -13857,7 +13857,7 @@
       "source": "core",
       "added": true,
       "category": "compositions",
-      "family": "01 · Application patterns",
+      "family": "01 \u00b7 Application patterns",
       "title": "Connected workspace application",
       "template": "templates/workspace.html",
       "css": [
@@ -13885,6 +13885,473 @@
       "scripts": [
         "js/workspace.js"
       ]
+    },
+    {
+      "key": "core/card-effects",
+      "id": "card-effects",
+      "source": "core",
+      "category": "surfaces",
+      "family": "01 \u00b7 Card appearance",
+      "title": "Tilt, spotlight & animated-border cards",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "tilt",
+        "spotlight",
+        "animated gradient border"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/card-deck",
+      "id": "card-deck",
+      "source": "core",
+      "category": "surfaces",
+      "family": "05 \u00b7 Interactive cards",
+      "title": "Stacked card deck",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "deck",
+        "stacked cards",
+        "next"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/poll-card",
+      "id": "poll-card",
+      "source": "core",
+      "category": "surfaces",
+      "family": "05 \u00b7 Interactive cards",
+      "title": "Poll card with live results",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "poll",
+        "vote",
+        "results"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/quiz-card",
+      "id": "quiz-card",
+      "source": "core",
+      "category": "surfaces",
+      "family": "05 \u00b7 Interactive cards",
+      "title": "Quiz card with answer feedback",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "quiz",
+        "answer",
+        "feedback"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/signature-pad",
+      "id": "signature-pad",
+      "source": "core",
+      "category": "forms",
+      "family": "08 \u00b7 Specialized inputs",
+      "title": "Drawn or typed signature",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "signature",
+        "canvas",
+        "drawing",
+        "typed"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/character-counter",
+      "id": "character-counter",
+      "source": "core",
+      "category": "forms",
+      "family": "02 \u00b7 Field feedback",
+      "title": "Character counter & limit feedback",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "counter",
+        "maxlength",
+        "textarea"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/color-field",
+      "id": "color-field",
+      "source": "core",
+      "category": "forms",
+      "family": "08 \u00b7 Specialized inputs",
+      "title": "Color picker with synchronized hex",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "color",
+        "hex",
+        "picker"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/payment-preview",
+      "id": "payment-preview",
+      "source": "core",
+      "category": "forms",
+      "family": "08 \u00b7 Specialized inputs",
+      "title": "Card fields with live preview",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "card",
+        "payment",
+        "live preview"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/input-masks",
+      "id": "input-masks",
+      "source": "core",
+      "category": "forms",
+      "family": "08 \u00b7 Specialized inputs",
+      "title": "Phone & currency formatting",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "phone",
+        "currency",
+        "mask",
+        "format"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/mixer-faders",
+      "id": "mixer-faders",
+      "source": "core",
+      "category": "sliders",
+      "family": "03 \u00b7 Vertical values",
+      "title": "Mixer faders with live values",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "mixer",
+        "equalizer",
+        "vertical",
+        "faders"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/vertical-range",
+      "id": "vertical-range",
+      "source": "core",
+      "category": "sliders",
+      "family": "03 \u00b7 Vertical values",
+      "title": "Vertical slider with value output",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "vertical",
+        "slider",
+        "live value"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/range-treatments",
+      "id": "range-treatments",
+      "source": "core",
+      "category": "sliders",
+      "family": "01 \u00b7 Range tracks",
+      "title": "Thick, thin & ruler range controls",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "range",
+        "ruler",
+        "thin",
+        "thick"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/knob",
+      "id": "knob",
+      "source": "core",
+      "category": "sliders",
+      "family": "04 \u00b7 Dials & directional controls",
+      "title": "Rotary knob",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "knob",
+        "rotary",
+        "dial",
+        "gain"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/xy-pad",
+      "id": "xy-pad",
+      "source": "core",
+      "category": "sliders",
+      "family": "04 \u00b7 Dials & directional controls",
+      "title": "XY position pad",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "xy",
+        "position",
+        "two dimensional"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/direction-pad",
+      "id": "direction-pad",
+      "source": "core",
+      "category": "sliders",
+      "family": "04 \u00b7 Dials & directional controls",
+      "title": "Direction pad",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "direction",
+        "pad",
+        "arrows"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/meter-variants",
+      "id": "meter-variants",
+      "source": "core",
+      "category": "sliders",
+      "family": "05 \u00b7 Meters & levels",
+      "title": "LED, battery, thermometer & tank meters",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "led",
+        "battery",
+        "thermometer",
+        "tank",
+        "meter"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
+    },
+    {
+      "key": "core/image-magnifier",
+      "id": "image-magnifier",
+      "source": "core",
+      "category": "gallery",
+      "family": "03 \u00b7 Interactive media",
+      "title": "Image magnifier lens",
+      "template": "templates/enhancements.html",
+      "css": [
+        "components/public-core.css",
+        "components/appearance.css",
+        "components/public-widgets.css"
+      ],
+      "status": "functional",
+      "tags": [
+        "image",
+        "magnifier",
+        "lens",
+        "zoom"
+      ],
+      "wrapper": "lumen",
+      "added": true,
+      "capabilities": {
+        "implementation": "interactive",
+        "customizable": false,
+        "applicationIntegration": false
+      }
     }
   ],
   "aliases": {

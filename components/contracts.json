@@ -3,7 +3,8 @@
   "components": {
     "btn": {
       "parts": [
-        "btn-icon"
+        "btn-icon",
+        "btn-label"
       ],
       "sizes": [
         "xs",
@@ -326,6 +327,98 @@
         "dismiss"
       ],
       "timing": "configurable; pauses on hover/focus; persistent undo"
+    },
+    "knob": {
+      "parts": [
+        "range"
+      ],
+      "states": [
+        "normal",
+        "active",
+        "disabled"
+      ],
+      "keyboard": [
+        "Arrow keys",
+        "Home",
+        "End"
+      ],
+      "native": "input"
+    },
+    "xy-pad": {
+      "parts": [
+        "xy-pad-plane",
+        "range"
+      ],
+      "states": [
+        "normal",
+        "active",
+        "disabled"
+      ],
+      "keyboard": [
+        "Arrow keys",
+        "Shift+Arrow keys"
+      ],
+      "native": "section"
+    },
+    "direction-pad": {
+      "parts": [
+        "btn"
+      ],
+      "states": [
+        "normal",
+        "active",
+        "disabled"
+      ],
+      "keyboard": [
+        "Arrow keys",
+        "Home",
+        "Enter",
+        "Space"
+      ],
+      "native": "section"
+    },
+    "signature": {
+      "parts": [
+        "signature-pad",
+        "input"
+      ],
+      "states": [
+        "normal",
+        "active"
+      ],
+      "keyboard": [
+        "typed signature alternative"
+      ],
+      "native": "section"
+    },
+    "magnifier": {
+      "parts": [
+        "magnifier-view",
+        "magnifier-lens"
+      ],
+      "states": [
+        "normal",
+        "active"
+      ],
+      "keyboard": [
+        "Arrow keys",
+        "native zoom range"
+      ],
+      "native": "section"
+    },
+    "card-deck": {
+      "parts": [
+        "card-deck-items",
+        "card"
+      ],
+      "states": [
+        "normal",
+        "active"
+      ],
+      "keyboard": [
+        "native previous and next buttons"
+      ],
+      "native": "section"
     }
   },
   "customization": {

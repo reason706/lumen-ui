@@ -42,6 +42,32 @@ try {
   await expect(page.locator("[data-lm-form-status]")).toContainText(
     "validated",
   );
+  await page.goto(server.base + "/example.html?item=core/knob");
+  await page.locator("#example[data-ready=true]").waitFor();
+  await page.getByRole("slider", { name: "Gain", exact: true }).focus();
+  await page.keyboard.press("ArrowRight");
+  await expect(page.locator("output")).toHaveText("51%");
+  await page.goto(server.base + "/example.html?item=core/poll-card");
+  await page.locator("#example[data-ready=true]").waitFor();
+  await page.getByRole("button", { name: "Dark", exact: true }).click();
+  await expect(page.locator("output")).toContainText("Vote recorded for Dark");
+  await page.goto(server.base + "/example.html?item=core/signature-pad");
+  await page.locator("#example[data-ready=true]").waitFor();
+  await page.getByLabel("Typed signature").fill("Alex");
+  assert.equal(
+    JSON.parse(await page.locator("input[type=hidden]").inputValue()).name,
+    "Alex",
+  );
+  await page.goto(
+    server.base + "/example.html?item=buttons/icon-buttons-variants",
+  );
+  await page.locator("#example[data-ready=true]").waitFor();
+  assert(
+    await page
+      .locator(".btn-icon.btn-style-outline.color-gradient-ocean svg")
+      .first()
+      .evaluate((n) => getComputedStyle(n).stroke.startsWith("url(")),
+  );
   await page.goto(server.base + "/workspace.html");
   await page.locator("#workspace-root[data-ready=true]").waitFor();
   await page.getByRole("button", { name: "Manage records" }).click();
@@ -123,7 +149,7 @@ try {
   console.log(
     "PASS " +
       name +
-      " compatibility: native forms, top-layer keyboard menus, connected CRUD, " +
+      " compatibility: native forms, gradient SVGs, knob/vote/signature controls, top-layer keyboard menus, connected CRUD, " +
       checks +
       " WCAG 2.2/LTR/RTL layouts, 320px reflow and 200% text" +
       (name === "chromium" ? ", forced colors" : ""),

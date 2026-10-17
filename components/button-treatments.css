@@ -1,0 +1,338 @@
+/* Attachment-matched palette and gradient treatments. Public classes stay unchanged. */
+.lumen .btn[class][class] {
+  --lm-tonal-bg: var(--lumen-tonal-primary);
+  --lm-tonal-ink: var(--lumen-tonal-ink-primary);
+}
+.lumen .btn[class][class*="color-"] {
+  --lm-tonal-bg: color-mix(in srgb, var(--lm-accent) 12%, var(--lm-surface));
+  --lm-tonal-ink: var(--lm-rest-ink);
+}
+.lumen .btn[class].color-primary {
+  --lm-tonal-bg: var(--lumen-tonal-primary);
+  --lm-tonal-ink: var(--lumen-tonal-ink-primary);
+}
+.lumen .btn[class].color-secondary {
+  --lm-tonal-bg: var(--lumen-tonal-secondary);
+  --lm-tonal-ink: var(--lumen-tonal-ink-secondary);
+}
+.lumen .btn[class].color-success {
+  --lm-tonal-bg: var(--lumen-tonal-success);
+  --lm-tonal-ink: var(--lumen-tonal-ink-success);
+}
+.lumen .btn[class].color-info {
+  --lm-tonal-bg: var(--lumen-tonal-info);
+  --lm-tonal-ink: var(--lumen-tonal-ink-info);
+}
+.lumen .btn[class].color-warning {
+  --lm-tonal-bg: var(--lumen-tonal-warning);
+  --lm-tonal-ink: var(--lumen-tonal-ink-warning);
+}
+.lumen .btn[class].color-danger {
+  --lm-tonal-bg: var(--lumen-tonal-danger);
+  --lm-tonal-ink: var(--lumen-tonal-ink-danger);
+}
+.lumen .btn[class].color-dark {
+  --lm-tonal-bg: var(--lumen-tonal-dark);
+  --lm-tonal-ink: var(--lumen-tonal-ink-dark);
+}
+.lumen .btn[class].color-light {
+  --lm-tonal-bg: var(--lumen-tonal-light);
+  --lm-tonal-ink: var(--lumen-tonal-ink-light);
+}
+.color-gradient-violet[class] {
+  --lm-gradient-start: var(--lumen-gradient-start-violet);
+  --lm-gradient-end: var(--lumen-gradient-end-violet);
+}
+.color-gradient-ocean[class] {
+  --lm-gradient-start: var(--lumen-gradient-start-ocean);
+  --lm-gradient-end: var(--lumen-gradient-end-ocean);
+}
+.color-gradient-sunset[class] {
+  --lm-gradient-start: var(--lumen-gradient-start-sunset);
+  --lm-gradient-end: var(--lumen-gradient-end-sunset);
+}
+.color-gradient-candy[class] {
+  --lm-gradient-start: var(--lumen-gradient-start-candy);
+  --lm-gradient-end: var(--lumen-gradient-end-candy);
+}
+.color-gradient-forest[class] {
+  --lm-gradient-start: var(--lumen-gradient-start-forest);
+  --lm-gradient-end: var(--lumen-gradient-end-forest);
+}
+.color-gradient-midnight[class] {
+  --lm-gradient-start: var(--lumen-gradient-start-midnight);
+  --lm-gradient-end: var(--lumen-gradient-end-midnight);
+}
+.color-gradient-rose[class] {
+  --lm-gradient-start: var(--lumen-gradient-start-rose);
+  --lm-gradient-end: var(--lumen-gradient-end-rose);
+}
+.color-gradient-aurora[class] {
+  --lm-gradient-start: var(--lumen-gradient-start-aurora);
+  --lm-gradient-end: var(--lumen-gradient-end-aurora);
+}
+
+.lumen .btn[class].btn-style-tonal[class] {
+  background: var(--lm-tonal-bg);
+  color: var(--lm-tonal-ink);
+  box-shadow: none;
+}
+.lumen .btn[class].btn-style-outline[class] {
+  background: transparent;
+  color: var(--lm-tonal-ink);
+  box-shadow: inset 0 0 0 1.5px var(--lm-accent);
+}
+.lumen
+  .btn[class]:is(.btn-style-tonal, .btn-style-outline)[class]:is(
+    :hover,
+    :active,
+    .demo-hover,
+    .demo-pressed,
+    [aria-pressed="true"]
+  ):not(:disabled):not([aria-disabled="true"]) {
+  background: var(--lm-fill, var(--lm-accent));
+  color: var(--lm-on-accent);
+  box-shadow: none;
+  border-color: transparent;
+}
+.lumen .btn[class].btn-style-tonal[class*="color-gradient-"] {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--lm-gradient-start) 16%, transparent),
+    color-mix(in srgb, var(--lm-gradient-end) 16%, transparent)
+  );
+  border-color: transparent;
+}
+.lumen .btn[class].btn-style-outline[class*="color-gradient-"] {
+  background:
+    linear-gradient(var(--lm-surface), var(--lm-surface)) padding-box,
+    var(--lm-gradient) border-box;
+  border: 2px solid transparent;
+  box-shadow: none;
+}
+.lumen
+  .btn[class]:is(
+    .btn-style-tonal,
+    .btn-style-outline,
+    .btn-style-ghost,
+    .btn-style-link
+  )[class*="color-gradient-"]
+  > .btn-label {
+  background: var(--lm-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.lumen
+  .btn[class]:is(
+    .btn-style-tonal,
+    .btn-style-outline,
+    .btn-style-ghost,
+    .btn-style-link
+  )[class*="color-gradient-"]
+  svg[data-lm-gradient-icon] {
+  stroke: var(--lm-icon-gradient);
+}
+.lumen
+  .btn[class]:is(
+    .btn-style-tonal,
+    .btn-style-outline,
+    .btn-style-ghost,
+    .btn-style-link
+  )[class*="color-gradient-"]
+  svg[data-lm-gradient-icon="fill"] {
+  fill: var(--lm-icon-gradient);
+  stroke: none;
+}
+.lumen
+  .btn[class]:is(
+    .btn-style-tonal,
+    .btn-style-outline
+  )[class*="color-gradient-"]:is(
+    :hover,
+    :active,
+    .demo-hover,
+    .demo-pressed,
+    [aria-pressed="true"]
+  ):not(:disabled):not([aria-disabled="true"]) {
+  background: var(--lm-gradient);
+  color: var(--lm-gradient-ink);
+  border-color: transparent;
+  box-shadow: var(--lm-gradient-shadow);
+}
+.lumen
+  .btn[class]:is(
+    .btn-style-tonal,
+    .btn-style-outline
+  )[class*="color-gradient-"]:is(
+    :hover,
+    :active,
+    .demo-hover,
+    .demo-pressed,
+    [aria-pressed="true"]
+  ):not(:disabled):not([aria-disabled="true"])
+  > .btn-label {
+  background: none;
+  color: inherit;
+  -webkit-text-fill-color: currentColor;
+}
+.lumen
+  .btn[class]:is(
+    .btn-style-tonal,
+    .btn-style-outline
+  )[class*="color-gradient-"]:is(
+    :hover,
+    :active,
+    .demo-hover,
+    .demo-pressed,
+    [aria-pressed="true"]
+  ):not(:disabled):not([aria-disabled="true"])
+  svg[data-lm-gradient-icon] {
+  stroke: currentColor;
+}
+.lumen
+  .btn[class]:is(
+    .btn-style-tonal,
+    .btn-style-outline
+  )[class*="color-gradient-"]:is(
+    :hover,
+    :active,
+    .demo-hover,
+    .demo-pressed,
+    [aria-pressed="true"]
+  ):not(:disabled):not([aria-disabled="true"])
+  svg[data-lm-gradient-icon="fill"] {
+  fill: currentColor;
+  stroke: none;
+}
+.lumen
+  .btn[class].btn-style-ghost[class*="color-gradient-"]:is(
+    :hover,
+    .demo-hover
+  ):not(:disabled):not([aria-disabled="true"]) {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--lm-gradient-start) 14%, transparent),
+    color-mix(in srgb, var(--lm-gradient-end) 14%, transparent)
+  );
+}
+.lumen .btn[class].btn-style-link[class*="color-gradient-"] {
+  text-decoration: none;
+}
+.lumen .btn[class].btn-style-link[class*="color-gradient-"] > .btn-label {
+  position: relative;
+  padding-block: 3px;
+}
+.lumen
+  .btn[class].btn-style-link[class*="color-gradient-"]
+  > .btn-label::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  height: 2px;
+  background: var(--lm-gradient);
+  transform-origin: left;
+  transition: transform var(--duration-fast);
+}
+.lumen
+  .btn[class].btn-style-link[class*="color-gradient-"]:hover
+  > .btn-label::after {
+  transform: scaleX(0.6);
+}
+.lumen
+  .btn[class][class*="color-gradient-"]:is(
+    :active,
+    .demo-pressed,
+    [aria-pressed="true"]
+  ):not(:disabled):not([aria-disabled="true"]) {
+  transform: scale(0.97);
+}
+.btn-label {
+  min-inline-size: 0;
+}
+@media (prefers-contrast: more), (forced-colors: active) {
+  .lumen
+    .btn[class]:is(
+      .btn-style-tonal,
+      .btn-style-outline,
+      .btn-style-ghost,
+      .btn-style-link
+    )[class*="color-gradient-"]
+    > .btn-label {
+    background: none;
+    color: var(--lm-ink);
+    -webkit-text-fill-color: currentColor;
+  }
+  .lumen .btn[class][class*="color-gradient-"] svg[data-lm-gradient-icon] {
+    stroke: currentColor !important;
+  }
+  .lumen
+    .btn[class][class*="color-gradient-"]
+    svg[data-lm-gradient-icon="fill"] {
+    fill: currentColor !important;
+    stroke: none !important;
+  }
+}
+/* Neutral outline labels stay legible, matching the supplied light treatment. */
+.lumen .btn[class]:is(.color-light, .color-dark).btn-style-outline[class] {
+  color: var(--lm-ink);
+}
+.lumen
+  .btn[class]:is(.color-light, .color-dark).btn-style-outline[class]:is(
+    :hover,
+    :active,
+    .demo-hover,
+    .demo-pressed,
+    [aria-pressed="true"]
+  ):not(:disabled):not([aria-disabled="true"]) {
+  color: var(--lm-on-accent);
+}
+.lumen
+  .btn[class][class*="color-gradient-"]:is(
+    :active,
+    .demo-pressed,
+    [aria-pressed="true"]
+  ):not(:disabled):not([aria-disabled="true"]) {
+  box-shadow: var(--lumen-control-pressed-shadow);
+}
+
+.lumen
+  .btn[class][class*="btn-style"]:is(.btn-style-tonal, .btn-style-outline):is(
+    :active,
+    .demo-pressed,
+    [aria-pressed="true"]
+  ):not(:disabled):not([aria-disabled="true"]) {
+  box-shadow: var(--lumen-control-pressed-shadow);
+}
+.lumen
+  :is(.card-style-gradient, .card-style-solid)
+  .btn.btn-style-outline[class]:not(:hover):not(:active) {
+  color: inherit;
+  border-color: currentColor;
+}
+
+.lumen .btn svg[data-lm-gradient-icon] {
+  --lm-icon-gradient: currentColor;
+}
+
+.lumen .btn[class][class*="color-gradient-"] {
+  --lm-gradient-shadow: 0 8px 20px
+    color-mix(in srgb, var(--lm-gradient-start) 38%, transparent);
+}
+.lumen
+  .btn[class][class*="color-gradient-"]:not(
+    :where(
+      .btn-style-tonal,
+      .btn-style-outline,
+      .btn-style-ghost,
+      .btn-style-link
+    )
+  ):is(:hover, .demo-hover):not(:active):not(.demo-pressed):not(
+    [aria-pressed="true"]
+  ):not(:disabled):not([aria-disabled="true"]) {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+  box-shadow: var(--lm-gradient-shadow);
+}

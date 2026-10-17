@@ -163,11 +163,20 @@ try {
   await page.locator("#icon-button").hover();
   await expect.poll(async () => (await metric("#icon-button")).bg).toBe(red);
   const rest = await metric("#gradient-button");
-  assert.equal(rest.image, "none");
+  assert(rest.image.includes("linear-gradient"));
+  assert(
+    rest.image.includes("0.16"),
+    "Gradient tonal resting fill matches the attachment opacity",
+  );
   await page.locator("#gradient-button").hover();
   await expect
     .poll(async () => (await metric("#gradient-button")).image)
     .toContain("linear-gradient");
+  assert.notEqual(
+    (await metric("#gradient-button")).image,
+    rest.image,
+    "Hover changes the translucent gradient to a full fill",
+  );
   await page.getByRole("button", { name: "Actions", exact: true }).click();
   assert(await page.getByRole("menu").isVisible());
   await page.keyboard.press("Escape");

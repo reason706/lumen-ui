@@ -44,9 +44,7 @@ try {
         ]),
       ),
     );
-  palette.secondary = palette.muted;
   palette.dark = palette.ink;
-  palette.light = palette.surface;
   const gradientsCard = page.locator('[data-key="foundations/gradients"]');
   await gradientsCard.scrollIntoViewIfNeeded();
   await gradientsCard.locator(".preview-host[data-ready=true]").waitFor();
@@ -421,6 +419,7 @@ try {
           theme,
       );
       await page.locator("#example[data-ready=true]").waitFor();
+      await page.mouse.move(0, 0);
       await page.addScriptTag({ content: axe });
       const violations = await page.evaluate(async () => {
         const r = await axe.run(document.getElementById("example"), {

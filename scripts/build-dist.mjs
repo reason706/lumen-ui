@@ -106,6 +106,8 @@ const runtime =
   "\n" +
   (await readFile("js/icons.js", "utf8")) +
   "\n" +
+  (await readFile("js/widgets.js", "utf8")) +
+  "\n" +
   (await readFile("js/components.js", "utf8"));
 outputs["dist/lumen.js"] =
   "/* Lumen UI " +

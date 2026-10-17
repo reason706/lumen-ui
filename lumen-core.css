@@ -12,3 +12,6 @@
 
 @import url('./components/public-patterns.css');
 @import url('./components/public-sizes.css');
+
+@import url("./components/public-button-treatments.css");
+@import url("./components/public-widgets.css");

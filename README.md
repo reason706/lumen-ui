@@ -1,15 +1,20 @@
 # Lumen UI — Component Library & Live Studio
 
-![Version](https://img.shields.io/badge/version-3.3.0-6366f1)
+![Version](https://img.shields.io/badge/version-3.4.0-6366f1)
 ![Runtime](https://img.shields.io/badge/runtime-framework%20free-10b981)
-![Examples](https://img.shields.io/badge/examples-530-8b5cf6)
+![Examples](https://img.shields.io/badge/examples-547-8b5cf6)
 ![Themes](https://img.shields.io/badge/themes-8-ec4899)
 
-Lumen UI is a modular HTML, CSS, and JavaScript component library with **530 examples across 12 categories and 69 families**. Its live studio organizes related items so you can find, compare, inspect, and copy them into your own interfaces.
+Lumen UI is a modular HTML, CSS, and JavaScript component library with **547 examples across 12 categories and 78 families**. Its live studio organizes related items so you can find, compare, inspect, and copy them into your own interfaces.
 
-Version 3 preserves the content of all **473 original examples**, with repeated button demonstrations merged into canonical sections. The original color, typography, spacing, effects, and component styles remain available. It adds **60 public core examples**, a single catalog, native HTML templates, reusable interactions, and responsive utilities. Lumen follows a Bootstrap-style approach to composing interfaces with classes and optional JavaScript; migrating an existing Bootstrap application requires adapting its markup and classes to Lumen's API.
+Version 3 preserves the content of all **473 original examples**, with repeated button demonstrations merged into canonical sections. The original color, typography, spacing, effects, and component styles remain available. It adds **77 public core examples**, a single catalog, native HTML templates, reusable interactions, and responsive utilities. Lumen follows a Bootstrap-style approach to composing interfaces with classes and optional JavaScript; migrating an existing Bootstrap application requires adapting its markup and classes to Lumen's API.
 
 ## What's new
+
+- **3.4 attachment styling:** shared semantic fills and fixed light-theme tonal colors match the supplied component preview. Secondary is `#64748B`; Light is `#D5DBEC`. Foundations includes those swatches alongside the existing neutral roles.
+- **Gradient text and icons:** tonal and outline buttons now use gradient lettering and SVG strokes by default, a 16% gradient tonal background or 2px gradient border, then a full fill on hover/press. Ghost/link treatments share the same ramps; solid gradients lift and brighten on hover. Disabled states remain stable, and filled foregrounds, dark themes, forced colors and high-contrast mode retain their shared handling.
+- **17 new examples:** interactive cards, a magnifier, signature input, field helpers, range/fader/meter variants, and working knob/XY/direction controls. They use the existing naming, lifecycle, copied-instance and portable export paths.
+
 
 - **3.3 foundation system:** one validated JSON token source generates shared roles, eight scoped themes, aliases, responsive breakpoints and component size recipes. Default medium and `size-md` now agree across 22 families; buttons and text/icon controls share their existing scale.
 - **Interaction contracts:** associated labels/errors, validation summaries, cancellable form/resource controllers, persistent undo, paused notifications and top-layer keyboard menus.
@@ -39,16 +44,16 @@ Version 3 preserves the content of all **473 original examples**, with repeated 
 | Foundations | 51 |
 | Layout & utilities | 8 |
 | Buttons & actions | 52 |
-| Forms & selection | 69 |
-| Sliders & values | 36 |
+| Forms & selection | 74 |
+| Sliders & values | 43 |
 | Navigation | 42 |
-| Cards & surfaces | 42 |
+| Cards & surfaces | 46 |
 | Disclosure & overlays | 21 |
 | Status & feedback | 50 |
 | Data & content | 49 |
-| Media & imagery | 75 |
+| Media & imagery | 76 |
 | Compositions | 35 |
-| **Total** | **530** |
+| **Total** | **547** |
 
 Examples are labeled by capability:
 
@@ -59,7 +64,7 @@ Examples are labeled by capability:
 | Visual reference | A styling example; full application behavior is not implied. |
 | Composition | An assembled interface whose application-specific actions and data need integration. |
 
-The 60 core examples include interactive controls, CSS/native examples, and compositions. Example counts are distinct from component-family counts and individual variant counts.
+The 77 core examples include interactive controls, CSS/native examples, and compositions. Example counts are distinct from component-family counts and individual variant counts.
 
 ## Open the studio
 
@@ -79,7 +84,7 @@ Use the category sidebar or **Ctrl / Command + K** to search. Select **Inspect**
 
 ## Ready-built files
 
-For a project that only needs the framework, copy `dist/lumen-core.css` and optionally `dist/lumen.js`. These files have no build-time dependencies or CSS imports. `dist/lumen.css` includes the larger reference collection. `dist/index.html` is a working starter page; `dist/manifest.json` records sizes and checksums. The compatibility core is about 33 KB gzip and the full collection about 130 KB gzip. New projects using only the agreed public names can choose `dist/lumen-core-modern.css` (about 27 KB gzip) or `dist/lumen-modern.css` (about 116 KB gzip). These optional bundles omit generated legacy selector aliases; the default bundles continue to support existing integrations. The minified optional runtime is about 12 KB gzip. Exact sizes and checksums are in the manifest; reviewed gzip limits in `bundle-budgets.json` are enforced during every build.
+For a project that only needs the framework, copy `dist/lumen-core.css` and optionally `dist/lumen.js`. These files have no build-time dependencies or CSS imports. `dist/lumen.css` includes the larger reference collection. `dist/index.html` is a working starter page; `dist/manifest.json` records sizes and checksums. The compatibility core is about 37 KB gzip and the full collection about 134 KB gzip. New projects using only the agreed public names can choose `dist/lumen-core-modern.css` (about 31 KB gzip) or `dist/lumen-modern.css` (about 119 KB gzip). These optional bundles omit generated legacy selector aliases; the default bundles continue to support existing integrations. The minified optional runtime is about 16 KB gzip. Exact sizes and checksums are in the manifest; reviewed gzip limits in `bundle-budgets.json` are enforced during every build.
 
 ```html
 <link rel="stylesheet" href="lumen-core.css">
@@ -98,6 +103,23 @@ Open **Inspect → Customize** on a supported example. Select an existing instan
 **Copy HTML** supplies markup with its required scope, inline icon definitions where needed, and fresh IDs so repeated copies keep their labels and behavior targets independent. Stateful controls are copied with their complete context; individual selection is available for self-contained visual controls. **Copy CSS** supplies expanded stylesheet dependencies. **Copy complete example** includes the source stylesheet/script links and icon definitions. **Download HTML** embeds the CSS and interaction script so the downloaded page can run independently. External images in visual references retain their original URLs. Direct-file studio opening supports these tools through the generated snapshot.
 
 Search understands familiar synonyms including “IB,” “btn,” “soft,” and “modal.” Example labels distinguish shared interactive components, native controls, and appearance references that need application behavior.
+
+## Additional controls and compositions
+
+Find these by name in the studio; each is also available as `example.html?item=core/KEY`:
+
+| Group | Keys |
+| --- | --- |
+| Interactive cards | `card-effects` (tilt, spotlight, animated border), `card-deck`, `poll-card`, `quiz-card` |
+| Fields | `signature-pad`, `character-counter`, `color-field`, `payment-preview`, `input-masks` |
+| Values | `mixer-faders`, `vertical-range`, `range-treatments`, `knob`, `xy-pad`, `direction-pad`, `meter-variants` |
+| Images | `image-magnifier` |
+
+Knobs use a native range for keyboard access. XY supports pointer input, arrow keys and named X/Y sliders; direction controls use native buttons. The deck cycles with Previous/Next and makes covered cards inert; it does not require dragging. Decorative tilt pauses with reduced motion. Magnification supports touch toggling, keyboard positioning and a native zoom range.
+
+Signatures support drawing and a typed alternative. The hidden `signature` form value contains `{name, paths}`, with normalized coordinates; drawn data survives a refresh/remount. Character counters use native `maxlength`. Color/hex fields synchronize and validate six-digit hex values. Phone formatting demonstrates US numbers; currency formatting uses USD on blur. The payment example formats fields and updates a local preview; it does not process payments or perform card authorization.
+
+`js/widgets.js` shares the public mount's refresh/destroy lifecycle and is included in `dist/lumen.js`. It emits bubbling events including `lumen:xychange`, `lumen:directionchange`, `lumen:deckchange`, `lumen:vote`, `lumen:answer`, `lumen:colorchange` and `lumen:signaturechange`. Native data changes also integrate with forms. Example state remains local; applications own persistence and submission.
 
 ## Connected reference workspace
 
@@ -118,11 +140,13 @@ The Compositions category includes tested login, settings, checkout, dashboard, 
 - File inputs accept `data-lm-max-size` in bytes, announce selection/errors, and support clearing. Repeated form names produce arrays in `lumen:submit` details; single values retain their existing shape.
 - Status presentations demonstrate application states. Retry/create actions are integration examples, not backend requests.
 
-Matching older form entries redirect through catalog aliases instead of duplicating the working patterns. The inventory now includes 530 examples, retaining all original entries through examples and aliases.
+Matching older form entries redirect through catalog aliases instead of duplicating the working patterns. The inventory now includes 547 examples, retaining all original entries through examples and aliases.
 
 ## Authoring design tokens
 
 Edit [tokens/design-tokens.json](tokens/design-tokens.json) for primitives, semantic roles, theme assignments, component roles, compatibility aliases, breakpoints and size recipes. `npm run build:tokens` generates the CSS modules, size stylesheet and JavaScript metadata. The build rejects unknown references, dependency cycles, incomplete themes and invalid customization contracts. Authored utilities live in `tokens/source/`; responsive utilities expand from one base definition at the shared breakpoints. Generated token modules, `components/utilities.css` and `components/sizes.css` should not be edited directly.
+
+Custom primary branding updates the primary tonal roles along with the solid fill; the unmodified default uses the attachment palette.
 
 The studio **Tokens** dialog adjusts palette, radii, spacing, control height and font, warns about configured text contrast and copies scoped CSS. `LumenDesign.apply(element, configuration)` and `LumenDesign.css(configuration, selector)` expose the same validated settings to applications and exports. Set `data-density="compact"` for denser surfaces/tables while keeping explicit control dimensions. [components/contracts.json](components/contracts.json) records anatomy, states, sizes and keyboard contracts. Existing class names and aliases remain supported.
 
@@ -179,6 +203,20 @@ Use the same base, appearance, color, and size classes for both. Add `btn-icon` 
 Sizes are `size-xs` (32px), `size-sm` (40px), default (44px), `size-lg` (52px), and `size-xl` (62px). Text buttons use horizontal padding; icon buttons use the same height as their square width with zero padding. Both APIs consume the generated `tokens/controls.css`; original category styles share `components/button-base.css` instead of repeating button geometry. All icon examples now use `btn btn-icon`. The compiled styles also support the original `b ib`, standalone `ib`, and `lm-*` aliases. Public core button dimensions now match the original scale, including the previously different small and large sizes.
 
 The [framework plan](FRAMEWORK-PLAN.md) records the completed stages 1–7 and verification boundaries. Naming now applies to every catalog template; visual references retain their existing behavior status.
+
+### Gradient button labels and icons
+
+The color/style API stays the same. `btn-label` gives CSS a separate layer for gradient lettering over a tonal or outline background:
+
+```html
+<button type="button" class="btn btn-style-tonal color-gradient-ocean">
+  <span class="btn-label">Explore</span>
+</button>
+```
+
+The runtime prepares plain labels automatically, and SVG icons receive local gradient definitions when mounted. Copied examples already include label wrappers, SVG definitions and independent IDs. Load `dist/lumen.js` for automatic setup; source-module users load `js/widgets.js` before `js/components.js`. A manually authored CSS-only SVG needs its own paint definition; the studio's copied markup includes it.
+
+The eight color ramps remain shared Foundation tokens. Light-theme tonal backgrounds/text follow the supplied palette; dark themes adapt those roles. Gradient resting labels/icons follow the supplied ramp, while filled text uses the existing per-gradient contrast token. `prefers-contrast: more` and forced colors provide a solid foreground alternative.
 
 ### Shared naming convention
 
@@ -294,6 +332,10 @@ The original theme manager, telemetry simulator, and automotive controls remain 
  js/studio-data.js         Generated direct-file snapshot
  js/components.js         Public interaction, form/resource and lifecycle API
  js/design.js             Shared validated branding API
+ js/widgets.js            Shared lifecycle for the additional controls
+ templates/enhancements.html Additional component examples
+ components/button-treatments.css Shared gradient text/icon and palette treatments
+ components/widgets.css   Public styles for additional components and parts
  js/workspace.js          Optional connected application controller
  workspace.html           Connected reference application
  js/studio.js             Catalog-driven studio and inspector
@@ -329,15 +371,17 @@ Browser checks require Chromium at `/usr/bin/chromium`, or an alternative execut
 The suite checks:
 
 - Catalog integrity, unique keys, template dependencies, and preservation of the original content through canonical sections and merged aliases.
-- Rendering all 530 previews over HTTP and through the offline snapshot loader, plus navigation, aliases, filtering, favorites, comparison, and standalone exports.
+- Rendering all 547 previews over HTTP and through the offline snapshot loader, plus navigation, aliases, filtering, favorites, comparison, and standalone exports.
 - Windows direct-file path resolution without fetch requests, offline snapshot rendering, HTML/CSS inspection, standalone interactions, paths containing spaces, and HTTP hosting under a subdirectory. The suite attempts real `file://` browser navigation; if an administrator policy blocks that scheme, it reports the check as skipped and tests the same snapshot loader using HTTP offline mode.
 - Core and selected original interactions, keyboard behavior, runtime lifecycle, responsive preview containers, and mobile layout.
 - Foundation/button palette parity, merged button aliases, text/icon hover and press states, disabled behavior, and 48 canonical button/theme accessibility checks.
-- **480 public core/theme combinations**: 60 core examples across eight themes, including open dialogs/menus, validation errors, automated WCAG checks through axe-core, and narrow-layout checks.
+- **616 public core/theme combinations**: 77 core examples across eight themes, including open dialogs/menus, validation errors, automated WCAG checks through axe-core, and narrow-layout checks.
+
+Attachment checks cover the exact palette, gradient text/icon paint references, state changes, keyboard/pointer controls, signatures, field formatting, portable widgets and 17 WCAG audits with 320px RTL layouts. `npm run test:attachment` runs this focused suite.
 
 Additional checks cover token dependencies, scoped brand changes, every default/medium size contract, nested themes, request races, notification timing, anatomy-preserving configuration and branded exports. The connected app has workflow checks and 12 desktop/mobile-RTL/dark WCAG audits. `npm run test:compat` checks native forms, keyboard menus, app CRUD, 320px/200% text reflow and Chromium forced colors. Set `LUMEN_BROWSER=firefox` or `webkit` after installing that Playwright browser. GitHub Actions runs this compatibility matrix separately.
 
-Local 3.3 verification uses Chromium. Firefox/WebKit downloads and native `file://` navigation are blocked by this managed environment's network/browser policies; those engine runs and direct-file navigation are not claimed as locally verified. Snapshot-based offline loading is exercised with source requests disabled.
+Local 3.4 verification uses Chromium. Firefox/WebKit downloads and native `file://` navigation are blocked by this managed environment's network/browser policies; those engine runs and direct-file navigation are not claimed as locally verified. Snapshot-based offline loading is exercised with source requests disabled.
 
 Focused commands are `npm run test:catalog`, `npm run test:buttons`, `npm run test:file`, and `npm run test:themes`. Automated checks cover the public core and selected interactions; they are not an accessibility certification of every retained visual reference or a substitute for manual testing in target applications.
 

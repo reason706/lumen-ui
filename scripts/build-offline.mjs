@@ -11,6 +11,7 @@ const catalog = JSON.parse(catalogText);
 const files = new Set([
   "catalog/components.json",
   "js/components.js",
+  "js/widgets.js",
   "js/tokens.js",
   "js/design.js",
   "tokens/design-tokens.json",

@@ -50,11 +50,13 @@
           detail,
         }),
       );
+    const widgets = global.LumenWidgets?.mount(root, { on, emit });
     function toast(message, options = {}) {
       let region = root.querySelector(":is(.lm-toast-region,.toast-region)");
       if (!region) {
         region = document.createElement("div");
         region.className = "toast-region lumen";
+        region.setAttribute("role", "region");
         region.setAttribute("aria-label", "Notifications");
         (root.body || root).append(region);
         cleanups.push(() => region.remove());
@@ -1122,6 +1124,7 @@
     });
     function refresh() {
       prepare(root);
+      widgets?.refresh();
       root
         .querySelectorAll("[data-lm-collapse][data-lm-responsive]")
         .forEach((button) => {
@@ -1265,6 +1268,7 @@
       refresh,
       destroy() {
         for (const button of busyButtons.keys()) busy(button, false);
+        widgets?.destroy();
         abort.abort();
         timers.forEach(clearTimeout);
         cleanups.forEach((fn) => fn());
@@ -1360,6 +1364,57 @@
     return template.content;
   }
   function prepare(root) {
+    root
+      .querySelectorAll(
+        '.btn:is(.btn-style-tonal,.btn-style-outline,.btn-style-ghost,.btn-style-link)[class*="color-gradient-"]',
+      )
+      .forEach((button) => {
+        for (const child of [...button.childNodes]) {
+          if (child.nodeType === 3 && child.textContent.trim()) {
+            const label = document.createElement("span");
+            label.className = "btn-label";
+            child.replaceWith(label);
+            label.append(child);
+          } else if (
+            child.nodeType === 1 &&
+            child.tagName.toLowerCase() !== "svg" &&
+            child.textContent.trim() &&
+            !child.matches('.badge,.chip,[aria-hidden="true"]')
+          )
+            child.classList.add("btn-label");
+        }
+        button.querySelectorAll("svg").forEach((svg) => {
+          if (svg.dataset.lmGradientIcon) return;
+          const ns = "http://www.w3.org/2000/svg",
+            defs = document.createElementNS(ns, "defs"),
+            gradient = document.createElementNS(ns, "linearGradient");
+          gradient.id = "lumen-button-gradient-" + ++seq;
+          gradient.setAttribute("x1", "0%");
+          gradient.setAttribute("y1", "0%");
+          gradient.setAttribute("x2", "100%");
+          gradient.setAttribute("y2", "100%");
+          for (const [offset, token] of [
+            ["0%", "--lm-gradient-start"],
+            ["100%", "--lm-gradient-end"],
+          ]) {
+            const stop = document.createElementNS(ns, "stop");
+            stop.setAttribute("offset", offset);
+            stop.setAttribute("style", "stop-color:var(" + token + ")");
+            gradient.append(stop);
+          }
+          defs.append(gradient);
+          svg.prepend(defs);
+          svg.style.setProperty(
+            "--lm-icon-gradient",
+            "url(#" + gradient.id + ")",
+          );
+          svg.dataset.lmGradientIcon = svg.matches(
+            '.icon-filled,[fill="currentColor"]',
+          )
+            ? "fill"
+            : "stroke";
+        });
+      });
     root.querySelectorAll(".field,.lm-field").forEach((field) => {
       const input = field.querySelector("input,select,textarea"),
         label = field.querySelector(".input-label,.lm-label");
@@ -1590,7 +1645,7 @@
     };
   }
   global.LumenUI = {
-    version: "3.3.0",
+    version: "3.4.0",
     mount,
     fragment,
     prepare,

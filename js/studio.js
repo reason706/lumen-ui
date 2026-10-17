@@ -195,6 +195,7 @@
     const scripts = [
       "js/tokens.js",
       "js/design.js",
+      "js/widgets.js",
       "js/components.js",
       ...(item.scripts || []),
     ];

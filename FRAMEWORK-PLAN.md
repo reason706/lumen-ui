@@ -1,5 +1,14 @@
 # Lumen framework plan
 
+## Version 3.4 attachment integration — implemented
+
+- Matched the supplied preview palette: Secondary `#64748B`, Light `#D5DBEC`, and explicit tonal background/ink pairs, with theme-aware dark equivalents. Foundation swatches and every button category consume those same roles.
+- Made gradient labels and SVG icons the default for tonal/outline treatments; added 16% two-stop tonal fills, 2px gradient outlines, full hover/press fills, gradient ghost/link details and solid hover feedback. Existing class names and color ramps remain unchanged. The shared `btn-label` part and independent SVG paint IDs are prepared for preview and export.
+- Added 17 functional examples covering image magnification, a button-operated card deck, tilt/spotlight/border cards, poll/quiz cards, drawn/typed signatures, counters, color fields, payment preview, US phone/USD formatting, faders, vertical/ruler ranges, meters, knob, XY and direction controls. Existing dual ranges and related references remain canonical examples rather than being copied into a new implementation.
+- Added one widget lifecycle module, public styles, contracts and catalog metadata. Native controls, typed alternatives, keyboard input, disabled state, reduced motion, high contrast, RTL and form data are included in the implementation.
+- Added focused workflow/accessibility/export checks and refreshed visual baselines; full catalog and theme checks include the new examples. Local Firefox/WebKit installation remains blocked by the managed network policy; the existing CI matrix remains configured.
+
+
 ## Version 3.3 roadmap — stages 1–7 implemented
 
 | Stage | Delivered | Evidence / boundary |

@@ -31,7 +31,11 @@ for (const item of c.items) {
   if (!sources.has(item.template))
     sources.set(item.template, await readFile(item.template, "utf8"));
   assert(
-    sources.get(item.template).includes('<template id="' + item.id + '">'),
+    [
+      ...sources
+        .get(item.template)
+        .matchAll(/<template\b[^>]*\bid=["']([^"']+)["'][^>]*>/g),
+    ].some((match) => match[1] === item.id),
     item.key + " missing markup",
   );
   for (const file of item.css) await access(file);

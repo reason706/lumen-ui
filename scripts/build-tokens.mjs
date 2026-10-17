@@ -120,6 +120,8 @@ const sourceFiles = [
   "components/core.css",
   "components/appearance.css",
   "components/patterns.css",
+  "components/button-treatments.css",
+  "components/widgets.css",
 ];
 const sources = await Promise.all(
   sourceFiles.map((file) => readFile(file, "utf8")),

@@ -320,6 +320,23 @@ try {
   await page.locator("#tokens-form [name=control]").fill("52");
   await page.locator("#tokens-form [name=radius]").fill("18");
   await page.locator("#tokens-close").click();
+  assert(
+    await page.evaluate(() => {
+      const scope = document.createElement("div");
+      scope.className = "lumen";
+      scope.innerHTML =
+        '<button class="btn btn-style-tonal color-primary">Brand probe</button>';
+      document.body.append(scope);
+      const c = document.createElement("canvas").getContext("2d");
+      c.fillStyle = getComputedStyle(scope.firstElementChild).backgroundColor;
+      c.fillRect(0, 0, 1, 1);
+      const [r, , b] = c.getImageData(0, 0, 1, 1).data;
+      scope.remove();
+      return r > b;
+    }),
+    "changing the primary brand also updates nested tonal fills",
+  );
+
   await page.locator("#search").fill("outline");
   await page.locator("#layout-filter").selectOption("list");
   await page.locator("#direction").selectOption("rtl");

@@ -1,11 +1,11 @@
 {
   "name": "lumen-ui",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "private": true,
   "description": "Framework-free component library and live component studio",
   "scripts": {
     "start": "python3 -m http.server 8000 --bind 127.0.0.1",
-    "test": "node scripts/build-tokens.mjs --check && node scripts/build-icons.mjs --check && node scripts/build-dist.mjs --check && node scripts/build-naming.mjs --check && node scripts/build-offline.mjs --check && node tests/catalog.mjs && node tests/naming.mjs && node tests/quality.mjs && node tests/system.mjs && node tests/workspace.mjs && node tests/compat.mjs && node tests/improvements.mjs && node tests/browser.mjs && node tests/buttons.mjs && node tests/file.mjs && node tests/themes.mjs",
+    "test": "node scripts/build-tokens.mjs --check && node scripts/build-icons.mjs --check && node scripts/build-dist.mjs --check && node scripts/build-naming.mjs --check && node scripts/build-offline.mjs --check && node tests/catalog.mjs && node tests/naming.mjs && node tests/quality.mjs && node tests/attachment.mjs && node tests/system.mjs && node tests/workspace.mjs && node tests/compat.mjs && node tests/improvements.mjs && node tests/browser.mjs && node tests/buttons.mjs && node tests/file.mjs && node tests/themes.mjs",
     "test:themes": "node tests/themes.mjs",
     "test:catalog": "node tests/catalog.mjs",
     "build:offline": "node scripts/build-tokens.mjs && node scripts/build-icons.mjs && node scripts/build-naming.mjs && node scripts/build-dist.mjs && node scripts/build-offline.mjs",
@@ -23,7 +23,8 @@
     "build:tokens": "node scripts/build-tokens.mjs",
     "test:system": "node tests/system.mjs",
     "test:workspace": "node tests/workspace.mjs",
-    "test:compat": "node tests/compat.mjs"
+    "test:compat": "node tests/compat.mjs",
+    "test:attachment": "node tests/attachment.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.58.2",

@@ -1,0 +1,674 @@
+<!-- Attachment-derived variants, built from shared public components. -->
+<template id="card-effects"
+  ><div class="lumen">
+    <div class="stack">
+      <div class="detail-grid">
+        <article class="card card-style-tilt" data-lm-card-effect>
+          <h3>Tilt toward your pointer</h3>
+          <p>A surface treatment using the shared card anatomy.</p>
+        </article>
+        <article class="card card-style-spotlight" data-lm-card-effect>
+          <h3>Follow the light</h3>
+          <p>Move the pointer across this card.</p>
+        </article>
+        <article class="card card-style-gradient-border">
+          <h3>A moving gradient border</h3>
+          <p>The animation pauses with reduced motion.</p>
+        </article>
+      </div>
+    </div>
+  </div></template
+>
+<template id="card-deck"
+  ><div class="lumen">
+    <div class="stack">
+      <section
+        class="card-deck stack"
+        data-lm-deck
+        aria-label="Featured collections"
+      >
+        <div class="card-deck-items">
+          <article class="card">
+            <span class="badge">Collection 1</span>
+            <h3>Aurora</h3>
+            <p>Shared foundations, a different perspective.</p>
+          </article>
+          <article class="card">
+            <span class="badge">Collection 2</span>
+            <h3>Ocean</h3>
+            <p>Shared foundations, a different perspective.</p>
+          </article>
+          <article class="card">
+            <span class="badge">Collection 3</span>
+            <h3>Midnight</h3>
+            <p>Shared foundations, a different perspective.</p>
+          </article>
+        </div>
+        <div class="row">
+          <button
+            type="button"
+            class="btn btn-style-outline"
+            data-deck-step="-1"
+          >
+            Previous card</button
+          ><button type="button" class="btn" data-deck-step="1">
+            Next card</button
+          ><output aria-live="polite">Card 1 of 3</output>
+        </div>
+      </section>
+    </div>
+  </div></template
+>
+<template id="poll-card"
+  ><div class="lumen">
+    <div class="stack">
+      <section class="card stack" data-lm-poll aria-labelledby="poll-title">
+        <h3 id="poll-title">Which theme do you prefer?</h3>
+        <div class="poll-option">
+          <button
+            type="button"
+            class="btn btn-style-outline"
+            data-votes="12"
+            value="Light"
+            aria-pressed="false"
+          >
+            Light</button
+          ><span data-poll-result></span
+          ><meter
+            min="0"
+            max="100"
+            value="0"
+            aria-label="Light vote percentage"
+            hidden
+          ></meter>
+        </div>
+        <div class="poll-option">
+          <button
+            type="button"
+            class="btn btn-style-outline"
+            data-votes="18"
+            value="Dark"
+            aria-pressed="false"
+          >
+            Dark</button
+          ><span data-poll-result></span
+          ><meter
+            min="0"
+            max="100"
+            value="0"
+            aria-label="Dark vote percentage"
+            hidden
+          ></meter>
+        </div>
+        <div class="poll-option">
+          <button
+            type="button"
+            class="btn btn-style-outline"
+            data-votes="9"
+            value="Auto"
+            aria-pressed="false"
+          >
+            Auto</button
+          ><span data-poll-result></span
+          ><meter
+            min="0"
+            max="100"
+            value="0"
+            aria-label="Auto vote percentage"
+            hidden
+          ></meter>
+        </div>
+        <output aria-live="polite">Choose an option to vote.</output
+        ><button type="button" class="btn btn-style-ghost" data-poll-reset>
+          Reset poll
+        </button>
+      </section>
+    </div>
+  </div></template
+>
+<template id="quiz-card"
+  ><div class="lumen">
+    <div class="stack">
+      <section
+        class="card stack"
+        data-lm-quiz
+        data-correct="rem"
+        aria-labelledby="quiz-title"
+      >
+        <h3 id="quiz-title">What does the CSS rem unit use?</h3>
+        <div class="quiz-options">
+          <button type="button" class="btn btn-style-outline" data-answer="px">
+            A fixed pixel size</button
+          ><button
+            type="button"
+            class="btn btn-style-outline"
+            data-answer="rem"
+          >
+            The root font size</button
+          ><button type="button" class="btn btn-style-outline" data-answer="vw">
+            The viewport width
+          </button>
+        </div>
+        <output aria-live="polite">Choose one answer.</output
+        ><button type="button" class="btn btn-style-ghost" data-quiz-reset>
+          Try again
+        </button>
+      </section>
+    </div>
+  </div></template
+>
+<template id="signature-pad"
+  ><div class="lumen">
+    <div class="stack">
+      <div class="stack" data-lm-signature>
+        <p id="signature-help">Draw in the box, or type your name below.</p>
+        <canvas
+          class="signature-pad"
+          role="img"
+          aria-label="Signature drawing area"
+          aria-describedby="signature-help"
+        ></canvas
+        ><label class="field"
+          ><span class="input-label">Typed signature</span
+          ><input
+            class="input"
+            type="text"
+            name="signature-name"
+            maxlength="80"
+            autocomplete="name" /></label
+        ><input type="hidden" name="signature" />
+        <div class="row">
+          <button
+            type="button"
+            class="btn btn-style-outline"
+            data-signature-clear
+          >
+            Clear signature</button
+          ><output aria-live="polite">Draw or type your signature.</output>
+        </div>
+      </div>
+    </div>
+  </div></template
+>
+<template id="character-counter"
+  ><div class="lumen">
+    <div class="stack">
+      <div class="stack" data-lm-count>
+        <label class="field"
+          ><span class="input-label">Short description</span
+          ><textarea
+            class="input"
+            name="description"
+            rows="3"
+            maxlength="80"
+            aria-describedby="description-count"
+          ></textarea></label
+        ><output id="description-count">0 / 80</output>
+        <p class="input-help" role="status"></p>
+      </div>
+    </div></div
+></template>
+<template id="color-field"
+  ><div class="lumen">
+    <div class="stack">
+      <div class="stack" data-lm-color>
+        <div class="color-field-row">
+          <label class="field"
+            ><span class="input-label">Pick a color</span
+            ><input
+              class="input"
+              type="color"
+              value="#4338ca"
+              name="color" /></label
+          ><label class="field"
+            ><span class="input-label">Hex color</span
+            ><input
+              class="input"
+              type="text"
+              name="hex"
+              value="#4338CA"
+              pattern="#[0-9a-fA-F]{6}"
+              maxlength="7"
+              required
+              spellcheck="false"
+              aria-describedby="hex-help" /></label
+          ><span class="color-field-swatch" aria-hidden="true"></span>
+        </div>
+        <p class="input-help" id="hex-help">
+          Use # followed by six hexadecimal digits.
+        </p>
+      </div>
+    </div>
+  </div></template
+>
+<template id="payment-preview"
+  ><div class="lumen">
+    <div class="stack">
+      <div class="stack" data-lm-payment-preview>
+        <div class="payment-preview" aria-label="Card preview">
+          <strong>Lumen card</strong
+          ><span data-card-number>•••• •••• •••• ••••</span>
+          <div class="row justify-between">
+            <span data-card-name>YOUR NAME</span
+            ><span data-card-expiry>MM/YY</span>
+          </div>
+        </div>
+        <p class="input-help">Preview only. No payment is collected.</p>
+        <label class="field"
+          ><span class="input-label">Card number</span
+          ><input
+            class="input"
+            name="card-number"
+            inputmode="numeric"
+            autocomplete="cc-number"
+            maxlength="23"
+            placeholder="4242 4242 4242 4242" /></label
+        ><label class="field"
+          ><span class="input-label">Name on card</span
+          ><input
+            class="input"
+            name="card-name"
+            autocomplete="cc-name"
+            maxlength="80" /></label
+        ><label class="field"
+          ><span class="input-label">Expiry date</span
+          ><input
+            class="input"
+            name="card-expiry"
+            inputmode="numeric"
+            autocomplete="cc-exp"
+            maxlength="5"
+            placeholder="MM/YY"
+        /></label>
+      </div>
+    </div></div
+></template>
+<template id="input-masks"
+  ><div class="lumen">
+    <div class="stack">
+      <label class="field"
+        ><span class="input-label">US phone number</span
+        ><input
+          class="input"
+          type="tel"
+          name="phone"
+          inputmode="tel"
+          autocomplete="tel-national"
+          placeholder="(555) 123-4567"
+          data-lm-mask="phone"
+          maxlength="14" /></label
+      ><label class="field"
+        ><span class="input-label">Amount in USD</span
+        ><input
+          class="input"
+          type="text"
+          name="amount"
+          inputmode="decimal"
+          placeholder="$0.00"
+          data-lm-mask="currency"
+          aria-describedby="amount-help"
+      /></label>
+      <p class="input-help" id="amount-help">
+        The amount formats when you leave the field.
+      </p>
+    </div>
+  </div></template
+>
+<template id="mixer-faders"
+  ><div class="lumen">
+    <div class="stack">
+      <div class="mixer">
+        <label class="field range-control" data-lm-slider
+          ><span class="input-label">Bass</span
+          ><input
+            class="range range-vertical"
+            type="range"
+            min="0"
+            max="100"
+            value="65"
+          /><output>65</output></label
+        ><label class="field range-control" data-lm-slider
+          ><span class="input-label">Mid</span
+          ><input
+            class="range range-vertical"
+            type="range"
+            min="0"
+            max="100"
+            value="45"
+          /><output>45</output></label
+        ><label class="field range-control" data-lm-slider
+          ><span class="input-label">Treble</span
+          ><input
+            class="range range-vertical"
+            type="range"
+            min="0"
+            max="100"
+            value="75"
+          /><output>75</output></label
+        ><label class="field range-control" data-lm-slider
+          ><span class="input-label">Master</span
+          ><input
+            class="range range-vertical"
+            type="range"
+            min="0"
+            max="100"
+            value="60"
+          /><output>60</output></label
+        >
+      </div>
+    </div>
+  </div></template
+>
+<template id="vertical-range"
+  ><div class="lumen">
+    <div class="stack">
+      <div class="row">
+        <label class="field range-control" data-lm-slider
+          ><span class="input-label">Volume</span
+          ><input
+            class="range range-vertical"
+            type="range"
+            min="0"
+            max="100"
+            value="55"
+          /><output>55</output></label
+        ><label class="field range-control" data-lm-slider
+          ><span class="input-label">Balance</span
+          ><input
+            class="range range-vertical"
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+          /><output>50</output></label
+        >
+      </div>
+    </div>
+  </div></template
+>
+<template id="range-treatments"
+  ><div class="lumen">
+    <div class="stack">
+      <label class="field range-control" data-lm-slider
+        ><span class="input-label">Thick pill</span
+        ><input
+          class="range range-style-thick"
+          type="range"
+          min="0"
+          max="100"
+          value="60"
+        /><output>60</output></label
+      ><label class="field range-control" data-lm-slider
+        ><span class="input-label">Thin line</span
+        ><input
+          class="range range-style-thin"
+          type="range"
+          min="0"
+          max="100"
+          value="40"
+        /><output>40</output></label
+      ><label class="field range-control" data-lm-slider
+        ><span class="input-label">Ruler scale</span
+        ><input
+          class="range range-style-ruler"
+          type="range"
+          min="0"
+          max="100"
+          value="70"
+        /><output>70</output></label
+      >
+    </div>
+  </div></template
+>
+<template id="knob"
+  ><div class="lumen">
+    <div class="stack">
+      <div class="stack">
+        <label class="input-label" for="gain-knob">Gain</label>
+        <div class="knob" data-lm-slider data-unit="%">
+          <input
+            id="gain-knob"
+            class="range"
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            aria-describedby="knob-help"
+          /><output>50%</output>
+        </div>
+        <p class="input-help" id="knob-help">
+          Drag the dial or use the arrow keys.
+        </p>
+      </div>
+    </div>
+  </div></template
+>
+<template id="xy-pad"
+  ><div class="lumen">
+    <div class="stack">
+      <fieldset class="stack" data-lm-xy>
+        <legend>Position</legend>
+        <div
+          class="xy-pad-plane"
+          tabindex="0"
+          role="group"
+          aria-label="Position plane"
+          aria-describedby="xy-help"
+        ></div>
+        <output aria-live="polite">X 50 · Y 50</output
+        ><label class="field"
+          ><span class="input-label">X position</span
+          ><input
+            class="range"
+            type="range"
+            name="x"
+            min="0"
+            max="100"
+            value="50" /></label
+        ><label class="field"
+          ><span class="input-label">Y position</span
+          ><input
+            class="range"
+            type="range"
+            name="y"
+            min="0"
+            max="100"
+            value="50"
+        /></label>
+        <p class="input-help" id="xy-help">
+          Drag the point or use arrow keys. Hold Shift for larger steps.
+        </p>
+      </fieldset>
+    </div>
+  </div></template
+>
+<template id="direction-pad"
+  ><div class="lumen">
+    <div class="stack">
+      <section class="stack" data-lm-direction aria-label="Directional control">
+        <div class="direction-pad">
+          <button
+            type="button"
+            class="btn btn-icon btn-style-tonal"
+            data-direction="Up"
+            aria-label="Up"
+            aria-pressed="false"
+          >
+            ↑</button
+          ><button
+            type="button"
+            class="btn btn-icon btn-style-tonal"
+            data-direction="Left"
+            aria-label="Left"
+            aria-pressed="false"
+          >
+            ←</button
+          ><button
+            type="button"
+            class="btn btn-icon btn-style-tonal"
+            data-direction="Center"
+            aria-label="Center"
+            aria-pressed="true"
+          >
+            •</button
+          ><button
+            type="button"
+            class="btn btn-icon btn-style-tonal"
+            data-direction="Right"
+            aria-label="Right"
+            aria-pressed="false"
+          >
+            →</button
+          ><button
+            type="button"
+            class="btn btn-icon btn-style-tonal"
+            data-direction="Down"
+            aria-label="Down"
+            aria-pressed="false"
+          >
+            ↓
+          </button>
+        </div>
+        <output aria-live="polite">Center</output>
+        <p class="input-help">Use arrow keys; Home selects the center.</p>
+      </section>
+    </div>
+  </div></template
+>
+<template id="meter-variants"
+  ><div class="lumen">
+    <div class="stack">
+      <div class="detail-grid">
+        <div class="card stack" data-lm-meter>
+          <h3>Signal strength</h3>
+          <div class="meter-visual meter-style-led" aria-hidden="true"></div>
+          <meter
+            class="meter-native"
+            min="0"
+            max="100"
+            value="70"
+            aria-label="Signal strength"
+          ></meter
+          ><label class="field"
+            ><span class="input-label">Adjust signal strength</span
+            ><input
+              class="range"
+              type="range"
+              min="0"
+              max="100"
+              value="70" /></label
+          ><output>70%</output>
+        </div>
+        <div class="card stack" data-lm-meter>
+          <h3>Battery charge</h3>
+          <div
+            class="meter-visual meter-style-battery"
+            aria-hidden="true"
+          ></div>
+          <meter
+            class="meter-native"
+            min="0"
+            max="100"
+            value="80"
+            aria-label="Battery charge"
+          ></meter
+          ><label class="field"
+            ><span class="input-label">Adjust battery charge</span
+            ><input
+              class="range"
+              type="range"
+              min="0"
+              max="100"
+              value="80" /></label
+          ><output>80%</output>
+        </div>
+        <div class="card stack" data-lm-meter>
+          <h3>Temperature level</h3>
+          <div
+            class="meter-visual meter-style-thermometer"
+            aria-hidden="true"
+          ></div>
+          <meter
+            class="meter-native"
+            min="0"
+            max="100"
+            value="65"
+            aria-label="Temperature level"
+          ></meter
+          ><label class="field"
+            ><span class="input-label">Adjust temperature level</span
+            ><input
+              class="range"
+              type="range"
+              min="0"
+              max="100"
+              value="65" /></label
+          ><output>65%</output>
+        </div>
+        <div class="card stack" data-lm-meter>
+          <h3>Tank level</h3>
+          <div class="meter-visual meter-style-tank" aria-hidden="true"></div>
+          <meter
+            class="meter-native"
+            min="0"
+            max="100"
+            value="45"
+            aria-label="Tank level"
+          ></meter
+          ><label class="field"
+            ><span class="input-label">Adjust tank level</span
+            ><input
+              class="range"
+              type="range"
+              min="0"
+              max="100"
+              value="45" /></label
+          ><output>45%</output>
+        </div>
+      </div>
+    </div>
+  </div></template
+>
+<template id="image-magnifier"
+  ><div class="lumen">
+    <div class="stack">
+      <section class="stack" data-lm-magnifier>
+        <div
+          class="magnifier-view"
+          tabindex="0"
+          role="group"
+          aria-label="Magnifier position"
+          aria-describedby="magnifier-help"
+        >
+          <img
+            alt="Illustrated mountain landscape at sunset"
+            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20480%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22sky%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%236366f1%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f59e0b%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20fill%3D%22url%28%23sky%29%22%20d%3D%22M0%200h640v480H0z%22%2F%3E%3Ccircle%20cx%3D%22470%22%20cy%3D%22150%22%20r%3D%2260%22%20fill%3D%22%23fef3c7%22%2F%3E%3Cpath%20fill%3D%22%23312e81%22%20d%3D%22M0%20400%20170%20190%20350%20390%20480%20240%20640%20410v70H0z%22%2F%3E%3Cpath%20fill%3D%22%230f1630%22%20d%3D%22m0%20440%20250-150%20220%20160%20170-90v120H0z%22%2F%3E%3C%2Fsvg%3E"
+          /><span class="magnifier-lens" aria-hidden="true"></span>
+        </div>
+        <div class="row">
+          <button
+            type="button"
+            class="btn btn-style-tonal"
+            aria-pressed="false"
+          >
+            Toggle magnifier</button
+          ><output>2.5×</output>
+        </div>
+        <label class="field"
+          ><span class="input-label">Magnification</span
+          ><input
+            class="range"
+            type="range"
+            min="1"
+            max="4"
+            step="0.25"
+            value="2.5"
+        /></label>
+        <p class="input-help" id="magnifier-help">
+          Move across the image, use arrow keys, or toggle the lens on for
+          touch.
+        </p>
+      </section>
+    </div>
+  </div></template
+>

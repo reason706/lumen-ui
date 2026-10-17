@@ -61,6 +61,13 @@
     if (config.primary) {
       result["--lumen-brand-primary"] = config.primary;
       result["--lumen-theme-primary"] = config.primary;
+      if (config.primary !== "#4338ca") {
+        result["--lumen-brand-tonal-primary"] =
+          "color-mix(in srgb," + config.primary + " 16%,white)";
+        result["--lumen-brand-tonal-ink-primary"] =
+          "color-mix(in srgb," + config.primary + " 35%,#0f1630)";
+      }
+
       result["--lumen-on-primary"] =
         contrast(config.primary, "#ffffff") >=
         contrast(config.primary, "#000000")
